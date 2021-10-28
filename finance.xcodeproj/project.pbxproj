@@ -58,14 +58,13 @@
 		ADBD414F272B3B1E00BB3327 /* finance */ = {
 			isa = PBXGroup;
 			children = (
+				ADBD4169272B3FB700BB3327 /* ViewController */,
 				ADBD4164272B3CA800BB3327 /* Views */,
 				ADBD4150272B3B1E00BB3327 /* AppDelegate.swift */,
 				ADBD4152272B3B1E00BB3327 /* SceneDelegate.swift */,
-				ADBD4154272B3B1E00BB3327 /* MainViewController.swift */,
 				ADBD4159272B3B1F00BB3327 /* Assets.xcassets */,
 				ADBD415B272B3B1F00BB3327 /* LaunchScreen.storyboard */,
 				ADBD415E272B3B1F00BB3327 /* Info.plist */,
-				ADBD4167272B3EF000BB3327 /* BaseViewController.swift */,
 			);
 			path = finance;
 			sourceTree = "<group>";
@@ -76,6 +75,15 @@
 				ADBD4165272B3CC500BB3327 /* PortfolioView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		ADBD4169272B3FB700BB3327 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ADBD4154272B3B1E00BB3327 /* MainViewController.swift */,
+				ADBD4167272B3EF000BB3327 /* BaseViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
