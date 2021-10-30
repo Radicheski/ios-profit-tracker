@@ -1,0 +1,352 @@
+{
+    "rank": 0,
+    "name": "Global",
+    "weight": 1,
+    "items": [
+        {
+            "rank": 0,
+            "name": "Dividendos",
+            "weight": 0.35,
+            "items": [
+                {
+                    "rank": 0,
+                    "name": "ENBR3",
+                    "weight": 0.1,
+                    "items": []
+                },
+                {
+                    "rank": 1,
+                    "name": "EGIE3",
+                    "weight": 0.075,
+                    "items": []
+                },
+                {
+                    "rank": 2,
+                    "name": "BBAS3",
+                    "weight": 0.075,
+                    "items": []
+                },
+                {
+                    "rank": 3,
+                    "name": "BBSE3",
+                    "weight": 0.075,
+                    "items": []
+                },
+                {
+                    "rank": 4,
+                    "name": "CPLE6",
+                    "weight": 0.05,
+                    "items": []
+                },
+                {
+                    "rank": 5,
+                    "name": "ITSA4",
+                    "weight": 0.05,
+                    "items": []
+                },
+                {
+                    "rank": 6,
+                    "name": "VIVT3",
+                    "weight": 0.075,
+                    "items": []
+                },
+                {
+                    "rank": 7,
+                    "name": "ABCB4",
+                    "weight": 0.025,
+                    "items": []
+                },
+                {
+                    "rank": 8,
+                    "name": "ELET6",
+                    "weight": 0.025,
+                    "items": []
+                },
+                {
+                    "rank": 9,
+                    "name": "MRVE3",
+                    "weight": 0.05,
+                    "items": []
+                },
+                {
+                    "rank": 10,
+                    "name": "CCRO3",
+                    "weight": 0.025,
+                    "items": []
+                },
+                {
+                    "rank": 11,
+                    "name": "PETR4",
+                    "weight": 0.075,
+                    "items": []
+                },
+                {
+                    "rank": 12,
+                    "name": "ODPV3",
+                    "weight": 0.025,
+                    "items": []
+                },
+                {
+                    "rank": 13,
+                    "name": "GRND3",
+                    "weight": 0.05,
+                    "items": []
+                },
+                {
+                    "rank": 14,
+                    "name": "WIZS3",
+                    "weight": 0.05,
+                    "items": []
+                },
+                {
+                    "rank": 15,
+                    "name": "TUPY3",
+                    "weight": 0.05,
+                    "items": []
+                },
+                {
+                    "rank": 16,
+                    "name": "TAEE11",
+                    "weight": 0.05,
+                    "items": []
+                },
+                {
+                    "rank": 17,
+                    "name": "UNIP6",
+                    "weight": 0.025,
+                    "items": []
+                }
+            ]
+        },
+        {
+            "rank": 1,
+            "name": "Valor",
+            "weight": 0.15,
+            "items": [
+                {
+                    "rank": 0,
+                    "name": "SULA11",
+                    "weight": 0.1,
+                    "items": []
+                },
+                {
+                    "rank": 1,
+                    "name": "EZTC3",
+                    "weight": 0.05,
+                    "items": []
+                },
+                {
+                    "rank": 2,
+                    "name": "NEOE3",
+                    "weight": 0.05,
+                    "items": []
+                },
+                {
+                    "rank": 3,
+                    "name": "BRBI11",
+                    "weight": 0.05,
+                    "items": []
+                },
+                {
+                    "rank": 4,
+                    "name": "MOVI3",
+                    "weight": 0.05,
+                    "items": []
+                },
+                {
+                    "rank": 5,
+                    "name": "GMAT3",
+                    "weight": 0.05,
+                    "items": []
+                },
+                {
+                    "rank": 6,
+                    "name": "PNVL3",
+                    "weight": 0.05,
+                    "items": []
+                },
+                {
+                    "rank": 7,
+                    "name": "BRKM5",
+                    "weight": 0.025,
+                    "items": []
+                },
+                {
+                    "rank": 8,
+                    "name": "ALUP11",
+                    "weight": 0.075,
+                    "items": []
+                },
+                {
+                    "rank": 9,
+                    "name": "MYPK3",
+                    "weight": 0.075,
+                    "items": []
+                },
+                {
+                    "rank": 10,
+                    "name": "MDIA3",
+                    "weight": 0.05,
+                    "items": []
+                },
+                {
+                    "rank": 11,
+                    "name": "RAIL3",
+                    "weight": 0.05,
+                    "items": []
+                },
+                {
+                    "rank": 12,
+                    "name": "B3SA3",
+                    "weight": 0.05,
+                    "items": []
+                },
+                {
+                    "rank": 13,
+                    "name": "IGTA3",
+                    "weight": 0.025,
+                    "items": []
+                },
+                {
+                    "rank": 14,
+                    "name": "VAMO3",
+                    "weight": 0.025,
+                    "items": []
+                },
+                {
+                    "rank": 15,
+                    "name": "ITSA4",
+                    "weight": 0.025,
+                    "items": []
+                },
+                {
+                    "rank": 16,
+                    "name": "TFCO4",
+                    "weight": 0.05,
+                    "items": []
+                },
+                {
+                    "rank": 17,
+                    "name": "BRAP4",
+                    "weight": 0.075,
+                    "items": []
+                },
+                {
+                    "rank": 18,
+                    "name": "EQTL3",
+                    "weight": 0.025,
+                    "items": []
+                },
+                {
+                    "rank": 19,
+                    "name": "CVCB3",
+                    "weight": 0.025,
+                    "items": []
+                }
+            ]
+        },
+        {
+            "rank": 2,
+            "name": "FII",
+            "weight": 0.5,
+            "items": [
+                {
+                    "rank": 0,
+                    "name": "BTLG11",
+                    "weight": 0.0625,
+                    "items": []
+                },
+                {
+                    "rank": 1,
+                    "name": "MCCI11",
+                    "weight": 0.0625,
+                    "items": []
+                },
+                {
+                    "rank": 2,
+                    "name": "PVBI11",
+                    "weight": 0.0625,
+                    "items": []
+                },
+                {
+                    "rank": 3,
+                    "name": "RBRP11",
+                    "weight": 0.0625,
+                    "items": []
+                },
+                {
+                    "rank": 4,
+                    "name": "RECR11",
+                    "weight": 0.0625,
+                    "items": []
+                },
+                {
+                    "rank": 5,
+                    "name": "HGRU11",
+                    "weight": 0.0625,
+                    "items": []
+                },
+                {
+                    "rank": 6,
+                    "name": "MALL11",
+                    "weight": 0.0625,
+                    "items": []
+                },
+                {
+                    "rank": 7,
+                    "name": "XPLG11",
+                    "weight": 0.0625,
+                    "items": []
+                },
+                {
+                    "rank": 8,
+                    "name": "HGLG11",
+                    "weight": 0.0625,
+                    "items": []
+                },
+                {
+                    "rank": 9,
+                    "name": "VGIP11",
+                    "weight": 0.0625,
+                    "items": []
+                },
+                {
+                    "rank": 10,
+                    "name": "ALZR11",
+                    "weight": 0.0625,
+                    "items": []
+                },
+                {
+                    "rank": 11,
+                    "name": "VRTA11",
+                    "weight": 0.0625,
+                    "items": []
+                },
+                {
+                    "rank": 12,
+                    "name": "VISC11",
+                    "weight": 0.0625,
+                    "items": []
+                },
+                {
+                    "rank": 13,
+                    "name": "VILG11",
+                    "weight": 0.0625,
+                    "items": []
+                },
+                {
+                    "rank": 14,
+                    "name": "XPML11",
+                    "weight": 0.0625,
+                    "items": []
+                },
+                {
+                    "rank": 15,
+                    "name": "IRDM11",
+                    "weight": 0.0625,
+                    "items": []
+                }
+            ]
+        }
+    ]
+}

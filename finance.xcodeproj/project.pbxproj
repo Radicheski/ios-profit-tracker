@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD58D52B272CC0E60047847C /* portfolioExpected.json in Resources */ = {isa = PBXBuildFile; fileRef = AD58D52A272CC0E60047847C /* portfolioExpected.json */; };
+		AD58D52E272CC7E60047847C /* PortfolioItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58D52D272CC7E60047847C /* PortfolioItem.swift */; };
+		AD58D531272CC80D0047847C /* PortfolioItem+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58D530272CC80D0047847C /* PortfolioItem+Equatable.swift */; };
+		AD58D533272CC8210047847C /* PortfolioItem+PortfolioComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58D532272CC8210047847C /* PortfolioItem+PortfolioComposite.swift */; };
+		AD58D536272CC8740047847C /* PortfolioComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58D535272CC8740047847C /* PortfolioComposite.swift */; };
 		ADBD4151272B3B1E00BB3327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4150272B3B1E00BB3327 /* AppDelegate.swift */; };
 		ADBD4153272B3B1E00BB3327 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4152272B3B1E00BB3327 /* SceneDelegate.swift */; };
 		ADBD4155272B3B1E00BB3327 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4154272B3B1E00BB3327 /* MainViewController.swift */; };
@@ -14,9 +19,28 @@
 		ADBD415D272B3B1F00BB3327 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADBD415B272B3B1F00BB3327 /* LaunchScreen.storyboard */; };
 		ADBD4166272B3CC500BB3327 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4165272B3CC500BB3327 /* PortfolioView.swift */; };
 		ADBD4168272B3EF000BB3327 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4167272B3EF000BB3327 /* BaseViewController.swift */; };
+		ADBD416B272B42C300BB3327 /* PortfolioNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD416A272B42C300BB3327 /* PortfolioNavigationController.swift */; };
+		ADBD416D272B44B600BB3327 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD416C272B44B600BB3327 /* PortfolioViewController.swift */; };
+		ADEB66AC272C3279002AFAE3 /* portfolio.json in Resources */ = {isa = PBXBuildFile; fileRef = ADEB66AB272C3279002AFAE3 /* portfolio.json */; };
+		ADEB66BB272C5581002AFAE3 /* PortfolioItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEB66BA272C5581002AFAE3 /* PortfolioItemTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		ADEB66B5272C551A002AFAE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADBD4145272B3B1E00BB3327 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADBD414C272B3B1E00BB3327;
+			remoteInfo = finance;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		AD58D52A272CC0E60047847C /* portfolioExpected.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portfolioExpected.json; sourceTree = "<group>"; };
+		AD58D52D272CC7E60047847C /* PortfolioItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItem.swift; sourceTree = "<group>"; };
+		AD58D530272CC80D0047847C /* PortfolioItem+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+Equatable.swift"; sourceTree = "<group>"; };
+		AD58D532272CC8210047847C /* PortfolioItem+PortfolioComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+PortfolioComposite.swift"; sourceTree = "<group>"; };
+		AD58D535272CC8740047847C /* PortfolioComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioComposite.swift; sourceTree = "<group>"; };
 		ADBD414D272B3B1E00BB3327 /* finance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBD4150272B3B1E00BB3327 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADBD4152272B3B1E00BB3327 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +50,11 @@
 		ADBD415E272B3B1F00BB3327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADBD4165272B3CC500BB3327 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		ADBD4167272B3EF000BB3327 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		ADBD416A272B42C300BB3327 /* PortfolioNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioNavigationController.swift; sourceTree = "<group>"; };
+		ADBD416C272B44B600BB3327 /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
+		ADEB66AB272C3279002AFAE3 /* portfolio.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portfolio.json; sourceTree = "<group>"; };
+		ADEB66B1272C551A002AFAE3 /* financeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = financeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADEB66BA272C5581002AFAE3 /* PortfolioItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItemTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,13 +65,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ADEB66AE272C551A002AFAE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD58D52C272CC7CA0047847C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD58D52F272CC7F40047847C /* PortfolioItem */,
+				AD58D52D272CC7E60047847C /* PortfolioItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD58D52F272CC7F40047847C /* PortfolioItem */ = {
+			isa = PBXGroup;
+			children = (
+				AD58D530272CC80D0047847C /* PortfolioItem+Equatable.swift */,
+				AD58D532272CC8210047847C /* PortfolioItem+PortfolioComposite.swift */,
+			);
+			path = PortfolioItem;
+			sourceTree = "<group>";
+		};
+		AD58D534272CC8630047847C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AD58D535272CC8740047847C /* PortfolioComposite.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		ADBD4144272B3B1E00BB3327 = {
 			isa = PBXGroup;
 			children = (
 				ADBD414F272B3B1E00BB3327 /* finance */,
+				ADEB66B2272C551A002AFAE3 /* financeTests */,
 				ADBD414E272B3B1E00BB3327 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				ADBD414D272B3B1E00BB3327 /* finance.app */,
+				ADEB66B1272C551A002AFAE3 /* financeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +122,9 @@
 		ADBD414F272B3B1E00BB3327 /* finance */ = {
 			isa = PBXGroup;
 			children = (
+				AD58D534272CC8630047847C /* Protocols */,
+				AD58D52C272CC7CA0047847C /* Model */,
+				ADEB66A9272C325C002AFAE3 /* Mock */,
 				ADBD4169272B3FB700BB3327 /* ViewController */,
 				ADBD4164272B3CA800BB3327 /* Views */,
 				ADBD4150272B3B1E00BB3327 /* AppDelegate.swift */,
@@ -82,8 +149,35 @@
 			children = (
 				ADBD4154272B3B1E00BB3327 /* MainViewController.swift */,
 				ADBD4167272B3EF000BB3327 /* BaseViewController.swift */,
+				ADBD416A272B42C300BB3327 /* PortfolioNavigationController.swift */,
+				ADBD416C272B44B600BB3327 /* PortfolioViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		ADEB66A9272C325C002AFAE3 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				ADEB66AA272C3264002AFAE3 /* Data */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		ADEB66AA272C3264002AFAE3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				ADEB66AB272C3279002AFAE3 /* portfolio.json */,
+				AD58D52A272CC0E60047847C /* portfolioExpected.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		ADEB66B2272C551A002AFAE3 /* financeTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADEB66BA272C5581002AFAE3 /* PortfolioItemTests.swift */,
+			);
+			path = financeTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +200,24 @@
 			productReference = ADBD414D272B3B1E00BB3327 /* finance.app */;
 			productType = "com.apple.product-type.application";
 		};
+		ADEB66B0272C551A002AFAE3 /* financeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADEB66B7272C551A002AFAE3 /* Build configuration list for PBXNativeTarget "financeTests" */;
+			buildPhases = (
+				ADEB66AD272C551A002AFAE3 /* Sources */,
+				ADEB66AE272C551A002AFAE3 /* Frameworks */,
+				ADEB66AF272C551A002AFAE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADEB66B6272C551A002AFAE3 /* PBXTargetDependency */,
+			);
+			name = financeTests;
+			productName = financeTests;
+			productReference = ADEB66B1272C551A002AFAE3 /* financeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -118,6 +230,10 @@
 				TargetAttributes = {
 					ADBD414C272B3B1E00BB3327 = {
 						CreatedOnToolsVersion = 13.1;
+					};
+					ADEB66B0272C551A002AFAE3 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = ADBD414C272B3B1E00BB3327;
 					};
 				};
 			};
@@ -135,6 +251,7 @@
 			projectRoot = "";
 			targets = (
 				ADBD414C272B3B1E00BB3327 /* finance */,
+				ADEB66B0272C551A002AFAE3 /* financeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -145,7 +262,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADBD415D272B3B1F00BB3327 /* LaunchScreen.storyboard in Resources */,
+				ADEB66AC272C3279002AFAE3 /* portfolio.json in Resources */,
+				AD58D52B272CC0E60047847C /* portfolioExpected.json in Resources */,
 				ADBD415A272B3B1F00BB3327 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEB66AF272C551A002AFAE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,12 +285,34 @@
 				ADBD4168272B3EF000BB3327 /* BaseViewController.swift in Sources */,
 				ADBD4155272B3B1E00BB3327 /* MainViewController.swift in Sources */,
 				ADBD4151272B3B1E00BB3327 /* AppDelegate.swift in Sources */,
+				AD58D52E272CC7E60047847C /* PortfolioItem.swift in Sources */,
 				ADBD4153272B3B1E00BB3327 /* SceneDelegate.swift in Sources */,
+				ADBD416B272B42C300BB3327 /* PortfolioNavigationController.swift in Sources */,
+				AD58D533272CC8210047847C /* PortfolioItem+PortfolioComposite.swift in Sources */,
+				ADBD416D272B44B600BB3327 /* PortfolioViewController.swift in Sources */,
 				ADBD4166272B3CC500BB3327 /* PortfolioView.swift in Sources */,
+				AD58D536272CC8740047847C /* PortfolioComposite.swift in Sources */,
+				AD58D531272CC80D0047847C /* PortfolioItem+Equatable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEB66AD272C551A002AFAE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADEB66BB272C5581002AFAE3 /* PortfolioItemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADEB66B6272C551A002AFAE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADBD414C272B3B1E00BB3327 /* finance */;
+			targetProxy = ADEB66B5272C551A002AFAE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		ADBD415B272B3B1F00BB3327 /* LaunchScreen.storyboard */ = {
@@ -348,6 +496,52 @@
 			};
 			name = Release;
 		};
+		ADEB66B8272C551A002AFAE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S85L3BQN65;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.radicheski.financeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/finance.app/finance";
+			};
+			name = Debug;
+		};
+		ADEB66B9272C551A002AFAE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S85L3BQN65;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.radicheski.financeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/finance.app/finance";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -365,6 +559,15 @@
 			buildConfigurations = (
 				ADBD4162272B3B1F00BB3327 /* Debug */,
 				ADBD4163272B3B1F00BB3327 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADEB66B7272C551A002AFAE3 /* Build configuration list for PBXNativeTarget "financeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADEB66B8272C551A002AFAE3 /* Debug */,
+				ADEB66B9272C551A002AFAE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
