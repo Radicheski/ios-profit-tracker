@@ -12,8 +12,15 @@ class MainViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        self.addChild(PortfolioNavigationController())
+        self.view.backgroundColor = .white
     }
 
 
 }
+
+
+
+
 
