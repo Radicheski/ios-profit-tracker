@@ -41,6 +41,16 @@ class TestPortfolioItem: XCTestCase {
         XCTAssertEqual(self.output.count, self.expectation.count)
     }
     
+    func testUniqueNames() {
+        var output = Set<String>()
+        self.output.forEach( { output.insert($0.name) } )
+        
+        var expectation = Set<String>()
+        self.expectation.keys.forEach( { expectation.insert($0) } )
+        
+        XCTAssertEqual(output, expectation)
+    }
+    
     func testOutputValues() {
         self.output.forEach {
             XCTAssertEqual($0.weight, self.expectation[$0.name]!)
