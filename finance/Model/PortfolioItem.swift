@@ -13,7 +13,6 @@ public struct PortfolioItem: Codable {
     public var rank: Int
     public var name: String
     public var weight: Decimal
-    public var items: [PortfolioItem]!
     public var parentId: UUID?
     
 }

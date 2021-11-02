@@ -1,41 +1,27 @@
 [
     {
-        "id": "425028BB-4828-451F-9232-F13C3ADD0F2C",
-        "rank": 0,
-        "name": "Global",
-        "weight": 1,
-        "items": []
-    },
-    {
         "id": "CB420047-888E-4E82-A8BB-56757A64F5B6",
         "rank": 0,
         "name": "Dividendos",
-        "weight": 0.35,
-        "items": [],
-        "parentId": "425028BB-4828-451F-9232-F13C3ADD0F2C"
+        "weight": 0.35
     },
     {
         "id": "94150771-1156-4F7F-989C-6879E7D850E3",
         "rank": 1,
         "name": "Valor",
-        "weight": 0.15,
-        "items": [],
-        "parentId": "425028BB-4828-451F-9232-F13C3ADD0F2C"
+        "weight": 0.15
     },
     {
         "id": "D54D5D89-E41A-462C-82CE-F77302EA7ED3",
         "rank": 2,
         "name": "FII",
-        "weight": 0.5,
-        "items": [],
-        "parentId": "425028BB-4828-451F-9232-F13C3ADD0F2C"
+        "weight": 0.5
     },
     {
         "id": "C121667D-F3F4-4748-818B-4DC83CBCF186",
         "rank": 0,
         "name": "BTLG11",
         "weight": 0.0625,
-        "items": [],
         "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
     },
     {
@@ -43,7 +29,6 @@
         "rank": 1,
         "name": "MCCI11",
         "weight": 0.0625,
-        "items": [],
         "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
     },
     {
@@ -51,7 +36,6 @@
         "rank": 2,
         "name": "PVBI11",
         "weight": 0.0625,
-        "items": [],
         "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
     },
     {
@@ -59,7 +43,6 @@
         "rank": 3,
         "name": "RBRP11",
         "weight": 0.0625,
-        "items": [],
         "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
     },
     {
@@ -67,7 +50,6 @@
         "rank": 4,
         "name": "RECR11",
         "weight": 0.0625,
-        "items": [],
         "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
     },
     {
@@ -75,7 +57,6 @@
         "rank": 5,
         "name": "HGRU11",
         "weight": 0.0625,
-        "items": [],
         "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
     },
     {
@@ -83,7 +64,6 @@
         "rank": 6,
         "name": "MALL11",
         "weight": 0.0625,
-        "items": [],
         "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
     },
     {
@@ -91,7 +71,6 @@
         "rank": 7,
         "name": "XPLG11",
         "weight": 0.0625,
-        "items": [],
         "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
     },
     {
@@ -99,7 +78,6 @@
         "rank": 8,
         "name": "HGLG11",
         "weight": 0.0625,
-        "items": [],
         "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
     },
     {
@@ -107,7 +85,6 @@
         "rank": 9,
         "name": "VGIP11",
         "weight": 0.0625,
-        "items": [],
         "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
     },
     {
@@ -115,7 +92,6 @@
         "rank": 10,
         "name": "ALZR11",
         "weight": 0.0625,
-        "items": [],
         "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
     },
     {
@@ -123,7 +99,6 @@
         "rank": 11,
         "name": "VRTA11",
         "weight": 0.0625,
-        "items": [],
         "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
     },
     {
@@ -131,7 +106,6 @@
         "rank": 12,
         "name": "VISC11",
         "weight": 0.0625,
-        "items": [],
         "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
     },
     {
@@ -139,7 +113,6 @@
         "rank": 13,
         "name": "VILG11",
         "weight": 0.0625,
-        "items": [],
         "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
     },
     {
@@ -147,7 +120,6 @@
         "rank": 14,
         "name": "XPML11",
         "weight": 0.0625,
-        "items": [],
         "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
     },
     {
@@ -155,7 +127,6 @@
         "rank": 15,
         "name": "IRDM11",
         "weight": 0.0625,
-        "items": [],
         "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
     },
     {
@@ -163,7 +134,6 @@
         "rank": 0,
         "name": "SULA11",
         "weight": 0.1,
-        "items": [],
         "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
     },
     {
@@ -171,7 +141,6 @@
         "rank": 1,
         "name": "EZTC3",
         "weight": 0.05,
-        "items": [],
         "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
     },
     {
@@ -179,7 +148,6 @@
         "rank": 2,
         "name": "NEOE3",
         "weight": 0.05,
-        "items": [],
         "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
     },
     {
@@ -187,7 +155,6 @@
         "rank": 3,
         "name": "BRBI11",
         "weight": 0.05,
-        "items": [],
         "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
     },
     {
@@ -195,7 +162,6 @@
         "rank": 4,
         "name": "MOVI3",
         "weight": 0.05,
-        "items": [],
         "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
     },
     {
@@ -203,7 +169,6 @@
         "rank": 5,
         "name": "GMAT3",
         "weight": 0.05,
-        "items": [],
         "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
     },
     {
@@ -211,7 +176,6 @@
         "rank": 6,
         "name": "PNVL3",
         "weight": 0.05,
-        "items": [],
         "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
     },
     {
@@ -219,7 +183,6 @@
         "rank": 7,
         "name": "BRKM5",
         "weight": 0.025,
-        "items": [],
         "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
     },
     {
@@ -227,7 +190,6 @@
         "rank": 8,
         "name": "ALUP11",
         "weight": 0.075,
-        "items": [],
         "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
     },
     {
@@ -235,7 +197,6 @@
         "rank": 9,
         "name": "MYPK3",
         "weight": 0.075,
-        "items": [],
         "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
     },
     {
@@ -243,7 +204,6 @@
         "rank": 10,
         "name": "MDIA3",
         "weight": 0.05,
-        "items": [],
         "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
     },
     {
@@ -251,7 +211,6 @@
         "rank": 11,
         "name": "RAIL3",
         "weight": 0.05,
-        "items": [],
         "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
     },
     {
@@ -259,7 +218,6 @@
         "rank": 12,
         "name": "B3SA3",
         "weight": 0.05,
-        "items": [],
         "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
     },
     {
@@ -267,7 +225,6 @@
         "rank": 13,
         "name": "IGTA3",
         "weight": 0.025,
-        "items": [],
         "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
     },
     {
@@ -275,7 +232,6 @@
         "rank": 14,
         "name": "VAMO3",
         "weight": 0.025,
-        "items": [],
         "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
     },
     {
@@ -283,7 +239,6 @@
         "rank": 15,
         "name": "ITSA4",
         "weight": 0.025,
-        "items": [],
         "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
     },
     {
@@ -291,7 +246,6 @@
         "rank": 16,
         "name": "TFCO4",
         "weight": 0.05,
-        "items": [],
         "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
     },
     {
@@ -299,7 +253,6 @@
         "rank": 17,
         "name": "BRAP4",
         "weight": 0.075,
-        "items": [],
         "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
     },
     {
@@ -307,7 +260,6 @@
         "rank": 18,
         "name": "EQTL3",
         "weight": 0.025,
-        "items": [],
         "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
     },
     {
@@ -315,7 +267,6 @@
         "rank": 19,
         "name": "CVCB3",
         "weight": 0.025,
-        "items": [],
         "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
     },
     {
@@ -323,7 +274,6 @@
         "rank": 0,
         "name": "ENBR3",
         "weight": 0.1,
-        "items": [],
         "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
     },
     {
@@ -331,7 +281,6 @@
         "rank": 1,
         "name": "EGIE3",
         "weight": 0.075,
-        "items": [],
         "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
     },
     {
@@ -339,7 +288,6 @@
         "rank": 2,
         "name": "BBAS3",
         "weight": 0.075,
-        "items": [],
         "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
     },
     {
@@ -347,7 +295,6 @@
         "rank": 3,
         "name": "BBSE3",
         "weight": 0.075,
-        "items": [],
         "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
     },
     {
@@ -355,7 +302,6 @@
         "rank": 4,
         "name": "CPLE6",
         "weight": 0.05,
-        "items": [],
         "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
     },
     {
@@ -363,7 +309,6 @@
         "rank": 5,
         "name": "ITSA4",
         "weight": 0.05,
-        "items": [],
         "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
     },
     {
@@ -371,7 +316,6 @@
         "rank": 6,
         "name": "VIVT3",
         "weight": 0.075,
-        "items": [],
         "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
     },
     {
@@ -379,7 +323,6 @@
         "rank": 7,
         "name": "ABCB4",
         "weight": 0.025,
-        "items": [],
         "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
     },
     {
@@ -387,7 +330,6 @@
         "rank": 8,
         "name": "ELET6",
         "weight": 0.025,
-        "items": [],
         "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
     },
     {
@@ -395,7 +337,6 @@
         "rank": 9,
         "name": "MRVE3",
         "weight": 0.05,
-        "items": [],
         "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
     },
     {
@@ -403,7 +344,6 @@
         "rank": 10,
         "name": "CCRO3",
         "weight": 0.025,
-        "items": [],
         "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
     },
     {
@@ -411,7 +351,6 @@
         "rank": 11,
         "name": "PETR4",
         "weight": 0.075,
-        "items": [],
         "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
     },
     {
@@ -419,7 +358,6 @@
         "rank": 12,
         "name": "ODPV3",
         "weight": 0.025,
-        "items": [],
         "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
     },
     {
@@ -427,7 +365,6 @@
         "rank": 13,
         "name": "GRND3",
         "weight": 0.05,
-        "items": [],
         "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
     },
     {
@@ -435,7 +372,6 @@
         "rank": 14,
         "name": "WIZS3",
         "weight": 0.05,
-        "items": [],
         "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
     },
     {
@@ -443,7 +379,6 @@
         "rank": 15,
         "name": "TUPY3",
         "weight": 0.05,
-        "items": [],
         "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
     },
     {
@@ -451,7 +386,6 @@
         "rank": 16,
         "name": "TAEE11",
         "weight": 0.05,
-        "items": [],
         "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
     },
     {
@@ -459,7 +393,6 @@
         "rank": 17,
         "name": "UNIP6",
         "weight": 0.025,
-        "items": [],
         "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
     }
 ]
