@@ -1,352 +1,465 @@
-{
-    "rank": 0,
-    "name": "Global",
-    "weight": 1,
-    "items": [
-        {
-            "rank": 0,
-            "name": "Dividendos",
-            "weight": 0.35,
-            "items": [
-                {
-                    "rank": 0,
-                    "name": "ENBR3",
-                    "weight": 0.1,
-                    "items": []
-                },
-                {
-                    "rank": 1,
-                    "name": "EGIE3",
-                    "weight": 0.075,
-                    "items": []
-                },
-                {
-                    "rank": 2,
-                    "name": "BBAS3",
-                    "weight": 0.075,
-                    "items": []
-                },
-                {
-                    "rank": 3,
-                    "name": "BBSE3",
-                    "weight": 0.075,
-                    "items": []
-                },
-                {
-                    "rank": 4,
-                    "name": "CPLE6",
-                    "weight": 0.05,
-                    "items": []
-                },
-                {
-                    "rank": 5,
-                    "name": "ITSA4",
-                    "weight": 0.05,
-                    "items": []
-                },
-                {
-                    "rank": 6,
-                    "name": "VIVT3",
-                    "weight": 0.075,
-                    "items": []
-                },
-                {
-                    "rank": 7,
-                    "name": "ABCB4",
-                    "weight": 0.025,
-                    "items": []
-                },
-                {
-                    "rank": 8,
-                    "name": "ELET6",
-                    "weight": 0.025,
-                    "items": []
-                },
-                {
-                    "rank": 9,
-                    "name": "MRVE3",
-                    "weight": 0.05,
-                    "items": []
-                },
-                {
-                    "rank": 10,
-                    "name": "CCRO3",
-                    "weight": 0.025,
-                    "items": []
-                },
-                {
-                    "rank": 11,
-                    "name": "PETR4",
-                    "weight": 0.075,
-                    "items": []
-                },
-                {
-                    "rank": 12,
-                    "name": "ODPV3",
-                    "weight": 0.025,
-                    "items": []
-                },
-                {
-                    "rank": 13,
-                    "name": "GRND3",
-                    "weight": 0.05,
-                    "items": []
-                },
-                {
-                    "rank": 14,
-                    "name": "WIZS3",
-                    "weight": 0.05,
-                    "items": []
-                },
-                {
-                    "rank": 15,
-                    "name": "TUPY3",
-                    "weight": 0.05,
-                    "items": []
-                },
-                {
-                    "rank": 16,
-                    "name": "TAEE11",
-                    "weight": 0.05,
-                    "items": []
-                },
-                {
-                    "rank": 17,
-                    "name": "UNIP6",
-                    "weight": 0.025,
-                    "items": []
-                }
-            ]
-        },
-        {
-            "rank": 1,
-            "name": "Valor",
-            "weight": 0.15,
-            "items": [
-                {
-                    "rank": 0,
-                    "name": "SULA11",
-                    "weight": 0.1,
-                    "items": []
-                },
-                {
-                    "rank": 1,
-                    "name": "EZTC3",
-                    "weight": 0.05,
-                    "items": []
-                },
-                {
-                    "rank": 2,
-                    "name": "NEOE3",
-                    "weight": 0.05,
-                    "items": []
-                },
-                {
-                    "rank": 3,
-                    "name": "BRBI11",
-                    "weight": 0.05,
-                    "items": []
-                },
-                {
-                    "rank": 4,
-                    "name": "MOVI3",
-                    "weight": 0.05,
-                    "items": []
-                },
-                {
-                    "rank": 5,
-                    "name": "GMAT3",
-                    "weight": 0.05,
-                    "items": []
-                },
-                {
-                    "rank": 6,
-                    "name": "PNVL3",
-                    "weight": 0.05,
-                    "items": []
-                },
-                {
-                    "rank": 7,
-                    "name": "BRKM5",
-                    "weight": 0.025,
-                    "items": []
-                },
-                {
-                    "rank": 8,
-                    "name": "ALUP11",
-                    "weight": 0.075,
-                    "items": []
-                },
-                {
-                    "rank": 9,
-                    "name": "MYPK3",
-                    "weight": 0.075,
-                    "items": []
-                },
-                {
-                    "rank": 10,
-                    "name": "MDIA3",
-                    "weight": 0.05,
-                    "items": []
-                },
-                {
-                    "rank": 11,
-                    "name": "RAIL3",
-                    "weight": 0.05,
-                    "items": []
-                },
-                {
-                    "rank": 12,
-                    "name": "B3SA3",
-                    "weight": 0.05,
-                    "items": []
-                },
-                {
-                    "rank": 13,
-                    "name": "IGTA3",
-                    "weight": 0.025,
-                    "items": []
-                },
-                {
-                    "rank": 14,
-                    "name": "VAMO3",
-                    "weight": 0.025,
-                    "items": []
-                },
-                {
-                    "rank": 15,
-                    "name": "ITSA4",
-                    "weight": 0.025,
-                    "items": []
-                },
-                {
-                    "rank": 16,
-                    "name": "TFCO4",
-                    "weight": 0.05,
-                    "items": []
-                },
-                {
-                    "rank": 17,
-                    "name": "BRAP4",
-                    "weight": 0.075,
-                    "items": []
-                },
-                {
-                    "rank": 18,
-                    "name": "EQTL3",
-                    "weight": 0.025,
-                    "items": []
-                },
-                {
-                    "rank": 19,
-                    "name": "CVCB3",
-                    "weight": 0.025,
-                    "items": []
-                }
-            ]
-        },
-        {
-            "rank": 2,
-            "name": "FII",
-            "weight": 0.5,
-            "items": [
-                {
-                    "rank": 0,
-                    "name": "BTLG11",
-                    "weight": 0.0625,
-                    "items": []
-                },
-                {
-                    "rank": 1,
-                    "name": "MCCI11",
-                    "weight": 0.0625,
-                    "items": []
-                },
-                {
-                    "rank": 2,
-                    "name": "PVBI11",
-                    "weight": 0.0625,
-                    "items": []
-                },
-                {
-                    "rank": 3,
-                    "name": "RBRP11",
-                    "weight": 0.0625,
-                    "items": []
-                },
-                {
-                    "rank": 4,
-                    "name": "RECR11",
-                    "weight": 0.0625,
-                    "items": []
-                },
-                {
-                    "rank": 5,
-                    "name": "HGRU11",
-                    "weight": 0.0625,
-                    "items": []
-                },
-                {
-                    "rank": 6,
-                    "name": "MALL11",
-                    "weight": 0.0625,
-                    "items": []
-                },
-                {
-                    "rank": 7,
-                    "name": "XPLG11",
-                    "weight": 0.0625,
-                    "items": []
-                },
-                {
-                    "rank": 8,
-                    "name": "HGLG11",
-                    "weight": 0.0625,
-                    "items": []
-                },
-                {
-                    "rank": 9,
-                    "name": "VGIP11",
-                    "weight": 0.0625,
-                    "items": []
-                },
-                {
-                    "rank": 10,
-                    "name": "ALZR11",
-                    "weight": 0.0625,
-                    "items": []
-                },
-                {
-                    "rank": 11,
-                    "name": "VRTA11",
-                    "weight": 0.0625,
-                    "items": []
-                },
-                {
-                    "rank": 12,
-                    "name": "VISC11",
-                    "weight": 0.0625,
-                    "items": []
-                },
-                {
-                    "rank": 13,
-                    "name": "VILG11",
-                    "weight": 0.0625,
-                    "items": []
-                },
-                {
-                    "rank": 14,
-                    "name": "XPML11",
-                    "weight": 0.0625,
-                    "items": []
-                },
-                {
-                    "rank": 15,
-                    "name": "IRDM11",
-                    "weight": 0.0625,
-                    "items": []
-                }
-            ]
-        }
-    ]
-}
+[
+    {
+        "id": "425028BB-4828-451F-9232-F13C3ADD0F2C",
+        "rank": 0,
+        "name": "Global",
+        "weight": 1,
+        "items": []
+    },
+    {
+        "id": "CB420047-888E-4E82-A8BB-56757A64F5B6",
+        "rank": 0,
+        "name": "Dividendos",
+        "weight": 0.35,
+        "items": [],
+        "parentId": "425028BB-4828-451F-9232-F13C3ADD0F2C"
+    },
+    {
+        "id": "94150771-1156-4F7F-989C-6879E7D850E3",
+        "rank": 1,
+        "name": "Valor",
+        "weight": 0.15,
+        "items": [],
+        "parentId": "425028BB-4828-451F-9232-F13C3ADD0F2C"
+    },
+    {
+        "id": "D54D5D89-E41A-462C-82CE-F77302EA7ED3",
+        "rank": 2,
+        "name": "FII",
+        "weight": 0.5,
+        "items": [],
+        "parentId": "425028BB-4828-451F-9232-F13C3ADD0F2C"
+    },
+    {
+        "id": "C121667D-F3F4-4748-818B-4DC83CBCF186",
+        "rank": 0,
+        "name": "BTLG11",
+        "weight": 0.0625,
+        "items": [],
+        "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
+    },
+    {
+        "id": "CA877D2E-3235-4002-8386-1706E02AA381",
+        "rank": 1,
+        "name": "MCCI11",
+        "weight": 0.0625,
+        "items": [],
+        "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
+    },
+    {
+        "id": "1FA9EA5A-44FF-4BF7-A862-74B294D90499",
+        "rank": 2,
+        "name": "PVBI11",
+        "weight": 0.0625,
+        "items": [],
+        "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
+    },
+    {
+        "id": "0669AADF-0A41-4697-A25C-259914EA7E6E",
+        "rank": 3,
+        "name": "RBRP11",
+        "weight": 0.0625,
+        "items": [],
+        "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
+    },
+    {
+        "id": "49F83F10-9299-4093-B618-301FD6814DDD",
+        "rank": 4,
+        "name": "RECR11",
+        "weight": 0.0625,
+        "items": [],
+        "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
+    },
+    {
+        "id": "A2860186-B699-486F-83AD-86278CAC68F3",
+        "rank": 5,
+        "name": "HGRU11",
+        "weight": 0.0625,
+        "items": [],
+        "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
+    },
+    {
+        "id": "B474BB15-A792-4884-80F5-7F07A039332D",
+        "rank": 6,
+        "name": "MALL11",
+        "weight": 0.0625,
+        "items": [],
+        "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
+    },
+    {
+        "id": "4C64A4C8-DA78-4AF7-90D4-33E7DF374B94",
+        "rank": 7,
+        "name": "XPLG11",
+        "weight": 0.0625,
+        "items": [],
+        "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
+    },
+    {
+        "id": "D2173800-67C8-45A3-A554-F4E61587F058",
+        "rank": 8,
+        "name": "HGLG11",
+        "weight": 0.0625,
+        "items": [],
+        "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
+    },
+    {
+        "id": "9E33E12C-650C-4D6D-9BB8-07CCEBCE1DAF",
+        "rank": 9,
+        "name": "VGIP11",
+        "weight": 0.0625,
+        "items": [],
+        "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
+    },
+    {
+        "id": "FDBBEF2A-564E-4C3B-801C-9D36172F8471",
+        "rank": 10,
+        "name": "ALZR11",
+        "weight": 0.0625,
+        "items": [],
+        "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
+    },
+    {
+        "id": "84714112-830D-4495-9CF5-AB0CCA744886",
+        "rank": 11,
+        "name": "VRTA11",
+        "weight": 0.0625,
+        "items": [],
+        "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
+    },
+    {
+        "id": "DA3FC390-386E-4B1D-A87A-48431771EB46",
+        "rank": 12,
+        "name": "VISC11",
+        "weight": 0.0625,
+        "items": [],
+        "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
+    },
+    {
+        "id": "A39A5E4E-E33E-4A35-916E-0FDC36F62CED",
+        "rank": 13,
+        "name": "VILG11",
+        "weight": 0.0625,
+        "items": [],
+        "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
+    },
+    {
+        "id": "F3E36A86-3588-4C1B-BB0C-FC78F378D058",
+        "rank": 14,
+        "name": "XPML11",
+        "weight": 0.0625,
+        "items": [],
+        "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
+    },
+    {
+        "id": "033098D6-0361-4A18-80B9-BAE4BDCE7B74",
+        "rank": 15,
+        "name": "IRDM11",
+        "weight": 0.0625,
+        "items": [],
+        "parentId": "D54D5D89-E41A-462C-82CE-F77302EA7ED3"
+    },
+    {
+        "id": "845A2A54-39B9-4672-A97F-C21FA3B44F9C",
+        "rank": 0,
+        "name": "SULA11",
+        "weight": 0.1,
+        "items": [],
+        "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
+    },
+    {
+        "id": "F421DF54-A2F8-424E-9966-1377C697ABD5",
+        "rank": 1,
+        "name": "EZTC3",
+        "weight": 0.05,
+        "items": [],
+        "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
+    },
+    {
+        "id": "A4F387F7-73E2-4B43-BEDB-A5EA2EBB3DAF",
+        "rank": 2,
+        "name": "NEOE3",
+        "weight": 0.05,
+        "items": [],
+        "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
+    },
+    {
+        "id": "FE66E37F-4EB0-4BFB-A3DC-ED3174A868D6",
+        "rank": 3,
+        "name": "BRBI11",
+        "weight": 0.05,
+        "items": [],
+        "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
+    },
+    {
+        "id": "54230238-3ACB-4E32-99D3-EB3F1B464F3E",
+        "rank": 4,
+        "name": "MOVI3",
+        "weight": 0.05,
+        "items": [],
+        "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
+    },
+    {
+        "id": "51E4D8FA-AA62-4724-AE5D-1C3A72D98104",
+        "rank": 5,
+        "name": "GMAT3",
+        "weight": 0.05,
+        "items": [],
+        "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
+    },
+    {
+        "id": "C48FD377-C77E-4E66-A242-7B550523607D",
+        "rank": 6,
+        "name": "PNVL3",
+        "weight": 0.05,
+        "items": [],
+        "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
+    },
+    {
+        "id": "C8915E59-2345-4B35-8242-D3B7563380F1",
+        "rank": 7,
+        "name": "BRKM5",
+        "weight": 0.025,
+        "items": [],
+        "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
+    },
+    {
+        "id": "2A16419F-CC9D-4DD5-A9C4-1457194E9FA6",
+        "rank": 8,
+        "name": "ALUP11",
+        "weight": 0.075,
+        "items": [],
+        "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
+    },
+    {
+        "id": "9CCCE1FC-2626-44E3-9B39-09760BCACCD8",
+        "rank": 9,
+        "name": "MYPK3",
+        "weight": 0.075,
+        "items": [],
+        "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
+    },
+    {
+        "id": "88968B80-ADEB-473D-9CE5-382E4729B42A",
+        "rank": 10,
+        "name": "MDIA3",
+        "weight": 0.05,
+        "items": [],
+        "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
+    },
+    {
+        "id": "B0ABDE9D-8B0B-460F-8AC7-77F31C7D5D2E",
+        "rank": 11,
+        "name": "RAIL3",
+        "weight": 0.05,
+        "items": [],
+        "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
+    },
+    {
+        "id": "8C96D24D-E778-4E55-B9E6-E299D2EB4B40",
+        "rank": 12,
+        "name": "B3SA3",
+        "weight": 0.05,
+        "items": [],
+        "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
+    },
+    {
+        "id": "0F29D848-D406-49D7-8D94-F871CC8C0E0F",
+        "rank": 13,
+        "name": "IGTA3",
+        "weight": 0.025,
+        "items": [],
+        "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
+    },
+    {
+        "id": "34102D72-43A3-4939-AEEA-EDE2D699766F",
+        "rank": 14,
+        "name": "VAMO3",
+        "weight": 0.025,
+        "items": [],
+        "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
+    },
+    {
+        "id": "EA71EBFB-0A9A-42DD-BF9A-3A8AE5C18D07",
+        "rank": 15,
+        "name": "ITSA4",
+        "weight": 0.025,
+        "items": [],
+        "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
+    },
+    {
+        "id": "221C6EDE-DCA3-4672-B86F-1D9F48DBF706",
+        "rank": 16,
+        "name": "TFCO4",
+        "weight": 0.05,
+        "items": [],
+        "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
+    },
+    {
+        "id": "5D12BC4D-3251-4269-8B8E-41FF9E3F772A",
+        "rank": 17,
+        "name": "BRAP4",
+        "weight": 0.075,
+        "items": [],
+        "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
+    },
+    {
+        "id": "0B04F52A-738A-4303-B4E8-6546411929E3",
+        "rank": 18,
+        "name": "EQTL3",
+        "weight": 0.025,
+        "items": [],
+        "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
+    },
+    {
+        "id": "5C3ACDED-9D77-479F-8B8E-8A90610F35A2",
+        "rank": 19,
+        "name": "CVCB3",
+        "weight": 0.025,
+        "items": [],
+        "parentId": "94150771-1156-4F7F-989C-6879E7D850E3"
+    },
+    {
+        "id": "92D02B32-7E83-440B-9C57-49C777B8DD32",
+        "rank": 0,
+        "name": "ENBR3",
+        "weight": 0.1,
+        "items": [],
+        "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
+    },
+    {
+        "id": "8831F0B8-6163-4674-953A-FBCEF92B7DC3",
+        "rank": 1,
+        "name": "EGIE3",
+        "weight": 0.075,
+        "items": [],
+        "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
+    },
+    {
+        "id": "757F489D-1F46-460E-B248-906E29863479",
+        "rank": 2,
+        "name": "BBAS3",
+        "weight": 0.075,
+        "items": [],
+        "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
+    },
+    {
+        "id": "24D58801-0AF6-46C6-822A-58132F0B3E96",
+        "rank": 3,
+        "name": "BBSE3",
+        "weight": 0.075,
+        "items": [],
+        "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
+    },
+    {
+        "id": "8798FEF8-3825-4917-8A55-9B39DA5AC78F",
+        "rank": 4,
+        "name": "CPLE6",
+        "weight": 0.05,
+        "items": [],
+        "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
+    },
+    {
+        "id": "A6CAF44F-C153-4E67-B4BA-041511BBDBDC",
+        "rank": 5,
+        "name": "ITSA4",
+        "weight": 0.05,
+        "items": [],
+        "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
+    },
+    {
+        "id": "9D337E0D-B706-451E-9789-185668C79A43",
+        "rank": 6,
+        "name": "VIVT3",
+        "weight": 0.075,
+        "items": [],
+        "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
+    },
+    {
+        "id": "D49ADC4F-5D38-45FA-8ABF-33F6152C44AC",
+        "rank": 7,
+        "name": "ABCB4",
+        "weight": 0.025,
+        "items": [],
+        "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
+    },
+    {
+        "id": "CA6C95BA-F9F2-41BA-8E7C-6AD708A3FC29",
+        "rank": 8,
+        "name": "ELET6",
+        "weight": 0.025,
+        "items": [],
+        "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
+    },
+    {
+        "id": "4154BD6B-B518-4F76-B5F6-70964D938A50",
+        "rank": 9,
+        "name": "MRVE3",
+        "weight": 0.05,
+        "items": [],
+        "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
+    },
+    {
+        "id": "2EB60472-E3DA-4DA6-A2F1-FA3C0D429692",
+        "rank": 10,
+        "name": "CCRO3",
+        "weight": 0.025,
+        "items": [],
+        "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
+    },
+    {
+        "id": "52107FF7-B784-4296-8D86-6B20DEAF796A",
+        "rank": 11,
+        "name": "PETR4",
+        "weight": 0.075,
+        "items": [],
+        "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
+    },
+    {
+        "id": "AE40254B-2998-4E57-8B42-22366DE9D917",
+        "rank": 12,
+        "name": "ODPV3",
+        "weight": 0.025,
+        "items": [],
+        "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
+    },
+    {
+        "id": "9D02E62A-0619-4C2D-8502-8E105D024250",
+        "rank": 13,
+        "name": "GRND3",
+        "weight": 0.05,
+        "items": [],
+        "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
+    },
+    {
+        "id": "846C0A69-CACB-4B07-A767-305A586FC0C6",
+        "rank": 14,
+        "name": "WIZS3",
+        "weight": 0.05,
+        "items": [],
+        "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
+    },
+    {
+        "id": "83D58E7E-D005-4E40-8E05-E458A4645685",
+        "rank": 15,
+        "name": "TUPY3",
+        "weight": 0.05,
+        "items": [],
+        "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
+    },
+    {
+        "id": "4AA761C8-54F0-4F8B-A749-F35AF44CD154",
+        "rank": 16,
+        "name": "TAEE11",
+        "weight": 0.05,
+        "items": [],
+        "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
+    },
+    {
+        "id": "7A33145F-1B64-4E6D-9839-7725A57B21A6",
+        "rank": 17,
+        "name": "UNIP6",
+        "weight": 0.025,
+        "items": [],
+        "parentId": "CB420047-888E-4E82-A8BB-56757A64F5B6"
+    }
+]

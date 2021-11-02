@@ -10,7 +10,7 @@ import finance
 
 class TestPortfolioItem: XCTestCase {
     
-    var item: PortfolioItem!
+    var item: [PortfolioItem]!
     
     var expectation: [String: Decimal]!
     
@@ -21,7 +21,7 @@ class TestPortfolioItem: XCTestCase {
         // Load test data
         if let path = Bundle.main.path(forResource: "portfolio", ofType: "json"),
            let data = FileManager.default.contents(atPath: path) {
-            let json = try JSONDecoder().decode(PortfolioItem.self, from: data)
+            let json = try JSONDecoder().decode([PortfolioItem].self, from: data)
             self.item = json
         }
         
@@ -34,7 +34,7 @@ class TestPortfolioItem: XCTestCase {
         }
         
         //Execute routine to be tested
-        self.output = self.item.flatWeight
+        self.output = PortfolioItem.getItems(self.item)
     }
     
     func testCheckSize() {

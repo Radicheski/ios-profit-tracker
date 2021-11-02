@@ -16,8 +16,8 @@ class PortfolioMock {
     private init() {
         if let path = Bundle.main.path(forResource: "portfolio", ofType: "json"),
            let data = FileManager.default.contents(atPath: path),
-           let json = try? JSONDecoder().decode(PortfolioItem.self, from: data) {
-            self.data = json.items.flatMap( { $0.items } )
+           let json = try? JSONDecoder().decode([PortfolioItem].self, from: data) {
+            self.data = json
         } else {
             self.data = []
         }
