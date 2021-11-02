@@ -9,18 +9,21 @@ import UIKit
 
 class PortfolioDataSource: NSObject, UITableViewDataSource {
     
-    var source: PortfolioMock = PortfolioMock.shared
+    var worker: PortfolioItemWorker
+    
+    init(parentId: UUID?) {
+        self.worker = PortfolioItemWorker(parentId: parentId)
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.source.data.filter( { $0.parentId == nil } ).count
+        return self.worker.items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "portfolioItem", for: indexPath)
         var conf = cell.defaultContentConfiguration()
-        let data = self.source.data.filter( { $0.parentId == nil } )
-        conf.text = data[indexPath.row].name
-        conf.secondaryText = "\(data[indexPath.row].weight)"
+        conf.text = self.worker.items[indexPath.row].name
+        conf.secondaryText = "\(self.worker.items[indexPath.row].weight)"
         cell.contentConfiguration = conf
         return cell
     }

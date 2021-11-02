@@ -23,6 +23,7 @@
 		ADCEFF9F2730AC9400E33A7D /* PortfolioMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCEFF9E2730AC9400E33A7D /* PortfolioMock.swift */; };
 		ADEB66AC272C3279002AFAE3 /* portfolio.json in Resources */ = {isa = PBXBuildFile; fileRef = ADEB66AB272C3279002AFAE3 /* portfolio.json */; };
 		ADEB66BB272C5581002AFAE3 /* PortfolioItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEB66BA272C5581002AFAE3 /* PortfolioItemTests.swift */; };
+		ADFBD7EB2731F765001DD06F /* PortfolioItemWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFBD7EA2731F765001DD06F /* PortfolioItemWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		ADEB66AB272C3279002AFAE3 /* portfolio.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portfolio.json; sourceTree = "<group>"; };
 		ADEB66B1272C551A002AFAE3 /* financeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = financeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEB66BA272C5581002AFAE3 /* PortfolioItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItemTests.swift; sourceTree = "<group>"; };
+		ADFBD7EA2731F765001DD06F /* PortfolioItemWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItemWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		ADBD414F272B3B1E00BB3327 /* finance */ = {
 			isa = PBXGroup;
 			children = (
+				ADFBD7E92731F756001DD06F /* Worker */,
 				AD58D534272CC8630047847C /* Protocols */,
 				AD58D52C272CC7CA0047847C /* Model */,
 				ADEB66A9272C325C002AFAE3 /* Mock */,
@@ -178,6 +181,14 @@
 				ADEB66BA272C5581002AFAE3 /* PortfolioItemTests.swift */,
 			);
 			path = financeTests;
+			sourceTree = "<group>";
+		};
+		ADFBD7E92731F756001DD06F /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				ADFBD7EA2731F765001DD06F /* PortfolioItemWorker.swift */,
+			);
+			path = Worker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADBD4168272B3EF000BB3327 /* BaseViewController.swift in Sources */,
+				ADFBD7EB2731F765001DD06F /* PortfolioItemWorker.swift in Sources */,
 				ADBD4155272B3B1E00BB3327 /* MainViewController.swift in Sources */,
 				ADBD4151272B3B1E00BB3327 /* AppDelegate.swift in Sources */,
 				AD58D52E272CC7E60047847C /* PortfolioItem.swift in Sources */,

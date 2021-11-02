@@ -9,8 +9,8 @@ import UIKit
 
 class PortfolioViewController: BaseViewController<PortfolioView> {
     
-    var datasource: UITableViewDataSource = PortfolioDataSource()
-
+    var datasource: UITableViewDataSource = PortfolioDataSource(parentId: nil)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.customView.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "portfolioItem")
@@ -19,16 +19,20 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
         self.customView.tableView.tableFooterView = self.getFooter()
     }
     
-    func getFooter() -> UIView {
-        let footer = UILabel()
-        footer.backgroundColor = .yellow
-        footer.textAlignment = .center
-        footer.frame = CGRect(x: 0, y: 0, width: self.customView.tableView.frame.width, height: 40)
-//        let value = PortfolioMock.shared.data[0].items.map ( { $0.weight } ).reduce(Decimal(), { $0 + $1 } )
-        let value = PortfolioMock.shared.data.filter( { $0.parentId == nil } ).map( { $0.weight } ).reduce(Decimal(), { $0 + $1 } )
-        footer.text = "Unallocated: \(100 - value * 100)%"
-        return footer
+    func getFooter() -> UIView? {
+        if let source = self.datasource as? PortfolioDataSource {
+            let footer = UILabel()
+            footer.backgroundColor = .yellow
+            footer.textAlignment = .center
+            footer.frame = CGRect(x: 0, y: 0, width: self.customView.tableView.frame.width, height: 40)
+            let value = source.worker.items.map( { $0.weight } ).reduce(Decimal(), { $0 + $1 } )
+            footer.text = "Unallocated: \(100 - value * 100)%"
+            return footer
+        } else {
+            return nil
+        }
+        
     }
-
-
+    
+    
 }
