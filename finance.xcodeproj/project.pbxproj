@@ -21,6 +21,7 @@
 		ADBD4168272B3EF000BB3327 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4167272B3EF000BB3327 /* BaseViewController.swift */; };
 		ADBD416B272B42C300BB3327 /* PortfolioNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD416A272B42C300BB3327 /* PortfolioNavigationController.swift */; };
 		ADBD416D272B44B600BB3327 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD416C272B44B600BB3327 /* PortfolioViewController.swift */; };
+		ADCEFF9F2730AC9400E33A7D /* PortfolioMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCEFF9E2730AC9400E33A7D /* PortfolioMock.swift */; };
 		ADEB66AC272C3279002AFAE3 /* portfolio.json in Resources */ = {isa = PBXBuildFile; fileRef = ADEB66AB272C3279002AFAE3 /* portfolio.json */; };
 		ADEB66BB272C5581002AFAE3 /* PortfolioItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEB66BA272C5581002AFAE3 /* PortfolioItemTests.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		ADBD4167272B3EF000BB3327 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		ADBD416A272B42C300BB3327 /* PortfolioNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioNavigationController.swift; sourceTree = "<group>"; };
 		ADBD416C272B44B600BB3327 /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
+		ADCEFF9E2730AC9400E33A7D /* PortfolioMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioMock.swift; sourceTree = "<group>"; };
 		ADEB66AB272C3279002AFAE3 /* portfolio.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portfolio.json; sourceTree = "<group>"; };
 		ADEB66B1272C551A002AFAE3 /* financeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = financeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEB66BA272C5581002AFAE3 /* PortfolioItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItemTests.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				ADEB66AA272C3264002AFAE3 /* Data */,
+				ADCEFF9E2730AC9400E33A7D /* PortfolioMock.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				ADBD416D272B44B600BB3327 /* PortfolioViewController.swift in Sources */,
 				ADBD4166272B3CC500BB3327 /* PortfolioView.swift in Sources */,
 				AD58D536272CC8740047847C /* PortfolioComposite.swift in Sources */,
+				ADCEFF9F2730AC9400E33A7D /* PortfolioMock.swift in Sources */,
 				AD58D531272CC80D0047847C /* PortfolioItem+Equatable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
