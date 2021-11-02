@@ -14,6 +14,9 @@ class PortfolioView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
+        self.addSubview(self.tableView)
+        self.tableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             self.tableView.widthAnchor.constraint(equalTo: self.safeAreaLayoutGuide.widthAnchor),
             self.tableView.heightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.heightAnchor),
