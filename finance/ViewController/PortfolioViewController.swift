@@ -8,9 +8,8 @@
 import UIKit
 
 class PortfolioViewController: BaseViewController<PortfolioView> {
-    
-    var worker = PortfolioItemWorker(parentId: nil)
     var interactor: PortfolioManagerInteractorProtocol? = PortfolioMock.shared
+    var parentId: UUID?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +25,9 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
     
     convenience init(parentId: UUID?) {
         self.init()
-        self.worker = PortfolioItemWorker(parentId: parentId)
+        self.parentId = parentId
     }
     
-    convenience init(worker: PortfolioItemWorker) {
-        self.init()
-        self.worker = worker
     }
     
 }
