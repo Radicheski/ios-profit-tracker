@@ -4,8 +4,9 @@
 
 import Foundation
 
-protocol PortfolioManagerViewControllerProtocol {
+protocol PortfolioManagerViewControllerProtocol: class {
 
+    var interactor: PortfolioManagerInteractorProtocol? { set get }
     func updateView()
 
 }

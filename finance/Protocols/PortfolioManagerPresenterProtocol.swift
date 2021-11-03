@@ -4,8 +4,9 @@
 
 import Foundation
 
-protocol PortfolioManagerPresenterProtocol {
+protocol PortfolioManagerPresenterProtocol: class {
 
+    var viewController: PortfolioManagerViewControllerProtocol? { set get }
     func load(data: [PortfolioItem])
 
 }
