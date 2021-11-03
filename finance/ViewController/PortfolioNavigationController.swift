@@ -14,7 +14,7 @@ class PortfolioNavigationController: UINavigationController {
         
         self.title = "Portfolio"
         self.tabBarItem.image = UIImage(systemName: "globe")
-        self.pushViewController(PortfolioViewController(), animated: true)
+        self.pushViewController(PortfolioViewController(parentId: nil), animated: true)
     }
 
 
