@@ -15,6 +15,8 @@ class PortfolioView: UIView {
     let tableView = UITableView()
     let footer = UILabel()
     
+    var segmentedControlAction: ((UISegmentedControl) -> Void)?
+    
     var footerText: String? {
         set {
             self.footer.text = newValue
@@ -67,6 +69,10 @@ class PortfolioView: UIView {
             self.footer.leftAnchor.constraint(equalTo: self.stackView.safeAreaLayoutGuide.leftAnchor),
             self.footer.heightAnchor.constraint(equalToConstant: 40),
         ])
+        
+        self.segmentedControl.addAction(UIAction(handler: { _ in
+            self.segmentedControlAction?(self.segmentedControl)
+        }), for: .valueChanged)
         
     }
     
