@@ -15,6 +15,7 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
         super.viewDidLoad()
         self.customView.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "portfolioItem")
         if self.title == nil { self.title = "Global Portfolio"}
+        if worker.parentId == nil { self.customView.segmentedControl.isHidden = false }
         self.customView.tableView.dataSource = self
         self.customView.tableView.delegate = self
         let value = self.worker.items.map( { $0.weight } ).reduce(Decimal(), { $0 + $1 } )
