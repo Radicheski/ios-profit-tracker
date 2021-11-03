@@ -26,6 +26,10 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
         self.worker = PortfolioItemWorker(parentId: parentId)
     }
     
+    convenience init(worker: PortfolioItemWorker) {
+        self.init()
+        self.worker = worker
+    }
     
 }
 
@@ -50,8 +54,11 @@ extension PortfolioViewController: UITableViewDataSource {
 extension PortfolioViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = PortfolioViewController(parentId: self.worker.items[indexPath.row].id)
-        vc.title = self.worker.items[indexPath.row].name
+        let selectedItem = self.worker.items[indexPath.row]
+        let worker = PortfolioItemWorker(parentId: selectedItem.id)
+        if worker.items.isEmpty { return }
+        let vc = PortfolioViewController(worker: worker)
+        vc.title = selectedItem.name
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
