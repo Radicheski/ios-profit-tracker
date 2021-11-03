@@ -6,6 +6,7 @@ import Foundation
 
 protocol PortfolioManagerViewControllerProtocol {
 
+    var interactor: PortfolioManagerInteractorProtocol? { get }
     func updateView()
 
 }

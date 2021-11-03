@@ -6,6 +6,7 @@ import Foundation
 
 protocol PortfolioManagerInteractorProtocol {
 
+    var presenter: PortfolioManagerPresenterProtocol? { get }
     func loadData(parentId: UUID?)
 
 }

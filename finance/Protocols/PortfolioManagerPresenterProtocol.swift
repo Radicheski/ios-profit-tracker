@@ -6,6 +6,7 @@ import Foundation
 
 protocol PortfolioManagerPresenterProtocol {
 
+    var viewController: PortfolioManagerViewControllerProtocol? { get }
     func load(data: [PortfolioItem])
 
 }
