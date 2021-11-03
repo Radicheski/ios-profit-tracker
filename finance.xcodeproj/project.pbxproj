@@ -24,6 +24,7 @@
 		ADEB66BB272C5581002AFAE3 /* PortfolioItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEB66BA272C5581002AFAE3 /* PortfolioItemTests.swift */; };
 		ADFBD7EB2731F765001DD06F /* PortfolioItemWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFBD7EA2731F765001DD06F /* PortfolioItemWorker.swift */; };
 		EBDF36A1D646D7942F5C3608 /* PortfolioManagerViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF324A9E12098BDC951F68 /* PortfolioManagerViewControllerProtocol.swift */; };
+		EBDF38D4D2DB83E460D605A4 /* FlatPortfolioDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF302093B0EAF78E70A7FB /* FlatPortfolioDataSource.swift */; };
 		EBDF396CEAC98494012114E5 /* PortfolioManagerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF3A6D562DE955E6FB7648 /* PortfolioManagerDataSource.swift */; };
 		EBDF39F8E6CAF29F6EFDEDD3 /* PortfolioManagerPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF3FDC2F79F68986CC0695 /* PortfolioManagerPresenterProtocol.swift */; };
 		EBDF3CBFB487E408A8715447 /* PortfolioManagerInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF3EAB3A94B4C227DDEC40 /* PortfolioManagerInteractorProtocol.swift */; };
@@ -60,6 +61,7 @@
 		ADEB66B1272C551A002AFAE3 /* financeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = financeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEB66BA272C5581002AFAE3 /* PortfolioItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItemTests.swift; sourceTree = "<group>"; };
 		ADFBD7EA2731F765001DD06F /* PortfolioItemWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItemWorker.swift; sourceTree = "<group>"; };
+		EBDF302093B0EAF78E70A7FB /* FlatPortfolioDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatPortfolioDataSource.swift; sourceTree = "<group>"; };
 		EBDF324A9E12098BDC951F68 /* PortfolioManagerViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioManagerViewControllerProtocol.swift; sourceTree = "<group>"; };
 		EBDF3A6D562DE955E6FB7648 /* PortfolioManagerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioManagerDataSource.swift; sourceTree = "<group>"; };
 		EBDF3C4A2EF3A78078840235 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				ADBD416A272B42C300BB3327 /* PortfolioNavigationController.swift */,
 				ADBD416C272B44B600BB3327 /* PortfolioViewController.swift */,
 				EBDF3A6D562DE955E6FB7648 /* PortfolioManagerDataSource.swift */,
+				EBDF302093B0EAF78E70A7FB /* FlatPortfolioDataSource.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				EBDF39F8E6CAF29F6EFDEDD3 /* PortfolioManagerPresenterProtocol.swift in Sources */,
 				EBDF36A1D646D7942F5C3608 /* PortfolioManagerViewControllerProtocol.swift in Sources */,
 				EBDF396CEAC98494012114E5 /* PortfolioManagerDataSource.swift in Sources */,
+				EBDF38D4D2DB83E460D605A4 /* FlatPortfolioDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
