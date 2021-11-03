@@ -27,6 +27,7 @@
 		EBDF396CEAC98494012114E5 /* PortfolioManagerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF3A6D562DE955E6FB7648 /* PortfolioManagerDataSource.swift */; };
 		EBDF39F8E6CAF29F6EFDEDD3 /* PortfolioManagerPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF3FDC2F79F68986CC0695 /* PortfolioManagerPresenterProtocol.swift */; };
 		EBDF3CBFB487E408A8715447 /* PortfolioManagerInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF3EAB3A94B4C227DDEC40 /* PortfolioManagerInteractorProtocol.swift */; };
+		EBDF3EFA1ED7B41B446B89E9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = EBDF3C4A2EF3A78078840235 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		ADFBD7EA2731F765001DD06F /* PortfolioItemWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItemWorker.swift; sourceTree = "<group>"; };
 		EBDF324A9E12098BDC951F68 /* PortfolioManagerViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioManagerViewControllerProtocol.swift; sourceTree = "<group>"; };
 		EBDF3A6D562DE955E6FB7648 /* PortfolioManagerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioManagerDataSource.swift; sourceTree = "<group>"; };
+		EBDF3C4A2EF3A78078840235 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		EBDF3EAB3A94B4C227DDEC40 /* PortfolioManagerInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioManagerInteractorProtocol.swift; sourceTree = "<group>"; };
 		EBDF3FDC2F79F68986CC0695 /* PortfolioManagerPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioManagerPresenterProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +108,7 @@
 				ADBD414F272B3B1E00BB3327 /* finance */,
 				ADEB66B2272C551A002AFAE3 /* financeTests */,
 				ADBD414E272B3B1E00BB3327 /* Products */,
+				EBDF3C4A2EF3A78078840235 /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -285,6 +288,7 @@
 				ADEB66AC272C3279002AFAE3 /* portfolio.json in Resources */,
 				AD58D52B272CC0E60047847C /* portfolioExpected.json in Resources */,
 				ADBD415A272B3B1F00BB3327 /* Assets.xcassets in Resources */,
+				EBDF3EFA1ED7B41B446B89E9 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
