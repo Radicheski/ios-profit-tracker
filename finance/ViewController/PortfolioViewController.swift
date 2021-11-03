@@ -17,17 +17,8 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
         if self.title == nil { self.title = "Global Portfolio"}
         self.customView.tableView.dataSource = self
         self.customView.tableView.delegate = self
-        self.customView.tableView.tableFooterView = self.getFooter()
-    }
-    
-    func getFooter() -> UIView? {
-        let footer = UILabel()
-        footer.backgroundColor = .yellow
-        footer.textAlignment = .center
-        footer.frame = CGRect(x: 0, y: 0, width: self.customView.tableView.frame.width, height: 40)
         let value = self.worker.items.map( { $0.weight } ).reduce(Decimal(), { $0 + $1 } )
-        footer.text = "Unallocated: \(100 - value * 100)%"
-        return footer
+        self.customView.footerText = "Unallocated: \(100 - value * 100)%"
     }
     
     convenience init(parentId: UUID?) {

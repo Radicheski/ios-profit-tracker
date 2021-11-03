@@ -8,21 +8,54 @@
 import UIKit
 
 class PortfolioView: UIView {
-
+    
+    let stackView = UIStackView()
+    
     let tableView = UITableView()
+    let footer = UILabel()
+    
+    var footerText: String? {
+        set {
+            self.footer.text = newValue
+        }
+        get {
+            return self.footer.text
+            
+        }
+    }
     
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        self.addSubview(self.tableView)
+        self.addSubview(self.stackView)
+        self.stackView.spacing = 0
+        self.stackView.axis = .vertical
+        self.stackView.distribution = .fill
+        self.stackView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            self.stackView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
+            self.stackView.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor),
+            self.stackView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor),
+            self.stackView.leftAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leftAnchor),
+        ])
+        
+        self.stackView.addArrangedSubview(self.tableView)
         self.tableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            self.tableView.widthAnchor.constraint(equalTo: self.safeAreaLayoutGuide.widthAnchor),
-            self.tableView.heightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.heightAnchor),
-            self.tableView.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
-            self.tableView.centerYAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerYAnchor),
+            self.tableView.leftAnchor.constraint(equalTo: self.stackView.safeAreaLayoutGuide.leftAnchor),
+            self.tableView.rightAnchor.constraint(equalTo: self.stackView.safeAreaLayoutGuide.rightAnchor),
         ])
+        
+        self.footer.textAlignment = .center
+        self.stackView.addArrangedSubview(self.footer)
+        self.footer.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            self.footer.rightAnchor.constraint(equalTo: self.stackView.safeAreaLayoutGuide.rightAnchor),
+            self.footer.leftAnchor.constraint(equalTo: self.stackView.safeAreaLayoutGuide.leftAnchor),
+            self.footer.heightAnchor.constraint(equalToConstant: 40),
+        ])
+        
     }
     
     required init?(coder: NSCoder) {
