@@ -9,6 +9,12 @@ import UIKit
 
 class PortfolioViewController: BaseViewController<PortfolioView> {
     var interactor: PortfolioManagerInteractorProtocol? = PortfolioMock.shared
+    var viewController: PortfolioManagerViewControllerProtocol? {
+        get {
+            return self
+        }
+        set {}
+    }
     var parentId: UUID?
     
     override func viewDidLoad() {
