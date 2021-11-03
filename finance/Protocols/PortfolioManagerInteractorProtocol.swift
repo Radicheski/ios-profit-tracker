@@ -8,5 +8,6 @@ protocol PortfolioManagerInteractorProtocol: class {
 
     var presenter: PortfolioManagerPresenterProtocol? { set get }
     func loadData(parentId: UUID?)
+    func fetchTotalAllocated(parentId: UUID?)
 
 }

@@ -38,26 +38,22 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
         self.customView.tableView.dataSource = self.dataSource
         self.customView.tableView.delegate = self
         let value = self.data.map( { $0.weight } ).reduce(Decimal(), { $0 + $1 } )
-        self.customView.footerText = "Unallocated: \(100 - value * 100)%"
         self.customView.segmentedControlAction = { [unowned self] control in
             if self.parentId == nil {
                 switch control.selectedSegmentIndex {
                 case 0:
                     self.customView.tableView.dataSource = self.dataSource
                     self.customView.tableView.delegate = self
-                    let value = self.data.map( { $0.weight } ).reduce(Decimal(), { $0 + $1 } )
-                    self.customView.footerText = "Unallocated: \(100 - value * 100)%"
                 case 1:
                     self.customView.tableView.dataSource = self.flatdatasource
                     self.customView.tableView.delegate = nil
-                    let value = self.flatdatasource.source.map( { $0.weight } ).reduce(Decimal(), { $0 + $1 } )
-                    self.customView.footerText = "Unallocated: \(100 - value * 100)%"
                 default: break
                 }
                 self.updateView()
             }
+            self.interactor?.loadData(parentId: self.parentId)
+            self.interactor?.fetchTotalAllocated(parentId: self.parentId)
         }
-        self.interactor?.loadData(parentId: self.parentId)
     }
     
     convenience init(parentId: UUID?) {
@@ -68,6 +64,7 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
         self.presenter?.viewController = self
 
         self.interactor?.loadData(parentId: parentId)
+        self.interactor?.fetchTotalAllocated(parentId: self.parentId)
     }
     
 }
@@ -89,6 +86,10 @@ extension PortfolioViewController: PortfolioManagerViewControllerProtocol {
 
     func updateView() {
         DispatchQueue.main.async { self.customView.tableView.reloadData() }
+    }
+
+    func updateTotalAllocated(value: Decimal) {
+        self.customView.footerText = "Unallocated: \(100 - value * 100)%"
     }
 
 }
