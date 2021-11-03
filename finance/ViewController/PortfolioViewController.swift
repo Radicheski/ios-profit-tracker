@@ -64,3 +64,11 @@ extension PortfolioViewController: UITableViewDelegate {
     }
     
 }
+
+extension PortfolioViewController: PortfolioManagerViewControllerProtocol {
+
+    func updateView() {
+        DispatchQueue.main.async { self.customView.tableView.reloadData() }
+    }
+
+}
