@@ -10,6 +10,7 @@ import UIKit
 class PortfolioViewController: BaseViewController<PortfolioView> {
     
     var worker = PortfolioItemWorker(parentId: nil)
+    var interactor: PortfolioManagerInteractorProtocol? = PortfolioMock.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,7 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
         self.customView.tableView.delegate = self
         let value = self.worker.items.map( { $0.weight } ).reduce(Decimal(), { $0 + $1 } )
         self.customView.footerText = "Unallocated: \(100 - value * 100)%"
+        self.interactor?.loadData(parentId: self.parentId)
     }
     
     convenience init(parentId: UUID?) {
