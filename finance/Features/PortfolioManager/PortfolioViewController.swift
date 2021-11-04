@@ -33,7 +33,7 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.customView.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "portfolioItem")
-        if self.title == nil { self.title = "Global Portfolio"}
+        if self.navigationItem.title == nil { self.navigationItem.title = "Global Portfolio"}
         self.customView.tableView.dataSource = self.dataSource
         self.customView.tableView.delegate = self
     }
@@ -57,7 +57,7 @@ extension PortfolioViewController: UITableViewDelegate {
         if let dataSource = self.presenter as? PortfolioManagerDataSource {
             let selectedItem = dataSource.data[indexPath.row]
             let vc = PortfolioViewController(parentId: selectedItem.id)
-            vc.title = selectedItem.name
+            vc.navigationItem.title = selectedItem.name
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

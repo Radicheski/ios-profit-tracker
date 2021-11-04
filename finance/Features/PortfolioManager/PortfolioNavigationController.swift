@@ -12,9 +12,8 @@ class PortfolioNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Portfolio"
+        self.tabBarItem.title = "Portfolio"
         self.tabBarItem.image = UIImage(systemName: "globe")
-        self.pushViewController(PortfolioViewController(parentId: nil), animated: true)
     }
 
 

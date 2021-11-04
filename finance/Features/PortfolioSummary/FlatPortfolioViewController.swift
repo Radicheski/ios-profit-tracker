@@ -18,8 +18,7 @@ class FlatPortfolioViewController: BaseViewController<PortfolioView> {
     convenience init(parentId: UUID?) {
         self.init()
 
-        self.title = "Flat"
-        self.tabBarItem.image = UIImage(systemName: "person")
+        self.navigationItem.title = "Flat"
 
         self.interactor = self
         self.presenter = self
