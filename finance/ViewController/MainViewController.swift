@@ -14,6 +14,7 @@ class MainViewController: UITabBarController {
         // Do any additional setup after loading the view.
         
         self.addChild(PortfolioNavigationController())
+        self.addChild(FlatPortfolioViewController(parentId: nil))
         self.view.backgroundColor = .white
     }
 
