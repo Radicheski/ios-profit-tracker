@@ -34,26 +34,8 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
         super.viewDidLoad()
         self.customView.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "portfolioItem")
         if self.title == nil { self.title = "Global Portfolio"}
-        if self.parentId == nil { self.customView.segmentedControl.isHidden = false }
         self.customView.tableView.dataSource = self.dataSource
         self.customView.tableView.delegate = self
-        let value = self.data.map( { $0.weight } ).reduce(Decimal(), { $0 + $1 } )
-        self.customView.segmentedControlAction = { [unowned self] control in
-            if self.parentId == nil {
-                switch control.selectedSegmentIndex {
-                case 0:
-                    self.customView.tableView.dataSource = self.dataSource
-                    self.customView.tableView.delegate = self
-                case 1:
-                    self.customView.tableView.dataSource = self.flatdatasource
-                    self.customView.tableView.delegate = nil
-                default: break
-                }
-                self.updateView()
-            }
-            self.interactor?.loadData(parentId: self.parentId)
-            self.interactor?.fetchTotalAllocated(parentId: self.parentId)
-        }
     }
     
     convenience init(parentId: UUID?) {
