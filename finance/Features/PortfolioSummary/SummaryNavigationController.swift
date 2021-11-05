@@ -9,7 +9,7 @@ class SummaryNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.tabBarItem.title = "Summary"
+        self.tabBarItem.title = CustomLocalization.Summary.summaryTabBarTitle
         self.tabBarItem.image = UIImage(systemName: "person")
     }
 

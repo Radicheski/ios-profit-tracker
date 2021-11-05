@@ -18,7 +18,7 @@ class FlatPortfolioViewController: BaseViewController<PortfolioView> {
     convenience init(parentId: UUID?) {
         self.init()
 
-        self.navigationItem.title = "Flat"
+        self.navigationItem.title = CustomLocalization.Summary.summaryTitle
 
         self.interactor = self
         self.presenter = self
@@ -43,7 +43,9 @@ extension FlatPortfolioViewController: PortfolioManagerViewControllerProtocol {
     }
 
     func updateTotalAllocated(value: Decimal) {
-        self.customView.footerText = "Unallocated: \(100 - value * 100)%"
+        let localizedString = CustomLocalization.Summary.summaryUnallocated
+        let percentValue = 100 - value * 100
+        self.customView.footerText = String.localizedStringWithFormat(localizedString, [percentValue])
     }
 
 }

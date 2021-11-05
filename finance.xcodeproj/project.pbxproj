@@ -13,6 +13,7 @@
 		ADAEFF2B27355D7700C7ABAE /* CustomLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEFF2A27355D7700C7ABAE /* CustomLocalization.swift */; };
 		ADAEFF2E273560D400C7ABAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADAEFF30273560D400C7ABAE /* Localizable.strings */; };
 		ADAEFF352735669100C7ABAE /* CustomLocalization+PortfolioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEFF342735669100C7ABAE /* CustomLocalization+PortfolioManager.swift */; };
+		ADAEFF37273566BD00C7ABAE /* CustomLocalization+Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEFF36273566BD00C7ABAE /* CustomLocalization+Summary.swift */; };
 		ADBD4151272B3B1E00BB3327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4150272B3B1E00BB3327 /* AppDelegate.swift */; };
 		ADBD4153272B3B1E00BB3327 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4152272B3B1E00BB3327 /* SceneDelegate.swift */; };
 		ADBD4155272B3B1E00BB3327 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4154272B3B1E00BB3327 /* MainViewController.swift */; };
@@ -54,6 +55,7 @@
 		ADAEFF31273560FB00C7ABAE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		ADAEFF332735621900C7ABAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		ADAEFF342735669100C7ABAE /* CustomLocalization+PortfolioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomLocalization+PortfolioManager.swift"; sourceTree = "<group>"; };
+		ADAEFF36273566BD00C7ABAE /* CustomLocalization+Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomLocalization+Summary.swift"; sourceTree = "<group>"; };
 		ADBD414D272B3B1E00BB3327 /* finance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBD4150272B3B1E00BB3327 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADBD4152272B3B1E00BB3327 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				EBDF329A38513EDB94407B10 /* FlatPortfolioViewController.swift */,
 				EBDF35D6DCDACA1CAE5BD2F1 /* FlatPortfolioDataSource.swift */,
 				EBDF35CA014AE318370973AE /* SummaryNavigationController.swift */,
+				ADAEFF36273566BD00C7ABAE /* CustomLocalization+Summary.swift */,
 			);
 			path = PortfolioSummary;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				EBDF3A2AC00A3CB4502C1CD8 /* PortfolioViewController.swift in Sources */,
 				ADAEFF2B27355D7700C7ABAE /* CustomLocalization.swift in Sources */,
 				EBDF34580807606EE48EFD90 /* PortfolioNavigationController.swift in Sources */,
+				ADAEFF37273566BD00C7ABAE /* CustomLocalization+Summary.swift in Sources */,
 				EBDF390411B3C133386EA80A /* PortfolioManagerDataSource.swift in Sources */,
 				EBDF31C01E60772D94B461A1 /* FlatPortfolioViewController.swift in Sources */,
 				EBDF30DEA011AED8894D032D /* FlatPortfolioDataSource.swift in Sources */,
