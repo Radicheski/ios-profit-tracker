@@ -10,7 +10,8 @@ import Foundation
 class PortfolioMock {
     
     static var shared = PortfolioMock()
-    
+
+    weak var presenter: PortfolioManagerPresenterProtocol?
     var data: [PortfolioItem]
     
     private init() {
@@ -23,4 +24,16 @@ class PortfolioMock {
         }
     }
     
+}
+
+extension PortfolioMock: PortfolioManagerInteractorProtocol {
+    func loadData(parentId: UUID?) {
+        let data = self.data.filter( { $0.parentId == parentId } )
+        self.presenter?.load(data: data)
+    }
+
+    func fetchTotalAllocated(parentId: UUID?) {
+        let value = self.data.filter( { $0.parentId == parentId } ).map( { $0.weight } ).reduce(Decimal(), { $0 + $1 } )
+        self.presenter?.presentTotalAllocated(value: value)
+    }
 }

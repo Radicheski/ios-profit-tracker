@@ -4,9 +4,11 @@
 
 import Foundation
 
-protocol PortfolioManagerViewControllerProtocol {
+protocol PortfolioManagerViewControllerProtocol: class {
 
-    var interactor: PortfolioManagerInteractorProtocol? { get }
+    var interactor: PortfolioManagerInteractorProtocol? { set get }
+
     func updateView()
+    func updateTotalAllocated(value: Decimal)
 
 }

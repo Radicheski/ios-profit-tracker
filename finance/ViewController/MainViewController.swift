@@ -9,14 +9,16 @@ import UIKit
 
 class MainViewController: UITabBarController {
 
+    let porftolioManager = PortfolioNavigationController(rootViewController: PortfolioViewController(parentId: nil))
+    let summary = SummaryNavigationController(rootViewController: FlatPortfolioViewController(parentId: nil))
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        self.addChild(PortfolioNavigationController())
+
+        self.viewControllers = [self.porftolioManager, self.summary]
         self.view.backgroundColor = .white
     }
-
 
 }
 

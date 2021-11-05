@@ -10,12 +10,9 @@ import UIKit
 class PortfolioView: UIView {
     
     let stackView = UIStackView()
-    
-    let segmentedControl = UISegmentedControl()
+
     let tableView = UITableView()
     let footer = UILabel()
-    
-    var segmentedControlAction: ((UISegmentedControl) -> Void)?
     
     var footerText: String? {
         set {
@@ -26,8 +23,7 @@ class PortfolioView: UIView {
             
         }
     }
-    
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -42,16 +38,6 @@ class PortfolioView: UIView {
             self.stackView.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor),
             self.stackView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor),
             self.stackView.leftAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leftAnchor),
-        ])
-        
-        self.segmentedControl.isHidden = true
-        self.segmentedControl.insertSegment(withTitle: "Tree", at: 0, animated: false)
-        self.segmentedControl.insertSegment(withTitle: "Flat", at: 1, animated: false)
-        self.stackView.addArrangedSubview(self.segmentedControl)
-        self.segmentedControl.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            self.segmentedControl.leftAnchor.constraint(equalTo: self.stackView.safeAreaLayoutGuide.leftAnchor, constant: 10),
-            self.segmentedControl.rightAnchor.constraint(equalTo: self.stackView.safeAreaLayoutGuide.rightAnchor, constant: -10),
         ])
         
         self.stackView.addArrangedSubview(self.tableView)
@@ -70,15 +56,10 @@ class PortfolioView: UIView {
             self.footer.heightAnchor.constraint(equalToConstant: 40),
         ])
         
-        self.segmentedControl.addAction(UIAction(handler: { _ in
-            self.segmentedControlAction?(self.segmentedControl)
-        }), for: .valueChanged)
-        
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
     
 }

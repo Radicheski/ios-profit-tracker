@@ -4,9 +4,11 @@
 
 import Foundation
 
-protocol PortfolioManagerInteractorProtocol {
+protocol PortfolioManagerInteractorProtocol: class {
 
-    var presenter: PortfolioManagerPresenterProtocol? { get }
+    var presenter: PortfolioManagerPresenterProtocol? { set get }
+
     func loadData(parentId: UUID?)
+    func fetchTotalAllocated(parentId: UUID?)
 
 }
