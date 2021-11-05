@@ -10,6 +10,7 @@
 		AD58D52B272CC0E60047847C /* portfolioExpected.json in Resources */ = {isa = PBXBuildFile; fileRef = AD58D52A272CC0E60047847C /* portfolioExpected.json */; };
 		AD58D52E272CC7E60047847C /* PortfolioItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58D52D272CC7E60047847C /* PortfolioItem.swift */; };
 		AD58D531272CC80D0047847C /* PortfolioItem+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58D530272CC80D0047847C /* PortfolioItem+Equatable.swift */; };
+		ADAEFF2E273560D400C7ABAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADAEFF30273560D400C7ABAE /* Localizable.strings */; };
 		ADBD4151272B3B1E00BB3327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4150272B3B1E00BB3327 /* AppDelegate.swift */; };
 		ADBD4153272B3B1E00BB3327 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4152272B3B1E00BB3327 /* SceneDelegate.swift */; };
 		ADBD4155272B3B1E00BB3327 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4154272B3B1E00BB3327 /* MainViewController.swift */; };
@@ -47,6 +48,8 @@
 		AD58D52A272CC0E60047847C /* portfolioExpected.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portfolioExpected.json; sourceTree = "<group>"; };
 		AD58D52D272CC7E60047847C /* PortfolioItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItem.swift; sourceTree = "<group>"; };
 		AD58D530272CC80D0047847C /* PortfolioItem+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+Equatable.swift"; sourceTree = "<group>"; };
+		ADAEFF31273560FB00C7ABAE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		ADAEFF332735621900C7ABAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		ADBD414D272B3B1E00BB3327 /* finance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBD4150272B3B1E00BB3327 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADBD4152272B3B1E00BB3327 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +111,14 @@
 			path = PortfolioItem;
 			sourceTree = "<group>";
 		};
+		ADAEFF32273561C400C7ABAE /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				ADAEFF30273560D400C7ABAE /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		ADBD4144272B3B1E00BB3327 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +141,7 @@
 		ADBD414F272B3B1E00BB3327 /* finance */ = {
 			isa = PBXGroup;
 			children = (
+				ADAEFF32273561C400C7ABAE /* Localization */,
 				ADFBD7E92731F756001DD06F /* Worker */,
 				AD58D52C272CC7CA0047847C /* Model */,
 				ADEB66A9272C325C002AFAE3 /* Mock */,
@@ -300,6 +312,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = ADBD4144272B3B1E00BB3327;
 			productRefGroup = ADBD414E272B3B1E00BB3327 /* Products */;
@@ -318,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADBD415D272B3B1F00BB3327 /* LaunchScreen.storyboard in Resources */,
+				ADAEFF2E273560D400C7ABAE /* Localizable.strings in Resources */,
 				ADEB66AC272C3279002AFAE3 /* portfolio.json in Resources */,
 				AD58D52B272CC0E60047847C /* portfolioExpected.json in Resources */,
 				ADBD415A272B3B1F00BB3327 /* Assets.xcassets in Resources */,
@@ -379,6 +393,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		ADAEFF30273560D400C7ABAE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADAEFF31273560FB00C7ABAE /* pt-BR */,
+				ADAEFF332735621900C7ABAE /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		ADBD415B272B3B1F00BB3327 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

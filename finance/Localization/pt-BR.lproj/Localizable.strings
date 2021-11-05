@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  finance
+
+  Created by Erik Radicheski da Silva on 05/11/21.
+  
+*/
+"globalPortfolioTabBarTitle" = "Carteiras";
+"globalPortfolioTitle" = "Carteira global";
+"globalPortfolioUnallocated" = "Não alocado: %@%%";
+
+"summaryTabBarTitle" = "Resumo";
+"summaryTitle" = "Resumo";
+"summaryUnallocated" = "Não alocado: %@%%";
