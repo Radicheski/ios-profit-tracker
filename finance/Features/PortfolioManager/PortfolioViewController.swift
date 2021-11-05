@@ -33,7 +33,7 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.customView.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "portfolioItem")
-        if self.navigationItem.title == nil { self.navigationItem.title = "Global Portfolio"}
+        if self.navigationItem.title == nil { self.navigationItem.title = CustomLocalization.PortfolioManager.globalPortfolioTitle }
         self.customView.tableView.dataSource = self.dataSource
         self.customView.tableView.delegate = self
     }
@@ -71,7 +71,9 @@ extension PortfolioViewController: PortfolioManagerViewControllerProtocol {
     }
 
     func updateTotalAllocated(value: Decimal) {
-        self.customView.footerText = "Unallocated: \(100 - value * 100)%"
+        let localizedString = CustomLocalization.PortfolioManager.globalPortfolioUnallocated
+        let percentValue = 100 - value * 100
+        self.customView.footerText = String.localizedStringWithFormat(localizedString, [percentValue])
     }
 
 }

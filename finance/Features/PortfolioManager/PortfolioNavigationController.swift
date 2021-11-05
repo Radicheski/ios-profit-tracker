@@ -12,7 +12,7 @@ class PortfolioNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tabBarItem.title = "Portfolio"
+        self.tabBarItem.title = CustomLocalization.PortfolioManager.globalPortfolioTabBarTitle
         self.tabBarItem.image = UIImage(systemName: "globe")
     }
 
