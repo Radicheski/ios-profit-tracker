@@ -85,9 +85,10 @@ extension FlatPortfolioViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "portfolio", for: indexPath)
-        var conf = cell.defaultContentConfiguration()
-        conf.text = self.data[indexPath.row].name
-        conf.secondaryText = "\(self.data[indexPath.row].weight)"
+        var conf = CustomContentConfiguration()
+        conf.title = self.data[indexPath.row].name
+        conf.weight = self.data[indexPath.row].weight
+        conf.price = Decimal(Int.random(in: 10...30))
         cell.contentConfiguration = conf
         return cell
     }
