@@ -6,7 +6,6 @@ import UIKit
 
 class CustomContentView: UIView, UIContentView {
 
-    var stackView = UIStackView()
 
     var titleLabel = UILabel()
     var weightLabel = UILabel()
@@ -22,20 +21,18 @@ class CustomContentView: UIView, UIContentView {
         self.configuration = configuration
         super.init(frame: .zero)
 
-        self.addSubview(self.stackView)
-        self.stackView.alignment = .center
-        self.stackView.spacing = 10
-        self.stackView.axis = .vertical
-        self.stackView.distribution = .fill
-        self.stackView.translatesAutoresizingMaskIntoConstraints = false
+        [self.titleLabel, self.weightLabel, self.priceLabel].forEach( { $0.translatesAutoresizingMaskIntoConstraints = false } )
+        [self.titleLabel, self.weightLabel, self.priceLabel].forEach( { self.addSubview($0) } )
         NSLayoutConstraint.activate([
-            self.stackView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 10),
-            self.stackView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -10),
-            self.stackView.leftAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leftAnchor, constant: 10),
-            self.stackView.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor, constant: -10),
+            self.titleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 10),
+            self.titleLabel.leftAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leftAnchor, constant: 10),
+            self.priceLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 10),
+            self.priceLabel.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor, constant: -10),
+            self.weightLabel.topAnchor.constraint(equalTo: self.priceLabel.safeAreaLayoutGuide.bottomAnchor, constant: 10),
+            self.weightLabel.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor, constant: -10),
+            self.weightLabel.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -10),
         ])
 
-        [self.titleLabel, self.weightLabel, self.priceLabel].forEach { self.stackView.addArrangedSubview($0) }
 
         self.configure()
 
