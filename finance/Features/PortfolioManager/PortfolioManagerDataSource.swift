@@ -17,7 +17,11 @@ class PortfolioManagerDataSource: NSObject, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "portfolioItem", for: indexPath)
         var conf = cell.defaultContentConfiguration()
         conf.text = self.data[indexPath.row].name
-        conf.secondaryText = "\(self.data[indexPath.row].weight)"
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .percent
+        formatter.minimumFractionDigits = 2
+        formatter.maximumFractionDigits = 2
+        conf.secondaryText = formatter.string(from: NSDecimalNumber(decimal: self.data[indexPath.row].weight))
         cell.contentConfiguration = conf
         return cell
     }

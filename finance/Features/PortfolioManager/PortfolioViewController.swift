@@ -72,7 +72,10 @@ extension PortfolioViewController: PortfolioManagerViewControllerProtocol {
 
     func updateTotalAllocated(value: Decimal) {
         let localizedString = CustomLocalization.PortfolioManager.globalPortfolioUnallocated
-        let percentValue = 100 - value * 100
+        let formatter = NumberFormatter()
+        formatter.maximumFractionDigits = 2
+        formatter.minimumFractionDigits = 2
+        let percentValue = formatter.string(from: NSDecimalNumber(decimal: 100 - value * 100)) ?? ""
         self.customView.footerText = String.localizedStringWithFormat(localizedString, percentValue as CVarArg)
     }
 
