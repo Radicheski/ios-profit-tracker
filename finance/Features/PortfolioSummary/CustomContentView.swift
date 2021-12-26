@@ -44,9 +44,18 @@ class CustomContentView: UIView, UIContentView {
 
     func configure() {
         if let conf = self.configuration as? CustomContentConfiguration {
+            let formatter = NumberFormatter()
+            formatter.minimumFractionDigits = 2
+            formatter.maximumFractionDigits = 2
             self.titleLabel.text = conf.title
-            self.weightLabel.text = "\(conf.weight ?? 0)"
-            self.priceLabel.text = "\(conf.price ?? 0)"
+            formatter.numberStyle = .percent
+            if let weight = conf.weight {
+                self.weightLabel.text = formatter.string(from: NSDecimalNumber(decimal: weight))
+            }
+            formatter.numberStyle = .decimal
+            if let price = conf.price {
+                self.priceLabel.text = formatter.string(from: NSDecimalNumber(decimal: price))
+            }
         }
     }
 
