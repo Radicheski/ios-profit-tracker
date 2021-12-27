@@ -32,10 +32,18 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.rightBarButtonItem = self.editButtonItem
         self.customView.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "portfolioItem")
         if self.navigationItem.title == nil { self.navigationItem.title = CustomLocalization.PortfolioManager.globalPortfolioTitle }
         self.customView.tableView.dataSource = self.dataSource
         self.customView.tableView.delegate = self
+    }
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        if let view = self.view as? PortfolioView {
+            view.tableView.setEditing(editing, animated: animated)
+        }
     }
     
     convenience init(parentId: UUID?) {

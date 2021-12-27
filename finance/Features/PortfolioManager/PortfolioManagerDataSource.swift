@@ -25,6 +25,14 @@ class PortfolioManagerDataSource: NSObject, UITableViewDataSource {
         cell.contentConfiguration = conf
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
 
 }
 
