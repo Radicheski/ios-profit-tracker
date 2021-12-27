@@ -43,6 +43,11 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
         super.setEditing(editing, animated: animated)
         if let view = self.view as? PortfolioView {
             view.tableView.setEditing(editing, animated: animated)
+            if editing {
+                view.tableView.insertRows(at: [IndexPath(row: view.tableView.numberOfRows(inSection: 0), section: 0)], with: .automatic)
+            } else {
+                view.tableView.deleteRows(at: [IndexPath(row: view.tableView.numberOfRows(inSection: 0) - 1, section: 0)], with: .automatic)
+            }
         }
     }
     
@@ -67,6 +72,14 @@ extension PortfolioViewController: UITableViewDelegate {
             let vc = PortfolioViewController(parentId: selectedItem.id)
             vc.navigationItem.title = selectedItem.name
             self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        if indexPath.row == tableView.numberOfRows(inSection: indexPath.section) - 1 {
+            return .insert
+        } else {
+            return .delete
         }
     }
     

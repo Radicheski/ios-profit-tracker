@@ -8,6 +8,7 @@
 "globalPortfolioTabBarTitle" = "Portfolios";
 "globalPortfolioTitle" = "Global portfolio";
 "globalPortfolioUnallocated" = "Unallocated: %@%%";
+"globalPortfolioNewItem" = "New item";
 
 "summaryTabBarTitle" = "Summary";
 "summaryTitle" = "Summary";

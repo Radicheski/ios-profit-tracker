@@ -14,6 +14,7 @@ extension CustomLocalization {
         static let globalPortfolioTabBarTitle = NSLocalizedString("globalPortfolioTabBarTitle", comment: "Global portfolio title")
         static let globalPortfolioTitle = NSLocalizedString("globalPortfolioTitle", comment: "Global portfolio title")
         static let globalPortfolioUnallocated = NSLocalizedString("globalPortfolioUnallocated", comment: "Global portfolio unallocated resources")
+        static let globalPortfolioNewItem = NSLocalizedString("globalPortfolioNewItem", comment: "Global portfolio new item cell title")
         
     }
     

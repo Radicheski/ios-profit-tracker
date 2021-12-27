@@ -10,18 +10,30 @@ class PortfolioManagerDataSource: NSObject, UITableViewDataSource {
     weak var viewController: PortfolioManagerViewControllerProtocol?
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.data.count
+        if tableView.isEditing {
+            return self.data.count + 1
+        } else {
+            return self.data.count
+        }
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "portfolioItem", for: indexPath)
         var conf = cell.defaultContentConfiguration()
-        conf.text = self.data[indexPath.row].name
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .percent
-        formatter.minimumFractionDigits = 2
-        formatter.maximumFractionDigits = 2
-        conf.secondaryText = formatter.string(from: NSDecimalNumber(decimal: self.data[indexPath.row].weight))
+        
+        if tableView.isEditing && indexPath.row == tableView.numberOfRows(inSection: indexPath.section) - 1 {
+            conf.text = CustomLocalization.PortfolioManager.globalPortfolioNewItem
+            conf.secondaryText = nil
+        } else {
+            conf.text = self.data[indexPath.row].name
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .percent
+            formatter.minimumFractionDigits = 2
+            formatter.maximumFractionDigits = 2
+            conf.secondaryText = formatter.string(from: NSDecimalNumber(decimal: self.data[indexPath.row].weight))
+        }
+        
         cell.contentConfiguration = conf
         return cell
     }

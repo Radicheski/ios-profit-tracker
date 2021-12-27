@@ -8,6 +8,7 @@
 "globalPortfolioTabBarTitle" = "Carteiras";
 "globalPortfolioTitle" = "Carteira global";
 "globalPortfolioUnallocated" = "Não alocado: %@%%";
+"globalPortfolioNewItem" = "Novo item";
 
 "summaryTabBarTitle" = "Resumo";
 "summaryTitle" = "Resumo";
