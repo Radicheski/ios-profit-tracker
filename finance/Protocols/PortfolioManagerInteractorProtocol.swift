@@ -7,8 +7,13 @@ import Foundation
 protocol PortfolioManagerInteractorProtocol: class {
 
     var presenter: PortfolioManagerPresenterProtocol? { set get }
+    var parentId: UUID? { get }
 
-    func loadData(parentId: UUID?)
-    func fetchTotalAllocated(parentId: UUID?)
+    func loadData()
+    func fetchTotalAllocated()
 
+    func insertData()
+    func removeData(at: Int)
+    func updateData()
+    
 }

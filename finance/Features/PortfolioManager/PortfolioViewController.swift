@@ -54,12 +54,14 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
     convenience init(parentId: UUID?) {
         self.init()
         self.parentId = parentId
+        
+        self.interactor = PortfolioInteractor(parentId: parentId)
 
         self.interactor?.presenter = self.presenter
         self.presenter?.viewController = self
 
-        self.interactor?.loadData(parentId: parentId)
-        self.interactor?.fetchTotalAllocated(parentId: self.parentId)
+        self.interactor?.loadData()
+        self.interactor?.fetchTotalAllocated()
     }
     
 }

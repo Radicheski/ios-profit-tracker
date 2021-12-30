@@ -14,8 +14,10 @@ class FlatPortfolioViewController: BaseViewController<PortfolioView> {
     var viewController: PortfolioManagerViewControllerProtocol?
 
     var data: [PortfolioItem] = []
+    
+    let parentId: UUID? = nil
 
-    convenience init(parentId: UUID?) {
+    required convenience init(parentId: UUID?) {
         self.init()
 
         self.navigationItem.title = CustomLocalization.Summary.summaryTitle
@@ -27,8 +29,8 @@ class FlatPortfolioViewController: BaseViewController<PortfolioView> {
         self.interactor?.presenter = self.presenter
         self.presenter?.viewController = self.viewController
 
-        self.interactor?.fetchTotalAllocated(parentId: nil)
-        self.interactor?.loadData(parentId: nil)
+        self.interactor?.fetchTotalAllocated()
+        self.interactor?.loadData()
 
         self.customView.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "portfolio")
         self.customView.tableView.dataSource = self
@@ -68,14 +70,26 @@ extension FlatPortfolioViewController: PortfolioManagerPresenterProtocol {
 
 extension FlatPortfolioViewController: PortfolioManagerInteractorProtocol {
 
-    func loadData(parentId: UUID?) {
+    func loadData() {
         let data = PortfolioItem.getItems(PortfolioMock.shared.data)
         self.presenter?.load(data: data)
     }
 
-    func fetchTotalAllocated(parentId: UUID?) {
+    func fetchTotalAllocated() {
         let value = PortfolioItem.getItems(PortfolioMock.shared.data).map( { $0.weight } ).reduce(Decimal(), { $0 + $1 } )
         self.presenter?.presentTotalAllocated(value: value)
+    }
+    
+    func insertData() {
+        fatalError()
+    }
+    
+    func removeData(at index: Int) {
+        fatalError()
+    }
+    
+    func updateData() {
+        fatalError()
     }
 
 }
