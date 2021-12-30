@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AD19B71B277E3A8A00D459EA /* PortfolioInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B71A277E3A8A00D459EA /* PortfolioInteractor.swift */; };
+		AD19B742277E402600D459EA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B741277E402600D459EA /* Persistence.swift */; };
 		AD4BC666277A8DAD00593CEE /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */; };
 		AD58D52B272CC0E60047847C /* portfolioExpected.json in Resources */ = {isa = PBXBuildFile; fileRef = AD58D52A272CC0E60047847C /* portfolioExpected.json */; };
 		AD58D52E272CC7E60047847C /* PortfolioItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58D52D272CC7E60047847C /* PortfolioItem.swift */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		AD19B71A277E3A8A00D459EA /* PortfolioInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioInteractor.swift; sourceTree = "<group>"; };
+		AD19B741277E402600D459EA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
 		AD58D52A272CC0E60047847C /* portfolioExpected.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portfolioExpected.json; sourceTree = "<group>"; };
 		AD58D52D272CC7E60047847C /* PortfolioItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItem.swift; sourceTree = "<group>"; };
@@ -106,6 +108,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD19B73F277E3FDB00D459EA /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				AD19B741277E402600D459EA /* Persistence.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		AD4BC664277A8D9500593CEE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +172,7 @@
 		ADBD414F272B3B1E00BB3327 /* finance */ = {
 			isa = PBXGroup;
 			children = (
+				AD19B73F277E3FDB00D459EA /* CoreData */,
 				AD4BC664277A8D9500593CEE /* Extensions */,
 				ADAEFF32273561C400C7ABAE /* Localization */,
 				ADFBD7E92731F756001DD06F /* Worker */,
@@ -398,6 +409,7 @@
 				ADAEFF2B27355D7700C7ABAE /* CustomLocalization.swift in Sources */,
 				EBDF34580807606EE48EFD90 /* PortfolioNavigationController.swift in Sources */,
 				ADAEFF37273566BD00C7ABAE /* CustomLocalization+Summary.swift in Sources */,
+				AD19B742277E402600D459EA /* Persistence.swift in Sources */,
 				EBDF390411B3C133386EA80A /* PortfolioManagerDataSource.swift in Sources */,
 				EBDF31C01E60772D94B461A1 /* FlatPortfolioViewController.swift in Sources */,
 				EBDF30DEA011AED8894D032D /* FlatPortfolioDataSource.swift in Sources */,
