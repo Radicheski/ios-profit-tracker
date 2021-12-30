@@ -8,12 +8,24 @@ class PortfolioManagerDataSource: NSObject, UITableViewDataSource {
 
     var data: [PortfolioItem] = []
     weak var viewController: PortfolioManagerViewControllerProtocol?
+    weak var interactor: PortfolioManagerInteractorProtocol?
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tableView.isEditing {
             return self.data.count + 1
         } else {
             return self.data.count
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        switch editingStyle {
+        case .insert:
+            self.interactor?.insertData()
+        case .delete:
+            self.interactor?.removeData(at: indexPath.row)
+        default:
+            break
         }
     }
 

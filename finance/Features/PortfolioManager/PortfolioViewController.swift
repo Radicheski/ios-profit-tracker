@@ -9,7 +9,7 @@ import UIKit
 
 class PortfolioViewController: BaseViewController<PortfolioView> {
 
-    var interactor: PortfolioManagerInteractorProtocol? = PortfolioMock.shared
+    var interactor: PortfolioManagerInteractorProtocol?
     var presenter: PortfolioManagerPresenterProtocol? = PortfolioManagerDataSource()
     var viewController: PortfolioManagerViewControllerProtocol? {
         get {
@@ -44,7 +44,9 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
         if let view = self.view as? PortfolioView {
             view.tableView.setEditing(editing, animated: animated)
             if editing {
-                view.tableView.insertRows(at: [IndexPath(row: view.tableView.numberOfRows(inSection: 0), section: 0)], with: .automatic)
+                let indexPath = IndexPath(row: view.tableView.numberOfRows(inSection: 0), section: 0)
+                view.tableView.insertRows(at: [indexPath], with: .automatic)
+                view.tableView.scrollToBottom(at: .none, animated: true)
             } else {
                 view.tableView.deleteRows(at: [IndexPath(row: view.tableView.numberOfRows(inSection: 0) - 1, section: 0)], with: .automatic)
             }
@@ -59,6 +61,7 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
 
         self.interactor?.presenter = self.presenter
         self.presenter?.viewController = self
+        (self.presenter as? PortfolioManagerDataSource)?.interactor = self.interactor
 
         self.interactor?.loadData()
         self.interactor?.fetchTotalAllocated()
