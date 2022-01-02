@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		AD19B71B277E3A8A00D459EA /* PortfolioInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B71A277E3A8A00D459EA /* PortfolioInteractor.swift */; };
 		AD19B742277E402600D459EA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B741277E402600D459EA /* Persistence.swift */; };
+		AD19B7452782217700D459EA /* FinanceModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD19B7432782217700D459EA /* FinanceModel.xcdatamodeld */; };
+		AD19B75027822C8400D459EA /* PortfolioItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B74E27822C8400D459EA /* PortfolioItem+CoreDataClass.swift */; };
+		AD19B75127822C8400D459EA /* PortfolioItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B74F27822C8400D459EA /* PortfolioItem+CoreDataProperties.swift */; };
+		AD19B753278230BD00D459EA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B752278230BD00D459EA /* SwiftyJSON.swift */; };
 		AD4BC666277A8DAD00593CEE /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */; };
 		AD58D52B272CC0E60047847C /* portfolioExpected.json in Resources */ = {isa = PBXBuildFile; fileRef = AD58D52A272CC0E60047847C /* portfolioExpected.json */; };
 		AD58D52E272CC7E60047847C /* PortfolioItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58D52D272CC7E60047847C /* PortfolioItem.swift */; };
@@ -17,6 +21,7 @@
 		ADAEFF2E273560D400C7ABAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADAEFF30273560D400C7ABAE /* Localizable.strings */; };
 		ADAEFF352735669100C7ABAE /* CustomLocalization+PortfolioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEFF342735669100C7ABAE /* CustomLocalization+PortfolioManager.swift */; };
 		ADAEFF37273566BD00C7ABAE /* CustomLocalization+Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEFF36273566BD00C7ABAE /* CustomLocalization+Summary.swift */; };
+		ADBBC31A27825FE80068D066 /* PortfolioItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC31927825FE80068D066 /* PortfolioItemTests.swift */; };
 		ADBD4151272B3B1E00BB3327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4150272B3B1E00BB3327 /* AppDelegate.swift */; };
 		ADBD4153272B3B1E00BB3327 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4152272B3B1E00BB3327 /* SceneDelegate.swift */; };
 		ADBD4155272B3B1E00BB3327 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4154272B3B1E00BB3327 /* MainViewController.swift */; };
@@ -26,7 +31,6 @@
 		ADBD4168272B3EF000BB3327 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4167272B3EF000BB3327 /* BaseViewController.swift */; };
 		ADCEFF9F2730AC9400E33A7D /* PortfolioMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCEFF9E2730AC9400E33A7D /* PortfolioMock.swift */; };
 		ADEB66AC272C3279002AFAE3 /* portfolio.json in Resources */ = {isa = PBXBuildFile; fileRef = ADEB66AB272C3279002AFAE3 /* portfolio.json */; };
-		ADEB66BB272C5581002AFAE3 /* PortfolioItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEB66BA272C5581002AFAE3 /* PortfolioItemTests.swift */; };
 		ADFBD7EB2731F765001DD06F /* PortfolioItemWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFBD7EA2731F765001DD06F /* PortfolioItemWorker.swift */; };
 		EBDF30DEA011AED8894D032D /* FlatPortfolioDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF35D6DCDACA1CAE5BD2F1 /* FlatPortfolioDataSource.swift */; };
 		EBDF31C01E60772D94B461A1 /* FlatPortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF329A38513EDB94407B10 /* FlatPortfolioViewController.swift */; };
@@ -42,7 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		ADEB66B5272C551A002AFAE3 /* PBXContainerItemProxy */ = {
+		ADBBC31B27825FE80068D066 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADBD4145272B3B1E00BB3327 /* Project object */;
 			proxyType = 1;
@@ -54,6 +58,10 @@
 /* Begin PBXFileReference section */
 		AD19B71A277E3A8A00D459EA /* PortfolioInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioInteractor.swift; sourceTree = "<group>"; };
 		AD19B741277E402600D459EA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		AD19B7442782217700D459EA /* FinanceModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinanceModel.xcdatamodel; sourceTree = "<group>"; };
+		AD19B74E27822C8400D459EA /* PortfolioItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AD19B74F27822C8400D459EA /* PortfolioItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AD19B752278230BD00D459EA /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
 		AD58D52A272CC0E60047847C /* portfolioExpected.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portfolioExpected.json; sourceTree = "<group>"; };
 		AD58D52D272CC7E60047847C /* PortfolioItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItem.swift; sourceTree = "<group>"; };
@@ -63,6 +71,8 @@
 		ADAEFF332735621900C7ABAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		ADAEFF342735669100C7ABAE /* CustomLocalization+PortfolioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomLocalization+PortfolioManager.swift"; sourceTree = "<group>"; };
 		ADAEFF36273566BD00C7ABAE /* CustomLocalization+Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomLocalization+Summary.swift"; sourceTree = "<group>"; };
+		ADBBC31727825FE80068D066 /* financeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = financeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADBBC31927825FE80068D066 /* PortfolioItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItemTests.swift; sourceTree = "<group>"; };
 		ADBD414D272B3B1E00BB3327 /* finance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBD4150272B3B1E00BB3327 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADBD4152272B3B1E00BB3327 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,8 +84,6 @@
 		ADBD4167272B3EF000BB3327 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		ADCEFF9E2730AC9400E33A7D /* PortfolioMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioMock.swift; sourceTree = "<group>"; };
 		ADEB66AB272C3279002AFAE3 /* portfolio.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portfolio.json; sourceTree = "<group>"; };
-		ADEB66B1272C551A002AFAE3 /* financeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = financeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADEB66BA272C5581002AFAE3 /* PortfolioItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItemTests.swift; sourceTree = "<group>"; };
 		ADFBD7EA2731F765001DD06F /* PortfolioItemWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItemWorker.swift; sourceTree = "<group>"; };
 		EBDF3245FEF1177F4071BD72 /* PortfolioNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioNavigationController.swift; sourceTree = "<group>"; };
 		EBDF324A9E12098BDC951F68 /* PortfolioManagerViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioManagerViewControllerProtocol.swift; sourceTree = "<group>"; };
@@ -91,14 +99,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		ADBD414A272B3B1E00BB3327 /* Frameworks */ = {
+		ADBBC31427825FE80068D066 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADEB66AE272C551A002AFAE3 /* Frameworks */ = {
+		ADBD414A272B3B1E00BB3327 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -111,7 +119,10 @@
 		AD19B73F277E3FDB00D459EA /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				AD19B74E27822C8400D459EA /* PortfolioItem+CoreDataClass.swift */,
+				AD19B74F27822C8400D459EA /* PortfolioItem+CoreDataProperties.swift */,
 				AD19B741277E402600D459EA /* Persistence.swift */,
+				AD19B7432782217700D459EA /* FinanceModel.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -150,11 +161,19 @@
 			path = Localization;
 			sourceTree = "<group>";
 		};
+		ADBBC31827825FE80068D066 /* financeTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADBBC31927825FE80068D066 /* PortfolioItemTests.swift */,
+			);
+			path = financeTests;
+			sourceTree = "<group>";
+		};
 		ADBD4144272B3B1E00BB3327 = {
 			isa = PBXGroup;
 			children = (
 				ADBD414F272B3B1E00BB3327 /* finance */,
-				ADEB66B2272C551A002AFAE3 /* financeTests */,
+				ADBBC31827825FE80068D066 /* financeTests */,
 				ADBD414E272B3B1E00BB3327 /* Products */,
 				EBDF3C4A2EF3A78078840235 /* .gitignore */,
 			);
@@ -164,7 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				ADBD414D272B3B1E00BB3327 /* finance.app */,
-				ADEB66B1272C551A002AFAE3 /* financeTests.xctest */,
+				ADBBC31727825FE80068D066 /* financeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,6 +232,7 @@
 			children = (
 				ADEB66AA272C3264002AFAE3 /* Data */,
 				ADCEFF9E2730AC9400E33A7D /* PortfolioMock.swift */,
+				AD19B752278230BD00D459EA /* SwiftyJSON.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -224,14 +244,6 @@
 				AD58D52A272CC0E60047847C /* portfolioExpected.json */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		ADEB66B2272C551A002AFAE3 /* financeTests */ = {
-			isa = PBXGroup;
-			children = (
-				ADEB66BA272C5581002AFAE3 /* PortfolioItemTests.swift */,
-			);
-			path = financeTests;
 			sourceTree = "<group>";
 		};
 		ADFBD7E92731F756001DD06F /* Worker */ = {
@@ -288,6 +300,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		ADBBC31627825FE80068D066 /* financeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADBBC31D27825FE80068D066 /* Build configuration list for PBXNativeTarget "financeTests" */;
+			buildPhases = (
+				ADBBC31327825FE80068D066 /* Sources */,
+				ADBBC31427825FE80068D066 /* Frameworks */,
+				ADBBC31527825FE80068D066 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADBBC31C27825FE80068D066 /* PBXTargetDependency */,
+			);
+			name = financeTests;
+			productName = financeTests;
+			productReference = ADBBC31727825FE80068D066 /* financeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		ADBD414C272B3B1E00BB3327 /* finance */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADBD4161272B3B1F00BB3327 /* Build configuration list for PBXNativeTarget "finance" */;
@@ -305,24 +335,6 @@
 			productReference = ADBD414D272B3B1E00BB3327 /* finance.app */;
 			productType = "com.apple.product-type.application";
 		};
-		ADEB66B0272C551A002AFAE3 /* financeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ADEB66B7272C551A002AFAE3 /* Build configuration list for PBXNativeTarget "financeTests" */;
-			buildPhases = (
-				ADEB66AD272C551A002AFAE3 /* Sources */,
-				ADEB66AE272C551A002AFAE3 /* Frameworks */,
-				ADEB66AF272C551A002AFAE3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ADEB66B6272C551A002AFAE3 /* PBXTargetDependency */,
-			);
-			name = financeTests;
-			productName = financeTests;
-			productReference = ADEB66B1272C551A002AFAE3 /* financeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -330,15 +342,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1310;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
+					ADBBC31627825FE80068D066 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = ADBD414C272B3B1E00BB3327;
+					};
 					ADBD414C272B3B1E00BB3327 = {
 						CreatedOnToolsVersion = 13.1;
-					};
-					ADEB66B0272C551A002AFAE3 = {
-						CreatedOnToolsVersion = 13.1;
-						TestTargetID = ADBD414C272B3B1E00BB3327;
 					};
 				};
 			};
@@ -357,12 +369,19 @@
 			projectRoot = "";
 			targets = (
 				ADBD414C272B3B1E00BB3327 /* finance */,
-				ADEB66B0272C551A002AFAE3 /* financeTests */,
+				ADBBC31627825FE80068D066 /* financeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		ADBBC31527825FE80068D066 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ADBD414B272B3B1E00BB3327 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -376,16 +395,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADEB66AF272C551A002AFAE3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		ADBBC31327825FE80068D066 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADBBC31A27825FE80068D066 /* PortfolioItemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ADBD4149272B3B1E00BB3327 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -394,6 +414,8 @@
 				ADFBD7EB2731F765001DD06F /* PortfolioItemWorker.swift in Sources */,
 				ADBD4155272B3B1E00BB3327 /* MainViewController.swift in Sources */,
 				ADBD4151272B3B1E00BB3327 /* AppDelegate.swift in Sources */,
+				AD19B75027822C8400D459EA /* PortfolioItem+CoreDataClass.swift in Sources */,
+				AD19B7452782217700D459EA /* FinanceModel.xcdatamodeld in Sources */,
 				AD58D52E272CC7E60047847C /* PortfolioItem.swift in Sources */,
 				ADAEFF352735669100C7ABAE /* CustomLocalization+PortfolioManager.swift in Sources */,
 				ADBD4153272B3B1E00BB3327 /* SceneDelegate.swift in Sources */,
@@ -413,26 +435,20 @@
 				EBDF390411B3C133386EA80A /* PortfolioManagerDataSource.swift in Sources */,
 				EBDF31C01E60772D94B461A1 /* FlatPortfolioViewController.swift in Sources */,
 				EBDF30DEA011AED8894D032D /* FlatPortfolioDataSource.swift in Sources */,
+				AD19B75127822C8400D459EA /* PortfolioItem+CoreDataProperties.swift in Sources */,
+				AD19B753278230BD00D459EA /* SwiftyJSON.swift in Sources */,
 				EBDF37D6FE10FAB0EFB1E38E /* SummaryNavigationController.swift in Sources */,
 				EBDF37EB6D58FC11B4EE5387 /* CustomContentView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADEB66AD272C551A002AFAE3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADEB66BB272C5581002AFAE3 /* PortfolioItemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		ADEB66B6272C551A002AFAE3 /* PBXTargetDependency */ = {
+		ADBBC31C27825FE80068D066 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = ADBD414C272B3B1E00BB3327 /* finance */;
-			targetProxy = ADEB66B5272C551A002AFAE3 /* PBXContainerItemProxy */;
+			targetProxy = ADBBC31B27825FE80068D066 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -457,6 +473,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		ADBBC31E27825FE80068D066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S85L3BQN65;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.radicheski.financeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/finance.app/finance";
+			};
+			name = Debug;
+		};
+		ADBBC31F27825FE80068D066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S85L3BQN65;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.radicheski.financeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/finance.app/finance";
+			};
+			name = Release;
+		};
 		ADBD415F272B3B1F00BB3327 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -627,55 +681,18 @@
 			};
 			name = Release;
 		};
-		ADEB66B8272C551A002AFAE3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = S85L3BQN65;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.radicheski.financeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/finance.app/finance";
-			};
-			name = Debug;
-		};
-		ADEB66B9272C551A002AFAE3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = S85L3BQN65;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.radicheski.financeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/finance.app/finance";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		ADBBC31D27825FE80068D066 /* Build configuration list for PBXNativeTarget "financeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADBBC31E27825FE80068D066 /* Debug */,
+				ADBBC31F27825FE80068D066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		ADBD4148272B3B1E00BB3327 /* Build configuration list for PBXProject "finance" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -694,16 +711,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADEB66B7272C551A002AFAE3 /* Build configuration list for PBXNativeTarget "financeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ADEB66B8272C551A002AFAE3 /* Debug */,
-				ADEB66B9272C551A002AFAE3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AD19B7432782217700D459EA /* FinanceModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AD19B7442782217700D459EA /* FinanceModel.xcdatamodel */,
+			);
+			currentVersion = AD19B7442782217700D459EA /* FinanceModel.xcdatamodel */;
+			path = FinanceModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = ADBD4145272B3B1E00BB3327 /* Project object */;
 }
