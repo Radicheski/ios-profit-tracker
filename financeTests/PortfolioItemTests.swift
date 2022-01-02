@@ -10,7 +10,7 @@ import finance
 
 class TestPortfolioItem: XCTestCase {
     
-    var item: [PortfolioItem]!
+    var item: [PortfolioItem] = []
     
     var expectation: [String: Decimal]!
     
@@ -20,9 +20,17 @@ class TestPortfolioItem: XCTestCase {
         
         // Load test data
         if let path = Bundle.main.path(forResource: "portfolio", ofType: "json"),
-           let data = FileManager.default.contents(atPath: path) {
-            let json = try JSONDecoder().decode([PortfolioItem].self, from: data)
-            self.item = json
+           let data = FileManager.default.contents(atPath: path),
+           let json = try? JSON(data: data).arrayValue {
+            for object in json {
+                let item = PortfolioItem(entity: PortfolioItem.entity(), insertInto: nil)
+                item.id = UUID(uuidString: object["id"].stringValue)!
+                item.parentId = UUID(uuidString: object["parentId"].stringValue)
+                item.rank = object["rank"].intValue
+                item.weight = Decimal(string: object["weight"].stringValue, locale: nil)!
+                item.name = object["name"].stringValue
+                self.item.append(item)
+            }
         }
         
         //Load expected output
