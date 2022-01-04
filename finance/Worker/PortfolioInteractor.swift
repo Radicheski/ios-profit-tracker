@@ -40,7 +40,11 @@ class PortfolioInteractor: PortfolioManagerInteractorProtocol {
     }
     
     func removeData(at index: Int) {
-        self.data.remove(at: index)
+        let item = self.data.remove(at: index)
+        Persistence.shared.persistentContainer.viewContext.delete(item)
+        let request = PortfolioItem.createFetchRequest()
+        request.predicate = NSPredicate(format: "parentId == %@", item.id.description)
+        try? Persistence.shared.persistentContainer.viewContext.fetch(request).forEach( { Persistence.shared.persistentContainer.viewContext.delete($0) } )
         self.loadData()
     }
     
