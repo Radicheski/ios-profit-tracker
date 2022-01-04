@@ -16,6 +16,7 @@ class PortfolioInteractor: PortfolioManagerInteractorProtocol {
     required init(parentId: UUID?) {
         self.parentId = parentId
         self.data = PortfolioMock.shared.data.filter( { $0.parentId == parentId } )
+        self.data.sort(by: { $0.rank < $1.rank } )
     }
     
     func loadData() {
@@ -28,7 +29,13 @@ class PortfolioInteractor: PortfolioManagerInteractorProtocol {
     }
     
     func insertData() {
-        self.data.append(PortfolioItem(id: UUID(), rank: 0, name: CustomLocalization.PortfolioManager.globalPortfolioNewItem, weight: Decimal(), parentId: self.parentId))
+        let newItem = PortfolioItem(context: Persistence.shared.persistentContainer.viewContext)
+        newItem.id = UUID()
+        newItem.rank = self.data.count
+        newItem.name = CustomLocalization.PortfolioManager.globalPortfolioNewItem
+        newItem.weight = Decimal()
+        newItem.parentId = self.parentId
+        self.data.append(newItem)
         self.loadData()
     }
     
