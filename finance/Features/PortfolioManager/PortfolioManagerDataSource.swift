@@ -57,6 +57,17 @@ class PortfolioManagerDataSource: NSObject, UITableViewDataSource {
     func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         return true
     }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let movedItem = self.data.first(where: { $0.rank == sourceIndexPath.row } )
+        if sourceIndexPath.row < destinationIndexPath.row {
+            self.data.filter( { $0.rank > sourceIndexPath.row && $0.rank <= destinationIndexPath.row } ).forEach( { $0.rank -= 1 } )
+        } else {
+            self.data.filter( { $0.rank < sourceIndexPath.row && $0.rank >= destinationIndexPath.row } ).forEach( { $0.rank += 1 } )
+        }
+        movedItem?.rank = destinationIndexPath.row
+        self.data.sort(by: { $0.rank < $1.rank } )
+    }
 
 }
 
