@@ -13,3 +13,7 @@
 "summaryTabBarTitle" = "Summary";
 "summaryTitle" = "Summary";
 "summaryUnallocated" = "Unallocated: %@%%";
+
+"updateViewNameLabel" = "Name";
+"updateViewWeightLabel" = "Weight";
+"updateViewParentLabel" = "Parent portfolio";

@@ -13,3 +13,7 @@
 "summaryTabBarTitle" = "Resumo";
 "summaryTitle" = "Resumo";
 "summaryUnallocated" = "Não alocado: %@%%";
+
+"updateViewNameLabel" = "Nome";
+"updateViewWeightLabel" = "Alocação";
+"updateViewParentLabel" = "Portfolio pai";
