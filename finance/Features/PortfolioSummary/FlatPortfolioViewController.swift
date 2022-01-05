@@ -91,6 +91,10 @@ extension FlatPortfolioViewController: PortfolioManagerInteractorProtocol {
     func updateData() {
         fatalError()
     }
+    
+    func getItem(at: Int) -> PortfolioItem {
+        fatalError()
+    }
 
 }
 

@@ -52,4 +52,8 @@ class PortfolioInteractor: PortfolioManagerInteractorProtocol {
         fatalError()
     }
     
+    func getItem(at index: Int) -> PortfolioItem {
+        return self.data[index]
+    }
+    
 }

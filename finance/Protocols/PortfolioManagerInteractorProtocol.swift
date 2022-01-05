@@ -15,5 +15,6 @@ protocol PortfolioManagerInteractorProtocol: class {
     func insertData()
     func removeData(at: Int)
     func updateData()
+    func getItem(at: Int) -> PortfolioItem
     
 }
