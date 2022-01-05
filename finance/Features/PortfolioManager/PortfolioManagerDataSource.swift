@@ -44,6 +44,7 @@ class PortfolioManagerDataSource: NSObject, UITableViewDataSource {
             formatter.minimumFractionDigits = 2
             formatter.maximumFractionDigits = 2
             conf.secondaryText = formatter.string(from: NSDecimalNumber(decimal: self.data[indexPath.row].weight))
+            cell.editingAccessoryType = .detailButton
         }
         
         cell.contentConfiguration = conf
@@ -55,7 +56,11 @@ class PortfolioManagerDataSource: NSObject, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        return true
+        if tableView.isEditing && indexPath.row == tableView.numberOfRows(inSection: indexPath.section) - 1 {
+            return false
+        } else {
+            return true
+        }
     }
     
     func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {

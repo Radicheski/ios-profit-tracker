@@ -89,6 +89,16 @@ extension PortfolioViewController: UITableViewDelegate {
         }
     }
     
+    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+        if let item = self.interactor?.getItem(at: indexPath.row) {
+            let vc = UpdateViewController()
+            vc.item = item
+            self.modalPresentationStyle = .popover
+            self.modalTransitionStyle = .crossDissolve
+            self.present(vc, animated: true, completion: nil)
+        }
+    }
+    
 }
 
 extension PortfolioViewController: PortfolioManagerViewControllerProtocol {
