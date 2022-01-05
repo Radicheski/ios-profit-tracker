@@ -48,6 +48,7 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
                 view.tableView.insertRows(at: [indexPath], with: .automatic)
                 view.tableView.scrollToBottom(at: .none, animated: true)
             } else {
+                Persistence.shared.saveContext()
                 view.tableView.deleteRows(at: [IndexPath(row: view.tableView.numberOfRows(inSection: 0) - 1, section: 0)], with: .automatic)
             }
         }
