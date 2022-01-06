@@ -11,40 +11,43 @@ class PortfolioInteractor: PortfolioManagerInteractorProtocol {
     
     var parentId: UUID?
     weak var presenter: PortfolioManagerPresenterProtocol?
-    var data: [PortfolioItem]
+    var datastore: Datastore = Datastore.shared
     
     required init(parentId: UUID?) {
         self.parentId = parentId
-        self.data = PortfolioMock.shared.data.filter( { $0.parentId == parentId } )
-        self.data.sort(by: { $0.rank < $1.rank } )
     }
     
     func loadData() {
+        let data = self.datastore.getElement(for: self.parentId)
         self.presenter?.load(data: data)
     }
 
     func fetchTotalAllocated() {
-        let value = self.data.map( { $0.weight } ).reduce(Decimal(), { $0 + $1 } )
+        let data = self.datastore.getElement(for: self.parentId)
+        let value = data.map( { $0.weight } ).reduce(Decimal(), { $0 + $1 } )
         self.presenter?.presentTotalAllocated(value: value)
     }
     
     func insertData() {
         let newItem = PortfolioItem(context: Persistence.shared.persistentContainer.viewContext)
         newItem.id = UUID()
-        newItem.rank = self.data.count
+        newItem.rank = self.datastore.getCount(for: self.parentId)
         newItem.name = CustomLocalization.PortfolioManager.globalPortfolioNewItem
         newItem.weight = Decimal()
         newItem.parentId = self.parentId
-        self.data.append(newItem)
+        self.datastore.insert(newItem)
         self.loadData()
     }
     
     func removeData(at index: Int) {
-        let item = self.data.remove(at: index)
-        Persistence.shared.persistentContainer.viewContext.delete(item)
-        let request = PortfolioItem.createFetchRequest()
-        request.predicate = NSPredicate(format: "parentId == %@", item.id.description)
-        try? Persistence.shared.persistentContainer.viewContext.fetch(request).forEach( { Persistence.shared.persistentContainer.viewContext.delete($0) } )
+        if let item = self.datastore.getElement(for: self.parentId, at: index) {
+            var children = [item]
+            repeat {
+                let child = children.removeFirst()
+                children.append(contentsOf: self.datastore.getElement(for: child.id))
+                self.datastore.remove(child)
+            } while (!children.isEmpty)
+        }
         self.loadData()
     }
     
@@ -53,7 +56,8 @@ class PortfolioInteractor: PortfolioManagerInteractorProtocol {
     }
     
     func getItem(at index: Int) -> PortfolioItem {
-        return self.data[index]
+        #warning("Improve method")
+        return self.datastore.getElement(for: self.parentId, at: index)!
     }
     
 }
