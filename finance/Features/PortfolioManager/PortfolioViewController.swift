@@ -24,8 +24,6 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
         }
     }
 
-    let flatdatasource = FlatPortfolioDataSource()
-
     var parentId: UUID?
 
     var data: [PortfolioItem] = []
