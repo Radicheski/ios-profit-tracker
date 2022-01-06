@@ -13,6 +13,7 @@
 		AD19B75027822C8400D459EA /* PortfolioItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B74E27822C8400D459EA /* PortfolioItem+CoreDataClass.swift */; };
 		AD19B75127822C8400D459EA /* PortfolioItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B74F27822C8400D459EA /* PortfolioItem+CoreDataProperties.swift */; };
 		AD19B753278230BD00D459EA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B752278230BD00D459EA /* SwiftyJSON.swift */; };
+		AD2810242787648C00BA4136 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2810232787648C00BA4136 /* Quote.swift */; };
 		AD2810272787676E00BA4136 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2810262787676E00BA4136 /* Formatter.swift */; };
 		AD281029278768B400BA4136 /* NumberFormatter+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD281028278768B400BA4136 /* NumberFormatter+extension.swift */; };
 		AD36B05A2786197C00040D25 /* CustomLocalization+UpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B0592786197C00040D25 /* CustomLocalization+UpdateView.swift */; };
@@ -66,6 +67,7 @@
 		AD19B74E27822C8400D459EA /* PortfolioItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AD19B74F27822C8400D459EA /* PortfolioItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AD19B752278230BD00D459EA /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		AD2810232787648C00BA4136 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		AD2810262787676E00BA4136 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		AD281028278768B400BA4136 /* NumberFormatter+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+extension.swift"; sourceTree = "<group>"; };
 		AD36B0592786197C00040D25 /* CustomLocalization+UpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomLocalization+UpdateView.swift"; sourceTree = "<group>"; };
@@ -134,6 +136,14 @@
 				AD19B7432782217700D459EA /* FinanceModel.xcdatamodeld */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		AD281020278759FA00BA4136 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AD2810232787648C00BA4136 /* Quote.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		AD2810252787676300BA4136 /* Utils */ = {
@@ -219,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				AD2810252787676300BA4136 /* Utils */,
+				AD281020278759FA00BA4136 /* Network */,
 				AD19B73F277E3FDB00D459EA /* CoreData */,
 				AD4BC664277A8D9500593CEE /* Extensions */,
 				ADAEFF32273561C400C7ABAE /* Localization */,
@@ -466,6 +477,7 @@
 				EBDF31C01E60772D94B461A1 /* FlatPortfolioViewController.swift in Sources */,
 				EBDF30DEA011AED8894D032D /* FlatPortfolioDataSource.swift in Sources */,
 				AD77DF642784EDB600D6AB9D /* UpdateView.swift in Sources */,
+				AD2810242787648C00BA4136 /* Quote.swift in Sources */,
 				AD19B75127822C8400D459EA /* PortfolioItem+CoreDataProperties.swift in Sources */,
 				AD19B753278230BD00D459EA /* SwiftyJSON.swift in Sources */,
 				EBDF37D6FE10FAB0EFB1E38E /* SummaryNavigationController.swift in Sources */,
