@@ -15,11 +15,7 @@ class UpdateViewController: BaseViewController<UpdateView> {
         super.viewDidLoad()
         
         self.customView.nameTextField.text = item?.name
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .percent
-        formatter.minimumFractionDigits = 2
-        formatter.maximumFractionDigits = 2
-        self.customView.weightTextField.text = formatter.string(from: NSDecimalNumber(decimal: item?.weight ?? Decimal()))
+        self.customView.weightTextField.text = Formatter.shared.percent.string(from: item?.weight ?? Decimal())
         self.customView.parentTextField.text = item?.parentId?.description
         
         self.customView.nameTextField.delegate = self

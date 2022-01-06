@@ -39,11 +39,7 @@ class PortfolioManagerDataSource: NSObject, UITableViewDataSource {
             conf.secondaryText = nil
         } else {
             conf.text = self.data[indexPath.row].name
-            let formatter = NumberFormatter()
-            formatter.numberStyle = .percent
-            formatter.minimumFractionDigits = 2
-            formatter.maximumFractionDigits = 2
-            conf.secondaryText = formatter.string(from: NSDecimalNumber(decimal: self.data[indexPath.row].weight))
+            conf.secondaryText = Formatter.shared.percent.string(from: self.data[indexPath.row].weight)
             cell.editingAccessoryType = .detailButton
         }
         
