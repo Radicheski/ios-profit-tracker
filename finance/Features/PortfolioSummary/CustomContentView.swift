@@ -50,8 +50,20 @@ class CustomContentView: UIView, UIContentView {
             if let weight = conf.weight {
                 self.weightLabel.text = Formatter.shared.percent.string(from: weight)
             }
-            if let price = conf.price {
-                self.priceLabel.text = Formatter.shared.currency.string(from: price)
+            self.priceLabel.text = "<N/D>"
+            self.priceLabel.textColor = .lightGray
+            if let title = conf.title {
+                let worker = NetworkWorker(ticker: title)
+                worker.getQuote { (quote: [Quote]) in
+                    let price = quote[0].vl_fechamento
+                    DispatchQueue.main.async { [weak self] in
+                        self?.priceLabel.text = Formatter.shared.currency.string(from: price)
+                        self?.priceLabel.textColor = .black
+                    }
+                } onError: { error in
+                    #warning("Improve error handling")
+                    print(error)
+                }
             }
         }
     }
