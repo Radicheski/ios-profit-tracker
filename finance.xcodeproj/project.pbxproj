@@ -36,7 +36,6 @@
 		ADBD4168272B3EF000BB3327 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4167272B3EF000BB3327 /* BaseViewController.swift */; };
 		ADCEFF9F2730AC9400E33A7D /* PortfolioMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCEFF9E2730AC9400E33A7D /* PortfolioMock.swift */; };
 		ADEB66AC272C3279002AFAE3 /* portfolio.json in Resources */ = {isa = PBXBuildFile; fileRef = ADEB66AB272C3279002AFAE3 /* portfolio.json */; };
-		ADFBD7EB2731F765001DD06F /* PortfolioItemWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFBD7EA2731F765001DD06F /* PortfolioItemWorker.swift */; };
 		EBDF30DEA011AED8894D032D /* FlatPortfolioDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF35D6DCDACA1CAE5BD2F1 /* FlatPortfolioDataSource.swift */; };
 		EBDF31C01E60772D94B461A1 /* FlatPortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF329A38513EDB94407B10 /* FlatPortfolioViewController.swift */; };
 		EBDF34580807606EE48EFD90 /* PortfolioNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF3245FEF1177F4071BD72 /* PortfolioNavigationController.swift */; };
@@ -94,7 +93,6 @@
 		ADBD4167272B3EF000BB3327 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		ADCEFF9E2730AC9400E33A7D /* PortfolioMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioMock.swift; sourceTree = "<group>"; };
 		ADEB66AB272C3279002AFAE3 /* portfolio.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portfolio.json; sourceTree = "<group>"; };
-		ADFBD7EA2731F765001DD06F /* PortfolioItemWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItemWorker.swift; sourceTree = "<group>"; };
 		EBDF3245FEF1177F4071BD72 /* PortfolioNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioNavigationController.swift; sourceTree = "<group>"; };
 		EBDF324A9E12098BDC951F68 /* PortfolioManagerViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioManagerViewControllerProtocol.swift; sourceTree = "<group>"; };
 		EBDF329A38513EDB94407B10 /* FlatPortfolioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatPortfolioViewController.swift; sourceTree = "<group>"; };
@@ -279,7 +277,6 @@
 		ADFBD7E92731F756001DD06F /* Worker */ = {
 			isa = PBXGroup;
 			children = (
-				ADFBD7EA2731F765001DD06F /* PortfolioItemWorker.swift */,
 				AD19B71A277E3A8A00D459EA /* PortfolioInteractor.swift */,
 			);
 			path = Worker;
@@ -442,7 +439,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADBD4168272B3EF000BB3327 /* BaseViewController.swift in Sources */,
-				ADFBD7EB2731F765001DD06F /* PortfolioItemWorker.swift in Sources */,
 				ADBD4155272B3B1E00BB3327 /* MainViewController.swift in Sources */,
 				ADBD4151272B3B1E00BB3327 /* AppDelegate.swift in Sources */,
 				AD19B75027822C8400D459EA /* PortfolioItem+CoreDataClass.swift in Sources */,
