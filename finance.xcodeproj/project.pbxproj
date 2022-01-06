@@ -13,6 +13,7 @@
 		AD19B75027822C8400D459EA /* PortfolioItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B74E27822C8400D459EA /* PortfolioItem+CoreDataClass.swift */; };
 		AD19B75127822C8400D459EA /* PortfolioItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B74F27822C8400D459EA /* PortfolioItem+CoreDataProperties.swift */; };
 		AD19B753278230BD00D459EA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B752278230BD00D459EA /* SwiftyJSON.swift */; };
+		AD28102227875A0700BA4136 /* NetworkWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD28102127875A0700BA4136 /* NetworkWorker.swift */; };
 		AD2810242787648C00BA4136 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2810232787648C00BA4136 /* Quote.swift */; };
 		AD2810272787676E00BA4136 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2810262787676E00BA4136 /* Formatter.swift */; };
 		AD281029278768B400BA4136 /* NumberFormatter+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD281028278768B400BA4136 /* NumberFormatter+extension.swift */; };
@@ -67,6 +68,7 @@
 		AD19B74E27822C8400D459EA /* PortfolioItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AD19B74F27822C8400D459EA /* PortfolioItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AD19B752278230BD00D459EA /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		AD28102127875A0700BA4136 /* NetworkWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWorker.swift; sourceTree = "<group>"; };
 		AD2810232787648C00BA4136 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		AD2810262787676E00BA4136 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		AD281028278768B400BA4136 /* NumberFormatter+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+extension.swift"; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		AD281020278759FA00BA4136 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				AD28102127875A0700BA4136 /* NetworkWorker.swift */,
 				AD2810232787648C00BA4136 /* Quote.swift */,
 			);
 			path = Network;
@@ -466,6 +469,7 @@
 				EBDF36A1D646D7942F5C3608 /* PortfolioManagerViewControllerProtocol.swift in Sources */,
 				EBDF3A2AC00A3CB4502C1CD8 /* PortfolioViewController.swift in Sources */,
 				AD2810272787676E00BA4136 /* Formatter.swift in Sources */,
+				AD28102227875A0700BA4136 /* NetworkWorker.swift in Sources */,
 				AD36B05D27864B3A00040D25 /* Datastore.swift in Sources */,
 				AD4BC666277A8DAD00593CEE /* UITableView+extension.swift in Sources */,
 				ADAEFF2B27355D7700C7ABAE /* CustomLocalization.swift in Sources */,
