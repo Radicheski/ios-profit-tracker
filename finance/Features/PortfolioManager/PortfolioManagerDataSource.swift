@@ -9,12 +9,15 @@ class PortfolioManagerDataSource: NSObject, UITableViewDataSource {
     var data: [PortfolioItem] = []
     weak var viewController: PortfolioManagerViewControllerProtocol?
     weak var interactor: PortfolioManagerInteractorProtocol?
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if tableView.isEditing {
-            return self.data.count + 1
-        } else {
-            return self.data.count
+        switch section {
+        case 0: return self.data.count
+        default: return tableView.isEditing ? 2 : 1
         }
     }
     
@@ -34,13 +37,18 @@ class PortfolioManagerDataSource: NSObject, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "portfolioItem", for: indexPath)
         var conf = cell.defaultContentConfiguration()
         
-        if tableView.isEditing && indexPath.row == tableView.numberOfRows(inSection: indexPath.section) - 1 {
-            conf.text = CustomLocalization.PortfolioManager.globalPortfolioNewItem
-            conf.secondaryText = nil
-        } else {
+        if indexPath.section == 0 {
             conf.text = self.data[indexPath.row].name
             conf.secondaryText = Formatter.shared.percent.string(from: self.data[indexPath.row].weight)
             cell.editingAccessoryType = .detailButton
+        } else {
+            if tableView.isEditing && indexPath.row == 0 {
+                conf.text = CustomLocalization.PortfolioManager.globalPortfolioNewItem
+                conf.secondaryText = nil
+            } else {
+                conf.text = "Não alocado"
+                conf.secondaryText = Formatter.shared.percent.string(from: Datastore.shared.getUnallocated(for: self.data[0].parentId))
+            }
         }
         
         cell.contentConfiguration = conf
@@ -48,15 +56,15 @@ class PortfolioManagerDataSource: NSObject, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    
-    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        if tableView.isEditing && indexPath.row == tableView.numberOfRows(inSection: indexPath.section) - 1 {
+        if indexPath.section == 1 && indexPath.row == tableView.numberOfRows(inSection: 1) - 1 {
             return false
         } else {
             return true
         }
+    }
+    
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return tableView.isEditing && indexPath.section == 0
     }
     
     func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {

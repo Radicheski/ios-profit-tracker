@@ -11,7 +11,7 @@ class PortfolioView: UIView {
     
     let stackView = UIStackView()
 
-    let tableView = UITableView()
+    let tableView = UITableView(frame: .zero, style: .grouped)
     let footer = UILabel()
     
     var footerText: String? {

@@ -42,12 +42,12 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
         if let view = self.view as? PortfolioView {
             view.tableView.setEditing(editing, animated: animated)
             if editing {
-                let indexPath = IndexPath(row: view.tableView.numberOfRows(inSection: 0), section: 0)
+                let indexPath = IndexPath(row: 0, section: 1)
                 view.tableView.insertRows(at: [indexPath], with: .automatic)
                 view.tableView.scrollToBottom(at: .none, animated: true)
             } else {
                 Persistence.shared.saveContext()
-                view.tableView.deleteRows(at: [IndexPath(row: view.tableView.numberOfRows(inSection: 0) - 1, section: 0)], with: .automatic)
+                view.tableView.deleteRows(at: [IndexPath(row: 0, section: 1)], with: .automatic)
             }
         }
     }
@@ -71,6 +71,8 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
 extension PortfolioViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 1 { return }
+            
         if let dataSource = self.presenter as? PortfolioManagerDataSource {
             let selectedItem = dataSource.data[indexPath.row]
             let vc = PortfolioViewController(parentId: selectedItem.id)
@@ -80,21 +82,27 @@ extension PortfolioViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
-        if indexPath.row == tableView.numberOfRows(inSection: indexPath.section) - 1 {
+        if indexPath.section == 0 {
+            return .delete
+        } else if indexPath.row == 0 {
             return .insert
         } else {
-            return .delete
+            return .none
         }
     }
     
     func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+        if indexPath.section == 1 { return }
+        
         if let item = self.interactor?.getItem(at: indexPath.row) {
             let vc = UpdateViewController()
             vc.item = item
-            self.modalPresentationStyle = .popover
-            self.modalTransitionStyle = .crossDissolve
             self.present(vc, animated: true, completion: nil)
         }
+    }
+    
+    func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
+        return proposedDestinationIndexPath.section == 0 ? proposedDestinationIndexPath : sourceIndexPath
     }
     
 }

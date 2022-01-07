@@ -96,17 +96,30 @@ extension FlatPortfolioViewController: PortfolioManagerInteractorProtocol {
 }
 
 extension FlatPortfolioViewController: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.data.count
+        return section == 0 ? self.data.count : 1
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "portfolio", for: indexPath)
-        var conf = CustomContentConfiguration()
-        conf.title = self.data[indexPath.row].name
-        conf.weight = self.data[indexPath.row].weight
-        cell.contentConfiguration = conf
+        
+        if indexPath.section == 0 {
+            var conf = CustomContentConfiguration()
+            conf.title = self.data[indexPath.row].name
+            conf.weight = self.data[indexPath.row].weight
+            cell.contentConfiguration = conf
+        } else {
+            var conf = cell.defaultContentConfiguration()
+            conf.text = "Não alocado"
+            conf.secondaryText = Formatter.shared.percent.string(from: Decimal())
+            cell.contentConfiguration = conf
+        }
+        
         return cell
     }
 
