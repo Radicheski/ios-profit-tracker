@@ -53,4 +53,12 @@ class Datastore {
         self.data[item.parentId]?.removeAll(where: { $0.id == item.id } )
     }
     
+    func getUnallocated(for parentId: UUID?) -> Decimal {
+        if let data = self.data[parentId] {
+            return data.map( { -$0.weight } ).reduce(Decimal(1), { $0 + $1 })
+        } else {
+            return Decimal(1)
+        }
+    }
+    
 }

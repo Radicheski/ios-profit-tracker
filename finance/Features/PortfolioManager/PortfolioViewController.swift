@@ -63,7 +63,6 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
         (self.presenter as? PortfolioManagerDataSource)?.interactor = self.interactor
 
         self.interactor?.loadData()
-        self.interactor?.fetchTotalAllocated()
     }
     
 }
@@ -111,12 +110,6 @@ extension PortfolioViewController: PortfolioManagerViewControllerProtocol {
 
     func updateView() {
         DispatchQueue.main.async { self.customView.tableView.reloadData() }
-    }
-
-    func updateTotalAllocated(value: Decimal) {
-        let localizedString = CustomLocalization.PortfolioManager.globalPortfolioUnallocated
-        let percentValue = Formatter.shared.percent.string(from: 100 - value * 100) ?? ""
-        self.customView.footerText = String.localizedStringWithFormat(localizedString, percentValue as CVarArg)
     }
 
 }

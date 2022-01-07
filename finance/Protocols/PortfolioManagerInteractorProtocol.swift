@@ -10,7 +10,6 @@ protocol PortfolioManagerInteractorProtocol: class {
     var parentId: UUID? { get }
 
     func loadData()
-    func fetchTotalAllocated()
 
     func insertData()
     func removeData(at: Int)

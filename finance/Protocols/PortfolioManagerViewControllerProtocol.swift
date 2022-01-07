@@ -9,6 +9,5 @@ protocol PortfolioManagerViewControllerProtocol: class {
     var interactor: PortfolioManagerInteractorProtocol? { set get }
 
     func updateView()
-    func updateTotalAllocated(value: Decimal)
 
 }

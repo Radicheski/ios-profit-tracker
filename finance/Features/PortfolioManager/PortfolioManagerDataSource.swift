@@ -87,7 +87,4 @@ extension PortfolioManagerDataSource: PortfolioManagerPresenterProtocol {
         self.viewController?.updateView()
     }
 
-    func presentTotalAllocated(value: Decimal) {
-        self.viewController?.updateTotalAllocated(value: value)
-    }
 }

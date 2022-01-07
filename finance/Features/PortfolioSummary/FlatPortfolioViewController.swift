@@ -29,7 +29,6 @@ class FlatPortfolioViewController: BaseViewController<PortfolioView> {
         self.interactor?.presenter = self.presenter
         self.presenter?.viewController = self.viewController
 
-        self.interactor?.fetchTotalAllocated()
         self.interactor?.loadData()
 
         self.customView.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "portfolio")
@@ -44,12 +43,6 @@ extension FlatPortfolioViewController: PortfolioManagerViewControllerProtocol {
         DispatchQueue.main.async { self.customView.tableView.reloadData() }
     }
 
-    func updateTotalAllocated(value: Decimal) {
-        let localizedString = CustomLocalization.Summary.summaryUnallocated
-        let percentValue = Formatter.shared.percent.string(from: 100 - value * 100) ?? ""
-        self.customView.footerText = String.localizedStringWithFormat(localizedString, percentValue as CVarArg)
-    }
-
 }
 
 extension FlatPortfolioViewController: PortfolioManagerPresenterProtocol {
@@ -59,10 +52,6 @@ extension FlatPortfolioViewController: PortfolioManagerPresenterProtocol {
         self.viewController?.updateView()
     }
 
-    func presentTotalAllocated(value: Decimal) {
-        self.viewController?.updateTotalAllocated(value: value)
-    }
-
 }
 
 extension FlatPortfolioViewController: PortfolioManagerInteractorProtocol {
@@ -70,11 +59,6 @@ extension FlatPortfolioViewController: PortfolioManagerInteractorProtocol {
     func loadData() {
         let data = PortfolioItem.getItems(PortfolioMock.shared.data)
         self.presenter?.load(data: data)
-    }
-
-    func fetchTotalAllocated() {
-        let value = PortfolioItem.getItems(PortfolioMock.shared.data).map( { $0.weight } ).reduce(Decimal(), { $0 + $1 } )
-        self.presenter?.presentTotalAllocated(value: value)
     }
     
     func insertData() {

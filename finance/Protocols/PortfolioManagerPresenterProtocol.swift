@@ -9,6 +9,5 @@ protocol PortfolioManagerPresenterProtocol: class {
     var viewController: PortfolioManagerViewControllerProtocol? { set get }
 
     func load(data: [PortfolioItem])
-    func presentTotalAllocated(value: Decimal)
 
 }

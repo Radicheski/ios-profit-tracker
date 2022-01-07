@@ -21,12 +21,6 @@ class PortfolioInteractor: PortfolioManagerInteractorProtocol {
         let data = self.datastore.getElement(for: self.parentId)
         self.presenter?.load(data: data)
     }
-
-    func fetchTotalAllocated() {
-        let data = self.datastore.getElement(for: self.parentId)
-        let value = data.map( { $0.weight } ).reduce(Decimal(), { $0 + $1 } )
-        self.presenter?.presentTotalAllocated(value: value)
-    }
     
     func insertData() {
         let newItem = PortfolioItem(context: Persistence.shared.persistentContainer.viewContext)
