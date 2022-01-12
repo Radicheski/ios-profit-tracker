@@ -99,8 +99,8 @@ extension FlatPortfolioViewController: UITableViewDataSource {
             cell.contentConfiguration = conf
         } else {
             var conf = cell.defaultContentConfiguration()
-            conf.secondaryText = Formatter.shared.percent.string(from: Decimal())
             conf.text = CustomLocalization.Summary.summaryUnallocated
+            conf.secondaryText = Formatter.shared.percent.string(from: self.data.map( { -$0.weight } ).reduce(Decimal(1), { $0 + $1 } ))
             cell.contentConfiguration = conf
         }
         
