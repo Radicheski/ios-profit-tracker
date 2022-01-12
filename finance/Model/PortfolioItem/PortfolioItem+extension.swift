@@ -9,6 +9,15 @@ import Foundation
 
 extension PortfolioItem {
     
+    public var weight: Decimal {
+        get {
+            self.cdweight.decimalValue
+        }
+        set {
+            self.cdweight = NSDecimalNumber(decimal: newValue)
+        }
+    }
+    
     convenience init() {
         self.init(entity: PortfolioItem.entity(), insertInto: nil)
     }

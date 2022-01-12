@@ -22,19 +22,4 @@ extension PortfolioItem {
     @NSManaged public var cdweight: NSDecimalNumber
     @NSManaged public var parentId: UUID?
     
-    public var weight: Decimal {
-        get {
-            self.cdweight.decimalValue
-        }
-        set {
-            self.cdweight = NSDecimalNumber(decimal: newValue)
-        }
-    }
-    
-}
-
-extension PortfolioItem : Identifiable {
-    public static func ==(lhs: PortfolioItem, rhs: PortfolioItem) -> Bool {
-        return lhs.name == rhs.name
-    }
 }

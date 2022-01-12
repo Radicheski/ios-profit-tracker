@@ -69,19 +69,3 @@ class CustomContentView: UIView, UIContentView {
     }
 
 }
-
-struct CustomContentConfiguration: UIContentConfiguration {
-
-    var title: String?
-    var weight: Decimal?
-    var price: Decimal?
-
-    func makeContentView() -> UIView & UIContentView {
-        return CustomContentView(self)
-    }
-
-    func updated(for state: UIConfigurationState) -> Self {
-        return self
-    }
-
-}

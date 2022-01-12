@@ -80,12 +80,3 @@ class PortfolioManagerDataSource: NSObject, UITableViewDataSource {
     }
 
 }
-
-extension PortfolioManagerDataSource: PortfolioManagerPresenterProtocol {
-
-    func load(data: [PortfolioItem]) {
-        self.data = data
-        self.viewController?.updateView()
-    }
-
-}
