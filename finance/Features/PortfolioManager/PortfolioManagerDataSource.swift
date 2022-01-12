@@ -42,6 +42,7 @@ class PortfolioManagerDataSource: NSObject, UITableViewDataSource {
             conf.secondaryText = Formatter.shared.percent.string(from: self.data[indexPath.row].weight)
             cell.editingAccessoryType = .detailButton
         } else {
+            cell.editingAccessoryType = .none
             if tableView.isEditing && indexPath.row == 0 {
                 conf.text = CustomLocalization.PortfolioManager.globalPortfolioNewItem
                 conf.secondaryText = nil
