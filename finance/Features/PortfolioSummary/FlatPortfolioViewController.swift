@@ -99,8 +99,8 @@ extension FlatPortfolioViewController: UITableViewDataSource {
             cell.contentConfiguration = conf
         } else {
             var conf = cell.defaultContentConfiguration()
-            conf.text = "Não alocado"
             conf.secondaryText = Formatter.shared.percent.string(from: Decimal())
+            conf.text = CustomLocalization.Summary.summaryUnallocated
             cell.contentConfiguration = conf
         }
         

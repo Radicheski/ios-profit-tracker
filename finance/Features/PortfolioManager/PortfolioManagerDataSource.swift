@@ -47,7 +47,7 @@ class PortfolioManagerDataSource: NSObject, UITableViewDataSource {
                 conf.text = CustomLocalization.PortfolioManager.globalPortfolioNewItem
                 conf.secondaryText = nil
             } else {
-                conf.text = "Não alocado"
+                conf.text = CustomLocalization.PortfolioManager.globalPortfolioUnallocated
                 conf.secondaryText = Formatter.shared.percent.string(from: Datastore.shared.getUnallocated(for: self.data[0].parentId))
             }
         }

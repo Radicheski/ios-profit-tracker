@@ -7,12 +7,12 @@
 */
 "globalPortfolioTabBarTitle" = "Portfolios";
 "globalPortfolioTitle" = "Global portfolio";
-"globalPortfolioUnallocated" = "Unallocated: %@%%";
+"globalPortfolioUnallocated" = "Unallocated";
 "globalPortfolioNewItem" = "New item";
 
 "summaryTabBarTitle" = "Summary";
 "summaryTitle" = "Summary";
-"summaryUnallocated" = "Unallocated: %@%%";
+"summaryUnallocated" = "Unallocated";
 
 "updateViewNameLabel" = "Name";
 "updateViewWeightLabel" = "Weight";

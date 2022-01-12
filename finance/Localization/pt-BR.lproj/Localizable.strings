@@ -7,12 +7,12 @@
 */
 "globalPortfolioTabBarTitle" = "Carteiras";
 "globalPortfolioTitle" = "Carteira global";
-"globalPortfolioUnallocated" = "Não alocado: %@%%";
+"globalPortfolioUnallocated" = "Não alocado";
 "globalPortfolioNewItem" = "Novo item";
 
 "summaryTabBarTitle" = "Resumo";
 "summaryTitle" = "Resumo";
-"summaryUnallocated" = "Não alocado: %@%%";
+"summaryUnallocated" = "Não alocado";
 
 "updateViewNameLabel" = "Nome";
 "updateViewWeightLabel" = "Alocação";
