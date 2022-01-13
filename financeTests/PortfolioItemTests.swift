@@ -29,6 +29,7 @@ class TestPortfolioItem: XCTestCase {
                 item.rank = object["rank"].intValue
                 item.weight = Decimal(string: object["weight"].stringValue, locale: nil)!
                 item.name = object["name"].stringValue
+                item.asset = object["asset"].boolValue
                 self.item.append(item)
             }
         }
