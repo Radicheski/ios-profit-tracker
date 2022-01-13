@@ -23,44 +23,31 @@ extension PortfolioItem {
     }
     
     public static func getItems(_ items: [PortfolioItem]) -> [PortfolioItem] {
-        var filtered = items.filter( { $0.parentId == nil } )
         
-        var result = [PortfolioItem]()
-        
-        while !filtered.isEmpty {
-            let firstItem = PortfolioItem()
-            firstItem.id = filtered[0].id
-            firstItem.parentId = filtered[0].parentId
-            firstItem.name = filtered[0].name
-            firstItem.weight = filtered[0].weight
-            filtered.remove(at: 0)
-            
-            items.filter( { $0.parentId == firstItem.id } ).forEach( {
-                let newItem = PortfolioItem()
-                newItem.id = $0.id
-                newItem.parentId = $0.parentId
-                newItem.name = $0.name
-                newItem.weight = $0.weight
-                newItem.weight *= firstItem.weight
-                if items.contains(where: { $0.parentId == newItem.id } ) {
-                    filtered.append(newItem)
-                } else {
-                    result.append(newItem)
-                }
-            } )
+        let map: [UUID?: PortfolioItem] = items.reduce(into: [:]) { dict, item in
+            dict[item.id] = item
         }
         
-        var map = [String: PortfolioItem]()
+        var result: [String: PortfolioItem] = [:]
         
-        for item in result {
-            if let _ = map[item.name] {
-                map[item.name]!.weight += item.weight
+        for item in items where item.asset {
+            var weight = item.weight
+            var parent = map[item.parentId]
+            while parent != nil {
+                weight *= parent!.weight
+                parent = map[parent!.parentId]
+            }
+            if result[item.name] == nil {
+                let newItem = PortfolioItem()
+                newItem.name = item.name
+                newItem.weight = weight
+                result[item.name] = newItem
             } else {
-                map[item.name] = item
+                result[item.name]?.weight += weight
             }
         }
-        Persistence.shared.saveContext()
-        return map.map( { $0.value } )
+        
+        return result.compactMap { $1 }
     }
     
 }
