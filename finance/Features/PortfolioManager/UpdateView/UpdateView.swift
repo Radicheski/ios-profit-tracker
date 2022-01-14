@@ -10,6 +10,7 @@ import UIKit
 class UpdateView: UIView {
     
     private var stackView: UIStackView = UIStackView()
+    private var allocationView: UIStackView = UIStackView()
     
     private var nameLabel: UILabel = UILabel()
     var nameTextField: UITextField = UITextField()
@@ -19,6 +20,9 @@ class UpdateView: UIView {
     
     private var parentLabel: UILabel = UILabel()
     var parentTextField: UITextField = UITextField()
+    
+    private var assetLabel: UILabel = UILabel()
+    var assetSwitch: UISwitch = UISwitch()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -78,11 +82,35 @@ class UpdateView: UIView {
             self.parentTextField.rightAnchor.constraint(equalTo: self.stackView.safeAreaLayoutGuide.rightAnchor),
         ])
         
+        
+        self.allocationView.axis = .horizontal
+        self.stackView.addArrangedSubview(self.allocationView)
+        self.allocationView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            self.allocationView.leftAnchor.constraint(equalTo: self.stackView.safeAreaLayoutGuide.leftAnchor),
+            self.allocationView.rightAnchor.constraint(equalTo: self.stackView.safeAreaLayoutGuide.rightAnchor),
+        ])
+        
+        self.allocationView.addArrangedSubview(self.assetLabel)
+        self.assetLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            self.assetLabel.topAnchor.constraint(equalTo: self.allocationView.safeAreaLayoutGuide.topAnchor),
+            self.assetLabel.bottomAnchor.constraint(equalTo: self.allocationView.safeAreaLayoutGuide.bottomAnchor),
+        ])
+        
+        self.allocationView.addArrangedSubview(self.assetSwitch)
+        self.assetSwitch.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            self.assetSwitch.topAnchor.constraint(equalTo: self.allocationView.safeAreaLayoutGuide.topAnchor),
+            self.assetSwitch.bottomAnchor.constraint(equalTo: self.allocationView.safeAreaLayoutGuide.bottomAnchor),
+        ])
+        
         self.parentTextField.isEnabled = false
         
         self.nameLabel.text = CustomLocalization.UpdateView.updateViewNameLabel
         self.weightLabel.text = CustomLocalization.UpdateView.updateViewWeightLabel
         self.parentLabel.text = CustomLocalization.UpdateView.updateViewParentLabel
+        self.assetLabel.text = CustomLocalization.UpdateView.updateViewPortfolioLabel
         
         [self.nameTextField, self.weightTextField, self.parentTextField].forEach({
             $0.borderStyle = .roundedRect
