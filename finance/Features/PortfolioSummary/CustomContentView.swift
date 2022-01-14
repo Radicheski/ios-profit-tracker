@@ -58,7 +58,7 @@ class CustomContentView: UIView, UIContentView {
                     let price = quote[0].vl_fechamento
                     DispatchQueue.main.async { [weak self] in
                         self?.priceLabel.text = Formatter.shared.currency.string(from: price)
-                        self?.priceLabel.textColor = .black
+                        self?.priceLabel.textColor = .label
                     }
                 } onError: { error in
                     #warning("Improve error handling")
