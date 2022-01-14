@@ -22,7 +22,7 @@ class UpdateView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .white
+        self.backgroundColor = .systemBackground
         
         self.addSubview(self.stackView)
         self.stackView.spacing = 5

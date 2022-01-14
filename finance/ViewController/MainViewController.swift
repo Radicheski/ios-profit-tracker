@@ -17,7 +17,7 @@ class MainViewController: UITabBarController {
         // Do any additional setup after loading the view.
 
         self.viewControllers = [self.porftolioManager, self.summary]
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .systemBackground
     }
 
 }

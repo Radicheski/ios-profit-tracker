@@ -51,7 +51,7 @@ class CustomContentView: UIView, UIContentView {
                 self.weightLabel.text = Formatter.shared.percent.string(from: weight)
             }
             self.priceLabel.text = "<N/D>"
-            self.priceLabel.textColor = .lightGray
+            self.priceLabel.textColor = .secondaryLabel
             if let title = conf.title {
                 let worker = NetworkWorker(ticker: title)
                 worker.getQuote { (quote: [Quote]) in
