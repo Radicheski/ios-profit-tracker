@@ -1,0 +1,2600 @@
+[
+  {
+    "date": "2017-05-23",
+    "ticker": "BBSE3",
+    "quantity": 100,
+    "total": 2874
+  },
+  {
+    "date": "2017-05-23",
+    "ticker": "HGJH11",
+    "quantity": 2,
+    "total": 2560
+  },
+  {
+    "date": "2017-05-23",
+    "ticker": "TAEE11",
+    "quantity": 100,
+    "total": 2271
+  },
+  {
+    "date": "2017-05-23",
+    "ticker": "MXRF11",
+    "quantity": 145,
+    "total": 1370.25
+  },
+  {
+    "date": "2017-05-23",
+    "ticker": "ENBR3",
+    "quantity": 100,
+    "total": 1289
+  },
+  {
+    "date": "2017-05-23",
+    "ticker": "TIET11",
+    "quantity": 100,
+    "total": 1289
+  },
+  {
+    "date": "2017-05-23",
+    "ticker": "KNIP11",
+    "quantity": 6,
+    "total": 626.94
+  },
+  {
+    "date": "2017-05-23",
+    "ticker": "JRDM11",
+    "quantity": 7,
+    "total": 595.98
+  },
+  {
+    "date": "2017-05-26",
+    "ticker": "EDGA11",
+    "quantity": 11,
+    "total": 538.89
+  },
+  {
+    "date": "2017-05-26",
+    "ticker": "FEXC11",
+    "quantity": 1,
+    "total": 92.5
+  },
+  {
+    "date": "2017-05-26",
+    "ticker": "FEXC11",
+    "quantity": 1,
+    "total": 92.5
+  },
+  {
+    "date": "2017-05-26",
+    "ticker": "EDGA11",
+    "quantity": 1,
+    "total": 48.99
+  },
+  {
+    "date": "2017-06-01",
+    "ticker": "ITSA4",
+    "quantity": 100,
+    "total": 880
+  },
+  {
+    "date": "2017-09-04",
+    "ticker": "PRSV11",
+    "quantity": 2,
+    "total": 862.22
+  },
+  {
+    "date": "2017-09-13",
+    "ticker": "CGRA4",
+    "quantity": 39,
+    "total": 972.27
+  },
+  {
+    "date": "2017-09-13",
+    "ticker": "MPLU3",
+    "quantity": 24,
+    "total": 966.72
+  },
+  {
+    "date": "2017-10-13",
+    "ticker": "BCRI11",
+    "quantity": 9,
+    "total": 967.5
+  },
+  {
+    "date": "2017-11-17",
+    "ticker": "GEPA4",
+    "quantity": 6,
+    "total": 257.4
+  },
+  {
+    "date": "2017-12-22",
+    "ticker": "RNGO11",
+    "quantity": 10,
+    "total": 928.1
+  },
+  {
+    "date": "2018-04-04",
+    "ticker": "MPLU3",
+    "quantity": 76,
+    "total": 2276.96
+  },
+  {
+    "date": "2018-04-05",
+    "ticker": "ITSA4",
+    "quantity": 2,
+    "total": 15.6
+  },
+  {
+    "date": "2018-04-12",
+    "ticker": "WIZS3",
+    "quantity": 100,
+    "total": 1100
+  },
+  {
+    "date": "2018-04-17",
+    "ticker": "HGJH11",
+    "quantity": 18,
+    "total": 0
+  },
+  {
+    "date": "2018-05-28",
+    "ticker": "CGRA4",
+    "quantity": 61,
+    "total": 1345.05
+  },
+  {
+    "date": "2018-05-30",
+    "ticker": "ITSA4",
+    "quantity": 10,
+    "total": 0
+  },
+  {
+    "date": "2018-06-01",
+    "ticker": "ECOR3",
+    "quantity": 100,
+    "total": 778
+  },
+  {
+    "date": "2018-06-22",
+    "ticker": "ITSA4",
+    "quantity": 100,
+    "total": 887
+  },
+  {
+    "date": "2018-06-25",
+    "ticker": "ITSA4",
+    "quantity": 69,
+    "total": 612.03
+  },
+  {
+    "date": "2018-06-25",
+    "ticker": "ITSA4",
+    "quantity": 19,
+    "total": 168.53
+  },
+  {
+    "date": "2018-10-22",
+    "ticker": "GGRC11",
+    "quantity": 9,
+    "total": 1107.9
+  },
+  {
+    "date": "2018-10-22",
+    "ticker": "VISC11",
+    "quantity": 7,
+    "total": 714
+  },
+  {
+    "date": "2018-10-22",
+    "ticker": "HGLG11",
+    "quantity": 4,
+    "total": 506.8
+  },
+  {
+    "date": "2018-10-22",
+    "ticker": "FIIB11",
+    "quantity": 1,
+    "total": 397.9
+  },
+  {
+    "date": "2018-10-22",
+    "ticker": "FEXC11",
+    "quantity": 1,
+    "total": 107.17
+  },
+  {
+    "date": "2018-10-22",
+    "ticker": "KNIP11",
+    "quantity": 1,
+    "total": 106.99
+  },
+  {
+    "date": "2018-10-24",
+    "ticker": "MALL11",
+    "quantity": 8,
+    "total": 793.44
+  },
+  {
+    "date": "2019-01-11",
+    "ticker": "HGJH11",
+    "quantity": -15,
+    "total": 2790
+  },
+  {
+    "date": "2019-01-11",
+    "ticker": "BCRI11",
+    "quantity": -9,
+    "total": 985.5
+  },
+  {
+    "date": "2019-01-11",
+    "ticker": "EDGA11",
+    "quantity": -12,
+    "total": 575.4
+  },
+  {
+    "date": "2019-01-11",
+    "ticker": "HGJH11",
+    "quantity": -3,
+    "total": 558
+  },
+  {
+    "date": "2019-01-11",
+    "ticker": "JRDM11",
+    "quantity": -7,
+    "total": 497
+  },
+  {
+    "date": "2019-01-11",
+    "ticker": "HGJH11",
+    "quantity": -2,
+    "total": 372
+  },
+  {
+    "date": "2019-01-11",
+    "ticker": "FEXC11",
+    "quantity": -2,
+    "total": 208.34
+  },
+  {
+    "date": "2019-01-11",
+    "ticker": "FEXC11",
+    "quantity": -1,
+    "total": 104.17
+  },
+  {
+    "date": "2019-01-16",
+    "ticker": "PRSV11",
+    "quantity": -2,
+    "total": 760
+  },
+  {
+    "date": "2019-02-25",
+    "ticker": "XPML11",
+    "quantity": 7,
+    "total": 734.93
+  },
+  {
+    "date": "2019-02-25",
+    "ticker": "VISC11",
+    "quantity": 2,
+    "total": 211.82
+  },
+  {
+    "date": "2019-02-26",
+    "ticker": "XPML11",
+    "quantity": 2,
+    "total": 210.6
+  },
+  {
+    "date": "2019-02-26",
+    "ticker": "RNGO11",
+    "quantity": 2,
+    "total": 163.52
+  },
+  {
+    "date": "2019-04-02",
+    "ticker": "MPLU3",
+    "quantity": -100,
+    "total": 2684
+  },
+  {
+    "date": "2019-04-03",
+    "ticker": "MALL11",
+    "quantity": 1,
+    "total": 106.92
+  },
+  {
+    "date": "2019-04-16",
+    "ticker": "FIIB11",
+    "quantity": 1,
+    "total": 438.49
+  },
+  {
+    "date": "2019-04-26",
+    "ticker": "GRND3",
+    "quantity": 100,
+    "total": 743
+  },
+  {
+    "date": "2019-05-21",
+    "ticker": "RBRR11",
+    "quantity": 9,
+    "total": 934.2
+  },
+  {
+    "date": "2019-05-22",
+    "ticker": "RBRR11",
+    "quantity": 1,
+    "total": 103.5
+  },
+  {
+    "date": "2019-05-30",
+    "ticker": "SULA11",
+    "quantity": 100,
+    "total": 3340
+  },
+  {
+    "date": "2019-05-30",
+    "ticker": "SUZB3",
+    "quantity": 100,
+    "total": 3325
+  },
+  {
+    "date": "2019-05-30",
+    "ticker": "LEVE3",
+    "quantity": 100,
+    "total": 2265
+  },
+  {
+    "date": "2019-05-30",
+    "ticker": "KLBN11",
+    "quantity": 100,
+    "total": 1548
+  },
+  {
+    "date": "2019-06-03",
+    "ticker": "MALL11",
+    "quantity": 1,
+    "total": 102.16
+  },
+  {
+    "date": "2019-06-06",
+    "ticker": "ALZR11",
+    "quantity": 9,
+    "total": 980.1
+  },
+  {
+    "date": "2019-07-18",
+    "ticker": "ALZR11",
+    "quantity": 1,
+    "total": 105.19
+  },
+  {
+    "date": "2019-08-05",
+    "ticker": "MXRF11",
+    "quantity": -145,
+    "total": 1706.65
+  },
+  {
+    "date": "2019-08-05",
+    "ticker": "HGCR11",
+    "quantity": 12,
+    "total": 1392
+  },
+  {
+    "date": "2019-08-05",
+    "ticker": "KNIP11",
+    "quantity": -7,
+    "total": 825.93
+  },
+  {
+    "date": "2019-08-05",
+    "ticker": "RNGO11",
+    "quantity": -9,
+    "total": 767.7
+  },
+  {
+    "date": "2019-08-05",
+    "ticker": "HGLG11",
+    "quantity": 3,
+    "total": 461.61
+  },
+  {
+    "date": "2019-08-05",
+    "ticker": "VISC11",
+    "quantity": 3,
+    "total": 335.37
+  },
+  {
+    "date": "2019-08-05",
+    "ticker": "RBRR11",
+    "quantity": 3,
+    "total": 323.7
+  },
+  {
+    "date": "2019-08-05",
+    "ticker": "ALZR11",
+    "quantity": 3,
+    "total": 315.6
+  },
+  {
+    "date": "2019-08-05",
+    "ticker": "HGLG11",
+    "quantity": 2,
+    "total": 307.7
+  },
+  {
+    "date": "2019-08-05",
+    "ticker": "RNGO11",
+    "quantity": -3,
+    "total": 255.9
+  },
+  {
+    "date": "2019-08-05",
+    "ticker": "MALL11",
+    "quantity": 2,
+    "total": 217
+  },
+  {
+    "date": "2019-08-08",
+    "ticker": "XPML11",
+    "quantity": 4,
+    "total": 419.72
+  },
+  {
+    "date": "2019-08-13",
+    "ticker": "MALL11",
+    "quantity": 1,
+    "total": 105.77
+  },
+  {
+    "date": "2019-08-27",
+    "ticker": "VISC11",
+    "quantity": 3,
+    "total": 324
+  },
+  {
+    "date": "2019-09-10",
+    "ticker": "ECOR3",
+    "quantity": -100,
+    "total": 1301
+  },
+  {
+    "date": "2019-09-13",
+    "ticker": "TIET11",
+    "quantity": 1,
+    "total": 10.29
+  },
+  {
+    "date": "2019-09-17",
+    "ticker": "MALL11",
+    "quantity": 20,
+    "total": 2030
+  },
+  {
+    "date": "2019-10-03",
+    "ticker": "RBRR11",
+    "quantity": 13,
+    "total": 1336.92
+  },
+  {
+    "date": "2019-10-09",
+    "ticker": "XPML11",
+    "quantity": 3,
+    "total": 329.04
+  },
+  {
+    "date": "2019-10-15",
+    "ticker": "RBRR11",
+    "quantity": 33,
+    "total": 3393.72
+  },
+  {
+    "date": "2019-11-01",
+    "ticker": "XPML11",
+    "quantity": 1,
+    "total": 109.68
+  },
+  {
+    "date": "2019-12-18",
+    "ticker": "HGCR11",
+    "quantity": 4,
+    "total": 440.2
+  },
+  {
+    "date": "2019-12-19",
+    "ticker": "VISC11",
+    "quantity": 4,
+    "total": 506
+  },
+  {
+    "date": "2020-01-10",
+    "ticker": "VISC11",
+    "quantity": 3,
+    "total": 379.5
+  },
+  {
+    "date": "2020-02-10",
+    "ticker": "GGRC11",
+    "quantity": -9,
+    "total": 1269
+  },
+  {
+    "date": "2020-03-13",
+    "ticker": "ITSA4",
+    "quantity": 100,
+    "total": 989
+  },
+  {
+    "date": "2020-03-13",
+    "ticker": "ITSA4",
+    "quantity": 100,
+    "total": 989
+  },
+  {
+    "date": "2020-03-23",
+    "ticker": "ABCB4",
+    "quantity": 44,
+    "total": 494.56
+  },
+  {
+    "date": "2020-03-30",
+    "ticker": "PETR4",
+    "quantity": 40,
+    "total": 537.2
+  },
+  {
+    "date": "2020-04-06",
+    "ticker": "WIZS3",
+    "quantity": 36,
+    "total": 330.84
+  },
+  {
+    "date": "2020-04-06",
+    "ticker": "ABCB4",
+    "quantity": 15,
+    "total": 194.4
+  },
+  {
+    "date": "2020-04-13",
+    "ticker": "EGIE3",
+    "quantity": 13,
+    "total": 500.24
+  },
+  {
+    "date": "2020-04-20",
+    "ticker": "EGIE3",
+    "quantity": 7,
+    "total": 276.57
+  },
+  {
+    "date": "2020-04-20",
+    "ticker": "WIZS3",
+    "quantity": 19,
+    "total": 167.01
+  },
+  {
+    "date": "2020-04-20",
+    "ticker": "WIZS3",
+    "quantity": 9,
+    "total": 79.11
+  },
+  {
+    "date": "2020-04-27",
+    "ticker": "VIVT3",
+    "quantity": 8,
+    "total": 377.44
+  },
+  {
+    "date": "2020-04-27",
+    "ticker": "WIZS3",
+    "quantity": 12,
+    "total": 111.48
+  },
+  {
+    "date": "2020-04-27",
+    "ticker": "VIVT3",
+    "quantity": 1,
+    "total": 47.18
+  },
+  {
+    "date": "2020-04-27",
+    "ticker": "ABCB4",
+    "quantity": 1,
+    "total": 13.44
+  },
+  {
+    "date": "2020-05-04",
+    "ticker": "VIVT3",
+    "quantity": 9,
+    "total": 428.13
+  },
+  {
+    "date": "2020-05-04",
+    "ticker": "EGIE3",
+    "quantity": 1,
+    "total": 38.55
+  },
+  {
+    "date": "2020-05-04",
+    "ticker": "WIZS3",
+    "quantity": 4,
+    "total": 34.44
+  },
+  {
+    "date": "2020-05-11",
+    "ticker": "UNIP6",
+    "quantity": 11,
+    "total": 249.15
+  },
+  {
+    "date": "2020-05-11",
+    "ticker": "PETR4",
+    "quantity": 5,
+    "total": 92.6
+  },
+  {
+    "date": "2020-05-11",
+    "ticker": "UNIP6",
+    "quantity": 4,
+    "total": 90.6
+  },
+  {
+    "date": "2020-05-11",
+    "ticker": "ENBR3",
+    "quantity": 4,
+    "total": 63.6
+  },
+  {
+    "date": "2020-05-11",
+    "ticker": "EGIE3",
+    "quantity": 1,
+    "total": 37.68
+  },
+  {
+    "date": "2020-05-18",
+    "ticker": "TUPY3",
+    "quantity": 25,
+    "total": 328.75
+  },
+  {
+    "date": "2020-05-18",
+    "ticker": "TUPY3",
+    "quantity": 16,
+    "total": 210.4
+  },
+  {
+    "date": "2020-05-25",
+    "ticker": "WIZS3",
+    "quantity": 30,
+    "total": 236.1
+  },
+  {
+    "date": "2020-05-25",
+    "ticker": "UNIP6",
+    "quantity": 5,
+    "total": 116
+  },
+  {
+    "date": "2020-05-25",
+    "ticker": "UNIP6",
+    "quantity": 4,
+    "total": 92.8
+  },
+  {
+    "date": "2020-05-25",
+    "ticker": "WIZS3",
+    "quantity": 6,
+    "total": 47.22
+  },
+  {
+    "date": "2020-05-25",
+    "ticker": "ABCB4",
+    "quantity": 1,
+    "total": 13.95
+  },
+  {
+    "date": "2020-06-01",
+    "ticker": "TUPY3",
+    "quantity": 17,
+    "total": 261.97
+  },
+  {
+    "date": "2020-06-01",
+    "ticker": "GRND3",
+    "quantity": 27,
+    "total": 196.56
+  },
+  {
+    "date": "2020-06-01",
+    "ticker": "VIVT3",
+    "quantity": 1,
+    "total": 47.31
+  },
+  {
+    "date": "2020-06-01",
+    "ticker": "ABCB4",
+    "quantity": 2,
+    "total": 28.96
+  },
+  {
+    "date": "2020-06-08",
+    "ticker": "UNIP6",
+    "quantity": 15,
+    "total": 403.05
+  },
+  {
+    "date": "2020-06-08",
+    "ticker": "ENBR3",
+    "quantity": 3,
+    "total": 55.05
+  },
+  {
+    "date": "2020-06-08",
+    "ticker": "VIVT3",
+    "quantity": 1,
+    "total": 48.35
+  },
+  {
+    "date": "2020-06-08",
+    "ticker": "ABCB4",
+    "quantity": 1,
+    "total": 15.26
+  },
+  {
+    "date": "2020-06-15",
+    "ticker": "UNIP6",
+    "quantity": 17,
+    "total": 408.85
+  },
+  {
+    "date": "2020-06-15",
+    "ticker": "PETR4",
+    "quantity": 3,
+    "total": 59.46
+  },
+  {
+    "date": "2020-06-15",
+    "ticker": "ABCB4",
+    "quantity": 3,
+    "total": 42.54
+  },
+  {
+    "date": "2020-06-15",
+    "ticker": "ENBR3",
+    "quantity": 1,
+    "total": 17.8
+  },
+  {
+    "date": "2020-06-15",
+    "ticker": "GRND3",
+    "quantity": 1,
+    "total": 7.49
+  },
+  {
+    "date": "2020-06-22",
+    "ticker": "UNIP6",
+    "quantity": 20,
+    "total": 474.4
+  },
+  {
+    "date": "2020-06-22",
+    "ticker": "ENBR3",
+    "quantity": 2,
+    "total": 36.52
+  },
+  {
+    "date": "2020-06-22",
+    "ticker": "GRND3",
+    "quantity": 1,
+    "total": 7.79
+  },
+  {
+    "date": "2020-06-29",
+    "ticker": "UNIP6",
+    "quantity": 14,
+    "total": 335.86
+  },
+  {
+    "date": "2020-06-29",
+    "ticker": "ENBR3",
+    "quantity": 3,
+    "total": 52.29
+  },
+  {
+    "date": "2020-06-29",
+    "ticker": "GRND3",
+    "quantity": 7,
+    "total": 50.54
+  },
+  {
+    "date": "2020-06-29",
+    "ticker": "EGIE3",
+    "quantity": 1,
+    "total": 42.2
+  },
+  {
+    "date": "2020-06-29",
+    "ticker": "ABCB4",
+    "quantity": 3,
+    "total": 42.03
+  },
+  {
+    "date": "2020-07-06",
+    "ticker": "UNIP6",
+    "quantity": 24,
+    "total": 588
+  },
+  {
+    "date": "2020-07-13",
+    "ticker": "UNIP6",
+    "quantity": 9,
+    "total": 223.29
+  },
+  {
+    "date": "2020-07-13",
+    "ticker": "IRDM11",
+    "quantity": 2,
+    "total": 218.52
+  },
+  {
+    "date": "2020-07-13",
+    "ticker": "ENBR3",
+    "quantity": 2,
+    "total": 35.36
+  },
+  {
+    "date": "2020-07-20",
+    "ticker": "RBRP11",
+    "quantity": 1,
+    "total": 84.99
+  },
+  {
+    "date": "2020-07-20",
+    "ticker": "RBRP11",
+    "quantity": 1,
+    "total": 84.99
+  },
+  {
+    "date": "2020-07-20",
+    "ticker": "RBRP11",
+    "quantity": 1,
+    "total": 84.99
+  },
+  {
+    "date": "2020-07-20",
+    "ticker": "RBRP11",
+    "quantity": 1,
+    "total": 84.99
+  },
+  {
+    "date": "2020-07-20",
+    "ticker": "RBRP11",
+    "quantity": 1,
+    "total": 84.99
+  },
+  {
+    "date": "2020-07-20",
+    "ticker": "RBRP11",
+    "quantity": 1,
+    "total": 84.99
+  },
+  {
+    "date": "2020-07-20",
+    "ticker": "HGCR11",
+    "quantity": -16,
+    "total": 1629.6
+  },
+  {
+    "date": "2020-07-27",
+    "ticker": "RBRP11",
+    "quantity": 5,
+    "total": 437.4
+  },
+  {
+    "date": "2020-07-27",
+    "ticker": "ABCB4",
+    "quantity": 4,
+    "total": 57.56
+  },
+  {
+    "date": "2020-07-27",
+    "ticker": "VIVT3",
+    "quantity": 1,
+    "total": 49.69
+  },
+  {
+    "date": "2020-07-27",
+    "ticker": "GRND3",
+    "quantity": 1,
+    "total": 7.77
+  },
+  {
+    "date": "2020-07-28",
+    "ticker": "ALZR11",
+    "quantity": 6,
+    "total": 690.06
+  },
+  {
+    "date": "2020-07-30",
+    "ticker": "RBRR11",
+    "quantity": 13,
+    "total": 1269.71
+  },
+  {
+    "date": "2020-07-30",
+    "ticker": "HGLG11",
+    "quantity": 4,
+    "total": 621.48
+  },
+  {
+    "date": "2020-08-03",
+    "ticker": "RBRP11",
+    "quantity": 5,
+    "total": 438.5
+  },
+  {
+    "date": "2020-08-03",
+    "ticker": "CVCB3",
+    "quantity": 3,
+    "total": 59.88
+  },
+  {
+    "date": "2020-08-03",
+    "ticker": "GRND3",
+    "quantity": 5,
+    "total": 37.6
+  },
+  {
+    "date": "2020-08-03",
+    "ticker": "ENBR3",
+    "quantity": 1,
+    "total": 18.35
+  },
+  {
+    "date": "2020-08-03",
+    "ticker": "ABCB4",
+    "quantity": 1,
+    "total": 14.16
+  },
+  {
+    "date": "2020-08-07",
+    "ticker": "ALZR11",
+    "quantity": 9,
+    "total": 1035.09
+  },
+  {
+    "date": "2020-08-10",
+    "ticker": "VRTA11",
+    "quantity": 2,
+    "total": 209.76
+  },
+  {
+    "date": "2020-08-10",
+    "ticker": "ENBR3",
+    "quantity": 6,
+    "total": 106.8
+  },
+  {
+    "date": "2020-08-10",
+    "ticker": "TUPY3",
+    "quantity": 4,
+    "total": 70
+  },
+  {
+    "date": "2020-08-10",
+    "ticker": "EGIE3",
+    "quantity": 1,
+    "total": 45
+  },
+  {
+    "date": "2020-08-10",
+    "ticker": "MYPK3",
+    "quantity": 2,
+    "total": 26.5
+  },
+  {
+    "date": "2020-08-10",
+    "ticker": "ABCB4",
+    "quantity": 1,
+    "total": 14.13
+  },
+  {
+    "date": "2020-09-04",
+    "ticker": "KLBN11",
+    "quantity": -100,
+    "total": 2510
+  },
+  {
+    "date": "2020-09-04",
+    "ticker": "TIET11",
+    "quantity": -100,
+    "total": 1490
+  },
+  {
+    "date": "2020-09-04",
+    "ticker": "HSML11",
+    "quantity": 15,
+    "total": 1402.2
+  },
+  {
+    "date": "2020-09-04",
+    "ticker": "VRTA11",
+    "quantity": 7,
+    "total": 729.89
+  },
+  {
+    "date": "2020-09-04",
+    "ticker": "VRTA11",
+    "quantity": 5,
+    "total": 521.35
+  },
+  {
+    "date": "2020-09-04",
+    "ticker": "ODPV3",
+    "quantity": 33,
+    "total": 434.61
+  },
+  {
+    "date": "2020-09-04",
+    "ticker": "ABCB4",
+    "quantity": 30,
+    "total": 416.7
+  },
+  {
+    "date": "2020-09-04",
+    "ticker": "VILG11",
+    "quantity": 2,
+    "total": 250.74
+  },
+  {
+    "date": "2020-09-04",
+    "ticker": "ABCB4",
+    "quantity": -15,
+    "total": 208.35
+  },
+  {
+    "date": "2020-09-04",
+    "ticker": "ABCB4",
+    "quantity": 14,
+    "total": 192.92
+  },
+  {
+    "date": "2020-09-04",
+    "ticker": "ABCB4",
+    "quantity": 7,
+    "total": 96.81
+  },
+  {
+    "date": "2020-09-04",
+    "ticker": "TUPY3",
+    "quantity": 3,
+    "total": 51.48
+  },
+  {
+    "date": "2020-09-04",
+    "ticker": "VIVT3",
+    "quantity": 1,
+    "total": 48.97
+  },
+  {
+    "date": "2020-09-04",
+    "ticker": "EGIE3",
+    "quantity": 1,
+    "total": 43.75
+  },
+  {
+    "date": "2020-09-04",
+    "ticker": "TIET11",
+    "quantity": -1,
+    "total": 14.91
+  },
+  {
+    "date": "2020-09-04",
+    "ticker": "ABCB4",
+    "quantity": 1,
+    "total": 13.83
+  },
+  {
+    "date": "2020-09-15",
+    "ticker": "ABCB4",
+    "quantity": 11,
+    "total": 144.65
+  },
+  {
+    "date": "2020-09-15",
+    "ticker": "ODPV3",
+    "quantity": 10,
+    "total": 126.2
+  },
+  {
+    "date": "2020-09-15",
+    "ticker": "CVCB3",
+    "quantity": 4,
+    "total": 70.72
+  },
+  {
+    "date": "2020-09-15",
+    "ticker": "PETR4",
+    "quantity": 2,
+    "total": 43.5
+  },
+  {
+    "date": "2020-09-15",
+    "ticker": "WIZS3",
+    "quantity": 2,
+    "total": 19.9
+  },
+  {
+    "date": "2020-09-15",
+    "ticker": "MYPK3",
+    "quantity": 1,
+    "total": 13.3
+  },
+  {
+    "date": "2020-09-17",
+    "ticker": "TUPY3",
+    "quantity": 1,
+    "total": 16.33
+  },
+  {
+    "date": "2020-09-17",
+    "ticker": "ABCB4",
+    "quantity": 1,
+    "total": 13.17
+  },
+  {
+    "date": "2020-09-22",
+    "ticker": "WIZS3",
+    "quantity": 12,
+    "total": 110.88
+  },
+  {
+    "date": "2020-09-22",
+    "ticker": "ABCB4",
+    "quantity": 2,
+    "total": 25.32
+  },
+  {
+    "date": "2020-09-22",
+    "ticker": "PETR4",
+    "quantity": 1,
+    "total": 20.93
+  },
+  {
+    "date": "2020-09-23",
+    "ticker": "WIZS3",
+    "quantity": 4,
+    "total": 36.8
+  },
+  {
+    "date": "2020-09-23",
+    "ticker": "TUPY3",
+    "quantity": 2,
+    "total": 31.66
+  },
+  {
+    "date": "2020-09-23",
+    "ticker": "CVCB3",
+    "quantity": 1,
+    "total": 16.37
+  },
+  {
+    "date": "2020-09-23",
+    "ticker": "ABCB4",
+    "quantity": 1,
+    "total": 12.57
+  },
+  {
+    "date": "2020-09-29",
+    "ticker": "WIZS3",
+    "quantity": 1,
+    "total": 9.11
+  },
+  {
+    "date": "2020-10-05",
+    "ticker": "ABCB4",
+    "quantity": 1,
+    "total": 11.98
+  },
+  {
+    "date": "2020-10-09",
+    "ticker": "ABCB4",
+    "quantity": 1,
+    "total": 12.44
+  },
+  {
+    "date": "2020-12-01",
+    "ticker": "SULA11",
+    "quantity": 1,
+    "total": 0
+  },
+  {
+    "date": "2020-12-02",
+    "ticker": "RBRR11",
+    "quantity": -72,
+    "total": 6774.48
+  },
+  {
+    "date": "2020-12-02",
+    "ticker": "MCCI11",
+    "quantity": 15,
+    "total": 1537.5
+  },
+  {
+    "date": "2020-12-02",
+    "ticker": "HGRU11",
+    "quantity": 12,
+    "total": 1503.6
+  },
+  {
+    "date": "2020-12-02",
+    "ticker": "XPLG11",
+    "quantity": 11,
+    "total": 1395.46
+  },
+  {
+    "date": "2020-12-02",
+    "ticker": "VILG11",
+    "quantity": 10,
+    "total": 1241.2
+  },
+  {
+    "date": "2020-12-02",
+    "ticker": "VIVT3",
+    "quantity": 17,
+    "total": 763.13
+  },
+  {
+    "date": "2020-12-02",
+    "ticker": "EGIE3",
+    "quantity": 3,
+    "total": 128.4
+  },
+  {
+    "date": "2020-12-02",
+    "ticker": "HSML11",
+    "quantity": 1,
+    "total": 93.05
+  },
+  {
+    "date": "2020-12-02",
+    "ticker": "ENBR3",
+    "quantity": 4,
+    "total": 75.96
+  },
+  {
+    "date": "2020-12-02",
+    "ticker": "VIVT3",
+    "quantity": 1,
+    "total": 45.01
+  },
+  {
+    "date": "2020-12-02",
+    "ticker": "GRND3",
+    "quantity": 3,
+    "total": 24.57
+  },
+  {
+    "date": "2020-12-02",
+    "ticker": "ODPV3",
+    "quantity": 1,
+    "total": 13.47
+  },
+  {
+    "date": "2020-12-04",
+    "ticker": "VGIP11",
+    "quantity": 4,
+    "total": 411.52
+  },
+  {
+    "date": "2020-12-04",
+    "ticker": "XPLG11",
+    "quantity": 1,
+    "total": 125.09
+  },
+  {
+    "date": "2020-12-08",
+    "ticker": "CVCB3",
+    "quantity": 2,
+    "total": 41.54
+  },
+  {
+    "date": "2020-12-09",
+    "ticker": "CVCB3",
+    "quantity": 1,
+    "total": 20.93
+  },
+  {
+    "date": "2020-12-09",
+    "ticker": "GRND3",
+    "quantity": 1,
+    "total": 8.16
+  },
+  {
+    "date": "2020-12-10",
+    "ticker": "GRND3",
+    "quantity": 1,
+    "total": 7.98
+  },
+  {
+    "date": "2020-12-16",
+    "ticker": "MYPK3",
+    "quantity": 4,
+    "total": 58.36
+  },
+  {
+    "date": "2021-01-13",
+    "ticker": "WIZS3",
+    "quantity": 9,
+    "total": 69.93
+  },
+  {
+    "date": "2021-01-26",
+    "ticker": "GEPA4",
+    "quantity": -6,
+    "total": 244.02
+  },
+  {
+    "date": "2021-01-26",
+    "ticker": "ELET3",
+    "quantity": 8,
+    "total": 224.8
+  },
+  {
+    "date": "2021-01-26",
+    "ticker": "GRND3",
+    "quantity": 2,
+    "total": 15.56
+  },
+  {
+    "date": "2021-01-26",
+    "ticker": "VILG11",
+    "quantity": 3,
+    "total": 354
+  },
+  {
+    "date": "2021-01-29",
+    "ticker": "ELET3",
+    "quantity": 1,
+    "total": 29.27
+  },
+  {
+    "date": "2021-01-29",
+    "ticker": "GRND3",
+    "quantity": 1,
+    "total": 7.88
+  },
+  {
+    "date": "2021-02-01",
+    "ticker": "SUZB3",
+    "quantity": -100,
+    "total": 6265
+  },
+  {
+    "date": "2021-02-01",
+    "ticker": "BTLG11",
+    "quantity": 11,
+    "total": 1252.46
+  },
+  {
+    "date": "2021-02-01",
+    "ticker": "MYPK3",
+    "quantity": 72,
+    "total": 1015.92
+  },
+  {
+    "date": "2021-02-01",
+    "ticker": "VGIP11",
+    "quantity": 9,
+    "total": 976.5
+  },
+  {
+    "date": "2021-02-01",
+    "ticker": "CVCB3",
+    "quantity": 51,
+    "total": 976.14
+  },
+  {
+    "date": "2021-02-01",
+    "ticker": "CCRO3",
+    "quantity": 47,
+    "total": 580.45
+  },
+  {
+    "date": "2021-02-01",
+    "ticker": "BBAS3",
+    "quantity": 16,
+    "total": 546.72
+  },
+  {
+    "date": "2021-02-01",
+    "ticker": "ELET3",
+    "quantity": 10,
+    "total": 306.9
+  },
+  {
+    "date": "2021-02-01",
+    "ticker": "BTLG11",
+    "quantity": 2,
+    "total": 227.72
+  },
+  {
+    "date": "2021-02-01",
+    "ticker": "VGIP11",
+    "quantity": 1,
+    "total": 108.4
+  },
+  {
+    "date": "2021-02-01",
+    "ticker": "GRND3",
+    "quantity": 5,
+    "total": 38.75
+  },
+  {
+    "date": "2021-02-01",
+    "ticker": "BBAS3",
+    "quantity": 1,
+    "total": 34.34
+  },
+  {
+    "date": "2021-02-01",
+    "ticker": "BBAS3",
+    "quantity": 1,
+    "total": 34.3
+  },
+  {
+    "date": "2021-02-01",
+    "ticker": "ELET3",
+    "quantity": 1,
+    "total": 30.56
+  },
+  {
+    "date": "2021-02-01",
+    "ticker": "ELET3",
+    "quantity": 1,
+    "total": 30.26
+  },
+  {
+    "date": "2021-02-01",
+    "ticker": "CCRO3",
+    "quantity": 2,
+    "total": 24.68
+  },
+  {
+    "date": "2021-02-01",
+    "ticker": "CVCB3",
+    "quantity": 1,
+    "total": 19.24
+  },
+  {
+    "date": "2021-02-01",
+    "ticker": "CVCB3",
+    "quantity": 1,
+    "total": 19.14
+  },
+  {
+    "date": "2021-02-01",
+    "ticker": "GRND3",
+    "quantity": 2,
+    "total": 15.46
+  },
+  {
+    "date": "2021-02-01",
+    "ticker": "GRND3",
+    "quantity": 2,
+    "total": 15.46
+  },
+  {
+    "date": "2021-02-01",
+    "ticker": "GRND3",
+    "quantity": 1,
+    "total": 7.72
+  },
+  {
+    "date": "2021-02-01",
+    "ticker": "GRND3",
+    "quantity": 1,
+    "total": 7.71
+  },
+  {
+    "date": "2021-02-03",
+    "ticker": "VILG11",
+    "quantity": 2,
+    "total": 236
+  },
+  {
+    "date": "2021-02-18",
+    "ticker": "ABCB4",
+    "quantity": 3,
+    "total": 36.04
+  },
+  {
+    "date": "2021-03-11",
+    "ticker": "RBRP11",
+    "quantity": 7,
+    "total": 617.89
+  },
+  {
+    "date": "2021-03-19",
+    "ticker": "RBRP11",
+    "quantity": 9,
+    "total": 794.43
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "UNIP6",
+    "quantity": -100,
+    "total": 6750
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "IVVB11",
+    "quantity": 14,
+    "total": 3470.32
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "ITSA4",
+    "quantity": -200,
+    "total": 2064
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "TAEE11",
+    "quantity": -48,
+    "total": 1779.36
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "LEVE3",
+    "quantity": -63,
+    "total": 1350.72
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "CGRA4",
+    "quantity": -45,
+    "total": 1287.9
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "BRAP4",
+    "quantity": 16,
+    "total": 1082.88
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "UNIP6",
+    "quantity": -13,
+    "total": 877.89
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "CGRA4",
+    "quantity": -30,
+    "total": 858.6
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "TFCO4",
+    "quantity": 66,
+    "total": 778.14
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "RAIL3",
+    "quantity": 39,
+    "total": 771.03
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "PNVL3",
+    "quantity": 41,
+    "total": 763.01
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "MDIA3",
+    "quantity": 25,
+    "total": 756.75
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "GMAT3",
+    "quantity": 100,
+    "total": 751
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "B3SA3",
+    "quantity": 14,
+    "total": 749.14
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "EQTL3",
+    "quantity": 33,
+    "total": 744.48
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "TAEE11",
+    "quantity": -19,
+    "total": 704.33
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "NEOE3",
+    "quantity": 42,
+    "total": 694.26
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "ALUP11",
+    "quantity": 27,
+    "total": 687.69
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "VIVT3",
+    "quantity": -14,
+    "total": 635.32
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "TUPY3",
+    "quantity": -30,
+    "total": 609.3
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "WIZS3",
+    "quantity": -73,
+    "total": 500.05
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "GRND3",
+    "quantity": -61,
+    "total": 473.36
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "EGIE3",
+    "quantity": -9,
+    "total": 369
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "VAMO3",
+    "quantity": 10,
+    "total": 367.5
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "UNIP6",
+    "quantity": -4,
+    "total": 272.88
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "CGRA4",
+    "quantity": -8,
+    "total": 228.96
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "MYPK3",
+    "quantity": 18,
+    "total": 212.22
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "CCRO3",
+    "quantity": -16,
+    "total": 192.64
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "ODPV3",
+    "quantity": -14,
+    "total": 185.36
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "CGRA4",
+    "quantity": -3,
+    "total": 85.86
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "ALUP11",
+    "quantity": 3,
+    "total": 76.41
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "BRAP4",
+    "quantity": 1,
+    "total": 67.68
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "NEOE3",
+    "quantity": 4,
+    "total": 66.16
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "TAEE11",
+    "quantity": -1,
+    "total": 37.05
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "TAEE11",
+    "quantity": -1,
+    "total": 37.05
+  },
+  {
+    "date": "2021-03-29",
+    "ticker": "GMAT3",
+    "quantity": 1,
+    "total": 7.5
+  },
+  {
+    "date": "2021-03-31",
+    "ticker": "SULA11",
+    "quantity": 6,
+    "total": 0
+  },
+  {
+    "date": "2021-04-12",
+    "ticker": "ITSA4",
+    "quantity": 5,
+    "total": 50.5
+  },
+  {
+    "date": "2021-04-12",
+    "ticker": "ITSA4",
+    "quantity": 4,
+    "total": 40.4
+  },
+  {
+    "date": "2021-04-12",
+    "ticker": "NEOE3",
+    "quantity": 2,
+    "total": 32.4
+  },
+  {
+    "date": "2021-04-12",
+    "ticker": "ITSA4",
+    "quantity": 1,
+    "total": 10.1
+  },
+  {
+    "date": "2021-04-15",
+    "ticker": "MDIA3",
+    "quantity": 2,
+    "total": 58.44
+  },
+  {
+    "date": "2021-04-15",
+    "ticker": "NEOE3",
+    "quantity": 1,
+    "total": 16.01
+  },
+  {
+    "date": "2021-04-15",
+    "ticker": "VGIP11",
+    "quantity": 6,
+    "total": 593.76
+  },
+  {
+    "date": "2021-04-23",
+    "ticker": "EGIE3",
+    "quantity": 2,
+    "total": 83.32
+  },
+  {
+    "date": "2021-04-29",
+    "ticker": "EGIE3",
+    "quantity": 1,
+    "total": 41.69
+  },
+  {
+    "date": "2021-04-29",
+    "ticker": "ITSA4",
+    "quantity": 2,
+    "total": 20.32
+  },
+  {
+    "date": "2021-04-29",
+    "ticker": "VGIP11",
+    "quantity": 2,
+    "total": 197.92
+  },
+  {
+    "date": "2021-04-30",
+    "ticker": "ITSA4",
+    "quantity": 1,
+    "total": 10.14
+  },
+  {
+    "date": "2021-04-30",
+    "ticker": "GRND3",
+    "quantity": 1,
+    "total": 7.97
+  },
+  {
+    "date": "2021-05-07",
+    "ticker": "EGIE3",
+    "quantity": 2,
+    "total": 79.94
+  },
+  {
+    "date": "2021-05-07",
+    "ticker": "ITSA4",
+    "quantity": 3,
+    "total": 30.75
+  },
+  {
+    "date": "2021-05-11",
+    "ticker": "GMAT3",
+    "quantity": 1,
+    "total": 7.82
+  },
+  {
+    "date": "2021-05-12",
+    "ticker": "ENBR3",
+    "quantity": 5,
+    "total": 91.95
+  },
+  {
+    "date": "2021-05-12",
+    "ticker": "ITSA4",
+    "quantity": 1,
+    "total": 10.31
+  },
+  {
+    "date": "2021-05-14",
+    "ticker": "EGIE3",
+    "quantity": 1,
+    "total": 40.15
+  },
+  {
+    "date": "2021-05-14",
+    "ticker": "PNVL3",
+    "quantity": 1,
+    "total": 18.31
+  },
+  {
+    "date": "2021-05-14",
+    "ticker": "ODPV3",
+    "quantity": 1,
+    "total": 13.17
+  },
+  {
+    "date": "2021-05-18",
+    "ticker": "B3SA3",
+    "quantity": 28,
+    "total": 0
+  },
+  {
+    "date": "2021-05-24",
+    "ticker": "GMAT3",
+    "quantity": 1,
+    "total": 7.89
+  },
+  {
+    "date": "2021-05-25",
+    "ticker": "EGIE3",
+    "quantity": 1,
+    "total": 41.06
+  },
+  {
+    "date": "2021-05-25",
+    "ticker": "GMAT3",
+    "quantity": 1,
+    "total": 7.99
+  },
+  {
+    "date": "2021-05-26",
+    "ticker": "BTLG11",
+    "quantity": 1,
+    "total": 109.5
+  },
+  {
+    "date": "2021-05-27",
+    "ticker": "EGIE3",
+    "quantity": 2,
+    "total": 81.4
+  },
+  {
+    "date": "2021-05-27",
+    "ticker": "ODPV3",
+    "quantity": 1,
+    "total": 12.77
+  },
+  {
+    "date": "2021-05-28",
+    "ticker": "EGIE3",
+    "quantity": 1,
+    "total": 39.85
+  },
+  {
+    "date": "2021-05-28",
+    "ticker": "ALUP11",
+    "quantity": 1,
+    "total": 27.32
+  },
+  {
+    "date": "2021-06-07",
+    "ticker": "CGRA4",
+    "quantity": -12,
+    "total": 403.8
+  },
+  {
+    "date": "2021-06-07",
+    "ticker": "ALUP11",
+    "quantity": 13,
+    "total": 365.56
+  },
+  {
+    "date": "2021-06-07",
+    "ticker": "CGRA4",
+    "quantity": -2,
+    "total": 67.3
+  },
+  {
+    "date": "2021-06-08",
+    "ticker": "EGIE3",
+    "quantity": 1,
+    "total": 41.03
+  },
+  {
+    "date": "2021-06-08",
+    "ticker": "ALUP11",
+    "quantity": 1,
+    "total": 28
+  },
+  {
+    "date": "2021-06-08",
+    "ticker": "ALUP11",
+    "quantity": 1,
+    "total": 27.99
+  },
+  {
+    "date": "2021-06-08",
+    "ticker": "ODPV3",
+    "quantity": 1,
+    "total": 12.9
+  },
+  {
+    "date": "2021-06-08",
+    "ticker": "GMAT3",
+    "quantity": 1,
+    "total": 7.97
+  },
+  {
+    "date": "2021-06-09",
+    "ticker": "BTLG11",
+    "quantity": 1,
+    "total": 109.5
+  },
+  {
+    "date": "2021-06-10",
+    "ticker": "RECR11",
+    "quantity": 13,
+    "total": 1333.02
+  },
+  {
+    "date": "2021-06-10",
+    "ticker": "ODPV3",
+    "quantity": 7,
+    "total": 89.88
+  },
+  {
+    "date": "2021-06-10",
+    "ticker": "BBAS3",
+    "quantity": 2,
+    "total": 71.52
+  },
+  {
+    "date": "2021-06-11",
+    "ticker": "LEVE3",
+    "quantity": -37,
+    "total": 1320.9
+  },
+  {
+    "date": "2021-06-11",
+    "ticker": "ODPV3",
+    "quantity": 19,
+    "total": 244.91
+  },
+  {
+    "date": "2021-06-11",
+    "ticker": "RECR11",
+    "quantity": 1,
+    "total": 101.8
+  },
+  {
+    "date": "2021-06-11",
+    "ticker": "B3SA3",
+    "quantity": 5,
+    "total": 80.2
+  },
+  {
+    "date": "2021-06-11",
+    "ticker": "BBAS3",
+    "quantity": 1,
+    "total": 35.49
+  },
+  {
+    "date": "2021-06-15",
+    "ticker": "VAMO3",
+    "quantity": 4,
+    "total": 215.56
+  },
+  {
+    "date": "2021-06-18",
+    "ticker": "CPLE6",
+    "quantity": 8,
+    "total": 50.64
+  },
+  {
+    "date": "2021-06-18",
+    "ticker": "CPLE6",
+    "quantity": 100,
+    "total": 632
+  },
+  {
+    "date": "2021-06-18",
+    "ticker": "CPLE6",
+    "quantity": 9,
+    "total": 56.88
+  },
+  {
+    "date": "2021-06-23",
+    "ticker": "FIIB11",
+    "quantity": -2,
+    "total": 974.42
+  },
+  {
+    "date": "2021-06-23",
+    "ticker": "PVBI11",
+    "quantity": 9,
+    "total": 862.38
+  },
+  {
+    "date": "2021-06-23",
+    "ticker": "PVBI11",
+    "quantity": 2,
+    "total": 191.62
+  },
+  {
+    "date": "2021-06-23",
+    "ticker": "PVBI11",
+    "quantity": 1,
+    "total": 95.83
+  },
+  {
+    "date": "2021-06-23",
+    "ticker": "ALZR11",
+    "quantity": 12,
+    "total": 1406.28
+  },
+  {
+    "date": "2021-06-25",
+    "ticker": "PVBI11",
+    "quantity": 1,
+    "total": 94.28
+  },
+  {
+    "date": "2021-06-25",
+    "ticker": "PVBI11",
+    "quantity": 1,
+    "total": 94.25
+  },
+  {
+    "date": "2021-06-25",
+    "ticker": "PVBI11",
+    "quantity": 1,
+    "total": 94.25
+  },
+  {
+    "date": "2021-06-25",
+    "ticker": "IRDM11",
+    "quantity": 8,
+    "total": 1013.6
+  },
+  {
+    "date": "2021-06-25",
+    "ticker": "CPLE6",
+    "quantity": 6,
+    "total": 37.02
+  },
+  {
+    "date": "2021-06-25",
+    "ticker": "BBAS3",
+    "quantity": 1,
+    "total": 33.53
+  },
+  {
+    "date": "2021-06-25",
+    "ticker": "PVB11",
+    "quantity": 1,
+    "total": 94.25
+  },
+  {
+    "date": "2021-06-25",
+    "ticker": "PVB11",
+    "quantity": 2,
+    "total": 188.5
+  },
+  {
+    "date": "2021-06-25",
+    "ticker": "PVB11",
+    "quantity": -3,
+    "total": 282.72
+  },
+  {
+    "date": "2021-06-25",
+    "ticker": "VGIP11",
+    "quantity": 10,
+    "total": 989.6
+  },
+  {
+    "date": "2021-06-29",
+    "ticker": "CPLE6",
+    "quantity": 1,
+    "total": 6.06
+  },
+  {
+    "date": "2021-06-29",
+    "ticker": "BBAS3",
+    "quantity": 1,
+    "total": 32.89
+  },
+  {
+    "date": "2021-07-06",
+    "ticker": "BRBI11",
+    "quantity": 34,
+    "total": 733.38
+  },
+  {
+    "date": "2021-07-07",
+    "ticker": "HSML11",
+    "quantity": -16,
+    "total": 1369.92
+  },
+  {
+    "date": "2021-07-12",
+    "ticker": "MOVI3",
+    "quantity": 23,
+    "total": 477.71
+  },
+  {
+    "date": "2021-07-26",
+    "ticker": "CVCB3",
+    "quantity": 7,
+    "total": 133.84
+  },
+  {
+    "date": "2021-07-13",
+    "ticker": "MOVI3",
+    "quantity": 6,
+    "total": 123.54
+  },
+  {
+    "date": "2021-07-13",
+    "ticker": "MOVI3",
+    "quantity": 7,
+    "total": 144.13
+  },
+  {
+    "date": "2021-07-15",
+    "ticker": "CPLE6",
+    "quantity": 2,
+    "total": 12.02
+  },
+  {
+    "date": "2021-07-15",
+    "ticker": "BRBI11",
+    "quantity": 3,
+    "total": 63.39
+  },
+  {
+    "date": "2021-07-12",
+    "ticker": "VGIP11",
+    "quantity": 11,
+    "total": 1088.56
+  },
+  {
+    "date": "2021-08-05",
+    "ticker": "IRDM11",
+    "quantity": 2,
+    "total": 202.82
+  },
+  {
+    "date": "2021-08-12",
+    "ticker": "HGLG11",
+    "quantity": 3,
+    "total": 480.96
+  },
+  {
+    "date": "2021-08-09",
+    "ticker": "CVCB3",
+    "quantity": 1,
+    "total": 19.12
+  },
+  {
+    "date": "2021-08-19",
+    "ticker": "IRDM11",
+    "quantity": 1,
+    "total": 101.41
+  },
+  {
+    "date": "2021-08-17",
+    "ticker": "VAMO3",
+    "quantity": 42,
+    "total": 0
+  },
+  {
+    "date": "2021-08-31",
+    "ticker": "IGTA3",
+    "quantity": 22,
+    "total": 770.44
+  },
+  {
+    "date": "2021-09-08",
+    "ticker": "BRKM5",
+    "quantity": 11,
+    "total": 734.69
+  },
+  {
+    "date": "2021-09-15",
+    "ticker": "EZTC3",
+    "quantity": 27,
+    "total": 710.1
+  },
+  {
+    "date": "2021-09-15",
+    "ticker": "CCRO3",
+    "quantity": 20,
+    "total": 234.4
+  },
+  {
+    "date": "2021-09-20",
+    "ticker": "MRVE3",
+    "quantity": 46,
+    "total": 620.54
+  },
+  {
+    "date": "2021-09-20",
+    "ticker": "MRVE3",
+    "quantity": 3,
+    "total": 40.98
+  },
+  {
+    "date": "2021-09-20",
+    "ticker": "CCRO3",
+    "quantity": 6,
+    "total": 68.46
+  },
+  {
+    "date": "2021-09-20",
+    "ticker": "RECR11",
+    "quantity": 1,
+    "total": 103.34
+  },
+  {
+    "date": "2021-09-20",
+    "ticker": "BRAP4",
+    "quantity": 2,
+    "total": 73.68088203
+  },
+  {
+    "date": "2021-09-22",
+    "ticker": "B3SA3",
+    "quantity": 1,
+    "total": 13.6
+  },
+  {
+    "date": "2021-09-24",
+    "ticker": "MRVE3",
+    "quantity": 1,
+    "total": 13.36
+  },
+  {
+    "date": "2021-09-24",
+    "ticker": "B3SA3",
+    "quantity": 1,
+    "total": 13.77
+  },
+  {
+    "date": "2021-10-11",
+    "ticker": "RECR11",
+    "quantity": 4,
+    "total": 392
+  },
+  {
+    "date": "2021-11-01",
+    "ticker": "EQTL3",
+    "quantity": -33,
+    "total": 761.97
+  },
+  {
+    "date": "2021-11-01",
+    "ticker": "TIMS3",
+    "quantity": 58,
+    "total": 662.36
+  },
+  {
+    "date": "2021-11-25",
+    "ticker": "VRTA11",
+    "quantity": 3,
+    "total": 292.08
+  },
+  {
+    "date": "2021-12-06",
+    "ticker": "IRDM11",
+    "quantity": 2,
+    "total": 199.5
+  },
+  {
+    "date": "2021-11-29",
+    "ticker": "XPLG11",
+    "quantity": 1,
+    "total": 88.78
+  },
+  {
+    "date": "2021-11-29",
+    "ticker": "EZTC3",
+    "quantity": 1,
+    "total": 18.72
+  },
+  {
+    "date": "2021-11-29",
+    "ticker": "CPLE6",
+    "quantity": 1,
+    "total": 6.13
+  },
+  {
+    "date": "2021-11-29",
+    "ticker": "BBAS3",
+    "quantity": 1,
+    "total": 31.37
+  },
+  {
+    "date": "2021-12-08",
+    "ticker": "VGIP11",
+    "quantity": 21,
+    "total": 2024.82
+  },
+  {
+    "date": "2021-11-23",
+    "ticker": "IGTA3",
+    "quantity": -22,
+    "total": 0
+  },
+  {
+    "date": "2021-11-23",
+    "ticker": "IGTI11",
+    "quantity": 3,
+    "total": 770.66
+  },
+  {
+    "date": "2021-12-14",
+    "ticker": "XPLG11",
+    "quantity": 1,
+    "total": 95.91
+  },
+  {
+    "date": "2021-12-14",
+    "ticker": "CPLE6",
+    "quantity": 3,
+    "total": 19.26
+  },
+  {
+    "date": "2021-12-15",
+    "ticker": "BBAS3",
+    "quantity": 2,
+    "total": 64.2
+  },
+  {
+    "date": "2021-12-15",
+    "ticker": "CPLE6",
+    "quantity": 3,
+    "total": 19.41
+  },
+  {
+    "date": "2021-12-16",
+    "ticker": "BBAS3",
+    "quantity": 1,
+    "total": 31.65
+  },
+  {
+    "date": "2021-12-21",
+    "ticker": "KLBN11",
+    "quantity": 21,
+    "total": 547.26
+  },
+  {
+    "date": "2021-12-20",
+    "ticker": "ITSA4",
+    "quantity": 15,
+    "total": 0
+  },
+  {
+    "date": "2021-12-22",
+    "ticker": "BBAS3",
+    "quantity": 1,
+    "total": 29.63
+  },
+  {
+    "date": "2021-12-22",
+    "ticker": "CPLE6",
+    "quantity": 2,
+    "total": 12.62
+  },
+  {
+    "date": "2021-12-22",
+    "ticker": "PNVL3",
+    "quantity": 1,
+    "total": 13.09
+  },
+  {
+    "date": "2021-12-20",
+    "ticker": "VALE3",
+    "quantity": 6,
+    "total": 241.552405662
+  },
+  {
+    "date": "2021-12-23",
+    "ticker": "BBAS3",
+    "quantity": 1,
+    "total": 29.23
+  },
+  {
+    "date": "2021-12-23",
+    "ticker": "PNVL3",
+    "quantity": 1,
+    "total": 12.82
+  },
+  {
+    "date": "2021-12-27",
+    "ticker": "CPLE6",
+    "quantity": 1,
+    "total": 6.37
+  },
+  {
+    "date": "2021-12-27",
+    "ticker": "PNVL3",
+    "quantity": 1,
+    "total": 12.93
+  },
+  {
+    "date": "2021-12-27",
+    "ticker": "B3SA3",
+    "quantity": 1,
+    "total": 11.43
+  },
+  {
+    "date": "2021-12-27",
+    "ticker": "KLBN11",
+    "quantity": 1,
+    "total": 26.06
+  },
+  {
+    "date": "2021-12-27",
+    "ticker": "IGTI11",
+    "quantity": 27,
+    "total": 0
+  },
+  {
+    "date": "2021-12-29",
+    "ticker": "B3SA3",
+    "quantity": 2,
+    "total": 22.26
+  },
+  {
+    "date": "2021-12-30",
+    "ticker": "BBAS3",
+    "quantity": 1,
+    "total": 29.04
+  },
+  {
+    "date": "2021-12-30",
+    "ticker": "EZTC3",
+    "quantity": 1,
+    "total": 20.1
+  },
+  {
+    "date": "2022-01-03",
+    "ticker": "MOVI3",
+    "quantity": 1,
+    "total": 15.83
+  },
+  {
+    "date": "2022-01-05",
+    "ticker": "MRVE3",
+    "quantity": 2,
+    "total": 21.6
+  },
+  {
+    "date": "2022-01-05",
+    "ticker": "EZTC3",
+    "quantity": 1,
+    "total": 18.52
+  },
+  {
+    "date": "2022-01-05",
+    "ticker": "MOVI3",
+    "quantity": 1,
+    "total": 14.66
+  },
+  {
+    "date": "2022-01-05",
+    "ticker": "PNVL3",
+    "quantity": 2,
+    "total": 24.04
+  },
+  {
+    "date": "2022-01-06",
+    "ticker": "EZTC3",
+    "quantity": 1,
+    "total": 18.07
+  },
+  {
+    "date": "2022-01-06",
+    "ticker": "PNVL3",
+    "quantity": 4,
+    "total": 45.64
+  },
+  {
+    "date": "2022-01-06",
+    "ticker": "MRVE3",
+    "quantity": 1,
+    "total": 10.57
+  },
+  {
+    "date": "2022-01-06",
+    "ticker": "MOVI3",
+    "quantity": 2,
+    "total": 28.02
+  },
+  {
+    "date": "2022-01-07",
+    "ticker": "CPLE6",
+    "quantity": 2,
+    "total": 12.18
+  },
+  {
+    "date": "2022-01-10",
+    "ticker": "CPLE6",
+    "quantity": 1,
+    "total": 6.06
+  },
+  {
+    "date": "2022-01-10",
+    "ticker": "MOVI3",
+    "quantity": 1,
+    "total": 13.51
+  },
+  {
+    "date": "2022-01-11",
+    "ticker": "EZTC3",
+    "quantity": 1,
+    "total": 17.9
+  },
+  {
+    "date": "2022-01-11",
+    "ticker": "MOVI3",
+    "quantity": 1,
+    "total": 13.54
+  }
+]

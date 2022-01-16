@@ -17,6 +17,7 @@
 		AD2810242787648C00BA4136 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2810232787648C00BA4136 /* Quote.swift */; };
 		AD2810272787676E00BA4136 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2810262787676E00BA4136 /* Formatter.swift */; };
 		AD281029278768B400BA4136 /* NumberFormatter+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD281028278768B400BA4136 /* NumberFormatter+extension.swift */; };
+		AD325C452791BFAC00CDBB24 /* transactions.json in Resources */ = {isa = PBXBuildFile; fileRef = AD325C442791BFAC00CDBB24 /* transactions.json */; };
 		AD36B05A2786197C00040D25 /* CustomLocalization+UpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B0592786197C00040D25 /* CustomLocalization+UpdateView.swift */; };
 		AD36B05D27864B3A00040D25 /* Datastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B05C27864B3A00040D25 /* Datastore.swift */; };
 		AD4BC666277A8DAD00593CEE /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */; };
@@ -24,6 +25,7 @@
 		AD58D52E272CC7E60047847C /* PortfolioItem+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58D52D272CC7E60047847C /* PortfolioItem+extension.swift */; };
 		AD77DF642784EDB600D6AB9D /* UpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD77DF632784EDB600D6AB9D /* UpdateView.swift */; };
 		AD77DF662784EFF300D6AB9D /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD77DF652784EFF300D6AB9D /* UpdateViewController.swift */; };
+		AD9F420927920F0D002A472F /* TransactionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9F420827920F0D002A472F /* TransactionTests.swift */; };
 		AD9F420C27921B0A002A472F /* Transaction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9F420A27921B0A002A472F /* Transaction+CoreDataClass.swift */; };
 		AD9F420D27921B0A002A472F /* Transaction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9F420B27921B0A002A472F /* Transaction+CoreDataProperties.swift */; };
 		ADAEFF2B27355D7700C7ABAE /* CustomLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEFF2A27355D7700C7ABAE /* CustomLocalization.swift */; };
@@ -83,6 +85,7 @@
 		AD2810232787648C00BA4136 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		AD2810262787676E00BA4136 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		AD281028278768B400BA4136 /* NumberFormatter+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+extension.swift"; sourceTree = "<group>"; };
+		AD325C442791BFAC00CDBB24 /* transactions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = transactions.json; sourceTree = "<group>"; };
 		AD36B0592786197C00040D25 /* CustomLocalization+UpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomLocalization+UpdateView.swift"; sourceTree = "<group>"; };
 		AD36B05C27864B3A00040D25 /* Datastore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datastore.swift; sourceTree = "<group>"; };
 		AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
@@ -90,6 +93,7 @@
 		AD58D52D272CC7E60047847C /* PortfolioItem+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+extension.swift"; sourceTree = "<group>"; };
 		AD77DF632784EDB600D6AB9D /* UpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateView.swift; sourceTree = "<group>"; };
 		AD77DF652784EFF300D6AB9D /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
+		AD9F420827920F0D002A472F /* TransactionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTests.swift; sourceTree = "<group>"; };
 		AD9F420A27921B0A002A472F /* Transaction+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AD9F420B27921B0A002A472F /* Transaction+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		ADAEFF2A27355D7700C7ABAE /* CustomLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocalization.swift; sourceTree = "<group>"; };
@@ -236,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				ADBBC31927825FE80068D066 /* PortfolioItemTests.swift */,
+				AD9F420827920F0D002A472F /* TransactionTests.swift */,
 			);
 			path = financeTests;
 			sourceTree = "<group>";
@@ -326,6 +331,7 @@
 			children = (
 				ADEB66AB272C3279002AFAE3 /* portfolio.json */,
 				AD58D52A272CC0E60047847C /* portfolioExpected.json */,
+				AD325C442791BFAC00CDBB24 /* transactions.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -479,6 +485,7 @@
 			files = (
 				ADBD415D272B3B1F00BB3327 /* LaunchScreen.storyboard in Resources */,
 				ADAEFF2E273560D400C7ABAE /* Localizable.strings in Resources */,
+				AD325C452791BFAC00CDBB24 /* transactions.json in Resources */,
 				ADEB66AC272C3279002AFAE3 /* portfolio.json in Resources */,
 				AD58D52B272CC0E60047847C /* portfolioExpected.json in Resources */,
 				ADBD415A272B3B1F00BB3327 /* Assets.xcassets in Resources */,
@@ -493,6 +500,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9F420927920F0D002A472F /* TransactionTests.swift in Sources */,
 				ADBBC31A27825FE80068D066 /* PortfolioItemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
