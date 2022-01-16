@@ -27,6 +27,8 @@
 		AD36D8AC279492B60043EB93 /* UpdateTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8AB279492B60043EB93 /* UpdateTransactionView.swift */; };
 		AD36D8AE279492DD0043EB93 /* CustomLocalization+Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8AD279492DD0043EB93 /* CustomLocalization+Transactions.swift */; };
 		AD36D8B0279492F30043EB93 /* TransactionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8AF279492F30043EB93 /* TransactionDataStore.swift */; };
+		AD36D8B22794930F0043EB93 /* TransactionsViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8B12794930F0043EB93 /* TransactionsViewController+UITableViewDataSource.swift */; };
+		AD36D8B42794933F0043EB93 /* TransactionsViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8B32794933F0043EB93 /* TransactionsViewController+UITableViewDelegate.swift */; };
 		AD4BC666277A8DAD00593CEE /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */; };
 		AD58D52B272CC0E60047847C /* portfolioExpected.json in Resources */ = {isa = PBXBuildFile; fileRef = AD58D52A272CC0E60047847C /* portfolioExpected.json */; };
 		AD58D52E272CC7E60047847C /* PortfolioItem+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58D52D272CC7E60047847C /* PortfolioItem+extension.swift */; };
@@ -102,6 +104,8 @@
 		AD36D8AB279492B60043EB93 /* UpdateTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTransactionView.swift; sourceTree = "<group>"; };
 		AD36D8AD279492DD0043EB93 /* CustomLocalization+Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomLocalization+Transactions.swift"; sourceTree = "<group>"; };
 		AD36D8AF279492F30043EB93 /* TransactionDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDataStore.swift; sourceTree = "<group>"; };
+		AD36D8B12794930F0043EB93 /* TransactionsViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionsViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		AD36D8B32794933F0043EB93 /* TransactionsViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionsViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
 		AD58D52A272CC0E60047847C /* portfolioExpected.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portfolioExpected.json; sourceTree = "<group>"; };
 		AD58D52D272CC7E60047847C /* PortfolioItem+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+extension.swift"; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 				AD36D8A9279492860043EB93 /* UpdateTransactionViewController.swift */,
 				AD36D8AB279492B60043EB93 /* UpdateTransactionView.swift */,
 				AD36D8AD279492DD0043EB93 /* CustomLocalization+Transactions.swift */,
+				AD36D8B12794930F0043EB93 /* TransactionsViewController+UITableViewDataSource.swift */,
+				AD36D8B32794933F0043EB93 /* TransactionsViewController+UITableViewDelegate.swift */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -552,6 +558,7 @@
 				ADC3F687278F623F0087294D /* PortfolioManagerDataSource+PortfolioManagerPresenterProtocol.swift in Sources */,
 				ADC3F683278F61D30087294D /* FlatPortfolioViewController+PortfolioManagerInteractorProtocol.swift in Sources */,
 				AD19B71B277E3A8A00D459EA /* PortfolioInteractor.swift in Sources */,
+				AD36D8B22794930F0043EB93 /* TransactionsViewController+UITableViewDataSource.swift in Sources */,
 				ADCEFF9F2730AC9400E33A7D /* PortfolioMock.swift in Sources */,
 				AD9F420D27921B0A002A472F /* Transaction+CoreDataProperties.swift in Sources */,
 				AD36D8AE279492DD0043EB93 /* CustomLocalization+Transactions.swift in Sources */,
@@ -590,6 +597,7 @@
 				EBDF37D6FE10FAB0EFB1E38E /* SummaryNavigationController.swift in Sources */,
 				EBDF37EB6D58FC11B4EE5387 /* CustomContentView.swift in Sources */,
 				ADC3F681278F619B0087294D /* FlatPortfolioViewController+PortfolioManagerPresenterProtocol.swift in Sources */,
+				AD36D8B42794933F0043EB93 /* TransactionsViewController+UITableViewDelegate.swift in Sources */,
 				AD77DF662784EFF300D6AB9D /* UpdateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
