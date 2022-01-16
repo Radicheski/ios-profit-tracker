@@ -18,3 +18,7 @@
 "updateViewWeightLabel" = "Weight";
 "updateViewParentLabel" = "Parent portfolio";
 "updateViewPortfolioLabel" = "Portfolio";
+
+"transactionsTabBarTitle" = "Transactions";
+"transactionTitle" = "Transactions";
+"newTransaction" = "New transaction";
