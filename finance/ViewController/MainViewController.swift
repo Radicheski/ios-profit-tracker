@@ -11,12 +11,18 @@ class MainViewController: UITabBarController {
 
     let porftolioManager = PortfolioNavigationController(rootViewController: PortfolioViewController(parentId: nil))
     let summary = SummaryNavigationController(rootViewController: FlatPortfolioViewController(parentId: nil))
+    let transactions: UINavigationController = {
+        let viewController = UINavigationController(rootViewController: TransactionsViewController())
+        viewController.tabBarItem.title = CustomLocalization.Transactions.transactionsTabBarTitle
+        viewController.tabBarItem.image = UIImage(systemName: "banknote")
+        return viewController
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
-        self.viewControllers = [self.porftolioManager, self.summary]
+        self.viewControllers = [self.porftolioManager, self.summary, self.transactions]
         self.view.backgroundColor = .systemBackground
     }
 

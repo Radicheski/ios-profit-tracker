@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD162AC12792F32A00E77FC1 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD162AC02792F32A00E77FC1 /* TransactionsViewController.swift */; };
 		AD162AC427934D2F00E77FC1 /* TransactionContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD162AC327934D2F00E77FC1 /* TransactionContentView.swift */; };
 		AD19B71B277E3A8A00D459EA /* PortfolioInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B71A277E3A8A00D459EA /* PortfolioInteractor.swift */; };
 		AD19B742277E402600D459EA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B741277E402600D459EA /* Persistence.swift */; };
@@ -79,6 +80,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD162AC02792F32A00E77FC1 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		AD162AC327934D2F00E77FC1 /* TransactionContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionContentView.swift; sourceTree = "<group>"; };
 		AD19B71A277E3A8A00D459EA /* PortfolioInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioInteractor.swift; sourceTree = "<group>"; };
 		AD19B741277E402600D459EA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 		AD162ABF2792F2FF00E77FC1 /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
+				AD162AC02792F32A00E77FC1 /* TransactionsViewController.swift */,
 				AD162AC327934D2F00E77FC1 /* TransactionContentView.swift */,
 				AD36D8A7279492290043EB93 /* TransactionContentConfiguration.swift */,
 				AD36D8AD279492DD0043EB93 /* CustomLocalization+Transactions.swift */,
@@ -550,6 +553,7 @@
 				EBDF39F8E6CAF29F6EFDEDD3 /* PortfolioManagerPresenterProtocol.swift in Sources */,
 				ADC3F67D278F611B0087294D /* CustomContentConfiguration.swift in Sources */,
 				AD162AC427934D2F00E77FC1 /* TransactionContentView.swift in Sources */,
+				AD162AC12792F32A00E77FC1 /* TransactionsViewController.swift in Sources */,
 				EBDF36A1D646D7942F5C3608 /* PortfolioManagerViewControllerProtocol.swift in Sources */,
 				EBDF3A2AC00A3CB4502C1CD8 /* PortfolioViewController.swift in Sources */,
 				AD2810272787676E00BA4136 /* Formatter.swift in Sources */,
