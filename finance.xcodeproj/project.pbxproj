@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD162AC427934D2F00E77FC1 /* TransactionContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD162AC327934D2F00E77FC1 /* TransactionContentView.swift */; };
 		AD19B71B277E3A8A00D459EA /* PortfolioInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B71A277E3A8A00D459EA /* PortfolioInteractor.swift */; };
 		AD19B742277E402600D459EA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B741277E402600D459EA /* Persistence.swift */; };
 		AD19B7452782217700D459EA /* FinanceModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD19B7432782217700D459EA /* FinanceModel.xcdatamodeld */; };
@@ -20,6 +21,7 @@
 		AD325C452791BFAC00CDBB24 /* transactions.json in Resources */ = {isa = PBXBuildFile; fileRef = AD325C442791BFAC00CDBB24 /* transactions.json */; };
 		AD36B05A2786197C00040D25 /* CustomLocalization+UpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B0592786197C00040D25 /* CustomLocalization+UpdateView.swift */; };
 		AD36B05D27864B3A00040D25 /* Datastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B05C27864B3A00040D25 /* Datastore.swift */; };
+		AD36D8A8279492290043EB93 /* TransactionContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8A7279492290043EB93 /* TransactionContentConfiguration.swift */; };
 		AD4BC666277A8DAD00593CEE /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */; };
 		AD58D52B272CC0E60047847C /* portfolioExpected.json in Resources */ = {isa = PBXBuildFile; fileRef = AD58D52A272CC0E60047847C /* portfolioExpected.json */; };
 		AD58D52E272CC7E60047847C /* PortfolioItem+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58D52D272CC7E60047847C /* PortfolioItem+extension.swift */; };
@@ -75,6 +77,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD162AC327934D2F00E77FC1 /* TransactionContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionContentView.swift; sourceTree = "<group>"; };
 		AD19B71A277E3A8A00D459EA /* PortfolioInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioInteractor.swift; sourceTree = "<group>"; };
 		AD19B741277E402600D459EA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		AD19B7442782217700D459EA /* FinanceModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinanceModel.xcdatamodel; sourceTree = "<group>"; };
@@ -88,6 +91,7 @@
 		AD325C442791BFAC00CDBB24 /* transactions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = transactions.json; sourceTree = "<group>"; };
 		AD36B0592786197C00040D25 /* CustomLocalization+UpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomLocalization+UpdateView.swift"; sourceTree = "<group>"; };
 		AD36B05C27864B3A00040D25 /* Datastore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datastore.swift; sourceTree = "<group>"; };
+		AD36D8A7279492290043EB93 /* TransactionContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionContentConfiguration.swift; sourceTree = "<group>"; };
 		AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
 		AD58D52A272CC0E60047847C /* portfolioExpected.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portfolioExpected.json; sourceTree = "<group>"; };
 		AD58D52D272CC7E60047847C /* PortfolioItem+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+extension.swift"; sourceTree = "<group>"; };
@@ -154,6 +158,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD162ABF2792F2FF00E77FC1 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				AD162AC327934D2F00E77FC1 /* TransactionContentView.swift */,
+				AD36D8A7279492290043EB93 /* TransactionContentConfiguration.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
 		AD162AC22792F92C00E77FC1 /* Transaction */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,6 +401,7 @@
 		EBDF3D33351F47B826444740 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				AD162ABF2792F2FF00E77FC1 /* Transactions */,
 				EBDF332B5FD4B2EE327BA42F /* PortfolioManager */,
 				EBDF3A51A9C3FC237753426D /* PortfolioSummary */,
 			);
@@ -528,6 +542,7 @@
 				EBDF3CBFB487E408A8715447 /* PortfolioManagerInteractorProtocol.swift in Sources */,
 				EBDF39F8E6CAF29F6EFDEDD3 /* PortfolioManagerPresenterProtocol.swift in Sources */,
 				ADC3F67D278F611B0087294D /* CustomContentConfiguration.swift in Sources */,
+				AD162AC427934D2F00E77FC1 /* TransactionContentView.swift in Sources */,
 				EBDF36A1D646D7942F5C3608 /* PortfolioManagerViewControllerProtocol.swift in Sources */,
 				EBDF3A2AC00A3CB4502C1CD8 /* PortfolioViewController.swift in Sources */,
 				AD2810272787676E00BA4136 /* Formatter.swift in Sources */,
@@ -544,6 +559,7 @@
 				ADC3F68B278F627E0087294D /* PortfolioViewController+UITableViewDelegate.swift in Sources */,
 				EBDF390411B3C133386EA80A /* PortfolioManagerDataSource.swift in Sources */,
 				EBDF31C01E60772D94B461A1 /* FlatPortfolioViewController.swift in Sources */,
+				AD36D8A8279492290043EB93 /* TransactionContentConfiguration.swift in Sources */,
 				AD77DF642784EDB600D6AB9D /* UpdateView.swift in Sources */,
 				AD2810242787648C00BA4136 /* Quote.swift in Sources */,
 				AD9F420C27921B0A002A472F /* Transaction+CoreDataClass.swift in Sources */,
