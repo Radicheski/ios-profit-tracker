@@ -23,6 +23,7 @@
 		AD36B05D27864B3A00040D25 /* Datastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B05C27864B3A00040D25 /* Datastore.swift */; };
 		AD36D8A8279492290043EB93 /* TransactionContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8A7279492290043EB93 /* TransactionContentConfiguration.swift */; };
 		AD36D8AE279492DD0043EB93 /* CustomLocalization+Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8AD279492DD0043EB93 /* CustomLocalization+Transactions.swift */; };
+		AD36D8B0279492F30043EB93 /* TransactionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8AF279492F30043EB93 /* TransactionDataStore.swift */; };
 		AD4BC666277A8DAD00593CEE /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */; };
 		AD58D52B272CC0E60047847C /* portfolioExpected.json in Resources */ = {isa = PBXBuildFile; fileRef = AD58D52A272CC0E60047847C /* portfolioExpected.json */; };
 		AD58D52E272CC7E60047847C /* PortfolioItem+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58D52D272CC7E60047847C /* PortfolioItem+extension.swift */; };
@@ -94,6 +95,7 @@
 		AD36B05C27864B3A00040D25 /* Datastore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datastore.swift; sourceTree = "<group>"; };
 		AD36D8A7279492290043EB93 /* TransactionContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionContentConfiguration.swift; sourceTree = "<group>"; };
 		AD36D8AD279492DD0043EB93 /* CustomLocalization+Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomLocalization+Transactions.swift"; sourceTree = "<group>"; };
+		AD36D8AF279492F30043EB93 /* TransactionDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDataStore.swift; sourceTree = "<group>"; };
 		AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
 		AD58D52A272CC0E60047847C /* portfolioExpected.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portfolioExpected.json; sourceTree = "<group>"; };
 		AD58D52D272CC7E60047847C /* PortfolioItem+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+extension.swift"; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				AD36B05C27864B3A00040D25 /* Datastore.swift */,
+				AD36D8AF279492F30043EB93 /* TransactionDataStore.swift */,
 			);
 			path = Datastore;
 			sourceTree = "<group>";
@@ -552,6 +555,7 @@
 				AD2810272787676E00BA4136 /* Formatter.swift in Sources */,
 				AD28102227875A0700BA4136 /* NetworkWorker.swift in Sources */,
 				AD36B05D27864B3A00040D25 /* Datastore.swift in Sources */,
+				AD36D8B0279492F30043EB93 /* TransactionDataStore.swift in Sources */,
 				AD4BC666277A8DAD00593CEE /* UITableView+extension.swift in Sources */,
 				ADAEFF2B27355D7700C7ABAE /* CustomLocalization.swift in Sources */,
 				EBDF34580807606EE48EFD90 /* PortfolioNavigationController.swift in Sources */,
