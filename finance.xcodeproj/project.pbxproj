@@ -23,6 +23,7 @@
 		AD36B05A2786197C00040D25 /* CustomLocalization+UpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B0592786197C00040D25 /* CustomLocalization+UpdateView.swift */; };
 		AD36B05D27864B3A00040D25 /* Datastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B05C27864B3A00040D25 /* Datastore.swift */; };
 		AD36D8A8279492290043EB93 /* TransactionContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8A7279492290043EB93 /* TransactionContentConfiguration.swift */; };
+		AD36D8AA279492860043EB93 /* UpdateTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8A9279492860043EB93 /* UpdateTransactionViewController.swift */; };
 		AD36D8AC279492B60043EB93 /* UpdateTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8AB279492B60043EB93 /* UpdateTransactionView.swift */; };
 		AD36D8AE279492DD0043EB93 /* CustomLocalization+Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8AD279492DD0043EB93 /* CustomLocalization+Transactions.swift */; };
 		AD36D8B0279492F30043EB93 /* TransactionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8AF279492F30043EB93 /* TransactionDataStore.swift */; };
@@ -97,6 +98,7 @@
 		AD36B0592786197C00040D25 /* CustomLocalization+UpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomLocalization+UpdateView.swift"; sourceTree = "<group>"; };
 		AD36B05C27864B3A00040D25 /* Datastore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datastore.swift; sourceTree = "<group>"; };
 		AD36D8A7279492290043EB93 /* TransactionContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionContentConfiguration.swift; sourceTree = "<group>"; };
+		AD36D8A9279492860043EB93 /* UpdateTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTransactionViewController.swift; sourceTree = "<group>"; };
 		AD36D8AB279492B60043EB93 /* UpdateTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTransactionView.swift; sourceTree = "<group>"; };
 		AD36D8AD279492DD0043EB93 /* CustomLocalization+Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomLocalization+Transactions.swift"; sourceTree = "<group>"; };
 		AD36D8AF279492F30043EB93 /* TransactionDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDataStore.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				AD162AC02792F32A00E77FC1 /* TransactionsViewController.swift */,
 				AD162AC327934D2F00E77FC1 /* TransactionContentView.swift */,
 				AD36D8A7279492290043EB93 /* TransactionContentConfiguration.swift */,
+				AD36D8A9279492860043EB93 /* UpdateTransactionViewController.swift */,
 				AD36D8AB279492B60043EB93 /* UpdateTransactionView.swift */,
 				AD36D8AD279492DD0043EB93 /* CustomLocalization+Transactions.swift */,
 			);
@@ -565,6 +568,7 @@
 				AD36D8B0279492F30043EB93 /* TransactionDataStore.swift in Sources */,
 				AD4BC666277A8DAD00593CEE /* UITableView+extension.swift in Sources */,
 				ADAEFF2B27355D7700C7ABAE /* CustomLocalization.swift in Sources */,
+				AD36D8AA279492860043EB93 /* UpdateTransactionViewController.swift in Sources */,
 				AD36D8AC279492B60043EB93 /* UpdateTransactionView.swift in Sources */,
 				EBDF34580807606EE48EFD90 /* PortfolioNavigationController.swift in Sources */,
 				ADC3F685278F61DC0087294D /* FlatPortfolioViewController+UITableViewDataSource.swift in Sources */,
