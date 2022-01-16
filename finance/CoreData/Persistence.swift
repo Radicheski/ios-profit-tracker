@@ -11,6 +11,10 @@ class Persistence {
     
     static var shared = Persistence()
     
+    var context: NSManagedObjectContext {
+        get { self.persistentContainer.viewContext }
+    }
+    
     private init() {}
     
     // MARK: - Core Data stack

@@ -66,4 +66,10 @@ class TestPortfolioItem: XCTestCase {
         }
     }
     
+    func testGetItemsPerfomance() {
+        self.measure {
+            PortfolioItem.getItems(self.item)
+        }
+    }
+    
 }

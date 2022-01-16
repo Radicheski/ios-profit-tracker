@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct Formatter {
+public struct Formatter {
     
-    static var shared = Formatter()
+    public static var shared = Formatter()
     
-    lazy var percent: NumberFormatter = {
+    private(set) public lazy var percent: NumberFormatter = {
         let formatter = NumberFormatter()
         
         formatter.numberStyle = .percent
@@ -22,10 +22,26 @@ struct Formatter {
         return formatter
     }()
     
-    lazy var currency: NumberFormatter = {
+    private(set) public lazy var currency: NumberFormatter = {
         let formatter = NumberFormatter()
         
         formatter.numberStyle = .currency
+        
+        return formatter
+    }()
+    
+    private(set) public lazy var date: DateFormatter = {
+        let formatter = DateFormatter()
+        
+        formatter.dateStyle = .short
+        
+        return formatter
+    }()
+    
+    private(set) public lazy var isoDate: ISO8601DateFormatter = {
+        let formatter = ISO8601DateFormatter()
+        
+        formatter.formatOptions = .withFullDate
         
         return formatter
     }()

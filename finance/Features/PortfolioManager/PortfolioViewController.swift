@@ -39,16 +39,14 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
     
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
-        if let view = self.view as? PortfolioView {
-            view.tableView.setEditing(editing, animated: animated)
-            if editing {
-                let indexPath = IndexPath(row: 0, section: 1)
-                view.tableView.insertRows(at: [indexPath], with: .automatic)
-                view.tableView.scrollToBottom(at: .none, animated: true)
-            } else {
-                Persistence.shared.saveContext()
-                view.tableView.deleteRows(at: [IndexPath(row: 0, section: 1)], with: .automatic)
-            }
+        self.customView.tableView.setEditing(editing, animated: animated)
+        let indexPath = IndexPath(row: 0, section: 1)
+        if editing {
+            self.customView.tableView.insertRows(at: [indexPath], with: .left)
+            self.customView.tableView.scrollToBottom(at: .none, animated: true)
+        } else {
+            Persistence.shared.saveContext()
+            self.customView.tableView.deleteRows(at: [indexPath], with: .left)
         }
     }
     
