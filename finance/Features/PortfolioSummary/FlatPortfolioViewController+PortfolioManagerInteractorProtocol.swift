@@ -8,9 +8,9 @@
 import Foundation
 
 extension FlatPortfolioViewController: PortfolioManagerInteractorProtocol {
-    #warning("Remove mock reference")
-    func loadData() {
-        let data = PortfolioItem.getItems(PortfolioMock.shared.data)
+
+    func loadData() {        
+        let data = PortfolioItem.getItems(Datastore.shared.getTree(for: nil))
         self.presenter?.load(data: data)
     }
     

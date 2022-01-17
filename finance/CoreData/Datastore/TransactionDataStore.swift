@@ -24,24 +24,6 @@ class TransactionDataStore {
             print(error)
         }
         
-        if self.data.isEmpty {
-#warning("Remove mock")
-            if let path = Bundle.main.path(forResource: "transactions", ofType: "json"),
-               let data = FileManager.default.contents(atPath: path),
-               let json = try? JSON(data: data) {
-                for object in json.arrayValue {
-                    let item = Transaction(context: Persistence.shared.context)
-                    item.date = Formatter.shared.isoDate.date(from: object["date"].stringValue)!
-                    item.quantity = object["quantity"].intValue
-                    item.ticker = object["ticker"].stringValue
-                    item.total = Decimal(string: object["total"].stringValue, locale: nil)!
-                    self.data.append(item)
-                    
-                }
-            }
-            Persistence.shared.saveContext()
-        }
-        
         self.data.sort { $0.date < $1.date }
     }
     

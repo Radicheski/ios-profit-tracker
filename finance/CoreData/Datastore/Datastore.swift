@@ -48,6 +48,17 @@ class Datastore {
         return array
     }
     
+    func getTree(for parentId: UUID?) -> [PortfolioItem] {
+        var array: [PortfolioItem] = []
+        var pending: [PortfolioItem] = self.getElement(for: parentId)
+        while !pending.isEmpty {
+            let next = pending.remove(at: 0)
+            array.append(next)
+            pending.append(contentsOf: self.getElement(for: next.id))
+        }
+        return array
+    }
+    
     func remove(_ item: PortfolioItem) {
         self.context.delete(item)
         self.data[item.parentId]?.removeAll(where: { $0.id == item.id } )
