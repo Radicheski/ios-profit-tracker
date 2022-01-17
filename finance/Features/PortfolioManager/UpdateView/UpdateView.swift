@@ -119,6 +119,8 @@ class UpdateView: UIView {
         [self.nameLabel, self.weightLabel, self.parentLabel].forEach({
             $0.font = UIFont.systemFont(ofSize: 12)
         })
+        
+        self.weightTextField.keyboardType = .decimalPad
     }
     
     required init?(coder: NSCoder) {

@@ -112,6 +112,8 @@ class UpdateTransactionView: UIView {
         [self.dateLabel, self.tickerLabel, self.quantityLabel, self.totalLabel].forEach({
             $0.font = UIFont.systemFont(ofSize: 12)
         })
+        
+        [self.quantityTextField, self.totalTextField].forEach { $0.keyboardType = .decimalPad}
     }
     
     required init?(coder: NSCoder) {
