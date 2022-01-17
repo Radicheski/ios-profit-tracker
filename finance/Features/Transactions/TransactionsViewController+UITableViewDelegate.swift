@@ -45,6 +45,7 @@ extension TransactionsViewController: UITableViewDelegate {
         
         let item = self.datastore.data[indexPath.row]
         let vc = UpdateTransactionViewController()
+        vc.sheetPresentationController?.detents = [.medium()]
         vc.item = item
         self.present(vc, animated: true, completion: nil)
     }

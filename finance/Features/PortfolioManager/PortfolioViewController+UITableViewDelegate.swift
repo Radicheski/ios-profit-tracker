@@ -36,6 +36,7 @@ extension PortfolioViewController: UITableViewDelegate {
         if let item = self.interactor?.getItem(at: indexPath.row) {
             let vc = UpdateViewController()
             vc.item = item
+            vc.sheetPresentationController?.detents = [.medium()]
             self.present(vc, animated: true, completion: nil)
         }
     }
