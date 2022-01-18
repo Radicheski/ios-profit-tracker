@@ -49,6 +49,8 @@
 		ADBBB6512797390200B596A5 /* UpdateViewController+NavigationAccessoryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB6502797390200B596A5 /* UpdateViewController+NavigationAccessoryDelegate.swift */; };
 		ADBBB6532797426A00B596A5 /* SaveCancelNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB6522797426A00B596A5 /* SaveCancelNavigationBar.swift */; };
 		ADBBB6552797428100B596A5 /* SaveCancelNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB6542797428100B596A5 /* SaveCancelNavigationDelegate.swift */; };
+		ADBBB6572797459200B596A5 /* UpdateViewController+SaveCancelNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB6562797459200B596A5 /* UpdateViewController+SaveCancelNavigationDelegate.swift */; };
+		ADBBB659279756C600B596A5 /* UpdateTransactionViewController+SaveCancelNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB658279756C600B596A5 /* UpdateTransactionViewController+SaveCancelNavigationDelegate.swift */; };
 		ADBBC31A27825FE80068D066 /* PortfolioItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC31927825FE80068D066 /* PortfolioItemTests.swift */; };
 		ADBD4151272B3B1E00BB3327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4150272B3B1E00BB3327 /* AppDelegate.swift */; };
 		ADBD4153272B3B1E00BB3327 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4152272B3B1E00BB3327 /* SceneDelegate.swift */; };
@@ -135,6 +137,8 @@
 		ADBBB6502797390200B596A5 /* UpdateViewController+NavigationAccessoryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UpdateViewController+NavigationAccessoryDelegate.swift"; sourceTree = "<group>"; };
 		ADBBB6522797426A00B596A5 /* SaveCancelNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCancelNavigationBar.swift; sourceTree = "<group>"; };
 		ADBBB6542797428100B596A5 /* SaveCancelNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCancelNavigationDelegate.swift; sourceTree = "<group>"; };
+		ADBBB6562797459200B596A5 /* UpdateViewController+SaveCancelNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UpdateViewController+SaveCancelNavigationDelegate.swift"; sourceTree = "<group>"; };
+		ADBBB658279756C600B596A5 /* UpdateTransactionViewController+SaveCancelNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UpdateTransactionViewController+SaveCancelNavigationDelegate.swift"; sourceTree = "<group>"; };
 		ADBBC31727825FE80068D066 /* financeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = financeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBBC31927825FE80068D066 /* PortfolioItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItemTests.swift; sourceTree = "<group>"; };
 		ADBD414D272B3B1E00BB3327 /* finance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finance.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +205,7 @@
 				AD36D8B32794933F0043EB93 /* TransactionsViewController+UITableViewDelegate.swift */,
 				ADBBB64C2797375600B596A5 /* UpdateTransactionViewController+UITextFieldDelegate.swift */,
 				ADBBB64E2797377600B596A5 /* UpdateTransactionViewController+NavigationAccessoryDelegate.swift */,
+				ADBBB658279756C600B596A5 /* UpdateTransactionViewController+SaveCancelNavigationDelegate.swift */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 				AD36B0592786197C00040D25 /* CustomLocalization+UpdateView.swift */,
 				ADC3F68C278F62D10087294D /* UpdateViewController+UITextFieldDelegate.swift */,
 				ADBBB6502797390200B596A5 /* UpdateViewController+NavigationAccessoryDelegate.swift */,
+				ADBBB6562797459200B596A5 /* UpdateViewController+SaveCancelNavigationDelegate.swift */,
 			);
 			path = UpdateView;
 			sourceTree = "<group>";
@@ -605,6 +611,7 @@
 				ADAEFF2B27355D7700C7ABAE /* CustomLocalization.swift in Sources */,
 				AD36D8AA279492860043EB93 /* UpdateTransactionViewController.swift in Sources */,
 				AD8E9A632795E757005164F6 /* Mock.swift in Sources */,
+				ADBBB6572797459200B596A5 /* UpdateViewController+SaveCancelNavigationDelegate.swift in Sources */,
 				AD36D8AC279492B60043EB93 /* UpdateTransactionView.swift in Sources */,
 				EBDF34580807606EE48EFD90 /* PortfolioNavigationController.swift in Sources */,
 				ADBBB6512797390200B596A5 /* UpdateViewController+NavigationAccessoryDelegate.swift in Sources */,
@@ -622,6 +629,7 @@
 				AD2810242787648C00BA4136 /* Quote.swift in Sources */,
 				AD9F420C27921B0A002A472F /* Transaction+CoreDataClass.swift in Sources */,
 				AD19B75127822C8400D459EA /* PortfolioItem+CoreDataProperties.swift in Sources */,
+				ADBBB659279756C600B596A5 /* UpdateTransactionViewController+SaveCancelNavigationDelegate.swift in Sources */,
 				AD19B753278230BD00D459EA /* SwiftyJSON.swift in Sources */,
 				ADC3F67F278F61650087294D /* FlatPortfolioViewController+PortfolioManagerViewControllerProtocol.swift in Sources */,
 				ADC3F689278F62760087294D /* PortfolioViewController+PortfolioManagerViewControllerProtocol.swift in Sources */,
