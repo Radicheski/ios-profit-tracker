@@ -9,6 +9,8 @@ import UIKit
 
 class UpdateTransactionView: UIView {
     
+    private var navigationBar = OKCancelNavigationBar()
+    
     private var stackView = UIStackView()
     
     private var dateLabel = UILabel()
@@ -30,6 +32,14 @@ class UpdateTransactionView: UIView {
         
         self.backgroundColor = .systemBackground
         
+        self.addSubview(self.navigationBar)
+        self.navigationBar.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            self.navigationBar.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
+            self.navigationBar.leftAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leftAnchor),
+            self.navigationBar.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor),
+        ])
+        
         self.addSubview(self.stackView)
         self.stackView.spacing = 5
         self.stackView.axis = .vertical
@@ -37,7 +47,7 @@ class UpdateTransactionView: UIView {
         self.stackView.alignment = .center
         self.stackView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            self.stackView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 10),
+            self.stackView.topAnchor.constraint(equalTo: self.navigationBar.bottomAnchor, constant: 10),
             self.stackView.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor, constant: -10),
             self.stackView.leftAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leftAnchor, constant: 10),
         ])
