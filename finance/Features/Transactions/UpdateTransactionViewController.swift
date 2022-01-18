@@ -15,6 +15,10 @@ class UpdateTransactionViewController: BaseViewController<UpdateTransactionView>
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.customView.tickerTextField.delegate = self
+        self.customView.quantityTextField.delegate = self
+        self.customView.totalTextField.delegate = self
     }
     
     func updateView() {
