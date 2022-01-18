@@ -24,6 +24,8 @@ class UpdateView: UIView {
     private var assetLabel: UILabel = UILabel()
     var assetSwitch: UISwitch = UISwitch()
     
+    private(set) var navigationManager: NavigationManager?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = .systemBackground
@@ -121,6 +123,10 @@ class UpdateView: UIView {
         })
         
         self.weightTextField.keyboardType = .decimalPad
+        
+        self.navigationManager = NavigationManager()
+        self.navigationManager?.addView(self.nameTextField)
+        self.navigationManager?.addView(self.weightTextField)
     }
     
     required init?(coder: NSCoder) {

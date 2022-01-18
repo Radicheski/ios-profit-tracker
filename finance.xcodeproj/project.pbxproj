@@ -42,6 +42,7 @@
 		ADAEFF2E273560D400C7ABAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADAEFF30273560D400C7ABAE /* Localizable.strings */; };
 		ADAEFF352735669100C7ABAE /* CustomLocalization+PortfolioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEFF342735669100C7ABAE /* CustomLocalization+PortfolioManager.swift */; };
 		ADAEFF37273566BD00C7ABAE /* CustomLocalization+Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEFF36273566BD00C7ABAE /* CustomLocalization+Summary.swift */; };
+		ADBBB64B279736CE00B596A5 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB64A279736CE00B596A5 /* NavigationManager.swift */; };
 		ADBBC31A27825FE80068D066 /* PortfolioItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC31927825FE80068D066 /* PortfolioItemTests.swift */; };
 		ADBD4151272B3B1E00BB3327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4150272B3B1E00BB3327 /* AppDelegate.swift */; };
 		ADBD4153272B3B1E00BB3327 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4152272B3B1E00BB3327 /* SceneDelegate.swift */; };
@@ -120,6 +121,7 @@
 		ADAEFF332735621900C7ABAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		ADAEFF342735669100C7ABAE /* CustomLocalization+PortfolioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomLocalization+PortfolioManager.swift"; sourceTree = "<group>"; };
 		ADAEFF36273566BD00C7ABAE /* CustomLocalization+Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomLocalization+Summary.swift"; sourceTree = "<group>"; };
+		ADBBB64A279736CE00B596A5 /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 		ADBBC31727825FE80068D066 /* financeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = financeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBBC31927825FE80068D066 /* PortfolioItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItemTests.swift; sourceTree = "<group>"; };
 		ADBD414D272B3B1E00BB3327 /* finance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finance.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,6 +222,7 @@
 			children = (
 				AD2810262787676E00BA4136 /* Formatter.swift */,
 				AD8E9A622795E757005164F6 /* Mock.swift */,
+				ADBBB64A279736CE00B596A5 /* NavigationManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -556,6 +559,7 @@
 				ADC3F68D278F62D10087294D /* UpdateViewController+UITextFieldDelegate.swift in Sources */,
 				AD36B05A2786197C00040D25 /* CustomLocalization+UpdateView.swift in Sources */,
 				ADC3F687278F623F0087294D /* PortfolioManagerDataSource+PortfolioManagerPresenterProtocol.swift in Sources */,
+				ADBBB64B279736CE00B596A5 /* NavigationManager.swift in Sources */,
 				ADC3F683278F61D30087294D /* FlatPortfolioViewController+PortfolioManagerInteractorProtocol.swift in Sources */,
 				AD19B71B277E3A8A00D459EA /* PortfolioInteractor.swift in Sources */,
 				AD36D8B22794930F0043EB93 /* TransactionsViewController+UITableViewDataSource.swift in Sources */,

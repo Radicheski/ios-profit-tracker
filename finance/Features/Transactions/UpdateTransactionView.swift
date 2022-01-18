@@ -23,6 +23,8 @@ class UpdateTransactionView: UIView {
     private var totalLabel = UILabel()
     var totalTextField = UITextField()
     
+    private(set) var navigationManager: NavigationManager?
+    
     override init(frame: CGRect) {
         super.init(frame: .zero)
         
@@ -114,6 +116,11 @@ class UpdateTransactionView: UIView {
         })
         
         [self.quantityTextField, self.totalTextField].forEach { $0.keyboardType = .decimalPad}
+        
+        self.navigationManager = NavigationManager()
+        self.navigationManager?.addView(self.tickerTextField)
+        self.navigationManager?.addView(self.quantityTextField)
+        self.navigationManager?.addView(self.totalTextField)
     }
     
     required init?(coder: NSCoder) {
