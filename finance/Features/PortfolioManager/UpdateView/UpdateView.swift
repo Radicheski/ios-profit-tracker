@@ -9,7 +9,7 @@ import UIKit
 
 class UpdateView: UIView {
     
-    private var navigationBar = OKCancelNavigationBar()
+    private(set) var navigationBar = SaveCancelNavigationBar()
     
     private var stackView: UIStackView = UIStackView()
     private var allocationView: UIStackView = UIStackView()

@@ -7,18 +7,23 @@
 
 import UIKit
 
-class OKCancelNavigationBar: UINavigationBar {
+class SaveCancelNavigationBar: UINavigationBar {
+    
+    enum Event {
+        case save
+        case cancel
+    }
     
     let navigationItem = UINavigationItem()
     let cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(buttonPressed(_:)))
-    let doneButton = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(buttonPressed(_:)))
+    let saveButton = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(buttonPressed(_:)))
     
-    weak var okCancelDelegate: OKCancelNavigationDelegate?
+    weak var saveCancelDelegate: SaveCancelNavigationDelegate?
     
     init() {
         super.init(frame: .zero)
         
-        self.navigationItem.rightBarButtonItem = doneButton
+        self.navigationItem.rightBarButtonItem = saveButton
         self.navigationItem.leftBarButtonItem = cancelButton
         self.pushItem(navigationItem, animated: true)
     }
@@ -28,13 +33,13 @@ class OKCancelNavigationBar: UINavigationBar {
     }
     
     @objc func buttonPressed(_ button: UIBarButtonItem) {
-        let event: UIBarButtonItem.SystemItem
+        let event: Event
         switch button {
         case self.cancelButton: event = .cancel
-        case self.doneButton: event = .done
+        case self.saveButton: event = .save
         default: return
         }
-        self.okCancelDelegate?.buttonPressed(button, event: event)
+        self.saveCancelDelegate?.buttonPressed(button, event: event)
     }
     
 }

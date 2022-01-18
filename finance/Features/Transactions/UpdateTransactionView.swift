@@ -9,7 +9,7 @@ import UIKit
 
 class UpdateTransactionView: UIView {
     
-    private var navigationBar = OKCancelNavigationBar()
+    private(set) var navigationBar = SaveCancelNavigationBar()
     
     private var stackView = UIStackView()
     
