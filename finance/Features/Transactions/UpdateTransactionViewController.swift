@@ -9,6 +9,8 @@ import Foundation
 
 class UpdateTransactionViewController: BaseViewController<UpdateTransactionView> {
     
+    var onDismiss: (() -> Void)?
+    
     var item: Transaction? {
         didSet { self.updateView() }
     }
@@ -29,6 +31,13 @@ class UpdateTransactionViewController: BaseViewController<UpdateTransactionView>
             self.customView.tickerTextField.placeholder = item.ticker
             self.customView.quantityTextField.placeholder = "\(item.quantity)"
             self.customView.totalTextField.placeholder = Formatter.shared.currency.string(from: item.total)
+        }
+    }
+    
+    override func dismiss(animated flag: Bool, completion: (() -> Void)? = nil) {
+        super.dismiss(animated: flag) { [weak self] in
+            self?.onDismiss?()
+            completion?()
         }
     }
     

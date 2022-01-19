@@ -37,6 +37,7 @@ extension PortfolioViewController: UITableViewDelegate {
             let vc = UpdateViewController()
             vc.item = item
             vc.sheetPresentationController?.detents = [.medium()]
+            vc.onDismiss = { tableView.reloadSections(IndexSet(0...1), with: .automatic) }
             self.present(vc, animated: true, completion: nil)
         }
     }
