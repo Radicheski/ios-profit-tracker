@@ -14,7 +14,6 @@
 		AD19B7452782217700D459EA /* FinanceModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD19B7432782217700D459EA /* FinanceModel.xcdatamodeld */; };
 		AD19B75027822C8400D459EA /* PortfolioItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B74E27822C8400D459EA /* PortfolioItem+CoreDataClass.swift */; };
 		AD19B75127822C8400D459EA /* PortfolioItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B74F27822C8400D459EA /* PortfolioItem+CoreDataProperties.swift */; };
-		AD19B753278230BD00D459EA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B752278230BD00D459EA /* SwiftyJSON.swift */; };
 		AD28102227875A0700BA4136 /* NetworkWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD28102127875A0700BA4136 /* NetworkWorker.swift */; };
 		AD2810242787648C00BA4136 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2810232787648C00BA4136 /* Quote.swift */; };
 		AD2810272787676E00BA4136 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2810262787676E00BA4136 /* Formatter.swift */; };
@@ -51,6 +50,7 @@
 		ADBBB6552797428100B596A5 /* SaveCancelNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB6542797428100B596A5 /* SaveCancelNavigationDelegate.swift */; };
 		ADBBB6572797459200B596A5 /* UpdateViewController+SaveCancelNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB6562797459200B596A5 /* UpdateViewController+SaveCancelNavigationDelegate.swift */; };
 		ADBBB659279756C600B596A5 /* UpdateTransactionViewController+SaveCancelNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB658279756C600B596A5 /* UpdateTransactionViewController+SaveCancelNavigationDelegate.swift */; };
+		ADBBB65C2798270B00B596A5 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = ADBBB65B2798270B00B596A5 /* SwiftyJSON */; };
 		ADBBC31A27825FE80068D066 /* PortfolioItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC31927825FE80068D066 /* PortfolioItemTests.swift */; };
 		ADBD4151272B3B1E00BB3327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4150272B3B1E00BB3327 /* AppDelegate.swift */; };
 		ADBD4153272B3B1E00BB3327 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4152272B3B1E00BB3327 /* SceneDelegate.swift */; };
@@ -101,7 +101,6 @@
 		AD19B7442782217700D459EA /* FinanceModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinanceModel.xcdatamodel; sourceTree = "<group>"; };
 		AD19B74E27822C8400D459EA /* PortfolioItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AD19B74F27822C8400D459EA /* PortfolioItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		AD19B752278230BD00D459EA /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		AD28102127875A0700BA4136 /* NetworkWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWorker.swift; sourceTree = "<group>"; };
 		AD2810232787648C00BA4136 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		AD2810262787676E00BA4136 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
@@ -186,6 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADBBB65C2798270B00B596A5 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +382,6 @@
 		ADEB66A9272C325C002AFAE3 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
-				AD19B752278230BD00D459EA /* SwiftyJSON.swift */,
 				ADEB66AA272C3264002AFAE3 /* Data */,
 			);
 			path = Mock;
@@ -493,6 +492,9 @@
 			dependencies = (
 			);
 			name = finance;
+			packageProductDependencies = (
+				ADBBB65B2798270B00B596A5 /* SwiftyJSON */,
+			);
 			productName = finance;
 			productReference = ADBD414D272B3B1E00BB3327 /* finance.app */;
 			productType = "com.apple.product-type.application";
@@ -526,6 +528,9 @@
 				"pt-BR",
 			);
 			mainGroup = ADBD4144272B3B1E00BB3327;
+			packageReferences = (
+				ADBBB65A2798270B00B596A5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = ADBD414E272B3B1E00BB3327 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -630,7 +635,6 @@
 				AD9F420C27921B0A002A472F /* Transaction+CoreDataClass.swift in Sources */,
 				AD19B75127822C8400D459EA /* PortfolioItem+CoreDataProperties.swift in Sources */,
 				ADBBB659279756C600B596A5 /* UpdateTransactionViewController+SaveCancelNavigationDelegate.swift in Sources */,
-				AD19B753278230BD00D459EA /* SwiftyJSON.swift in Sources */,
 				ADC3F67F278F61650087294D /* FlatPortfolioViewController+PortfolioManagerViewControllerProtocol.swift in Sources */,
 				ADC3F689278F62760087294D /* PortfolioViewController+PortfolioManagerViewControllerProtocol.swift in Sources */,
 				EBDF37D6FE10FAB0EFB1E38E /* SummaryNavigationController.swift in Sources */,
@@ -912,6 +916,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ADBBB65A2798270B00B596A5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ADBBB65B2798270B00B596A5 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADBBB65A2798270B00B596A5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		AD19B7432782217700D459EA /* FinanceModel.xcdatamodeld */ = {

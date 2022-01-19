@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 func loadMockData() throws {
     let portfolioItemRequest = PortfolioItem.createFetchRequest()
