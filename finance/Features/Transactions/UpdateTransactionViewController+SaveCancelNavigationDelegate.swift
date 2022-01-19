@@ -19,7 +19,8 @@ extension UpdateTransactionViewController: SaveCancelNavigationDelegate {
     func save() {
         self.item?.date = self.customView.dateTextField.date
         
-        if let ticker = self.customView.tickerTextField.text {
+        if let ticker = self.customView.tickerTextField.text,
+           !ticker.isEmpty {
             self.item?.ticker = ticker
         }
         

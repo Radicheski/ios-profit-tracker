@@ -17,12 +17,13 @@ extension UpdateViewController: SaveCancelNavigationDelegate {
     }
     
     func save() {
-        if let name = self.customView.nameTextField.text {
+        if let name = self.customView.nameTextField.text,
+           !name.isEmpty {
             self.item?.name = name
         }
         
         if let weightString = self.customView.weightTextField.text,
-           let weight = try? Decimal(weightString, format: .percent){
+           let weight = try? Decimal(weightString, format: .percent) {
             self.item?.weight = weight
         }
         
