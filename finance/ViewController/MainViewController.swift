@@ -9,7 +9,7 @@ import UIKit
 
 class MainViewController: UITabBarController {
 
-    let porftolioManager = PortfolioNavigationController(rootViewController: PortfolioViewController(parentId: nil))
+    let porftolioManager = PortfolioNavigationController()
     let summary = SummaryNavigationController(rootViewController: SummaryViewController(parentId: nil))
     let transactions: UINavigationController = {
         let viewController = UINavigationController(rootViewController: TransactionsViewController())

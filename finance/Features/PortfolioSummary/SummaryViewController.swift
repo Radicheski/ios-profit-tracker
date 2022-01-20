@@ -15,7 +15,7 @@ class SummaryViewController: BaseViewController<PortfolioView> {
 
     var data: [PortfolioItem] = []
     
-    let parentId: UUID? = nil
+    let parentId: UUID = UUID.zero
     
     var datastore = SummaryDataStore()
 

@@ -9,6 +9,10 @@ import UIKit
 
 class PortfolioNavigationController: UINavigationController {
     
+    convenience init() {
+        self.init(rootViewController: PortfolioViewController())
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

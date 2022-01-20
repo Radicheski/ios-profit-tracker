@@ -29,7 +29,7 @@ class UpdateViewController: BaseViewController<UpdateView> {
         if let item = item {
             self.customView.nameTextField.placeholder = item.name
             self.customView.weightTextField.placeholder = Formatter.shared.percent.string(from: item.weight)
-            self.customView.parentTextField.placeholder = item.parentId?.description
+            self.customView.parentTextField.placeholder = item.parentId.description
             self.customView.assetSwitch.isOn = !(item.asset)
         }
     }

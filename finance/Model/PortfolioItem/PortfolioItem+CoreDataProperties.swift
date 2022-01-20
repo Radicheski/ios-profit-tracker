@@ -20,7 +20,7 @@ extension PortfolioItem {
     @NSManaged public var rank: Int
     @NSManaged public var name: String
     @NSManaged public var cdweight: NSDecimalNumber
-    @NSManaged public var parentId: UUID?
+    @NSManaged public var parentId: UUID
     @NSManaged public var asset: Bool
 
 }

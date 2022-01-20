@@ -33,7 +33,7 @@ fileprivate func loadPortfolioData() {
         for object in json {
             let item = PortfolioItem(context: Persistence.shared.context)
             item.id = UUID(uuidString: object["id"].stringValue)!
-            item.parentId = UUID(uuidString: object["parentId"].stringValue)
+            item.parentId = UUID(uuidString: object["parentId"].stringValue)!
             item.rank = object["rank"].intValue
             item.weight = Decimal(string: object["weight"].stringValue, locale: nil)!
             item.name = object["name"].stringValue

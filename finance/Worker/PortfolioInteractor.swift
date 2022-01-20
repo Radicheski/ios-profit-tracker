@@ -9,11 +9,11 @@ import Foundation
 
 class PortfolioInteractor: PortfolioManagerInteractorProtocol {
     
-    var parentId: UUID?
+    var parentId: UUID
     weak var presenter: PortfolioManagerPresenterProtocol?
     var datastore: PortfolioDatastore = PortfolioDatastore.shared
     
-    required init(parentId: UUID?) {
+    required init(parentId: UUID) {
         self.parentId = parentId
     }
     

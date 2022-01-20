@@ -24,11 +24,12 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
         }
     }
 
-    var parentId: UUID?
+    var parentId: UUID = UUID.zero
 
     var data: [PortfolioItem] = []
     
     override func viewDidLoad() {
+        self.setupVipCycle()
         super.viewDidLoad()
         self.navigationItem.rightBarButtonItem = self.editButtonItem
         self.customView.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "portfolioItem")
@@ -50,10 +51,16 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
         }
     }
     
-    convenience init(parentId: UUID?) {
+    init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    convenience init(parentId: UUID) {
         self.init()
         self.parentId = parentId
-        
+    }
+    
+    func setupVipCycle() {
         self.interactor = PortfolioInteractor(parentId: parentId)
 
         self.interactor?.presenter = self.presenter
@@ -61,6 +68,11 @@ class PortfolioViewController: BaseViewController<PortfolioView> {
         (self.presenter as? PortfolioManagerDataSource)?.interactor = self.interactor
 
         self.interactor?.loadData()
+    }
+    
+    required init?(coder: NSCoder) {
+        self.parentId = UUID.zero
+        super.init(coder: coder)
     }
     
 }
