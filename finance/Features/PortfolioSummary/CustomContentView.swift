@@ -10,6 +10,7 @@ class CustomContentView: UIView, UIContentView {
     var titleLabel = UILabel()
     var weightLabel = UILabel()
     var priceLabel = UILabel()
+    var quantityLabel = UILabel()
 
     var configuration: UIContentConfiguration {
         didSet {
@@ -21,8 +22,8 @@ class CustomContentView: UIView, UIContentView {
         self.configuration = configuration
         super.init(frame: .zero)
 
-        [self.titleLabel, self.weightLabel, self.priceLabel].forEach( { $0.translatesAutoresizingMaskIntoConstraints = false } )
-        [self.titleLabel, self.weightLabel, self.priceLabel].forEach( { self.addSubview($0) } )
+        [self.titleLabel, self.weightLabel, self.priceLabel, self.quantityLabel].forEach( { $0.translatesAutoresizingMaskIntoConstraints = false } )
+        [self.titleLabel, self.weightLabel, self.priceLabel, self.quantityLabel].forEach( { self.addSubview($0) } )
         NSLayoutConstraint.activate([
             self.titleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 11),
             self.titleLabel.leftAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leftAnchor, constant: 20),
@@ -31,10 +32,13 @@ class CustomContentView: UIView, UIContentView {
             self.weightLabel.topAnchor.constraint(equalTo: self.priceLabel.safeAreaLayoutGuide.bottomAnchor, constant: 3),
             self.weightLabel.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor, constant: -20),
             self.weightLabel.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -11),
+            self.quantityLabel.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
+            self.quantityLabel.centerYAnchor.constraint(equalTo: self.titleLabel.centerYAnchor),
         ])
         self.titleLabel.font = UIFont.systemFont(ofSize: 17)
         self.priceLabel.font = UIFont.systemFont(ofSize: 17)
         self.weightLabel.font = UIFont.systemFont(ofSize: 12)
+        self.quantityLabel.font = UIFont.systemFont(ofSize: 17)
 
         self.configure()
 
@@ -50,6 +54,7 @@ class CustomContentView: UIView, UIContentView {
             if let weight = conf.weight {
                 self.weightLabel.text = Formatter.shared.percent.string(from: weight)
             }
+            self.quantityLabel.text = conf.quantity == nil ? nil : "\(conf.quantity!)"
             self.priceLabel.text = "<N/D>"
             self.priceLabel.textColor = .secondaryLabel
             if let title = conf.title {

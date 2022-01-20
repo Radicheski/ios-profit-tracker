@@ -16,6 +16,8 @@ class FlatPortfolioViewController: BaseViewController<PortfolioView> {
     var data: [PortfolioItem] = []
     
     let parentId: UUID? = nil
+    
+    var datastore = SummaryDataStore()
 
     required convenience init(parentId: UUID?) {
         self.init()
@@ -34,6 +36,11 @@ class FlatPortfolioViewController: BaseViewController<PortfolioView> {
         self.customView.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "portfolio")
         self.customView.tableView.dataSource = self
         self.customView.tableView.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.datastore.update()
+        self.customView.tableView.reloadData()
     }
 
 }

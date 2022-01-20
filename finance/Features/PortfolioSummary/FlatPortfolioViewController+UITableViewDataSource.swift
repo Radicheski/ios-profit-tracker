@@ -14,7 +14,7 @@ extension FlatPortfolioViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return section == 0 ? self.data.count : 1
+        return section == 0 ? self.datastore.count : 1
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -22,8 +22,9 @@ extension FlatPortfolioViewController: UITableViewDataSource {
         
         if indexPath.section == 0 {
             var conf = CustomContentConfiguration()
-            conf.title = self.data[indexPath.row].name
-            conf.weight = self.data[indexPath.row].weight
+            conf.title = self.datastore.data[indexPath.row].name
+            conf.weight = self.datastore.data[indexPath.row].weight
+            conf.quantity = self.datastore.data[indexPath.row].quantity
             cell.contentConfiguration = conf
         } else {
             var conf = cell.defaultContentConfiguration()

@@ -12,6 +12,7 @@ struct CustomContentConfiguration: UIContentConfiguration {
     var title: String?
     var weight: Decimal?
     var price: Decimal?
+    var quantity: Int?
 
     func makeContentView() -> UIView & UIContentView {
         return CustomContentView(self)
