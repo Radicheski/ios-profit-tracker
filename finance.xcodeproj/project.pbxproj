@@ -20,7 +20,7 @@
 		AD281029278768B400BA4136 /* NumberFormatter+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD281028278768B400BA4136 /* NumberFormatter+extension.swift */; };
 		AD325C452791BFAC00CDBB24 /* transactions.json in Resources */ = {isa = PBXBuildFile; fileRef = AD325C442791BFAC00CDBB24 /* transactions.json */; };
 		AD36B05A2786197C00040D25 /* CustomLocalization+UpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B0592786197C00040D25 /* CustomLocalization+UpdateView.swift */; };
-		AD36B05D27864B3A00040D25 /* Datastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B05C27864B3A00040D25 /* Datastore.swift */; };
+		AD36B05D27864B3A00040D25 /* PortfolioDatastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B05C27864B3A00040D25 /* PortfolioDatastore.swift */; };
 		AD36D8A8279492290043EB93 /* TransactionContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8A7279492290043EB93 /* TransactionContentConfiguration.swift */; };
 		AD36D8AA279492860043EB93 /* UpdateTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8A9279492860043EB93 /* UpdateTransactionViewController.swift */; };
 		AD36D8AC279492B60043EB93 /* UpdateTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8AB279492B60043EB93 /* UpdateTransactionView.swift */; };
@@ -107,7 +107,7 @@
 		AD281028278768B400BA4136 /* NumberFormatter+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+extension.swift"; sourceTree = "<group>"; };
 		AD325C442791BFAC00CDBB24 /* transactions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = transactions.json; sourceTree = "<group>"; };
 		AD36B0592786197C00040D25 /* CustomLocalization+UpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomLocalization+UpdateView.swift"; sourceTree = "<group>"; };
-		AD36B05C27864B3A00040D25 /* Datastore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datastore.swift; sourceTree = "<group>"; };
+		AD36B05C27864B3A00040D25 /* PortfolioDatastore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDatastore.swift; sourceTree = "<group>"; };
 		AD36D8A7279492290043EB93 /* TransactionContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionContentConfiguration.swift; sourceTree = "<group>"; };
 		AD36D8A9279492860043EB93 /* UpdateTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTransactionViewController.swift; sourceTree = "<group>"; };
 		AD36D8AB279492B60043EB93 /* UpdateTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTransactionView.swift; sourceTree = "<group>"; };
@@ -251,7 +251,7 @@
 		AD36B05B27864B2600040D25 /* Datastore */ = {
 			isa = PBXGroup;
 			children = (
-				AD36B05C27864B3A00040D25 /* Datastore.swift */,
+				AD36B05C27864B3A00040D25 /* PortfolioDatastore.swift */,
 				AD36D8AF279492F30043EB93 /* TransactionDataStore.swift */,
 			);
 			path = Datastore;
@@ -610,7 +610,7 @@
 				AD2810272787676E00BA4136 /* Formatter.swift in Sources */,
 				ADBBB64D2797375600B596A5 /* UpdateTransactionViewController+UITextFieldDelegate.swift in Sources */,
 				AD28102227875A0700BA4136 /* NetworkWorker.swift in Sources */,
-				AD36B05D27864B3A00040D25 /* Datastore.swift in Sources */,
+				AD36B05D27864B3A00040D25 /* PortfolioDatastore.swift in Sources */,
 				AD36D8B0279492F30043EB93 /* TransactionDataStore.swift in Sources */,
 				AD4BC666277A8DAD00593CEE /* UITableView+extension.swift in Sources */,
 				ADAEFF2B27355D7700C7ABAE /* CustomLocalization.swift in Sources */,

@@ -10,7 +10,7 @@ import Foundation
 extension FlatPortfolioViewController: PortfolioManagerInteractorProtocol {
 
     func loadData() {        
-        let data = PortfolioItem.getItems(Datastore.shared.getTree(for: nil))
+        let data = PortfolioItem.getItems(PortfolioDatastore.shared.getTree(for: nil))
         self.presenter?.load(data: data)
     }
     

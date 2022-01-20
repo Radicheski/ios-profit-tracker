@@ -11,7 +11,7 @@ class PortfolioInteractor: PortfolioManagerInteractorProtocol {
     
     var parentId: UUID?
     weak var presenter: PortfolioManagerPresenterProtocol?
-    var datastore: Datastore = Datastore.shared
+    var datastore: PortfolioDatastore = PortfolioDatastore.shared
     
     required init(parentId: UUID?) {
         self.parentId = parentId

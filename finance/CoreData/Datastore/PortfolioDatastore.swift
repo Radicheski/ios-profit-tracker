@@ -7,9 +7,9 @@
 
 import CoreData
 
-class Datastore {
+class PortfolioDatastore {
     
-    static public var shared = Datastore()
+    static public var shared = PortfolioDatastore()
     
     private var context: NSManagedObjectContext = Persistence.shared.persistentContainer.viewContext
     

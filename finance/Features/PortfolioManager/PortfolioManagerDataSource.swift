@@ -51,7 +51,7 @@ class PortfolioManagerDataSource: NSObject, UITableViewDataSource {
                 if self.data.isEmpty {
                     conf.secondaryText = Formatter.shared.percent.string(from: Decimal(1))
                 } else {
-                    conf.secondaryText = Formatter.shared.percent.string(from: Datastore.shared.getUnallocated(for: self.data[0].parentId))
+                    conf.secondaryText = Formatter.shared.percent.string(from: PortfolioDatastore.shared.getUnallocated(for: self.data[0].parentId))
                 }
             }
         }
