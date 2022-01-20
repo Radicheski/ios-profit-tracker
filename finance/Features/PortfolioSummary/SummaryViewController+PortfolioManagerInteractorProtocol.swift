@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  SummaryViewController+PortfolioManagerInteractorProtocol.swift
 //  finance
 //
 //  Created by Erik Radicheski da Silva on 12/01/22.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension FlatPortfolioViewController: PortfolioManagerInteractorProtocol {
+extension SummaryViewController: PortfolioManagerInteractorProtocol {
 
     func loadData() {        
         let data = PortfolioItem.getItems(PortfolioDatastore.shared.getTree(for: nil))

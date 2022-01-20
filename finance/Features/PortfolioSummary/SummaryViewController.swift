@@ -1,5 +1,5 @@
 //
-//  FlatPortfolioViewController.swift
+//  SummaryViewController.swift
 //  finance
 //
 //  Created by Erik Radicheski da Silva on 04/11/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FlatPortfolioViewController: BaseViewController<PortfolioView> {
+class SummaryViewController: BaseViewController<PortfolioView> {
 
     var interactor: PortfolioManagerInteractorProtocol?
     var presenter: PortfolioManagerPresenterProtocol?
@@ -45,7 +45,7 @@ class FlatPortfolioViewController: BaseViewController<PortfolioView> {
 
 }
 
-extension FlatPortfolioViewController: UITableViewDelegate {
+extension SummaryViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return nil

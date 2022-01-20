@@ -1,5 +1,5 @@
 //
-//  File2.swift
+//  SummaryViewController+UITableViewDataSource.swift
 //  finance
 //
 //  Created by Erik Radicheski da Silva on 12/01/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension FlatPortfolioViewController: UITableViewDataSource {
+extension SummaryViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2

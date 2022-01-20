@@ -1,5 +1,5 @@
 //
-//  FlatPortfolioViewController+PortfolioManagerPresenterProtocol.swift
+//  SummaryViewController+PortfolioManagerPresenterProtocol.swift
 //  finance
 //
 //  Created by Erik Radicheski da Silva on 12/01/22.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension FlatPortfolioViewController: PortfolioManagerPresenterProtocol {
+extension SummaryViewController: PortfolioManagerPresenterProtocol {
 
     func load(data: [PortfolioItem]) {
         self.data = data
