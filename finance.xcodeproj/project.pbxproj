@@ -51,6 +51,8 @@
 		ADBBB6572797459200B596A5 /* UpdateViewController+SaveCancelNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB6562797459200B596A5 /* UpdateViewController+SaveCancelNavigationDelegate.swift */; };
 		ADBBB659279756C600B596A5 /* UpdateTransactionViewController+SaveCancelNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB658279756C600B596A5 /* UpdateTransactionViewController+SaveCancelNavigationDelegate.swift */; };
 		ADBBB65C2798270B00B596A5 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = ADBBB65B2798270B00B596A5 /* SwiftyJSON */; };
+		ADBBB65E27999CB000B596A5 /* FullDatastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB65D27999CB000B596A5 /* FullDatastore.swift */; };
+		ADBBB66027999CCA00B596A5 /* ReadOnlyDatastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB65F27999CCA00B596A5 /* ReadOnlyDatastore.swift */; };
 		ADBBC31A27825FE80068D066 /* PortfolioItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC31927825FE80068D066 /* PortfolioItemTests.swift */; };
 		ADBD4151272B3B1E00BB3327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4150272B3B1E00BB3327 /* AppDelegate.swift */; };
 		ADBD4153272B3B1E00BB3327 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4152272B3B1E00BB3327 /* SceneDelegate.swift */; };
@@ -138,6 +140,8 @@
 		ADBBB6542797428100B596A5 /* SaveCancelNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCancelNavigationDelegate.swift; sourceTree = "<group>"; };
 		ADBBB6562797459200B596A5 /* UpdateViewController+SaveCancelNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UpdateViewController+SaveCancelNavigationDelegate.swift"; sourceTree = "<group>"; };
 		ADBBB658279756C600B596A5 /* UpdateTransactionViewController+SaveCancelNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UpdateTransactionViewController+SaveCancelNavigationDelegate.swift"; sourceTree = "<group>"; };
+		ADBBB65D27999CB000B596A5 /* FullDatastore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullDatastore.swift; sourceTree = "<group>"; };
+		ADBBB65F27999CCA00B596A5 /* ReadOnlyDatastore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadOnlyDatastore.swift; sourceTree = "<group>"; };
 		ADBBC31727825FE80068D066 /* financeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = financeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBBC31927825FE80068D066 /* PortfolioItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItemTests.swift; sourceTree = "<group>"; };
 		ADBD414D272B3B1E00BB3327 /* finance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finance.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -428,6 +432,8 @@
 				EBDF324A9E12098BDC951F68 /* PortfolioManagerViewControllerProtocol.swift */,
 				ADBBB6482797354600B596A5 /* NavigationAccessoryDelegate.swift */,
 				ADBBB6542797428100B596A5 /* SaveCancelNavigationDelegate.swift */,
+				ADBBB65D27999CB000B596A5 /* FullDatastore.swift */,
+				ADBBB65F27999CCA00B596A5 /* ReadOnlyDatastore.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -600,6 +606,7 @@
 				AD9F420D27921B0A002A472F /* Transaction+CoreDataProperties.swift in Sources */,
 				AD36D8AE279492DD0043EB93 /* CustomLocalization+Transactions.swift in Sources */,
 				ADBBB6552797428100B596A5 /* SaveCancelNavigationDelegate.swift in Sources */,
+				ADBBB65E27999CB000B596A5 /* FullDatastore.swift in Sources */,
 				EBDF3CBFB487E408A8715447 /* PortfolioManagerInteractorProtocol.swift in Sources */,
 				EBDF39F8E6CAF29F6EFDEDD3 /* PortfolioManagerPresenterProtocol.swift in Sources */,
 				ADC3F67D278F611B0087294D /* CustomContentConfiguration.swift in Sources */,
@@ -643,6 +650,7 @@
 				ADC3F681278F619B0087294D /* FlatPortfolioViewController+PortfolioManagerPresenterProtocol.swift in Sources */,
 				AD36D8B42794933F0043EB93 /* TransactionsViewController+UITableViewDelegate.swift in Sources */,
 				AD77DF662784EFF300D6AB9D /* UpdateViewController.swift in Sources */,
+				ADBBB66027999CCA00B596A5 /* ReadOnlyDatastore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
