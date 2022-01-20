@@ -55,6 +55,8 @@
 		ADBBB66027999CCA00B596A5 /* ReadOnlyDatastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB65F27999CCA00B596A5 /* ReadOnlyDatastore.swift */; };
 		ADBBB66227999DDB00B596A5 /* SummaryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB66127999DDB00B596A5 /* SummaryItem.swift */; };
 		ADBBB66427999E0800B596A5 /* SummaryDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB66327999E0800B596A5 /* SummaryDataStore.swift */; };
+		ADBBB6662799BBBC00B596A5 /* UITableViewCell+RegistrableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB6652799BBBC00B596A5 /* UITableViewCell+RegistrableTableViewCell.swift */; };
+		ADBBB6682799BBDE00B596A5 /* RegistrableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB6672799BBDE00B596A5 /* RegistrableTableViewCell.swift */; };
 		ADBBC31A27825FE80068D066 /* PortfolioItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC31927825FE80068D066 /* PortfolioItemTests.swift */; };
 		ADBD4151272B3B1E00BB3327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4150272B3B1E00BB3327 /* AppDelegate.swift */; };
 		ADBD4153272B3B1E00BB3327 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4152272B3B1E00BB3327 /* SceneDelegate.swift */; };
@@ -146,6 +148,8 @@
 		ADBBB65F27999CCA00B596A5 /* ReadOnlyDatastore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadOnlyDatastore.swift; sourceTree = "<group>"; };
 		ADBBB66127999DDB00B596A5 /* SummaryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryItem.swift; sourceTree = "<group>"; };
 		ADBBB66327999E0800B596A5 /* SummaryDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryDataStore.swift; sourceTree = "<group>"; };
+		ADBBB6652799BBBC00B596A5 /* UITableViewCell+RegistrableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+RegistrableTableViewCell.swift"; sourceTree = "<group>"; };
+		ADBBB6672799BBDE00B596A5 /* RegistrableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrableTableViewCell.swift; sourceTree = "<group>"; };
 		ADBBC31727825FE80068D066 /* financeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = financeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBBC31927825FE80068D066 /* PortfolioItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItemTests.swift; sourceTree = "<group>"; };
 		ADBD414D272B3B1E00BB3327 /* finance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finance.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -271,6 +275,7 @@
 			children = (
 				AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */,
 				AD281028278768B400BA4136 /* NumberFormatter+extension.swift */,
+				ADBBB6652799BBBC00B596A5 /* UITableViewCell+RegistrableTableViewCell.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -440,6 +445,7 @@
 				ADBBB6542797428100B596A5 /* SaveCancelNavigationDelegate.swift */,
 				ADBBB65D27999CB000B596A5 /* FullDatastore.swift */,
 				ADBBB65F27999CCA00B596A5 /* ReadOnlyDatastore.swift */,
+				ADBBB6672799BBDE00B596A5 /* RegistrableTableViewCell.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -591,6 +597,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADBBB6662799BBBC00B596A5 /* UITableViewCell+RegistrableTableViewCell.swift in Sources */,
 				ADBD4168272B3EF000BB3327 /* BaseViewController.swift in Sources */,
 				ADBD4155272B3B1E00BB3327 /* MainViewController.swift in Sources */,
 				ADBBB66227999DDB00B596A5 /* SummaryItem.swift in Sources */,
@@ -634,6 +641,7 @@
 				AD36D8AC279492B60043EB93 /* UpdateTransactionView.swift in Sources */,
 				EBDF34580807606EE48EFD90 /* PortfolioNavigationController.swift in Sources */,
 				ADBBB66427999E0800B596A5 /* SummaryDataStore.swift in Sources */,
+				ADBBB6682799BBDE00B596A5 /* RegistrableTableViewCell.swift in Sources */,
 				ADBBB6512797390200B596A5 /* UpdateViewController+NavigationAccessoryDelegate.swift in Sources */,
 				ADC3F685278F61DC0087294D /* SummaryViewController+UITableViewDataSource.swift in Sources */,
 				ADAEFF37273566BD00C7ABAE /* CustomLocalization+Summary.swift in Sources */,

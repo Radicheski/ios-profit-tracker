@@ -16,4 +16,12 @@ extension UITableView {
         self.scrollToRow(at: indexPath, at: scrollPosition, animated: animated)
     }
     
+    func register(_ type: RegistrableTableViewCell.Type) {
+        self.register(type, forCellReuseIdentifier: type.identifier)
+    }
+    
+    func dequeueReusableCell<T: RegistrableTableViewCell>(_ type: T.Type, for indexPath: IndexPath) -> T {
+        return self.dequeueReusableCell(withIdentifier: T.identifier, for: indexPath) as! T
+    }
+    
 }
