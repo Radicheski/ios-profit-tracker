@@ -53,6 +53,7 @@
 		ADBBB65C2798270B00B596A5 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = ADBBB65B2798270B00B596A5 /* SwiftyJSON */; };
 		ADBBB65E27999CB000B596A5 /* FullDatastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB65D27999CB000B596A5 /* FullDatastore.swift */; };
 		ADBBB66027999CCA00B596A5 /* ReadOnlyDatastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB65F27999CCA00B596A5 /* ReadOnlyDatastore.swift */; };
+		ADBBB66227999DDB00B596A5 /* SummaryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB66127999DDB00B596A5 /* SummaryItem.swift */; };
 		ADBBC31A27825FE80068D066 /* PortfolioItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC31927825FE80068D066 /* PortfolioItemTests.swift */; };
 		ADBD4151272B3B1E00BB3327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4150272B3B1E00BB3327 /* AppDelegate.swift */; };
 		ADBD4153272B3B1E00BB3327 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4152272B3B1E00BB3327 /* SceneDelegate.swift */; };
@@ -142,6 +143,7 @@
 		ADBBB658279756C600B596A5 /* UpdateTransactionViewController+SaveCancelNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UpdateTransactionViewController+SaveCancelNavigationDelegate.swift"; sourceTree = "<group>"; };
 		ADBBB65D27999CB000B596A5 /* FullDatastore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullDatastore.swift; sourceTree = "<group>"; };
 		ADBBB65F27999CCA00B596A5 /* ReadOnlyDatastore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadOnlyDatastore.swift; sourceTree = "<group>"; };
+		ADBBB66127999DDB00B596A5 /* SummaryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryItem.swift; sourceTree = "<group>"; };
 		ADBBC31727825FE80068D066 /* financeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = financeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBBC31927825FE80068D066 /* PortfolioItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItemTests.swift; sourceTree = "<group>"; };
 		ADBD414D272B3B1E00BB3327 /* finance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finance.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -275,6 +277,7 @@
 			children = (
 				AD162AC22792F92C00E77FC1 /* Transaction */,
 				ADC3F679278F606B0087294D /* PortfolioItem */,
+				ADBBB66127999DDB00B596A5 /* SummaryItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -587,6 +590,7 @@
 			files = (
 				ADBD4168272B3EF000BB3327 /* BaseViewController.swift in Sources */,
 				ADBD4155272B3B1E00BB3327 /* MainViewController.swift in Sources */,
+				ADBBB66227999DDB00B596A5 /* SummaryItem.swift in Sources */,
 				ADBD4151272B3B1E00BB3327 /* AppDelegate.swift in Sources */,
 				AD19B75027822C8400D459EA /* PortfolioItem+CoreDataClass.swift in Sources */,
 				ADBBB6492797354600B596A5 /* NavigationAccessoryDelegate.swift in Sources */,
