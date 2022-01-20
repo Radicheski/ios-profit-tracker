@@ -315,6 +315,16 @@
 			path = Localization;
 			sourceTree = "<group>";
 		};
+		ADBBB6692799D56800B596A5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF3EAB3A94B4C227DDEC40 /* PortfolioManagerInteractorProtocol.swift */,
+				EBDF3FDC2F79F68986CC0695 /* PortfolioManagerPresenterProtocol.swift */,
+				EBDF324A9E12098BDC951F68 /* PortfolioManagerViewControllerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		ADBBC31827825FE80068D066 /* financeTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -426,6 +436,7 @@
 		EBDF332B5FD4B2EE327BA42F /* PortfolioManager */ = {
 			isa = PBXGroup;
 			children = (
+				ADBBB6692799D56800B596A5 /* Protocols */,
 				AD77DF622784ED7500D6AB9D /* UpdateView */,
 				EBDF3AFC4B7B4E1CF0436BAC /* PortfolioViewController.swift */,
 				EBDF3245FEF1177F4071BD72 /* PortfolioNavigationController.swift */,
@@ -441,9 +452,6 @@
 		EBDF37E648074FC97F24035F /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				EBDF3EAB3A94B4C227DDEC40 /* PortfolioManagerInteractorProtocol.swift */,
-				EBDF3FDC2F79F68986CC0695 /* PortfolioManagerPresenterProtocol.swift */,
-				EBDF324A9E12098BDC951F68 /* PortfolioManagerViewControllerProtocol.swift */,
 				ADBBB6482797354600B596A5 /* NavigationAccessoryDelegate.swift */,
 				ADBBB6542797428100B596A5 /* SaveCancelNavigationDelegate.swift */,
 				ADBBB65D27999CB000B596A5 /* FullDatastore.swift */,
