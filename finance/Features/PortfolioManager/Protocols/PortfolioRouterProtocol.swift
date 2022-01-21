@@ -8,4 +8,5 @@
 protocol PortfolioRouterProtocol: AnyObject {
     var view: PortfolioViewProtocol? { get }
     func present(item: Portfolio.ViewModel)
+    func update(item: Portfolio.ViewModel)
 }
