@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension SummaryViewController: PortfolioManagerInteractorProtocol {
+extension SummaryViewController: OldPortfolioManagerInteractorProtocol {
 
     func loadData() {        
         let data = PortfolioItem.getItems(PortfolioDatastore.shared.getTree(for: nil))

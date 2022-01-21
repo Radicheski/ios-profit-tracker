@@ -9,9 +9,9 @@ import UIKit
 
 class SummaryViewController: BaseViewController<PortfolioView> {
 
-    var interactor: PortfolioManagerInteractorProtocol?
-    var presenter: PortfolioManagerPresenterProtocol?
-    var viewController: PortfolioManagerViewControllerProtocol?
+    var interactor: OldPortfolioManagerInteractorProtocol?
+    var presenter: OldPortfolioManagerPresenterProtocol?
+    var viewController: OldPortfolioManagerViewControllerProtocol?
 
     var data: [PortfolioItem] = []
     

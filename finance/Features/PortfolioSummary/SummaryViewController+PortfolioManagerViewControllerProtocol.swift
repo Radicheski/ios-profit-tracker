@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension SummaryViewController: PortfolioManagerViewControllerProtocol {
+extension SummaryViewController: OldPortfolioManagerViewControllerProtocol {
 
     func updateView() {
         DispatchQueue.main.async { self.customView.tableView.reloadData() }

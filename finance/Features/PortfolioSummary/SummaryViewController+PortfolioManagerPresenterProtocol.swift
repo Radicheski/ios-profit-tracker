@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension SummaryViewController: PortfolioManagerPresenterProtocol {
+extension SummaryViewController: OldPortfolioManagerPresenterProtocol {
 
     func load(data: [PortfolioItem]) {
         self.data = data

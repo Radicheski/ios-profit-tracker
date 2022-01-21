@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension PortfolioManagerDataSource: PortfolioManagerPresenterProtocol {
+extension PortfolioManagerDataSource: OldPortfolioManagerPresenterProtocol {
 
     func load(data: [PortfolioItem]) {
         self.data = data
