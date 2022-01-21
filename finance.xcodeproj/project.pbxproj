@@ -65,6 +65,8 @@
 		ADBBB67B279ADDCA00B596A5 /* PortfolioConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB67A279ADDCA00B596A5 /* PortfolioConfiguratorProtocol.swift */; };
 		ADBBB67E279ADDF200B596A5 /* PortfolioConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB67D279ADDF200B596A5 /* PortfolioConfigurator.swift */; };
 		ADBBB680279ADE0800B596A5 /* PortfolioRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB67F279ADE0800B596A5 /* PortfolioRouter.swift */; };
+		ADBBB68C279ADEC800B596A5 /* PortfolioTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB68B279ADEC800B596A5 /* PortfolioTableViewDataSource.swift */; };
+		ADBBB68E279ADEDE00B596A5 /* PortfolioTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB68D279ADEDE00B596A5 /* PortfolioTableViewDelegate.swift */; };
 		ADBBB690279B1A7C00B596A5 /* PortfolioItem+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB68F279B1A7C00B596A5 /* PortfolioItem+ViewModel.swift */; };
 		ADBBC31A27825FE80068D066 /* PortfolioItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC31927825FE80068D066 /* PortfolioItemTests.swift */; };
 		ADBD4151272B3B1E00BB3327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4150272B3B1E00BB3327 /* AppDelegate.swift */; };
@@ -164,6 +166,8 @@
 		ADBBB67A279ADDCA00B596A5 /* PortfolioConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		ADBBB67D279ADDF200B596A5 /* PortfolioConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioConfigurator.swift; sourceTree = "<group>"; };
 		ADBBB67F279ADE0800B596A5 /* PortfolioRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioRouter.swift; sourceTree = "<group>"; };
+		ADBBB68B279ADEC800B596A5 /* PortfolioTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioTableViewDataSource.swift; sourceTree = "<group>"; };
+		ADBBB68D279ADEDE00B596A5 /* PortfolioTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioTableViewDelegate.swift; sourceTree = "<group>"; };
 		ADBBB68F279B1A7C00B596A5 /* PortfolioItem+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+ViewModel.swift"; sourceTree = "<group>"; };
 		ADBBC31727825FE80068D066 /* financeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = financeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBBC31927825FE80068D066 /* PortfolioItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItemTests.swift; sourceTree = "<group>"; };
@@ -346,6 +350,8 @@
 			children = (
 				ADBBB67D279ADDF200B596A5 /* PortfolioConfigurator.swift */,
 				ADBBB67F279ADE0800B596A5 /* PortfolioRouter.swift */,
+				ADBBB68B279ADEC800B596A5 /* PortfolioTableViewDataSource.swift */,
+				ADBBB68D279ADEDE00B596A5 /* PortfolioTableViewDelegate.swift */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -623,6 +629,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADBBB68E279ADEDE00B596A5 /* PortfolioTableViewDelegate.swift in Sources */,
 				ADBBB6662799BBBC00B596A5 /* UITableViewCell+RegistrableTableViewCell.swift in Sources */,
 				ADBBB66B2799D5C700B596A5 /* UUID+extension.swift in Sources */,
 				ADBD4168272B3EF000BB3327 /* BaseViewController.swift in Sources */,
@@ -636,6 +643,7 @@
 				AD58D52E272CC7E60047847C /* PortfolioItem+extension.swift in Sources */,
 				ADAEFF352735669100C7ABAE /* CustomLocalization+PortfolioManager.swift in Sources */,
 				ADBD4153272B3B1E00BB3327 /* SceneDelegate.swift in Sources */,
+				ADBBB68C279ADEC800B596A5 /* PortfolioTableViewDataSource.swift in Sources */,
 				ADBD4166272B3CC500BB3327 /* PortfolioView.swift in Sources */,
 				ADBBB64F2797377600B596A5 /* UpdateTransactionViewController+NavigationAccessoryDelegate.swift in Sources */,
 				ADC3F68D278F62D10087294D /* UpdateViewController+UITextFieldDelegate.swift in Sources */,
