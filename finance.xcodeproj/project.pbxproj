@@ -64,6 +64,7 @@
 		ADBBB679279ADDB100B596A5 /* PortfolioRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB678279ADDB100B596A5 /* PortfolioRouterProtocol.swift */; };
 		ADBBB67B279ADDCA00B596A5 /* PortfolioConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB67A279ADDCA00B596A5 /* PortfolioConfiguratorProtocol.swift */; };
 		ADBBB67E279ADDF200B596A5 /* PortfolioConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB67D279ADDF200B596A5 /* PortfolioConfigurator.swift */; };
+		ADBBB690279B1A7C00B596A5 /* PortfolioItem+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB68F279B1A7C00B596A5 /* PortfolioItem+ViewModel.swift */; };
 		ADBBC31A27825FE80068D066 /* PortfolioItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC31927825FE80068D066 /* PortfolioItemTests.swift */; };
 		ADBD4151272B3B1E00BB3327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4150272B3B1E00BB3327 /* AppDelegate.swift */; };
 		ADBD4153272B3B1E00BB3327 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4152272B3B1E00BB3327 /* SceneDelegate.swift */; };
@@ -161,6 +162,7 @@
 		ADBBB678279ADDB100B596A5 /* PortfolioRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioRouterProtocol.swift; sourceTree = "<group>"; };
 		ADBBB67A279ADDCA00B596A5 /* PortfolioConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		ADBBB67D279ADDF200B596A5 /* PortfolioConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioConfigurator.swift; sourceTree = "<group>"; };
+		ADBBB68F279B1A7C00B596A5 /* PortfolioItem+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+ViewModel.swift"; sourceTree = "<group>"; };
 		ADBBC31727825FE80068D066 /* financeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = financeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBBC31927825FE80068D066 /* PortfolioItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItemTests.swift; sourceTree = "<group>"; };
 		ADBD414D272B3B1E00BB3327 /* finance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finance.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -422,6 +424,7 @@
 				AD19B74E27822C8400D459EA /* PortfolioItem+CoreDataClass.swift */,
 				AD19B74F27822C8400D459EA /* PortfolioItem+CoreDataProperties.swift */,
 				ADC3F67A278F60A80087294D /* PortfolioItem+Identifiable.swift */,
+				ADBBB68F279B1A7C00B596A5 /* PortfolioItem+ViewModel.swift */,
 			);
 			path = PortfolioItem;
 			sourceTree = "<group>";
@@ -633,6 +636,7 @@
 				ADBD4166272B3CC500BB3327 /* PortfolioView.swift in Sources */,
 				ADBBB64F2797377600B596A5 /* UpdateTransactionViewController+NavigationAccessoryDelegate.swift in Sources */,
 				ADC3F68D278F62D10087294D /* UpdateViewController+UITextFieldDelegate.swift in Sources */,
+				ADBBB690279B1A7C00B596A5 /* PortfolioItem+ViewModel.swift in Sources */,
 				AD36B05A2786197C00040D25 /* CustomLocalization+UpdateView.swift in Sources */,
 				ADC3F687278F623F0087294D /* PortfolioManagerDataSource+PortfolioManagerPresenterProtocol.swift in Sources */,
 				ADBBB64B279736CE00B596A5 /* NavigationManager.swift in Sources */,
