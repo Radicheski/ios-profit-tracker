@@ -50,8 +50,10 @@ class PortfolioWorker: NSObject, PortfolioWorkerProtocol {
     }
     
     func move(from startIndex: Int, to endIndex: Int) {
-        #warning("Implemet this method")
-        print(#function)
+        var data = loadData()
+        let item = data.remove(at: startIndex)
+        data.insert(item, at: endIndex)
+        updateRanks(data)
     }
     
     func delete(fromIndex index: Int) {
