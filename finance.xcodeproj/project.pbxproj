@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		AD0D22F8279C1D7700CBA554 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D22F7279C1D7600CBA554 /* Box.swift */; };
+		AD0D22FB279C568500CBA554 /* SummaryViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D22FA279C568500CBA554 /* SummaryViewProtocol.swift */; };
+		AD0D22FD279C5AFA00CBA554 /* SummaryInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D22FC279C5AFA00CBA554 /* SummaryInteractorProtocol.swift */; };
+		AD0D22FF279C5B1100CBA554 /* SummaryRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D22FE279C5B1100CBA554 /* SummaryRouterProtocol.swift */; };
+		AD0D2301279C5B2800CBA554 /* SummaryPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2300279C5B2800CBA554 /* SummaryPresenterProtocol.swift */; };
+		AD0D2303279C5B3C00CBA554 /* SummaryWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2302279C5B3C00CBA554 /* SummaryWorkerProtocol.swift */; };
+		AD0D230A279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2309279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift */; };
 		AD162AC12792F32A00E77FC1 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD162AC02792F32A00E77FC1 /* TransactionsViewController.swift */; };
 		AD162AC427934D2F00E77FC1 /* TransactionContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD162AC327934D2F00E77FC1 /* TransactionContentView.swift */; };
 		AD19B742277E402600D459EA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B741277E402600D459EA /* Persistence.swift */; };
@@ -114,6 +120,12 @@
 
 /* Begin PBXFileReference section */
 		AD0D22F7279C1D7600CBA554 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		AD0D22FA279C568500CBA554 /* SummaryViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewProtocol.swift; sourceTree = "<group>"; };
+		AD0D22FC279C5AFA00CBA554 /* SummaryInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryInteractorProtocol.swift; sourceTree = "<group>"; };
+		AD0D22FE279C5B1100CBA554 /* SummaryRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryRouterProtocol.swift; sourceTree = "<group>"; };
+		AD0D2300279C5B2800CBA554 /* SummaryPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryPresenterProtocol.swift; sourceTree = "<group>"; };
+		AD0D2302279C5B3C00CBA554 /* SummaryWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryWorkerProtocol.swift; sourceTree = "<group>"; };
+		AD0D2309279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		AD162AC02792F32A00E77FC1 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		AD162AC327934D2F00E77FC1 /* TransactionContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionContentView.swift; sourceTree = "<group>"; };
 		AD19B741277E402600D459EA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -230,6 +242,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD0D22F9279C567400CBA554 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AD0D22FA279C568500CBA554 /* SummaryViewProtocol.swift */,
+				AD0D22FC279C5AFA00CBA554 /* SummaryInteractorProtocol.swift */,
+				AD0D22FE279C5B1100CBA554 /* SummaryRouterProtocol.swift */,
+				AD0D2300279C5B2800CBA554 /* SummaryPresenterProtocol.swift */,
+				AD0D2302279C5B3C00CBA554 /* SummaryWorkerProtocol.swift */,
+				AD0D2309279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		AD162ABF2792F2FF00E77FC1 /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
@@ -500,6 +525,7 @@
 		EBDF3A51A9C3FC237753426D /* PortfolioSummary */ = {
 			isa = PBXGroup;
 			children = (
+				AD0D22F9279C567400CBA554 /* Protocols */,
 				EBDF329A38513EDB94407B10 /* SummaryViewController.swift */,
 				EBDF35CA014AE318370973AE /* SummaryNavigationController.swift */,
 				ADAEFF36273566BD00C7ABAE /* CustomLocalization+Summary.swift */,
@@ -644,6 +670,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD0D2303279C5B3C00CBA554 /* SummaryWorkerProtocol.swift in Sources */,
 				ADBBB68E279ADEDE00B596A5 /* PortfolioTableViewDelegate.swift in Sources */,
 				ADBBB6662799BBBC00B596A5 /* UITableViewCell+RegistrableTableViewCell.swift in Sources */,
 				ADBBB66B2799D5C700B596A5 /* UUID+extension.swift in Sources */,
@@ -655,13 +682,16 @@
 				ADBBB684279ADE4800B596A5 /* PortfolioPresenter.swift in Sources */,
 				AD19B75027822C8400D459EA /* PortfolioItem+CoreDataClass.swift in Sources */,
 				ADBBB6492797354600B596A5 /* NavigationAccessoryDelegate.swift in Sources */,
+				AD0D22FB279C568500CBA554 /* SummaryViewProtocol.swift in Sources */,
 				AD19B7452782217700D459EA /* FinanceModel.xcdatamodeld in Sources */,
+				AD0D2301279C5B2800CBA554 /* SummaryPresenterProtocol.swift in Sources */,
 				AD58D52E272CC7E60047847C /* PortfolioItem+extension.swift in Sources */,
 				ADAEFF352735669100C7ABAE /* CustomLocalization+PortfolioManager.swift in Sources */,
 				ADBD4153272B3B1E00BB3327 /* SceneDelegate.swift in Sources */,
 				ADBBB68C279ADEC800B596A5 /* PortfolioTableViewDataSource.swift in Sources */,
 				ADBD4166272B3CC500BB3327 /* PortfolioView.swift in Sources */,
 				ADBBB64F2797377600B596A5 /* UpdateTransactionViewController+NavigationAccessoryDelegate.swift in Sources */,
+				AD0D22FD279C5AFA00CBA554 /* SummaryInteractorProtocol.swift in Sources */,
 				ADC3F68D278F62D10087294D /* UpdateViewController+UITextFieldDelegate.swift in Sources */,
 				ADBBB690279B1A7C00B596A5 /* PortfolioItem+ViewModel.swift in Sources */,
 				AD36B05A2786197C00040D25 /* CustomLocalization+UpdateView.swift in Sources */,
@@ -689,6 +719,7 @@
 				AD36D8B0279492F30043EB93 /* TransactionDataStore.swift in Sources */,
 				AD4BC666277A8DAD00593CEE /* UITableView+extension.swift in Sources */,
 				ADAEFF2B27355D7700C7ABAE /* CustomLocalization.swift in Sources */,
+				AD0D22FF279C5B1100CBA554 /* SummaryRouterProtocol.swift in Sources */,
 				AD36D8AA279492860043EB93 /* UpdateTransactionViewController.swift in Sources */,
 				AD8E9A632795E757005164F6 /* Mock.swift in Sources */,
 				ADBBB67E279ADDF200B596A5 /* PortfolioConfigurator.swift in Sources */,
@@ -699,6 +730,7 @@
 				EBDF34580807606EE48EFD90 /* PortfolioNavigationController.swift in Sources */,
 				ADBBB66427999E0800B596A5 /* SummaryDataStore.swift in Sources */,
 				ADBBB688279ADE9600B596A5 /* PortfolioWorker.swift in Sources */,
+				AD0D230A279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift in Sources */,
 				ADBBB6682799BBDE00B596A5 /* RegistrableTableViewCell.swift in Sources */,
 				ADBBB6512797390200B596A5 /* UpdateViewController+NavigationAccessoryDelegate.swift in Sources */,
 				ADC3F685278F61DC0087294D /* SummaryViewController+UITableViewDataSource.swift in Sources */,
