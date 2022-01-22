@@ -7,8 +7,8 @@ import UIKit
 class PortfolioManagerDataSource: NSObject, UITableViewDataSource {
 
     var data: [PortfolioItem] = []
-    weak var viewController: PortfolioManagerViewControllerProtocol?
-    weak var interactor: PortfolioManagerInteractorProtocol?
+    weak var viewController: OldPortfolioManagerViewControllerProtocol?
+    weak var interactor: OldPortfolioManagerInteractorProtocol?
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
