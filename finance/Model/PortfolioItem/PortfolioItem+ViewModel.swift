@@ -10,24 +10,49 @@ import UIKit
 extension PortfolioItem {
     
     class ViewModel {
-        var id: String
-        var name: String
-        var weight: String?
-        var parentId: String
-        var isAsset: Bool
+        var id: Box<String>
+        var name: Box<String>
+        var weight: Box<String?>
+        var parentId: Box<String>
+        var isAsset: Box<Bool>
         
         init(from portfolio: Portfolio) {
-            self.name = portfolio.name
-            self.weight = Formatter.shared.percent.string(from: portfolio.weight)
-            self.parentId = portfolio.parentId.uuidString
-            self.isAsset = portfolio.asset
-            self.id = portfolio.id.uuidString
+            self.name = Box(portfolio.name)
+            self.weight = Box(Formatter.shared.percent.string(from: portfolio.weight))
+            self.parentId = Box(portfolio.parentId.uuidString)
+            self.isAsset = Box(portfolio.asset)
+            self.id = Box(portfolio.id.uuidString)
+            
+            self.id.listener = { newValue in
+                portfolio.id = UUID(uuidString: newValue) ?? UUID()
+            }
+            
+            self.name.listener = { newValue in
+                portfolio.name = newValue
+            }
+            
+            self.weight.listener = { newValue in
+                do {
+                    portfolio.weight = try Decimal(newValue ?? "0", format: .percent)
+                } catch {
+                    portfolio.weight = 0
+                }
+            }
+            
+            self.parentId.listener = { newValue in
+                portfolio.parentId = UUID(uuidString: newValue) ?? UUID()
+            }
+            
+            self.isAsset.listener = { newValue in
+                portfolio.asset = newValue
+            }
+        
         }
         
         func configure(_ cell: UITableViewCell) {
             var contentConfiguration = cell.defaultContentConfiguration()
-            contentConfiguration.text = self.name
-            contentConfiguration.secondaryText = self.weight
+            contentConfiguration.text = self.name.value
+            contentConfiguration.secondaryText = self.weight.value
             cell.contentConfiguration = contentConfiguration
         }
     }

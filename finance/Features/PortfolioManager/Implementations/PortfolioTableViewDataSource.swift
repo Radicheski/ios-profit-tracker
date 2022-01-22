@@ -39,7 +39,7 @@ class PortfolioTableViewDataSource: NSObject, UITableViewDataSource {
                 conf.secondaryText = nil
             } else {
                 conf.text = CustomLocalization.PortfolioManager.globalPortfolioUnallocated
-                conf.secondaryText = Formatter.shared.percent.string(from: self.data.map { try! Decimal($0.weight ?? "0", format: .percent) }.reduce(1, { $0 - $1 }))
+                conf.secondaryText = Formatter.shared.percent.string(from: self.data.map { try! Decimal($0.weight.value ?? "0", format: .percent) }.reduce(1, { $0 - $1 }))
             }
             cell.contentConfiguration = conf
         default: break

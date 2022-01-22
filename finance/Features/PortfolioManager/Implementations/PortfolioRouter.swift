@@ -12,7 +12,7 @@ class PortfolioRouter: NSObject, PortfolioRouterProtocol {
     
     func present(item: Portfolio.ViewModel) {
         let configurator = PortfolioConfigurator()
-        let viewController = configurator.build(for: UUID(uuidString: item.id)!)
+        let viewController = configurator.build(for: UUID(uuidString: item.id.value)!)
         self.view?.navigationController?.pushViewController(viewController, animated: true)
     }
     
