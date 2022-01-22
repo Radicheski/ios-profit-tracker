@@ -19,7 +19,7 @@ class PortfolioWorker: NSObject, PortfolioWorkerProtocol {
     func loadData() -> [Portfolio] {
         do {
             let request = PortfolioItem.createFetchRequest()
-            request.predicate = NSPredicate(format: "parentId == %@", self.portfolioId.uuidString)
+            request.predicate = NSPredicate(format: "parentId == %@", self.portfolioId as CVarArg)
             request.sortDescriptors = [NSSortDescriptor(key: "rank", ascending: true)]
             let data = try self.context.fetch(request)
             return data
@@ -28,12 +28,27 @@ class PortfolioWorker: NSObject, PortfolioWorkerProtocol {
         }
     }
     func insert() -> [Portfolio] {
+        let rank = count()
         let newItem = PortfolioItem(context: self.context)
         newItem.id = UUID()
         newItem.parentId = self.portfolioId
         newItem.name = ""
+        newItem.rank = rank
+        newItem.asset = false
         return loadData()
     }
+    
+    func count() -> Int {
+        do {
+            let request = PortfolioItem.createFetchRequest()
+            request.predicate = NSPredicate(format: "parentId == %@", self.portfolioId as CVarArg)
+            let data = try self.context.count(for: request)
+            return data
+        } catch {
+            return 0
+        }
+    }
+    
     func move(from startIndex: Int, to endIndex: Int) {
         #warning("Implemet this method")
         print(#function)
@@ -41,7 +56,7 @@ class PortfolioWorker: NSObject, PortfolioWorkerProtocol {
     
     func delete(fromIndex index: Int) {
         let request = PortfolioItem.createFetchRequest()
-        request.predicate = NSPredicate(format: "parentId == %@ and rank == %i", self.portfolioId.uuidString, index)
+        request.predicate = NSPredicate(format: "parentId == %@ and rank == %i", self.portfolioId as CVarArg, index)
         if let item = try? self.context.fetch(request) {
             item.forEach { self.context.delete($0)}
         }
