@@ -66,6 +66,7 @@ class PortfolioTableViewDataSource: NSObject, UITableViewDataSource {
             self.viewController?.delete(fromIndex: indexPath.row)
         default: return
         }
+        if !tableView.isEditing { self.viewController?.interactor.save() }
     }
     
 }

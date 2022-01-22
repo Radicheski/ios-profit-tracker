@@ -55,11 +55,15 @@ class PortfolioWorker: NSObject, PortfolioWorkerProtocol {
     }
     
     func delete(fromIndex index: Int) {
-        let request = PortfolioItem.createFetchRequest()
-        request.predicate = NSPredicate(format: "parentId == %@ and rank == %i", self.portfolioId as CVarArg, index)
-        if let item = try? self.context.fetch(request) {
-            item.forEach { self.context.delete($0)}
+        var data = loadData()
+        let item = data.remove(at: index)
+        self.context.delete(item)
+        let childrenWorker = PortfolioWorker(portfolioId: item.id)
+        #warning("if has children show alert controller asking for confirmation")
+        while childrenWorker.count() > 0 {
+            childrenWorker.delete(fromIndex: 0)
         }
+        updateRanks(data)
     }
     
     func save() {
@@ -69,4 +73,11 @@ class PortfolioWorker: NSObject, PortfolioWorkerProtocol {
     func discard() {
         if self.context.hasChanges { self.context.rollback() }
     }
+    
+    func updateRanks(_ items: [PortfolioItem]) {
+        for index in 0 ..< items.count {
+            items[index].rank = index
+        }
+    }
+    
 }
