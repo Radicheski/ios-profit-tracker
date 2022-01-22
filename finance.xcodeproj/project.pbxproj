@@ -66,6 +66,7 @@
 		ADBBB67B279ADDCA00B596A5 /* PortfolioConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB67A279ADDCA00B596A5 /* PortfolioConfiguratorProtocol.swift */; };
 		ADBBB67E279ADDF200B596A5 /* PortfolioConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB67D279ADDF200B596A5 /* PortfolioConfigurator.swift */; };
 		ADBBB680279ADE0800B596A5 /* PortfolioRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB67F279ADE0800B596A5 /* PortfolioRouter.swift */; };
+		ADBBB686279ADE6100B596A5 /* PortfolioInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB685279ADE6100B596A5 /* PortfolioInteractor.swift */; };
 		ADBBB688279ADE9600B596A5 /* PortfolioWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB687279ADE9600B596A5 /* PortfolioWorker.swift */; };
 		ADBBB68C279ADEC800B596A5 /* PortfolioTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB68B279ADEC800B596A5 /* PortfolioTableViewDataSource.swift */; };
 		ADBBB68E279ADEDE00B596A5 /* PortfolioTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB68D279ADEDE00B596A5 /* PortfolioTableViewDelegate.swift */; };
@@ -169,6 +170,7 @@
 		ADBBB67A279ADDCA00B596A5 /* PortfolioConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		ADBBB67D279ADDF200B596A5 /* PortfolioConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioConfigurator.swift; sourceTree = "<group>"; };
 		ADBBB67F279ADE0800B596A5 /* PortfolioRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioRouter.swift; sourceTree = "<group>"; };
+		ADBBB685279ADE6100B596A5 /* PortfolioInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioInteractor.swift; sourceTree = "<group>"; };
 		ADBBB687279ADE9600B596A5 /* PortfolioWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioWorker.swift; sourceTree = "<group>"; };
 		ADBBB68B279ADEC800B596A5 /* PortfolioTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioTableViewDataSource.swift; sourceTree = "<group>"; };
 		ADBBB68D279ADEDE00B596A5 /* PortfolioTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioTableViewDelegate.swift; sourceTree = "<group>"; };
@@ -355,6 +357,7 @@
 			children = (
 				ADBBB67D279ADDF200B596A5 /* PortfolioConfigurator.swift */,
 				ADBBB67F279ADE0800B596A5 /* PortfolioRouter.swift */,
+				ADBBB685279ADE6100B596A5 /* PortfolioInteractor.swift */,
 				ADBBB687279ADE9600B596A5 /* PortfolioWorker.swift */,
 				ADBBB68B279ADEC800B596A5 /* PortfolioTableViewDataSource.swift */,
 				ADBBB68D279ADEDE00B596A5 /* PortfolioTableViewDelegate.swift */,
@@ -707,6 +710,7 @@
 				ADBBB659279756C600B596A5 /* UpdateTransactionViewController+SaveCancelNavigationDelegate.swift in Sources */,
 				ADC3F67F278F61650087294D /* SummaryViewController+PortfolioManagerViewControllerProtocol.swift in Sources */,
 				EBDF37D6FE10FAB0EFB1E38E /* SummaryNavigationController.swift in Sources */,
+				ADBBB686279ADE6100B596A5 /* PortfolioInteractor.swift in Sources */,
 				ADBBB6532797426A00B596A5 /* SaveCancelNavigationBar.swift in Sources */,
 				EBDF37EB6D58FC11B4EE5387 /* CustomContentView.swift in Sources */,
 				ADC3F681278F619B0087294D /* SummaryViewController+PortfolioManagerPresenterProtocol.swift in Sources */,
