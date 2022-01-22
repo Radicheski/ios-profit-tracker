@@ -20,14 +20,17 @@ extension UpdateViewController: SaveCancelNavigationDelegate {
         if let name = self.customView.nameTextField.text,
            !name.isEmpty {
             self.item?.name = name
+            self.viewModel?.name.value = name
         }
         
         if let weightString = self.customView.weightTextField.text,
            let weight = try? Decimal(weightString, format: .percent) {
             self.item?.weight = weight
+            self.viewModel?.weight.value = weightString
         }
         
         self.item?.asset = !self.customView.assetSwitch.isOn
+        self.viewModel?.isAsset.value = !self.customView.assetSwitch.isOn
         
         self.dismiss(animated: true, completion: nil)
     }

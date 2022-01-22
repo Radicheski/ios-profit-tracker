@@ -19,6 +19,9 @@ class PortfolioRouter: NSObject, PortfolioRouterProtocol {
     func update(item: Portfolio.ViewModel) {
         let viewController = UpdateViewController()
         viewController.viewModel = item
+        viewController.onDismiss = { [weak self] in
+            self?.view?.loadData()
+        }
         self.view?.present(viewController)
     }
 }
