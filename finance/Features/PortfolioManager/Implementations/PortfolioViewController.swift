@@ -1,0 +1,110 @@
+//
+//  PortfolioViewController.swift
+//  finance
+//
+//  Created by Erik Radicheski da Silva on 21/01/22.
+//
+
+import UIKit
+
+class PortfolioViewController: BaseViewController<PortfolioView>, PortfolioViewProtocol {
+    
+    var interactor: PortfolioInteractorProtocol
+    var router: PortfolioRouterProtocol
+    var delegate: PortfolioTableViewDelegate? {
+        didSet {
+            self.customView.tableView.delegate = self.delegate
+            
+        }
+    }
+    var datasource: PortfolioTableViewDataSource? {
+        didSet {
+            self.customView.tableView.dataSource = self.datasource
+            
+        }
+    }
+    
+    init(interactor: PortfolioInteractorProtocol, router: PortfolioRouterProtocol) {
+        
+        self.interactor = interactor
+        self.router = router
+        
+        super.init(nibName: nil, bundle: nil)
+        
+        self.customView.tableView.register(UITableViewCell.self)
+        self.delegate = PortfolioTableViewDelegate()
+        self.datasource = PortfolioTableViewDataSource()
+        self.delegate?.viewController = self
+        self.datasource?.viewController = self
+        self.customView.tableView.delegate = self.delegate
+        self.customView.tableView.dataSource = self.datasource
+        
+        self.navigationItem.rightBarButtonItem = self.editButtonItem
+        if self.navigationItem.title == nil { self.navigationItem.title = CustomLocalization.PortfolioManager.globalPortfolioTitle }
+        
+        self.customView.tableView.allowsSelectionDuringEditing = true
+    }
+    
+    func loadData() {
+        self.interactor.loadData()
+    }
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        self.customView.tableView.setEditing(editing, animated: animated)
+        super.setEditing(editing, animated: animated)
+        let indexPath = IndexPath(row: 0, section: 1)
+        if editing {
+            self.navigationItem.setLeftBarButton(UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelEdit)), animated: true)
+            self.customView.tableView.insertRows(at: [indexPath], with: .left)
+            self.customView.tableView.scrollToBottom(at: .none, animated: true)
+        } else {
+            self.navigationItem.setLeftBarButton(nil, animated: true)
+            self.interactor.save()
+            self.customView.tableView.deleteRows(at: [indexPath], with: .left)
+        }
+    }
+    
+    @objc func cancelEdit() {
+        self.interactor.discard()
+        self.setEditing(false, animated: true)
+    }
+    
+    required init?(coder: NSCoder) {
+        return nil
+    }
+    
+    func updateView(with data: [Portfolio.ViewModel]) {
+        self.datasource?.data = data
+        let sections = IndexSet(0..<self.customView.tableView.numberOfSections)
+        self.customView.tableView.reloadSections(sections, with: .automatic)
+    }
+    
+    func present(fromIndex index: Int) {
+        self.interactor.present(fromIndex: index)
+    }
+    
+    func present(item: Portfolio.ViewModel) {
+        if isEditing {
+            self.router.update(item: item)
+        } else {
+            self.router.present(item: item)
+        }
+    }
+    
+    func present(_ viewController: UIViewController) {
+        self.present(viewController, animated: true, completion: nil)
+    }
+    
+    func insert() {
+        self.interactor.insert()
+    }
+    
+    func delete(fromIndex index: Int) {
+        self.interactor.delete(fromIndex: index)
+    }
+    
+    func move(from startIndex: Int, to endIndex: Int) {
+        self.interactor.move(from: startIndex, to: endIndex)
+    }
+    
+}
