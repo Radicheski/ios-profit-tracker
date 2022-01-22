@@ -15,6 +15,10 @@ class UpdateViewController: BaseViewController<UpdateView> {
         didSet { self.updateView() }
     }
     
+    var viewModel: Portfolio.ViewModel? {
+        didSet { self.updateView() }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,6 +35,11 @@ class UpdateViewController: BaseViewController<UpdateView> {
             self.customView.weightTextField.placeholder = Formatter.shared.percent.string(from: item.weight)
             self.customView.parentTextField.placeholder = item.parentId.description
             self.customView.assetSwitch.isOn = !(item.asset)
+        } else if let item = viewModel {
+            self.customView.nameTextField.placeholder = item.name.value
+            self.customView.weightTextField.placeholder = item.weight.value
+            self.customView.parentTextField.placeholder = item.parentId.value
+            self.customView.assetSwitch.isOn = !(item.isAsset.value)
         }
     }
     
