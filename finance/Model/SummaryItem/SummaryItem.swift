@@ -30,4 +30,10 @@ class SummaryItem {
 
     }
     
+    init(from item: PortfolioItem) {
+        self.name = item.name
+        self.weight = item.weight
+        self.quantity = 0
+    }
+    
 }
