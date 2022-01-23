@@ -7,4 +7,5 @@
 
 protocol SummaryPresenterProtocol: AnyObject {
     var view: SummaryViewProtocol? { get }
+    func loadData(_ items: [SummaryItem])
 }

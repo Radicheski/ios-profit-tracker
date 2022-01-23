@@ -20,6 +20,7 @@
 		AD0D230F279C5E6900CBA554 /* SummaryConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D230E279C5E6900CBA554 /* SummaryConfigurator.swift */; };
 		AD0D2311279D8CC900CBA554 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2310279D8CC900CBA554 /* SummaryViewController.swift */; };
 		AD0D2313279D8D4300CBA554 /* SummaryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2312279D8D4300CBA554 /* SummaryRouter.swift */; };
+		AD0D2317279D8DBF00CBA554 /* SummaryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2316279D8DBF00CBA554 /* SummaryPresenter.swift */; };
 		AD0D2319279D8DE900CBA554 /* SummaryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2318279D8DE900CBA554 /* SummaryInteractor.swift */; };
 		AD162AC12792F32A00E77FC1 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD162AC02792F32A00E77FC1 /* TransactionsViewController.swift */; };
 		AD162AC427934D2F00E77FC1 /* TransactionContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD162AC327934D2F00E77FC1 /* TransactionContentView.swift */; };
@@ -129,6 +130,7 @@
 		AD0D230E279C5E6900CBA554 /* SummaryConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryConfigurator.swift; sourceTree = "<group>"; };
 		AD0D2310279D8CC900CBA554 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		AD0D2312279D8D4300CBA554 /* SummaryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryRouter.swift; sourceTree = "<group>"; };
+		AD0D2316279D8DBF00CBA554 /* SummaryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryPresenter.swift; sourceTree = "<group>"; };
 		AD0D2318279D8DE900CBA554 /* SummaryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryInteractor.swift; sourceTree = "<group>"; };
 		AD162AC02792F32A00E77FC1 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		AD162AC327934D2F00E77FC1 /* TransactionContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionContentView.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				AD0D230E279C5E6900CBA554 /* SummaryConfigurator.swift */,
 				AD0D2310279D8CC900CBA554 /* SummaryViewController.swift */,
 				AD0D2312279D8D4300CBA554 /* SummaryRouter.swift */,
+				AD0D2316279D8DBF00CBA554 /* SummaryPresenter.swift */,
 				AD0D2318279D8DE900CBA554 /* SummaryInteractor.swift */,
 			);
 			path = Implementations;
@@ -757,6 +760,7 @@
 				AD0D230D279C5C0900CBA554 /* SummaryItem+ViewModel.swift in Sources */,
 				ADBBB686279ADE6100B596A5 /* PortfolioInteractor.swift in Sources */,
 				ADBBB6532797426A00B596A5 /* SaveCancelNavigationBar.swift in Sources */,
+				AD0D2317279D8DBF00CBA554 /* SummaryPresenter.swift in Sources */,
 				EBDF37EB6D58FC11B4EE5387 /* CustomContentView.swift in Sources */,
 				ADBBB67B279ADDCA00B596A5 /* PortfolioConfiguratorProtocol.swift in Sources */,
 				AD36D8B42794933F0043EB93 /* TransactionsViewController+UITableViewDelegate.swift in Sources */,
