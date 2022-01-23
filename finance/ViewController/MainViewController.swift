@@ -10,7 +10,7 @@ import UIKit
 class MainViewController: UITabBarController {
 
     let porftolioManager = PortfolioNavigationController()
-    let summary = SummaryNavigationController(rootViewController: SummaryViewController(parentId: nil))
+    let summary = SummaryNavigationController()
     let transactions: UINavigationController = {
         let viewController = UINavigationController(rootViewController: TransactionsViewController())
         viewController.tabBarItem.title = CustomLocalization.Transactions.transactionsTabBarTitle
