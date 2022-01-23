@@ -13,6 +13,8 @@
 		AD0D22FF279C5B1100CBA554 /* SummaryRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D22FE279C5B1100CBA554 /* SummaryRouterProtocol.swift */; };
 		AD0D2301279C5B2800CBA554 /* SummaryPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2300279C5B2800CBA554 /* SummaryPresenterProtocol.swift */; };
 		AD0D2303279C5B3C00CBA554 /* SummaryWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2302279C5B3C00CBA554 /* SummaryWorkerProtocol.swift */; };
+		AD0D2306279C5B5900CBA554 /* SummaryTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2305279C5B5900CBA554 /* SummaryTableViewDelegate.swift */; };
+		AD0D2308279C5B7B00CBA554 /* SummaryTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2307279C5B7B00CBA554 /* SummaryTableViewDataSource.swift */; };
 		AD0D230A279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2309279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift */; };
 		AD0D230D279C5C0900CBA554 /* SummaryItem+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D230C279C5C0900CBA554 /* SummaryItem+ViewModel.swift */; };
 		AD0D2311279D8CC900CBA554 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2310279D8CC900CBA554 /* SummaryViewController.swift */; };
@@ -117,6 +119,8 @@
 		AD0D22FE279C5B1100CBA554 /* SummaryRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryRouterProtocol.swift; sourceTree = "<group>"; };
 		AD0D2300279C5B2800CBA554 /* SummaryPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryPresenterProtocol.swift; sourceTree = "<group>"; };
 		AD0D2302279C5B3C00CBA554 /* SummaryWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryWorkerProtocol.swift; sourceTree = "<group>"; };
+		AD0D2305279C5B5900CBA554 /* SummaryTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryTableViewDelegate.swift; sourceTree = "<group>"; };
+		AD0D2307279C5B7B00CBA554 /* SummaryTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryTableViewDataSource.swift; sourceTree = "<group>"; };
 		AD0D2309279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		AD0D230C279C5C0900CBA554 /* SummaryItem+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SummaryItem+ViewModel.swift"; sourceTree = "<group>"; };
 		AD0D2310279D8CC900CBA554 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
@@ -242,6 +246,8 @@
 		AD0D2304279C5B4E00CBA554 /* Implementations */ = {
 			isa = PBXGroup;
 			children = (
+				AD0D2305279C5B5900CBA554 /* SummaryTableViewDelegate.swift */,
+				AD0D2307279C5B7B00CBA554 /* SummaryTableViewDataSource.swift */,
 				AD0D2310279D8CC900CBA554 /* SummaryViewController.swift */,
 			);
 			path = Implementations;
@@ -662,6 +668,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD0D2306279C5B5900CBA554 /* SummaryTableViewDelegate.swift in Sources */,
 				AD0D2303279C5B3C00CBA554 /* SummaryWorkerProtocol.swift in Sources */,
 				ADBBB68E279ADEDE00B596A5 /* PortfolioTableViewDelegate.swift in Sources */,
 				ADBBB6662799BBBC00B596A5 /* UITableViewCell+RegistrableTableViewCell.swift in Sources */,
@@ -684,6 +691,7 @@
 				ADBBB68C279ADEC800B596A5 /* PortfolioTableViewDataSource.swift in Sources */,
 				ADBD4166272B3CC500BB3327 /* PortfolioView.swift in Sources */,
 				ADBBB64F2797377600B596A5 /* UpdateTransactionViewController+NavigationAccessoryDelegate.swift in Sources */,
+				AD0D2308279C5B7B00CBA554 /* SummaryTableViewDataSource.swift in Sources */,
 				AD0D22FD279C5AFA00CBA554 /* SummaryInteractorProtocol.swift in Sources */,
 				ADC3F68D278F62D10087294D /* UpdateViewController+UITextFieldDelegate.swift in Sources */,
 				ADBBB690279B1A7C00B596A5 /* PortfolioItem+ViewModel.swift in Sources */,
