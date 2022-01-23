@@ -18,6 +18,7 @@
 		AD0D230A279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2309279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift */; };
 		AD0D230D279C5C0900CBA554 /* SummaryItem+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D230C279C5C0900CBA554 /* SummaryItem+ViewModel.swift */; };
 		AD0D2311279D8CC900CBA554 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2310279D8CC900CBA554 /* SummaryViewController.swift */; };
+		AD0D2313279D8D4300CBA554 /* SummaryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2312279D8D4300CBA554 /* SummaryRouter.swift */; };
 		AD162AC12792F32A00E77FC1 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD162AC02792F32A00E77FC1 /* TransactionsViewController.swift */; };
 		AD162AC427934D2F00E77FC1 /* TransactionContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD162AC327934D2F00E77FC1 /* TransactionContentView.swift */; };
 		AD19B742277E402600D459EA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B741277E402600D459EA /* Persistence.swift */; };
@@ -124,6 +125,7 @@
 		AD0D2309279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		AD0D230C279C5C0900CBA554 /* SummaryItem+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SummaryItem+ViewModel.swift"; sourceTree = "<group>"; };
 		AD0D2310279D8CC900CBA554 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		AD0D2312279D8D4300CBA554 /* SummaryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryRouter.swift; sourceTree = "<group>"; };
 		AD162AC02792F32A00E77FC1 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		AD162AC327934D2F00E77FC1 /* TransactionContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionContentView.swift; sourceTree = "<group>"; };
 		AD19B741277E402600D459EA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				AD0D2305279C5B5900CBA554 /* SummaryTableViewDelegate.swift */,
 				AD0D2307279C5B7B00CBA554 /* SummaryTableViewDataSource.swift */,
 				AD0D2310279D8CC900CBA554 /* SummaryViewController.swift */,
+				AD0D2312279D8D4300CBA554 /* SummaryRouter.swift */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -730,6 +733,7 @@
 				ADBBB6682799BBDE00B596A5 /* RegistrableTableViewCell.swift in Sources */,
 				ADBBB6512797390200B596A5 /* UpdateViewController+NavigationAccessoryDelegate.swift in Sources */,
 				ADAEFF37273566BD00C7ABAE /* CustomLocalization+Summary.swift in Sources */,
+				AD0D2313279D8D4300CBA554 /* SummaryRouter.swift in Sources */,
 				AD19B742277E402600D459EA /* Persistence.swift in Sources */,
 				ADD677692796E06700880AE8 /* NavigationAccessoryView.swift in Sources */,
 				ADC3F67B278F60A80087294D /* PortfolioItem+Identifiable.swift in Sources */,
