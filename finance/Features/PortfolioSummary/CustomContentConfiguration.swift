@@ -10,9 +10,9 @@ import UIKit
 struct CustomContentConfiguration: UIContentConfiguration {
 
     var title: String?
-    var weight: Decimal?
-    var price: Decimal?
-    var quantity: Int?
+    var weight: String?
+    var price: String?
+    var quantity: String?
 
     func makeContentView() -> UIView & UIContentView {
         return CustomContentView(self)

@@ -51,11 +51,9 @@ class CustomContentView: UIView, UIContentView {
     func configure() {
         if let conf = self.configuration as? CustomContentConfiguration {
             self.titleLabel.text = conf.title
-            if let weight = conf.weight {
-                self.weightLabel.text = Formatter.shared.percent.string(from: weight)
-            }
-            self.quantityLabel.text = conf.quantity == nil ? nil : "\(conf.quantity!)"
-            self.priceLabel.text = "<N/D>"
+            self.weightLabel.text = conf.weight
+            self.quantityLabel.text = conf.quantity
+            self.priceLabel.text = conf.price
             self.priceLabel.textColor = .secondaryLabel
             if let title = conf.title {
                 let worker = NetworkWorker(ticker: title)
