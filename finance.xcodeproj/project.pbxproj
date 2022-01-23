@@ -17,6 +17,7 @@
 		AD0D2308279C5B7B00CBA554 /* SummaryTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2307279C5B7B00CBA554 /* SummaryTableViewDataSource.swift */; };
 		AD0D230A279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2309279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift */; };
 		AD0D230D279C5C0900CBA554 /* SummaryItem+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D230C279C5C0900CBA554 /* SummaryItem+ViewModel.swift */; };
+		AD0D230F279C5E6900CBA554 /* SummaryConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D230E279C5E6900CBA554 /* SummaryConfigurator.swift */; };
 		AD0D2311279D8CC900CBA554 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2310279D8CC900CBA554 /* SummaryViewController.swift */; };
 		AD0D2313279D8D4300CBA554 /* SummaryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2312279D8D4300CBA554 /* SummaryRouter.swift */; };
 		AD162AC12792F32A00E77FC1 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD162AC02792F32A00E77FC1 /* TransactionsViewController.swift */; };
@@ -124,6 +125,7 @@
 		AD0D2307279C5B7B00CBA554 /* SummaryTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryTableViewDataSource.swift; sourceTree = "<group>"; };
 		AD0D2309279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		AD0D230C279C5C0900CBA554 /* SummaryItem+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SummaryItem+ViewModel.swift"; sourceTree = "<group>"; };
+		AD0D230E279C5E6900CBA554 /* SummaryConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryConfigurator.swift; sourceTree = "<group>"; };
 		AD0D2310279D8CC900CBA554 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		AD0D2312279D8D4300CBA554 /* SummaryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryRouter.swift; sourceTree = "<group>"; };
 		AD162AC02792F32A00E77FC1 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 			children = (
 				AD0D2305279C5B5900CBA554 /* SummaryTableViewDelegate.swift */,
 				AD0D2307279C5B7B00CBA554 /* SummaryTableViewDataSource.swift */,
+				AD0D230E279C5E6900CBA554 /* SummaryConfigurator.swift */,
 				AD0D2310279D8CC900CBA554 /* SummaryViewController.swift */,
 				AD0D2312279D8D4300CBA554 /* SummaryRouter.swift */,
 			);
@@ -718,6 +721,7 @@
 				AD36D8B0279492F30043EB93 /* TransactionDataStore.swift in Sources */,
 				AD4BC666277A8DAD00593CEE /* UITableView+extension.swift in Sources */,
 				ADAEFF2B27355D7700C7ABAE /* CustomLocalization.swift in Sources */,
+				AD0D230F279C5E6900CBA554 /* SummaryConfigurator.swift in Sources */,
 				AD0D22FF279C5B1100CBA554 /* SummaryRouterProtocol.swift in Sources */,
 				AD36D8AA279492860043EB93 /* UpdateTransactionViewController.swift in Sources */,
 				AD8E9A632795E757005164F6 /* Mock.swift in Sources */,
