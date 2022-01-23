@@ -8,4 +8,5 @@
 protocol SummaryInteractorProtocol: AnyObject {
     var presenter: SummaryPresenterProtocol { get }
     var worker: SummaryWorkerProtocol { get }
+    func loadData()
 }
