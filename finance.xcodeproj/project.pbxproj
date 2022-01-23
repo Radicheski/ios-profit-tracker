@@ -15,6 +15,7 @@
 		AD0D2303279C5B3C00CBA554 /* SummaryWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2302279C5B3C00CBA554 /* SummaryWorkerProtocol.swift */; };
 		AD0D230A279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2309279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift */; };
 		AD0D230D279C5C0900CBA554 /* SummaryItem+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D230C279C5C0900CBA554 /* SummaryItem+ViewModel.swift */; };
+		AD0D2311279D8CC900CBA554 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2310279D8CC900CBA554 /* SummaryViewController.swift */; };
 		AD162AC12792F32A00E77FC1 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD162AC02792F32A00E77FC1 /* TransactionsViewController.swift */; };
 		AD162AC427934D2F00E77FC1 /* TransactionContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD162AC327934D2F00E77FC1 /* TransactionContentView.swift */; };
 		AD19B742277E402600D459EA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B741277E402600D459EA /* Persistence.swift */; };
@@ -118,6 +119,7 @@
 		AD0D2302279C5B3C00CBA554 /* SummaryWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryWorkerProtocol.swift; sourceTree = "<group>"; };
 		AD0D2309279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		AD0D230C279C5C0900CBA554 /* SummaryItem+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SummaryItem+ViewModel.swift"; sourceTree = "<group>"; };
+		AD0D2310279D8CC900CBA554 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		AD162AC02792F32A00E77FC1 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		AD162AC327934D2F00E77FC1 /* TransactionContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionContentView.swift; sourceTree = "<group>"; };
 		AD19B741277E402600D459EA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -235,6 +237,14 @@
 				AD0D2309279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AD0D2304279C5B4E00CBA554 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				AD0D2310279D8CC900CBA554 /* SummaryViewController.swift */,
+			);
+			path = Implementations;
 			sourceTree = "<group>";
 		};
 		AD0D230B279C5BE800CBA554 /* SummaryItem */ = {
@@ -511,6 +521,7 @@
 		EBDF3A51A9C3FC237753426D /* PortfolioSummary */ = {
 			isa = PBXGroup;
 			children = (
+				AD0D2304279C5B4E00CBA554 /* Implementations */,
 				AD0D22F9279C567400CBA554 /* Protocols */,
 				EBDF35CA014AE318370973AE /* SummaryNavigationController.swift */,
 				ADAEFF36273566BD00C7ABAE /* CustomLocalization+Summary.swift */,
@@ -661,6 +672,7 @@
 				ADBBB66227999DDB00B596A5 /* SummaryItem.swift in Sources */,
 				ADBD4151272B3B1E00BB3327 /* AppDelegate.swift in Sources */,
 				ADBBB684279ADE4800B596A5 /* PortfolioPresenter.swift in Sources */,
+				AD0D2311279D8CC900CBA554 /* SummaryViewController.swift in Sources */,
 				AD19B75027822C8400D459EA /* PortfolioItem+CoreDataClass.swift in Sources */,
 				ADBBB6492797354600B596A5 /* NavigationAccessoryDelegate.swift in Sources */,
 				AD0D22FB279C568500CBA554 /* SummaryViewProtocol.swift in Sources */,
