@@ -53,6 +53,7 @@
 		AD948325279DC4280098E194 /* TransactionWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD948324279DC4280098E194 /* TransactionWorkerProtocol.swift */; };
 		AD948327279DC4650098E194 /* TransactionConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD948326279DC4650098E194 /* TransactionConfiguratorProtocol.swift */; };
 		AD94832A279DC5930098E194 /* TransactionConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD948329279DC5930098E194 /* TransactionConfigurator.swift */; };
+		AD948336279DC8150098E194 /* Transaction+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD948335279DC8150098E194 /* Transaction+ViewModel.swift */; };
 		AD94833C279DCCEC0098E194 /* TransactionNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD94833B279DCCEC0098E194 /* TransactionNavigationController.swift */; };
 		AD9F420927920F0D002A472F /* TransactionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9F420827920F0D002A472F /* TransactionTests.swift */; };
 		AD9F420C27921B0A002A472F /* Transaction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9F420A27921B0A002A472F /* Transaction+CoreDataClass.swift */; };
@@ -169,6 +170,7 @@
 		AD948324279DC4280098E194 /* TransactionWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionWorkerProtocol.swift; sourceTree = "<group>"; };
 		AD948326279DC4650098E194 /* TransactionConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		AD948329279DC5930098E194 /* TransactionConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionConfigurator.swift; sourceTree = "<group>"; };
+		AD948335279DC8150098E194 /* Transaction+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transaction+ViewModel.swift"; sourceTree = "<group>"; };
 		AD94833B279DCCEC0098E194 /* TransactionNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionNavigationController.swift; sourceTree = "<group>"; };
 		AD9F420827920F0D002A472F /* TransactionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTests.swift; sourceTree = "<group>"; };
 		AD9F420A27921B0A002A472F /* Transaction+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 			children = (
 				AD9F420A27921B0A002A472F /* Transaction+CoreDataClass.swift */,
 				AD9F420B27921B0A002A472F /* Transaction+CoreDataProperties.swift */,
+				AD948335279DC8150098E194 /* Transaction+ViewModel.swift */,
 			);
 			path = Transaction;
 			sourceTree = "<group>";
@@ -750,6 +753,7 @@
 				ADBBB673279ADD5900B596A5 /* PortfolioInteractorProtocol.swift in Sources */,
 				AD9F420D27921B0A002A472F /* Transaction+CoreDataProperties.swift in Sources */,
 				AD36D8AE279492DD0043EB93 /* CustomLocalization+Transactions.swift in Sources */,
+				AD948336279DC8150098E194 /* Transaction+ViewModel.swift in Sources */,
 				ADBBB6552797428100B596A5 /* SaveCancelNavigationDelegate.swift in Sources */,
 				ADBBB65E27999CB000B596A5 /* FullDatastore.swift in Sources */,
 				ADC3F67D278F611B0087294D /* CustomContentConfiguration.swift in Sources */,

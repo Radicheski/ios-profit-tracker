@@ -11,14 +11,14 @@ struct TransactionContentConfiguration: UIContentConfiguration {
     
     var date: Date
     var ticker: String
-    var quantity: Int
-    var total: Decimal
+    var quantity: String
+    var total: String
     
-    init(transaction: Transaction) {
-        self.date = transaction.date
-        self.ticker = transaction.ticker
-        self.quantity = transaction.quantity
-        self.total = transaction.total
+    init(transaction: Transaction.ViewModel) {
+        self.date = transaction.date.value
+        self.ticker = transaction.ticker.value
+        self.quantity = transaction.quantity.value
+        self.total = transaction.total.value
     }
     
     func makeContentView() -> UIView & UIContentView {

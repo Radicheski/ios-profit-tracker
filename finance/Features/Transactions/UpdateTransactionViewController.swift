@@ -11,7 +11,7 @@ class UpdateTransactionViewController: BaseViewController<UpdateTransactionView>
     
     var onDismiss: (() -> Void)?
     
-    var item: Transaction? {
+    var item: Transaction.ViewModel? {
         didSet { self.updateView() }
     }
     
@@ -27,10 +27,10 @@ class UpdateTransactionViewController: BaseViewController<UpdateTransactionView>
     
     func updateView() {
         if let item = item {
-            self.customView.dateTextField.date = item.date
-            self.customView.tickerTextField.placeholder = item.ticker
-            self.customView.quantityTextField.placeholder = "\(item.quantity)"
-            self.customView.totalTextField.placeholder = Formatter.shared.currency.string(from: item.total)
+            self.customView.dateTextField.date = item.date.value
+            self.customView.tickerTextField.placeholder = item.ticker.value
+            self.customView.quantityTextField.placeholder = item.quantity.value
+            self.customView.totalTextField.placeholder = item.total.value
         }
     }
     

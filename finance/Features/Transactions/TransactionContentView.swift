@@ -72,8 +72,8 @@ class TransactionContentView: UIView, UIContentView {
         guard let configuration = self.configuration as? TransactionContentConfiguration else { return }
         self.dateLabel.text = Formatter.shared.date.string(from: configuration.date)
         self.tickerLabel.text = configuration.ticker
-        self.quantityLabel.text = "\(configuration.quantity)"
-        self.totalLabel.text = Formatter.shared.currency.string(from: configuration.total)
+        self.quantityLabel.text = configuration.quantity
+        self.totalLabel.text = configuration.total
     }
     
 }

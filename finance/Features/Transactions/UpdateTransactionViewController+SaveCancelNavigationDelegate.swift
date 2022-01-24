@@ -17,22 +17,22 @@ extension UpdateTransactionViewController: SaveCancelNavigationDelegate {
     }
     
     func save() {
-        self.item?.date = self.customView.dateTextField.date
+        self.item?.date.value = self.customView.dateTextField.date
         
         if let ticker = self.customView.tickerTextField.text,
            !ticker.isEmpty {
-            self.item?.ticker = ticker
+            self.item?.ticker.value = ticker
         }
         
         if let quantityString = self.customView.quantityTextField.text,
-           let quantity = try? Int(quantityString, format: .number) {
-            self.item?.quantity = quantity
+           let _ = try? Int(quantityString, format: .number) {
+            self.item?.quantity.value = quantityString
         }
         
         if let totalString = self.customView.totalTextField.text,
            let currencyCode = Locale.current.currencyCode,
-           let total = try? Decimal(totalString, format: .currency(code: currencyCode)) {
-            self.item?.total = total
+           let _ = try? Decimal(totalString, format: .currency(code: currencyCode)) {
+            self.item?.total.value = totalString
         }
         
         self.dismiss(animated: true, completion: nil)
