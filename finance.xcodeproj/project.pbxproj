@@ -23,7 +23,6 @@
 		AD0D2315279D8D5D00CBA554 /* SummaryWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2314279D8D5D00CBA554 /* SummaryWorker.swift */; };
 		AD0D2317279D8DBF00CBA554 /* SummaryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2316279D8DBF00CBA554 /* SummaryPresenter.swift */; };
 		AD0D2319279D8DE900CBA554 /* SummaryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2318279D8DE900CBA554 /* SummaryInteractor.swift */; };
-		AD162AC12792F32A00E77FC1 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD162AC02792F32A00E77FC1 /* TransactionsViewController.swift */; };
 		AD162AC427934D2F00E77FC1 /* TransactionContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD162AC327934D2F00E77FC1 /* TransactionContentView.swift */; };
 		AD19B742277E402600D459EA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B741277E402600D459EA /* Persistence.swift */; };
 		AD19B7452782217700D459EA /* FinanceModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD19B7432782217700D459EA /* FinanceModel.xcdatamodeld */; };
@@ -41,8 +40,6 @@
 		AD36D8AC279492B60043EB93 /* UpdateTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8AB279492B60043EB93 /* UpdateTransactionView.swift */; };
 		AD36D8AE279492DD0043EB93 /* CustomLocalization+Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8AD279492DD0043EB93 /* CustomLocalization+Transactions.swift */; };
 		AD36D8B0279492F30043EB93 /* TransactionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8AF279492F30043EB93 /* TransactionDataStore.swift */; };
-		AD36D8B22794930F0043EB93 /* TransactionsViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8B12794930F0043EB93 /* TransactionsViewController+UITableViewDataSource.swift */; };
-		AD36D8B42794933F0043EB93 /* TransactionsViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8B32794933F0043EB93 /* TransactionsViewController+UITableViewDelegate.swift */; };
 		AD4BC666277A8DAD00593CEE /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */; };
 		AD58D52B272CC0E60047847C /* portfolioExpected.json in Resources */ = {isa = PBXBuildFile; fileRef = AD58D52A272CC0E60047847C /* portfolioExpected.json */; };
 		AD58D52E272CC7E60047847C /* PortfolioItem+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58D52D272CC7E60047847C /* PortfolioItem+extension.swift */; };
@@ -140,7 +137,6 @@
 		AD0D2314279D8D5D00CBA554 /* SummaryWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryWorker.swift; sourceTree = "<group>"; };
 		AD0D2316279D8DBF00CBA554 /* SummaryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryPresenter.swift; sourceTree = "<group>"; };
 		AD0D2318279D8DE900CBA554 /* SummaryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryInteractor.swift; sourceTree = "<group>"; };
-		AD162AC02792F32A00E77FC1 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		AD162AC327934D2F00E77FC1 /* TransactionContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionContentView.swift; sourceTree = "<group>"; };
 		AD19B741277E402600D459EA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		AD19B7442782217700D459EA /* FinanceModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinanceModel.xcdatamodel; sourceTree = "<group>"; };
@@ -158,8 +154,6 @@
 		AD36D8AB279492B60043EB93 /* UpdateTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTransactionView.swift; sourceTree = "<group>"; };
 		AD36D8AD279492DD0043EB93 /* CustomLocalization+Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomLocalization+Transactions.swift"; sourceTree = "<group>"; };
 		AD36D8AF279492F30043EB93 /* TransactionDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDataStore.swift; sourceTree = "<group>"; };
-		AD36D8B12794930F0043EB93 /* TransactionsViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionsViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
-		AD36D8B32794933F0043EB93 /* TransactionsViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionsViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
 		AD58D52A272CC0E60047847C /* portfolioExpected.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portfolioExpected.json; sourceTree = "<group>"; };
 		AD58D52D272CC7E60047847C /* PortfolioItem+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+extension.swift"; sourceTree = "<group>"; };
@@ -293,14 +287,11 @@
 			isa = PBXGroup;
 			children = (
 				AD94831B279DC3310098E194 /* Protocols */,
-				AD162AC02792F32A00E77FC1 /* TransactionsViewController.swift */,
 				AD162AC327934D2F00E77FC1 /* TransactionContentView.swift */,
 				AD36D8A7279492290043EB93 /* TransactionContentConfiguration.swift */,
 				AD36D8A9279492860043EB93 /* UpdateTransactionViewController.swift */,
 				AD36D8AB279492B60043EB93 /* UpdateTransactionView.swift */,
 				AD36D8AD279492DD0043EB93 /* CustomLocalization+Transactions.swift */,
-				AD36D8B12794930F0043EB93 /* TransactionsViewController+UITableViewDataSource.swift */,
-				AD36D8B32794933F0043EB93 /* TransactionsViewController+UITableViewDelegate.swift */,
 				ADBBB64C2797375600B596A5 /* UpdateTransactionViewController+UITextFieldDelegate.swift */,
 				ADBBB64E2797377600B596A5 /* UpdateTransactionViewController+NavigationAccessoryDelegate.swift */,
 				ADBBB658279756C600B596A5 /* UpdateTransactionViewController+SaveCancelNavigationDelegate.swift */,
@@ -742,14 +733,12 @@
 				AD36B05A2786197C00040D25 /* CustomLocalization+UpdateView.swift in Sources */,
 				ADBBB64B279736CE00B596A5 /* NavigationManager.swift in Sources */,
 				ADBBB673279ADD5900B596A5 /* PortfolioInteractorProtocol.swift in Sources */,
-				AD36D8B22794930F0043EB93 /* TransactionsViewController+UITableViewDataSource.swift in Sources */,
 				AD9F420D27921B0A002A472F /* Transaction+CoreDataProperties.swift in Sources */,
 				AD36D8AE279492DD0043EB93 /* CustomLocalization+Transactions.swift in Sources */,
 				ADBBB6552797428100B596A5 /* SaveCancelNavigationDelegate.swift in Sources */,
 				ADBBB65E27999CB000B596A5 /* FullDatastore.swift in Sources */,
 				ADC3F67D278F611B0087294D /* CustomContentConfiguration.swift in Sources */,
 				AD162AC427934D2F00E77FC1 /* TransactionContentView.swift in Sources */,
-				AD162AC12792F32A00E77FC1 /* TransactionsViewController.swift in Sources */,
 				ADBBB68A279ADEA900B596A5 /* PortfolioViewController.swift in Sources */,
 				ADBBB677279ADD8900B596A5 /* PortfolioPresenterProtocol.swift in Sources */,
 				AD2810272787676E00BA4136 /* Formatter.swift in Sources */,
@@ -799,7 +788,6 @@
 				AD948327279DC4650098E194 /* TransactionConfiguratorProtocol.swift in Sources */,
 				EBDF37EB6D58FC11B4EE5387 /* CustomContentView.swift in Sources */,
 				ADBBB67B279ADDCA00B596A5 /* PortfolioConfiguratorProtocol.swift in Sources */,
-				AD36D8B42794933F0043EB93 /* TransactionsViewController+UITableViewDelegate.swift in Sources */,
 				ADBBB679279ADDB100B596A5 /* PortfolioRouterProtocol.swift in Sources */,
 				AD77DF662784EFF300D6AB9D /* UpdateViewController.swift in Sources */,
 				ADBBB66027999CCA00B596A5 /* ReadOnlyDatastore.swift in Sources */,
