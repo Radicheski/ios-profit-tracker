@@ -8,5 +8,10 @@
 import Foundation
 
 protocol TransactionWorkerProtocol {
-    
+    func loadData() -> [Transaction]
+    func save()
+    func discard()
+    func present(fromIndex index: Int) -> Transaction
+    func insert()
+    func delete(fromIndex index: Int)
 }
