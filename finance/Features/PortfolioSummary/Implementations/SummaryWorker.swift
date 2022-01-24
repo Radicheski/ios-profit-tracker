@@ -12,8 +12,22 @@ class SummaryWorker: SummaryWorkerProtocol {
     func loadData() -> [SummaryItem] {
         let request = PortfolioItem.createFetchRequest()
         let response = try! self.context.fetch(request)
-        let data = PortfolioItem.getItems(response)
-        return data.map { SummaryItem(from: $0) }.sorted(by: { $0.name < $1.name } )
+        var data = PortfolioItem.getItems(response).map { SummaryItem(from: $0) }
+        
+        let transactionRequest = Transaction.createFetchRequest()
+        let transactionResponse = try! self.context.fetch(transactionRequest)
+        
+        for transaction in transactionResponse {
+            if let item = data.first(where: { $0.name == transaction.ticker } ) {
+                item.quantity += transaction.quantity
+            } else {
+                let newItem = SummaryItem(name: transaction.ticker)
+                newItem.quantity += transaction.quantity
+                data.append(newItem)
+            }
+        }
+        
+        return data.filter { $0.quantity != 0 || $0.weight != 0 }.sorted(by: { $0.name < $1.name } )
     }
     
 }
