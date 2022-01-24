@@ -54,6 +54,7 @@
 		AD948327279DC4650098E194 /* TransactionConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD948326279DC4650098E194 /* TransactionConfiguratorProtocol.swift */; };
 		AD94832A279DC5930098E194 /* TransactionConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD948329279DC5930098E194 /* TransactionConfigurator.swift */; };
 		AD94832E279DC6960098E194 /* TransactionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD94832D279DC6960098E194 /* TransactionInteractor.swift */; };
+		AD948334279DC7450098E194 /* TransactionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD948333279DC7450098E194 /* TransactionPresenter.swift */; };
 		AD948336279DC8150098E194 /* Transaction+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD948335279DC8150098E194 /* Transaction+ViewModel.swift */; };
 		AD94833C279DCCEC0098E194 /* TransactionNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD94833B279DCCEC0098E194 /* TransactionNavigationController.swift */; };
 		AD9F420927920F0D002A472F /* TransactionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9F420827920F0D002A472F /* TransactionTests.swift */; };
@@ -172,6 +173,7 @@
 		AD948326279DC4650098E194 /* TransactionConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		AD948329279DC5930098E194 /* TransactionConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionConfigurator.swift; sourceTree = "<group>"; };
 		AD94832D279DC6960098E194 /* TransactionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionInteractor.swift; sourceTree = "<group>"; };
+		AD948333279DC7450098E194 /* TransactionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionPresenter.swift; sourceTree = "<group>"; };
 		AD948335279DC8150098E194 /* Transaction+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transaction+ViewModel.swift"; sourceTree = "<group>"; };
 		AD94833B279DCCEC0098E194 /* TransactionNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionNavigationController.swift; sourceTree = "<group>"; };
 		AD9F420827920F0D002A472F /* TransactionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTests.swift; sourceTree = "<group>"; };
@@ -411,6 +413,7 @@
 			children = (
 				AD948329279DC5930098E194 /* TransactionConfigurator.swift */,
 				AD94832D279DC6960098E194 /* TransactionInteractor.swift */,
+				AD948333279DC7450098E194 /* TransactionPresenter.swift */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -727,6 +730,7 @@
 				ADBBB6662799BBBC00B596A5 /* UITableViewCell+RegistrableTableViewCell.swift in Sources */,
 				ADBBB66B2799D5C700B596A5 /* UUID+extension.swift in Sources */,
 				ADBD4168272B3EF000BB3327 /* BaseViewController.swift in Sources */,
+				AD948334279DC7450098E194 /* TransactionPresenter.swift in Sources */,
 				ADBD4155272B3B1E00BB3327 /* MainViewController.swift in Sources */,
 				ADBBB675279ADD6F00B596A5 /* PortfolioWorkerProtocol.swift in Sources */,
 				ADBBB66227999DDB00B596A5 /* SummaryItem.swift in Sources */,

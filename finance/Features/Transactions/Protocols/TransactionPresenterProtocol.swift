@@ -9,4 +9,6 @@ import Foundation
 
 protocol TransactionPresenterProtocol {
     var view: TransactionViewProtocol? { get }
+    func loadData(_ data: [Transaction])
+    func present(item: Transaction)
 }
