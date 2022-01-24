@@ -10,4 +10,10 @@ import Foundation
 protocol TransactionInteractorProtocol {
     var presenter: TransactionPresenterProtocol { get }
     var worker: TransactionWorkerProtocol { get }
+    func loadData()
+    func save()
+    func discard()
+    func present(fromIndex index: Int)
+    func insert()
+    func delete(fromIndex index: Int)
 }
