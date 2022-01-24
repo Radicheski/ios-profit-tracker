@@ -9,4 +9,5 @@ import Foundation
 
 protocol TransactionRouterProtocol {
     var view: TransactionViewProtocol? { get }
+    func present(item: Transaction.ViewModel)
 }
