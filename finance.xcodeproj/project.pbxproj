@@ -131,6 +131,8 @@
 		ADC3F67B278F60A80087294D /* PortfolioItem+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC3F67A278F60A80087294D /* PortfolioItem+Identifiable.swift */; };
 		ADC3F67D278F611B0087294D /* CustomContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC3F67C278F611B0087294D /* CustomContentConfiguration.swift */; };
 		ADC3F68D278F62D10087294D /* UpdateViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC3F68C278F62D10087294D /* UpdateViewController+UITextFieldDelegate.swift */; };
+		ADD1EFA327A1B5AD002A4055 /* BrokerNoteUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFA227A1B5AD002A4055 /* BrokerNoteUpdateView.swift */; };
+		ADD1EFA527A1BC2F002A4055 /* BrokerNoteUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFA427A1BC2F002A4055 /* BrokerNoteUpdateViewController.swift */; };
 		ADD677692796E06700880AE8 /* NavigationAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD677682796E06700880AE8 /* NavigationAccessoryView.swift */; };
 		ADEB66AC272C3279002AFAE3 /* portfolio.json in Resources */ = {isa = PBXBuildFile; fileRef = ADEB66AB272C3279002AFAE3 /* portfolio.json */; };
 		EBDF34580807606EE48EFD90 /* PortfolioNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF3245FEF1177F4071BD72 /* PortfolioNavigationController.swift */; };
@@ -277,6 +279,8 @@
 		ADC3F67A278F60A80087294D /* PortfolioItem+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+Identifiable.swift"; sourceTree = "<group>"; };
 		ADC3F67C278F611B0087294D /* CustomContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomContentConfiguration.swift; sourceTree = "<group>"; };
 		ADC3F68C278F62D10087294D /* UpdateViewController+UITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UpdateViewController+UITextFieldDelegate.swift"; sourceTree = "<group>"; };
+		ADD1EFA227A1B5AD002A4055 /* BrokerNoteUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerNoteUpdateView.swift; sourceTree = "<group>"; };
+		ADD1EFA427A1BC2F002A4055 /* BrokerNoteUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerNoteUpdateViewController.swift; sourceTree = "<group>"; };
 		ADD677682796E06700880AE8 /* NavigationAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAccessoryView.swift; sourceTree = "<group>"; };
 		ADEB66AB272C3279002AFAE3 /* portfolio.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portfolio.json; sourceTree = "<group>"; };
 		EBDF3245FEF1177F4071BD72 /* PortfolioNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioNavigationController.swift; sourceTree = "<group>"; };
@@ -323,6 +327,8 @@
 				AD041F9627A0278A00C9A815 /* Protocols */,
 				AD041FC727A06A4200C9A815 /* BrokerNoteContentConfiguration.swift */,
 				AD041FC927A0760400C9A815 /* BrokerNoteContentView.swift */,
+				ADD1EFA227A1B5AD002A4055 /* BrokerNoteUpdateView.swift */,
+				ADD1EFA427A1BC2F002A4055 /* BrokerNoteUpdateViewController.swift */,
 			);
 			path = BrokerNoteSummary;
 			sourceTree = "<group>";
@@ -875,6 +881,7 @@
 				AD36D8AE279492DD0043EB93 /* CustomLocalization+Transactions.swift in Sources */,
 				AD948336279DC8150098E194 /* Transaction+ViewModel.swift in Sources */,
 				ADBBB6552797428100B596A5 /* SaveCancelNavigationDelegate.swift in Sources */,
+				ADD1EFA327A1B5AD002A4055 /* BrokerNoteUpdateView.swift in Sources */,
 				ADBBB65E27999CB000B596A5 /* FullDatastore.swift in Sources */,
 				ADC3F67D278F611B0087294D /* CustomContentConfiguration.swift in Sources */,
 				AD162AC427934D2F00E77FC1 /* TransactionContentView.swift in Sources */,
@@ -939,6 +946,7 @@
 				AD041FAB27A02EB700C9A815 /* BrokerNote+ViewModel.swift in Sources */,
 				AD948327279DC4650098E194 /* TransactionConfiguratorProtocol.swift in Sources */,
 				EBDF37EB6D58FC11B4EE5387 /* CustomContentView.swift in Sources */,
+				ADD1EFA527A1BC2F002A4055 /* BrokerNoteUpdateViewController.swift in Sources */,
 				ADBBB67B279ADDCA00B596A5 /* PortfolioConfiguratorProtocol.swift in Sources */,
 				AD041FC627A068D500C9A815 /* BrokerNote+extension.swift in Sources */,
 				ADBBB679279ADDB100B596A5 /* PortfolioRouterProtocol.swift in Sources */,
