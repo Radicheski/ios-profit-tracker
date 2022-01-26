@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21C52" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BrokerNote" representedClassName="BrokerNote" syncable="YES">
+        <attribute name="brokerageHouse" attributeType="String"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="noteNumber" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="cdtransactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction"/>
+    </entity>
     <entity name="PortfolioItem" representedClassName="PortfolioItem" syncable="YES">
         <attribute name="asset" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="cdweight" attributeType="Decimal" defaultValueString="0.0"/>
@@ -17,5 +23,6 @@
     <elements>
         <element name="PortfolioItem" positionX="-63" positionY="-18" width="128" height="119"/>
         <element name="Transaction" positionX="-63" positionY="27" width="128" height="89"/>
+        <element name="BrokerNote" positionX="-63" positionY="36" width="128" height="89"/>
     </elements>
 </model>
