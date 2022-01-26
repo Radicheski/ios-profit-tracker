@@ -48,4 +48,15 @@ public struct Formatter {
     
     private init(){}
     
+    private(set) public lazy var number: NumberFormatter = {
+        let formatter = NumberFormatter()
+        
+        formatter.groupingSeparator = Locale.current.groupingSeparator
+        formatter.decimalSeparator = Locale.current.decimalSeparator
+        formatter.groupingSize = 3
+        formatter.usesGroupingSeparator = true
+        
+        return formatter
+    }()
+    
 }
