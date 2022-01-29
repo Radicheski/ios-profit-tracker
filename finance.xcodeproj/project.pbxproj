@@ -133,6 +133,9 @@
 		ADC3F67B278F60A80087294D /* PortfolioItem+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC3F67A278F60A80087294D /* PortfolioItem+Identifiable.swift */; };
 		ADC3F67D278F611B0087294D /* CustomContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC3F67C278F611B0087294D /* CustomContentConfiguration.swift */; };
 		ADC3F68D278F62D10087294D /* UpdateViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC3F68C278F62D10087294D /* UpdateViewController+UITextFieldDelegate.swift */; };
+		ADCD162D27A56D19006219AA /* SwitchInputFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD162C27A56D19006219AA /* SwitchInputFormField.swift */; };
+		ADCD162F27A56DE4006219AA /* SwitchInputContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD162E27A56DE4006219AA /* SwitchInputContentConfiguration.swift */; };
+		ADCD163127A56F02006219AA /* SwitchInputContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD163027A56F02006219AA /* SwitchInputContentView.swift */; };
 		ADD1EFA327A1B5AD002A4055 /* BrokerNoteUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFA227A1B5AD002A4055 /* BrokerNoteUpdateView.swift */; };
 		ADD1EFA527A1BC2F002A4055 /* BrokerNoteUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFA427A1BC2F002A4055 /* BrokerNoteUpdateViewController.swift */; };
 		ADD1EFAD27A1D0E9002A4055 /* TextInputContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFAC27A1D0E9002A4055 /* TextInputContentConfiguration.swift */; };
@@ -286,6 +289,9 @@
 		ADC3F67A278F60A80087294D /* PortfolioItem+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+Identifiable.swift"; sourceTree = "<group>"; };
 		ADC3F67C278F611B0087294D /* CustomContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomContentConfiguration.swift; sourceTree = "<group>"; };
 		ADC3F68C278F62D10087294D /* UpdateViewController+UITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UpdateViewController+UITextFieldDelegate.swift"; sourceTree = "<group>"; };
+		ADCD162C27A56D19006219AA /* SwitchInputFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchInputFormField.swift; sourceTree = "<group>"; };
+		ADCD162E27A56DE4006219AA /* SwitchInputContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchInputContentConfiguration.swift; sourceTree = "<group>"; };
+		ADCD163027A56F02006219AA /* SwitchInputContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchInputContentView.swift; sourceTree = "<group>"; };
 		ADD1EFA227A1B5AD002A4055 /* BrokerNoteUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerNoteUpdateView.swift; sourceTree = "<group>"; };
 		ADD1EFA427A1BC2F002A4055 /* BrokerNoteUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerNoteUpdateViewController.swift; sourceTree = "<group>"; };
 		ADD1EFAC27A1D0E9002A4055 /* TextInputContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputContentConfiguration.swift; sourceTree = "<group>"; };
@@ -659,9 +665,20 @@
 			path = PortfolioItem;
 			sourceTree = "<group>";
 		};
+		ADCD162B27A56D00006219AA /* SwitchInputFormField */ = {
+			isa = PBXGroup;
+			children = (
+				ADCD162C27A56D19006219AA /* SwitchInputFormField.swift */,
+				ADCD162E27A56DE4006219AA /* SwitchInputContentConfiguration.swift */,
+				ADCD163027A56F02006219AA /* SwitchInputContentView.swift */,
+			);
+			path = SwitchInputFormField;
+			sourceTree = "<group>";
+		};
 		ADD1EFA627A1BD75002A4055 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				ADCD162B27A56D00006219AA /* SwitchInputFormField */,
 				ADD1EFAB27A1D0D4002A4055 /* TextInputFormField */,
 			);
 			path = TableView;
@@ -869,7 +886,9 @@
 				AD94833A279DCB4F0098E194 /* TransactionTableViewDelegate.swift in Sources */,
 				AD0D2319279D8DE900CBA554 /* SummaryInteractor.swift in Sources */,
 				AD041FA127A02DDA00C9A815 /* BrokerNoteSummaryPresenterProtocol.swift in Sources */,
+				ADCD162D27A56D19006219AA /* SwitchInputFormField.swift in Sources */,
 				AD0D2303279C5B3C00CBA554 /* SummaryWorkerProtocol.swift in Sources */,
+				ADCD163127A56F02006219AA /* SwitchInputContentView.swift in Sources */,
 				ADBBB68E279ADEDE00B596A5 /* PortfolioTableViewDelegate.swift in Sources */,
 				ADBBB6662799BBBC00B596A5 /* UITableViewCell+RegistrableTableViewCell.swift in Sources */,
 				ADBBB66B2799D5C700B596A5 /* UUID+extension.swift in Sources */,
@@ -943,6 +962,7 @@
 				AD041FB027A0309400C9A815 /* BrokerNoteSummaryViewController.swift in Sources */,
 				ADBBB680279ADE0800B596A5 /* PortfolioRouter.swift in Sources */,
 				AD94831F279DC3890098E194 /* TransactionInteractorProtocol.swift in Sources */,
+				ADCD162F27A56DE4006219AA /* SwitchInputContentConfiguration.swift in Sources */,
 				AD36D8AC279492B60043EB93 /* UpdateTransactionView.swift in Sources */,
 				EBDF34580807606EE48EFD90 /* PortfolioNavigationController.swift in Sources */,
 				AD041FBC27A03B4600C9A815 /* BrokerNoteSummaryConfigurator.swift in Sources */,
