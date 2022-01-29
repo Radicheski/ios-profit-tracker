@@ -36,6 +36,11 @@ class TransactionViewController: BaseViewController<PortfolioView>, TransactionV
         if self.navigationItem.title == nil { self.navigationItem.title = CustomLocalization.Transactions.transactionTitle }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.loadData()
+        super.viewWillAppear(animated)
+    }
+    
     override func setEditing(_ editing: Bool, animated: Bool) {
         self.customView.tableView.setEditing(editing, animated: animated)
         super.setEditing(editing, animated: animated)

@@ -5,16 +5,47 @@
 //  Created by Erik Radicheski da Silva on 23/01/22.
 //
 
-import Foundation
+import UIKit
 
 class TransactionRouter: TransactionRouterProtocol {
     weak var view: TransactionViewProtocol?
     
     func present(item: Transaction.ViewModel) {
-        let vc = UpdateTransactionViewController()
-        vc.sheetPresentationController?.detents = [.medium()]
-        vc.onDismiss = { self.view?.loadData() }
-        vc.item = item
-        self.view?.present(vc)
+        let viewController = FormViewController()
+        var ticker: Box<String?> = Box(item.ticker.value)
+        var quantity: Box<String?> = Box(item.quantity.value)
+        var date: Box<String?> = Box(item.date.value.formatted())
+        var total: Box<String?> = Box(item.total.value)
+        viewController.data = [
+            TextInputFormField(key: "ticker", value: ticker, contentConfiguration: .init(title: "Ticker", placeholder: ticker.value)),
+            TextInputFormField(key: "quantity", value: quantity, contentConfiguration: .init(title: "Quantity", placeholder: quantity.value)),
+            TextInputFormField(key: "date", value: date, contentConfiguration: .init(title: "Data", placeholder: date.value)),
+            TextInputFormField(key: "total", value: total, contentConfiguration: .init(title: "Total", placeholder: total.value)),
+        ]
+        
+        viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(systemItem: .cancel, primaryAction: UIAction(handler: self.action(_:)), menu: nil)
+        
+        viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(systemItem: .save, primaryAction: UIAction(handler: { [weak self] _ in
+            if let ticker = ticker.value {
+                item.ticker.value = ticker
+            }
+            if let quantity = quantity.value {
+                item.quantity.value = quantity
+            }
+            if let total = total.value {
+                item.total.value = total
+            }
+            if let dateString = date.value,
+               let date = Formatter.shared.date.date(from: dateString) {
+                item.date.value = date
+            }
+            self?.view?.navigationController?.popViewController(animated: true)
+        }))
+        
+        self.view?.show(viewController, sender: nil)
+    }
+
+    func action( _ action: UIAction) {
+        self.view?.navigationController?.popViewController(animated: true)
     }
 }
