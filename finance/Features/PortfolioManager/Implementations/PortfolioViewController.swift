@@ -45,6 +45,11 @@ class PortfolioViewController: BaseViewController<PortfolioView>, PortfolioViewP
         self.customView.tableView.allowsSelectionDuringEditing = true
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.loadData()
+        super.viewWillAppear(animated)
+    }
+    
     func loadData() {
         self.interactor.loadData()
     }

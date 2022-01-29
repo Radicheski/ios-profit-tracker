@@ -5,7 +5,7 @@
 //  Created by Erik Radicheski da Silva on 22/01/22.
 //
 
-struct Box<T> {
+class Box<T> {
     
     var listener: ((T) -> Void)?
     

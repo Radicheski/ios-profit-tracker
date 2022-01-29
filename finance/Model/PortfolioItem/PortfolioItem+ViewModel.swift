@@ -11,7 +11,7 @@ extension PortfolioItem {
     
     class ViewModel {
         var id: Box<String>
-        var name: Box<String>
+        var name: Box<String?>
         var weight: Box<String?>
         var parentId: Box<String>
         var isAsset: Box<Bool>
@@ -28,7 +28,9 @@ extension PortfolioItem {
             }
             
             self.name.listener = { newValue in
-                portfolio.name = newValue
+                if let newValue = newValue {
+                    portfolio.name = newValue
+                }
             }
             
             self.weight.listener = { newValue in
