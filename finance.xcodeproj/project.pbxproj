@@ -138,6 +138,8 @@
 		ADCD163127A56F02006219AA /* SwitchInputContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD163027A56F02006219AA /* SwitchInputContentView.swift */; };
 		ADD1EFA327A1B5AD002A4055 /* BrokerNoteUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFA227A1B5AD002A4055 /* BrokerNoteUpdateView.swift */; };
 		ADD1EFA527A1BC2F002A4055 /* BrokerNoteUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFA427A1BC2F002A4055 /* BrokerNoteUpdateViewController.swift */; };
+		ADD1EFA827A1BD93002A4055 /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFA727A1BD93002A4055 /* FormField.swift */; };
+		ADD1EFAA27A1C6BC002A4055 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFA927A1C6BC002A4055 /* FormViewController.swift */; };
 		ADD1EFAD27A1D0E9002A4055 /* TextInputContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFAC27A1D0E9002A4055 /* TextInputContentConfiguration.swift */; };
 		ADD1EFAF27A1D109002A4055 /* TextInputContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFAE27A1D109002A4055 /* TextInputContentView.swift */; };
 		ADD1EFB127A1D143002A4055 /* TextInputFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFB027A1D143002A4055 /* TextInputFormField.swift */; };
@@ -294,6 +296,8 @@
 		ADCD163027A56F02006219AA /* SwitchInputContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchInputContentView.swift; sourceTree = "<group>"; };
 		ADD1EFA227A1B5AD002A4055 /* BrokerNoteUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerNoteUpdateView.swift; sourceTree = "<group>"; };
 		ADD1EFA427A1BC2F002A4055 /* BrokerNoteUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerNoteUpdateViewController.swift; sourceTree = "<group>"; };
+		ADD1EFA727A1BD93002A4055 /* FormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
+		ADD1EFA927A1C6BC002A4055 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		ADD1EFAC27A1D0E9002A4055 /* TextInputContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputContentConfiguration.swift; sourceTree = "<group>"; };
 		ADD1EFAE27A1D109002A4055 /* TextInputContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputContentView.swift; sourceTree = "<group>"; };
 		ADD1EFB027A1D143002A4055 /* TextInputFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputFormField.swift; sourceTree = "<group>"; };
@@ -680,6 +684,8 @@
 			children = (
 				ADCD162B27A56D00006219AA /* SwitchInputFormField */,
 				ADD1EFAB27A1D0D4002A4055 /* TextInputFormField */,
+				ADD1EFA727A1BD93002A4055 /* FormField.swift */,
+				ADD1EFA927A1C6BC002A4055 /* FormViewController.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -957,6 +963,7 @@
 				AD8E9A632795E757005164F6 /* Mock.swift in Sources */,
 				ADBBB67E279ADDF200B596A5 /* PortfolioConfigurator.swift in Sources */,
 				ADD1EFAD27A1D0E9002A4055 /* TextInputContentConfiguration.swift in Sources */,
+				ADD1EFAA27A1C6BC002A4055 /* FormViewController.swift in Sources */,
 				AD0D22F8279C1D7700CBA554 /* Box.swift in Sources */,
 				ADBBB6572797459200B596A5 /* UpdateViewController+SaveCancelNavigationDelegate.swift in Sources */,
 				AD041FB027A0309400C9A815 /* BrokerNoteSummaryViewController.swift in Sources */,
@@ -971,6 +978,7 @@
 				ADBBB688279ADE9600B596A5 /* PortfolioWorker.swift in Sources */,
 				AD041FBE27A05E3800C9A815 /* BrokerNoteSummaryRouter.swift in Sources */,
 				AD94832E279DC6960098E194 /* TransactionInteractor.swift in Sources */,
+				ADD1EFA827A1BD93002A4055 /* FormField.swift in Sources */,
 				AD948323279DC3EE0098E194 /* TransactionRouterProtocol.swift in Sources */,
 				ADD1EFB127A1D143002A4055 /* TextInputFormField.swift in Sources */,
 				AD0D230A279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift in Sources */,
