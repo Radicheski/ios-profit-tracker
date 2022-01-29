@@ -135,6 +135,9 @@
 		ADC3F68D278F62D10087294D /* UpdateViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC3F68C278F62D10087294D /* UpdateViewController+UITextFieldDelegate.swift */; };
 		ADD1EFA327A1B5AD002A4055 /* BrokerNoteUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFA227A1B5AD002A4055 /* BrokerNoteUpdateView.swift */; };
 		ADD1EFA527A1BC2F002A4055 /* BrokerNoteUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFA427A1BC2F002A4055 /* BrokerNoteUpdateViewController.swift */; };
+		ADD1EFAD27A1D0E9002A4055 /* TextInputContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFAC27A1D0E9002A4055 /* TextInputContentConfiguration.swift */; };
+		ADD1EFAF27A1D109002A4055 /* TextInputContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFAE27A1D109002A4055 /* TextInputContentView.swift */; };
+		ADD1EFB127A1D143002A4055 /* TextInputFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFB027A1D143002A4055 /* TextInputFormField.swift */; };
 		ADD677692796E06700880AE8 /* NavigationAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD677682796E06700880AE8 /* NavigationAccessoryView.swift */; };
 		ADEB66AC272C3279002AFAE3 /* portfolio.json in Resources */ = {isa = PBXBuildFile; fileRef = ADEB66AB272C3279002AFAE3 /* portfolio.json */; };
 		EBDF34580807606EE48EFD90 /* PortfolioNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF3245FEF1177F4071BD72 /* PortfolioNavigationController.swift */; };
@@ -285,6 +288,9 @@
 		ADC3F68C278F62D10087294D /* UpdateViewController+UITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UpdateViewController+UITextFieldDelegate.swift"; sourceTree = "<group>"; };
 		ADD1EFA227A1B5AD002A4055 /* BrokerNoteUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerNoteUpdateView.swift; sourceTree = "<group>"; };
 		ADD1EFA427A1BC2F002A4055 /* BrokerNoteUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerNoteUpdateViewController.swift; sourceTree = "<group>"; };
+		ADD1EFAC27A1D0E9002A4055 /* TextInputContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputContentConfiguration.swift; sourceTree = "<group>"; };
+		ADD1EFAE27A1D109002A4055 /* TextInputContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputContentView.swift; sourceTree = "<group>"; };
+		ADD1EFB027A1D143002A4055 /* TextInputFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputFormField.swift; sourceTree = "<group>"; };
 		ADD677682796E06700880AE8 /* NavigationAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAccessoryView.swift; sourceTree = "<group>"; };
 		ADEB66AB272C3279002AFAE3 /* portfolio.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portfolio.json; sourceTree = "<group>"; };
 		EBDF3245FEF1177F4071BD72 /* PortfolioNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioNavigationController.swift; sourceTree = "<group>"; };
@@ -624,6 +630,7 @@
 		ADBD4164272B3CA800BB3327 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ADD1EFA627A1BD75002A4055 /* TableView */,
 				ADBD4165272B3CC500BB3327 /* PortfolioView.swift */,
 				ADD677682796E06700880AE8 /* NavigationAccessoryView.swift */,
 				ADBBB6522797426A00B596A5 /* SaveCancelNavigationBar.swift */,
@@ -650,6 +657,24 @@
 				ADBBB68F279B1A7C00B596A5 /* PortfolioItem+ViewModel.swift */,
 			);
 			path = PortfolioItem;
+			sourceTree = "<group>";
+		};
+		ADD1EFA627A1BD75002A4055 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				ADD1EFAB27A1D0D4002A4055 /* TextInputFormField */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		ADD1EFAB27A1D0D4002A4055 /* TextInputFormField */ = {
+			isa = PBXGroup;
+			children = (
+				ADD1EFAC27A1D0E9002A4055 /* TextInputContentConfiguration.swift */,
+				ADD1EFAE27A1D109002A4055 /* TextInputContentView.swift */,
+				ADD1EFB027A1D143002A4055 /* TextInputFormField.swift */,
+			);
+			path = TextInputFormField;
 			sourceTree = "<group>";
 		};
 		ADEB66A9272C325C002AFAE3 /* Mock */ = {
@@ -868,6 +893,7 @@
 				AD94832A279DC5930098E194 /* TransactionConfigurator.swift in Sources */,
 				ADAEFF352735669100C7ABAE /* CustomLocalization+PortfolioManager.swift in Sources */,
 				AD041FA927A02E6C00C9A815 /* BrokerNoteSummaryTableViewDataSource.swift in Sources */,
+				ADD1EFAF27A1D109002A4055 /* TextInputContentView.swift in Sources */,
 				ADBD4153272B3B1E00BB3327 /* SceneDelegate.swift in Sources */,
 				ADBBB68C279ADEC800B596A5 /* PortfolioTableViewDataSource.swift in Sources */,
 				ADBD4166272B3CC500BB3327 /* PortfolioView.swift in Sources */,
@@ -911,6 +937,7 @@
 				AD36D8AA279492860043EB93 /* UpdateTransactionViewController.swift in Sources */,
 				AD8E9A632795E757005164F6 /* Mock.swift in Sources */,
 				ADBBB67E279ADDF200B596A5 /* PortfolioConfigurator.swift in Sources */,
+				ADD1EFAD27A1D0E9002A4055 /* TextInputContentConfiguration.swift in Sources */,
 				AD0D22F8279C1D7700CBA554 /* Box.swift in Sources */,
 				ADBBB6572797459200B596A5 /* UpdateViewController+SaveCancelNavigationDelegate.swift in Sources */,
 				AD041FB027A0309400C9A815 /* BrokerNoteSummaryViewController.swift in Sources */,
@@ -925,6 +952,7 @@
 				AD041FBE27A05E3800C9A815 /* BrokerNoteSummaryRouter.swift in Sources */,
 				AD94832E279DC6960098E194 /* TransactionInteractor.swift in Sources */,
 				AD948323279DC3EE0098E194 /* TransactionRouterProtocol.swift in Sources */,
+				ADD1EFB127A1D143002A4055 /* TextInputFormField.swift in Sources */,
 				AD0D230A279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift in Sources */,
 				ADBBB6682799BBDE00B596A5 /* RegistrableTableViewCell.swift in Sources */,
 				ADBBB6512797390200B596A5 /* UpdateViewController+NavigationAccessoryDelegate.swift in Sources */,
