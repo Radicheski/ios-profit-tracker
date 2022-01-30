@@ -20,6 +20,7 @@ extension Transaction {
     @NSManaged public var date: Date
     @NSManaged public var quantity: Int
     @NSManaged public var cdtotal: NSDecimalNumber
+    @NSManaged public var brokerNote: BrokerNote
 
 }
 
