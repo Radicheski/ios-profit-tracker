@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TextInputFormField: FormField {
+class TextInputFormField: Row {
 
     var key: String
     var value: Box<String?>

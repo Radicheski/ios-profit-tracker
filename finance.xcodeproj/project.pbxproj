@@ -126,7 +126,7 @@
 		ADCD162D27A56D19006219AA /* SwitchInputFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD162C27A56D19006219AA /* SwitchInputFormField.swift */; };
 		ADCD162F27A56DE4006219AA /* SwitchInputContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD162E27A56DE4006219AA /* SwitchInputContentConfiguration.swift */; };
 		ADCD163127A56F02006219AA /* SwitchInputContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD163027A56F02006219AA /* SwitchInputContentView.swift */; };
-		ADD1EFA827A1BD93002A4055 /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFA727A1BD93002A4055 /* FormField.swift */; };
+		ADD1EFA827A1BD93002A4055 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFA727A1BD93002A4055 /* Row.swift */; };
 		ADD1EFAA27A1C6BC002A4055 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFA927A1C6BC002A4055 /* FormViewController.swift */; };
 		ADD1EFAD27A1D0E9002A4055 /* TextInputContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFAC27A1D0E9002A4055 /* TextInputContentConfiguration.swift */; };
 		ADD1EFAF27A1D109002A4055 /* TextInputContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFAE27A1D109002A4055 /* TextInputContentView.swift */; };
@@ -272,7 +272,7 @@
 		ADCD162C27A56D19006219AA /* SwitchInputFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchInputFormField.swift; sourceTree = "<group>"; };
 		ADCD162E27A56DE4006219AA /* SwitchInputContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchInputContentConfiguration.swift; sourceTree = "<group>"; };
 		ADCD163027A56F02006219AA /* SwitchInputContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchInputContentView.swift; sourceTree = "<group>"; };
-		ADD1EFA727A1BD93002A4055 /* FormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
+		ADD1EFA727A1BD93002A4055 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 		ADD1EFA927A1C6BC002A4055 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		ADD1EFAC27A1D0E9002A4055 /* TextInputContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputContentConfiguration.swift; sourceTree = "<group>"; };
 		ADD1EFAE27A1D109002A4055 /* TextInputContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputContentView.swift; sourceTree = "<group>"; };
@@ -643,12 +643,29 @@
 			path = SwitchInputFormField;
 			sourceTree = "<group>";
 		};
-		ADD1EFA627A1BD75002A4055 /* TableView */ = {
+		ADCD164827A7155E006219AA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				ADD1EFA727A1BD93002A4055 /* Row.swift */,
+				ADCD164B27A71692006219AA /* Section.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		ADCD164D27A716EE006219AA /* Implementations */ = {
 			isa = PBXGroup;
 			children = (
 				ADCD162B27A56D00006219AA /* SwitchInputFormField */,
 				ADD1EFAB27A1D0D4002A4055 /* TextInputFormField */,
-				ADD1EFA727A1BD93002A4055 /* FormField.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		ADD1EFA627A1BD75002A4055 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				ADCD164D27A716EE006219AA /* Implementations */,
+				ADCD164827A7155E006219AA /* Protocols */,
 				ADD1EFA927A1C6BC002A4055 /* FormViewController.swift */,
 			);
 			path = TableView;
@@ -935,7 +952,7 @@
 				ADBBB688279ADE9600B596A5 /* PortfolioWorker.swift in Sources */,
 				AD041FBE27A05E3800C9A815 /* BrokerNoteSummaryRouter.swift in Sources */,
 				AD94832E279DC6960098E194 /* TransactionInteractor.swift in Sources */,
-				ADD1EFA827A1BD93002A4055 /* FormField.swift in Sources */,
+				ADD1EFA827A1BD93002A4055 /* Row.swift in Sources */,
 				AD948323279DC3EE0098E194 /* TransactionRouterProtocol.swift in Sources */,
 				ADD1EFB127A1D143002A4055 /* TextInputFormField.swift in Sources */,
 				AD0D230A279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift in Sources */,

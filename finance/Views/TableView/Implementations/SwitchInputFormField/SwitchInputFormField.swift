@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SwitchInputFormField: FormField {
+class SwitchInputFormField: Row {
     
     var key: String
     var value: Box<Bool>

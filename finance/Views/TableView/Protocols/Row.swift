@@ -1,5 +1,5 @@
 //
-//  FormField.swift
+//  Row.swift
 //  finance
 //
 //  Created by Erik Radicheski da Silva on 26/01/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol FormField: AnyObject {
+protocol Row: AnyObject {
     var key: String { get }
     var tableViewCell: RegistrableTableViewCell.Type { get }
     var contentConfiguration: UIContentConfiguration { get }
@@ -15,7 +15,7 @@ protocol FormField: AnyObject {
     func dequeue(_ tableView: UITableView, for indexPath: IndexPath) -> UITableViewCell
 }
 
-extension FormField {
+extension Row {
 
     var tableViewCell: RegistrableTableViewCell.Type { UITableViewCell.self }
 
@@ -31,7 +31,7 @@ extension FormField {
 
 }
 
-protocol BoxedFormField: FormField {
+protocol BoxedFormField: Row {
     associatedtype Item
     var value: Box<Item> { get }
 }
