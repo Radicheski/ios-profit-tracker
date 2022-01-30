@@ -126,6 +126,7 @@
 		ADCD162D27A56D19006219AA /* SwitchInputFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD162C27A56D19006219AA /* SwitchInputFormField.swift */; };
 		ADCD162F27A56DE4006219AA /* SwitchInputContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD162E27A56DE4006219AA /* SwitchInputContentConfiguration.swift */; };
 		ADCD163127A56F02006219AA /* SwitchInputContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD163027A56F02006219AA /* SwitchInputContentView.swift */; };
+		ADCD164C27A71692006219AA /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD164B27A71692006219AA /* Section.swift */; };
 		ADD1EFA827A1BD93002A4055 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFA727A1BD93002A4055 /* Row.swift */; };
 		ADD1EFAA27A1C6BC002A4055 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFA927A1C6BC002A4055 /* FormViewController.swift */; };
 		ADD1EFAD27A1D0E9002A4055 /* TextInputContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1EFAC27A1D0E9002A4055 /* TextInputContentConfiguration.swift */; };
@@ -272,6 +273,7 @@
 		ADCD162C27A56D19006219AA /* SwitchInputFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchInputFormField.swift; sourceTree = "<group>"; };
 		ADCD162E27A56DE4006219AA /* SwitchInputContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchInputContentConfiguration.swift; sourceTree = "<group>"; };
 		ADCD163027A56F02006219AA /* SwitchInputContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchInputContentView.swift; sourceTree = "<group>"; };
+		ADCD164B27A71692006219AA /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		ADD1EFA727A1BD93002A4055 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 		ADD1EFA927A1C6BC002A4055 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		ADD1EFAC27A1D0E9002A4055 /* TextInputContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputContentConfiguration.swift; sourceTree = "<group>"; };
@@ -872,6 +874,7 @@
 				AD0D2306279C5B5900CBA554 /* SummaryTableViewDelegate.swift in Sources */,
 				AD94833A279DCB4F0098E194 /* TransactionTableViewDelegate.swift in Sources */,
 				AD0D2319279D8DE900CBA554 /* SummaryInteractor.swift in Sources */,
+				ADCD164C27A71692006219AA /* Section.swift in Sources */,
 				AD041FA127A02DDA00C9A815 /* BrokerNoteSummaryPresenterProtocol.swift in Sources */,
 				ADCD162D27A56D19006219AA /* SwitchInputFormField.swift in Sources */,
 				AD0D2303279C5B3C00CBA554 /* SummaryWorkerProtocol.swift in Sources */,
