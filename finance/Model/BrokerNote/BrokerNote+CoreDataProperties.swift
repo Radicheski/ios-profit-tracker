@@ -16,6 +16,7 @@ extension BrokerNote {
         return NSFetchRequest<BrokerNote>(entityName: "BrokerNote")
     }
 
+    @NSManaged public var id: UUID
     @NSManaged public var brokerageHouse: String
     @NSManaged public var date: Date
     @NSManaged public var noteNumber: Int

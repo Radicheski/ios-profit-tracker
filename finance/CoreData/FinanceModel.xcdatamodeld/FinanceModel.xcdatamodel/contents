@@ -3,6 +3,7 @@
     <entity name="BrokerNote" representedClassName="BrokerNote" syncable="YES">
         <attribute name="brokerageHouse" attributeType="String"/>
         <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="noteNumber" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <relationship name="cdtransactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="brokerNote" inverseEntity="Transaction"/>
     </entity>
