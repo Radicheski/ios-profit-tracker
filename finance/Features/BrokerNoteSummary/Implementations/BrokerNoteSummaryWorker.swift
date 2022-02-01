@@ -32,6 +32,7 @@ class BrokerNoteSummaryWorker: BrokerNoteSummaryWorkerProtocol {
     
     func insert() {
         let newItem = BrokerNote(context: self.context)
+        newItem.id = UUID()
         newItem.date = Date.now
         newItem.noteNumber = 0
         newItem.brokerageHouse = ""

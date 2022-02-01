@@ -55,6 +55,12 @@
 		AD21192327A7FF6600B54710 /* BrokerNoteDetailRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21192227A7FF6600B54710 /* BrokerNoteDetailRouterProtocol.swift */; };
 		AD21192527A7FF8700B54710 /* BrokerNoteDetailWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21192427A7FF8700B54710 /* BrokerNoteDetailWorkerProtocol.swift */; };
 		AD21192727A7FFB700B54710 /* BrokerNoteDetailConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21192627A7FFB700B54710 /* BrokerNoteDetailConfiguratorProtocol.swift */; };
+		AD21192A27A8036A00B54710 /* BrokerNoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21192927A8036A00B54710 /* BrokerNoteDetailViewController.swift */; };
+		AD21192C27A8340C00B54710 /* BrokerNoteDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21192B27A8340C00B54710 /* BrokerNoteDetailInteractor.swift */; };
+		AD21192E27A8346700B54710 /* BrokerNoteDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21192D27A8346700B54710 /* BrokerNoteDetailPresenter.swift */; };
+		AD21193027A8349700B54710 /* BrokerNoteDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21192F27A8349700B54710 /* BrokerNoteDetailRouter.swift */; };
+		AD21193227A834BF00B54710 /* BrokerNoteDetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21193127A834BF00B54710 /* BrokerNoteDetailWorker.swift */; };
+		AD21193427A834E700B54710 /* BrokerNoteDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21193327A834E700B54710 /* BrokerNoteDetailConfigurator.swift */; };
 		AD28102227875A0700BA4136 /* NetworkWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD28102127875A0700BA4136 /* NetworkWorker.swift */; };
 		AD2810242787648C00BA4136 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2810232787648C00BA4136 /* Quote.swift */; };
 		AD2810272787676E00BA4136 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2810262787676E00BA4136 /* Formatter.swift */; };
@@ -207,6 +213,12 @@
 		AD21192227A7FF6600B54710 /* BrokerNoteDetailRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerNoteDetailRouterProtocol.swift; sourceTree = "<group>"; };
 		AD21192427A7FF8700B54710 /* BrokerNoteDetailWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerNoteDetailWorkerProtocol.swift; sourceTree = "<group>"; };
 		AD21192627A7FFB700B54710 /* BrokerNoteDetailConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerNoteDetailConfiguratorProtocol.swift; sourceTree = "<group>"; };
+		AD21192927A8036A00B54710 /* BrokerNoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerNoteDetailViewController.swift; sourceTree = "<group>"; };
+		AD21192B27A8340C00B54710 /* BrokerNoteDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerNoteDetailInteractor.swift; sourceTree = "<group>"; };
+		AD21192D27A8346700B54710 /* BrokerNoteDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerNoteDetailPresenter.swift; sourceTree = "<group>"; };
+		AD21192F27A8349700B54710 /* BrokerNoteDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerNoteDetailRouter.swift; sourceTree = "<group>"; };
+		AD21193127A834BF00B54710 /* BrokerNoteDetailWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerNoteDetailWorker.swift; sourceTree = "<group>"; };
+		AD21193327A834E700B54710 /* BrokerNoteDetailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerNoteDetailConfigurator.swift; sourceTree = "<group>"; };
 		AD28102127875A0700BA4136 /* NetworkWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWorker.swift; sourceTree = "<group>"; };
 		AD2810232787648C00BA4136 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		AD2810262787676E00BA4136 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
@@ -446,6 +458,7 @@
 		AD21191A27A7FCD100B54710 /* BrokerNoteDetail */ = {
 			isa = PBXGroup;
 			children = (
+				AD21192827A8034D00B54710 /* Implementations */,
 				AD21191B27A7FE9E00B54710 /* Protocols */,
 			);
 			path = BrokerNoteDetail;
@@ -462,6 +475,19 @@
 				AD21192627A7FFB700B54710 /* BrokerNoteDetailConfiguratorProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AD21192827A8034D00B54710 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				AD21192927A8036A00B54710 /* BrokerNoteDetailViewController.swift */,
+				AD21192B27A8340C00B54710 /* BrokerNoteDetailInteractor.swift */,
+				AD21192D27A8346700B54710 /* BrokerNoteDetailPresenter.swift */,
+				AD21192F27A8349700B54710 /* BrokerNoteDetailRouter.swift */,
+				AD21193127A834BF00B54710 /* BrokerNoteDetailWorker.swift */,
+				AD21193327A834E700B54710 /* BrokerNoteDetailConfigurator.swift */,
+			);
+			path = Implementations;
 			sourceTree = "<group>";
 		};
 		AD281020278759FA00BA4136 /* Network */ = {
@@ -977,6 +1003,7 @@
 				AD28102227875A0700BA4136 /* NetworkWorker.swift in Sources */,
 				AD36B05D27864B3A00040D25 /* PortfolioDatastore.swift in Sources */,
 				AD041FA727A02E3100C9A815 /* BrokerNoteSummaryConfiguratorProtocol.swift in Sources */,
+				AD21193227A834BF00B54710 /* BrokerNoteDetailWorker.swift in Sources */,
 				AD36D8B0279492F30043EB93 /* TransactionDataStore.swift in Sources */,
 				AD4BC666277A8DAD00593CEE /* UITableView+extension.swift in Sources */,
 				ADAEFF2B27355D7700C7ABAE /* CustomLocalization.swift in Sources */,
@@ -986,6 +1013,7 @@
 				ADBBB67E279ADDF200B596A5 /* PortfolioConfigurator.swift in Sources */,
 				ADD1EFAD27A1D0E9002A4055 /* TextInputContentConfiguration.swift in Sources */,
 				ADD1EFAA27A1C6BC002A4055 /* FormViewController.swift in Sources */,
+				AD21192E27A8346700B54710 /* BrokerNoteDetailPresenter.swift in Sources */,
 				AD0D22F8279C1D7700CBA554 /* Box.swift in Sources */,
 				AD21191D27A7FEB200B54710 /* BrokerNoteDetailViewProtocol.swift in Sources */,
 				AD041FB027A0309400C9A815 /* BrokerNoteSummaryViewController.swift in Sources */,
@@ -997,6 +1025,7 @@
 				EBDF34580807606EE48EFD90 /* PortfolioNavigationController.swift in Sources */,
 				AD041FBC27A03B4600C9A815 /* BrokerNoteSummaryConfigurator.swift in Sources */,
 				AD948332279DC7010098E194 /* TransactionRouter.swift in Sources */,
+				AD21192C27A8340C00B54710 /* BrokerNoteDetailInteractor.swift in Sources */,
 				ADBBB66427999E0800B596A5 /* SummaryDataStore.swift in Sources */,
 				ADBBB688279ADE9600B596A5 /* PortfolioWorker.swift in Sources */,
 				AD041FBE27A05E3800C9A815 /* BrokerNoteSummaryRouter.swift in Sources */,
@@ -1004,6 +1033,7 @@
 				ADD1EFA827A1BD93002A4055 /* Row.swift in Sources */,
 				AD948323279DC3EE0098E194 /* TransactionRouterProtocol.swift in Sources */,
 				ADD1EFB127A1D143002A4055 /* TextInputFormField.swift in Sources */,
+				AD21192A27A8036A00B54710 /* BrokerNoteDetailViewController.swift in Sources */,
 				AD0D230A279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift in Sources */,
 				ADBBB6682799BBDE00B596A5 /* RegistrableTableViewCell.swift in Sources */,
 				AD948325279DC4280098E194 /* TransactionWorkerProtocol.swift in Sources */,
@@ -1024,8 +1054,10 @@
 				AD94831D279DC3420098E194 /* TransactionViewProtocol.swift in Sources */,
 				AD19B75127822C8400D459EA /* PortfolioItem+CoreDataProperties.swift in Sources */,
 				AD041FAE27A02FE300C9A815 /* BrokerNoteSummaryTableViewDelegate.swift in Sources */,
+				AD21193027A8349700B54710 /* BrokerNoteDetailRouter.swift in Sources */,
 				EBDF37D6FE10FAB0EFB1E38E /* SummaryNavigationController.swift in Sources */,
 				AD0D230D279C5C0900CBA554 /* SummaryItem+ViewModel.swift in Sources */,
+				AD21193427A834E700B54710 /* BrokerNoteDetailConfigurator.swift in Sources */,
 				ADBBB686279ADE6100B596A5 /* PortfolioInteractor.swift in Sources */,
 				ADBBB6532797426A00B596A5 /* SaveCancelNavigationBar.swift in Sources */,
 				AD0D2317279D8DBF00CBA554 /* SummaryPresenter.swift in Sources */,

@@ -16,12 +16,17 @@ class TransactionRouter: TransactionRouterProtocol {
         var quantity: Box<String?> = Box(item.quantity.value)
         var date: Box<String?> = Box(item.date.value.formatted())
         var total: Box<String?> = Box(item.total.value)
-        viewController.data = [
+        let rows: [Row] = [
             TextInputFormField(key: "ticker", value: ticker, contentConfiguration: .init(title: "Ticker", placeholder: ticker.value)),
-            TextInputFormField(key: "quantity", value: quantity, contentConfiguration: .init(title: "Quantity", placeholder: quantity.value)),
+            TextInputFormField(key: "quantity", value: quantity, contentConfiguration: .init(title: "Quantidade", placeholder: quantity.value)),
             TextInputFormField(key: "date", value: date, contentConfiguration: .init(title: "Data", placeholder: date.value)),
             TextInputFormField(key: "total", value: total, contentConfiguration: .init(title: "Total", placeholder: total.value)),
         ]
+        
+        let section = TableViewSection(key: "updateHeader", rows: rows)
+        
+        viewController.dataSource.insert(section: section, at: 0)
+        viewController.registerSections()
         
         viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(systemItem: .cancel, primaryAction: UIAction(handler: self.action(_:)), menu: nil)
         

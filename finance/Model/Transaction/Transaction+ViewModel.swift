@@ -5,7 +5,7 @@
 //  Created by Erik Radicheski da Silva on 23/01/22.
 //
 
-import Foundation
+import UIKit
 
 extension Transaction {
     class ViewModel {
@@ -41,4 +41,12 @@ extension Transaction {
             }
         }
     }
+}
+
+extension Transaction.ViewModel: Row {
+    
+    var key: String { "\(self.date.value)-\(self.total)" }
+    
+    var contentConfiguration: UIContentConfiguration { TransactionContentConfiguration(transaction: self) }
+    
 }

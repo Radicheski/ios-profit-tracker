@@ -22,11 +22,15 @@ class PortfolioRouter: NSObject, PortfolioRouterProtocol {
         var name: Box<String?> = Box(item.name.value)
         var weight: Box<String?> = Box(item.weight.value)
         var asset: Box<Bool> = Box(!item.isAsset.value)
-        viewController.data = [
+        let rows: [Row] = [
             TextInputFormField(key: "name", value: name, contentConfiguration: .init(title: CustomLocalization.UpdateView.updateViewNameLabel, placeholder: name.value)),
             TextInputFormField(key: "weight", value: weight, contentConfiguration: .init(title: CustomLocalization.UpdateView.updateViewWeightLabel, placeholder: weight.value)),
             SwitchInputFormField(key: "asset", value: asset, contentConfiguration: .init(title: CustomLocalization.UpdateView.updateViewPortfolioLabel, value: asset.value))
         ]
+        let section = TableViewSection(key: "updateHeader", rows: rows)
+        
+        viewController.dataSource.insert(section: section, at: 0)
+        viewController.registerSections()
         
         viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(systemItem: .cancel, primaryAction: UIAction(handler: self.action(_:)), menu: nil)
         
