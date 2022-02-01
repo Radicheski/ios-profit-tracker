@@ -10,37 +10,15 @@ import UIKit
 
 class FormViewController: BaseViewController<PortfolioView> {
     
-    var data: [FormField] = [] {
-        didSet {
-            self.data.forEach { $0.register(self.customView.tableView) }
-            self.customView.tableView.reloadData()
-        }
-    }
+    var dataSource = SectionDataSource()
     
     override func viewDidLoad() {
-        self.customView.tableView.delegate = self
-        self.customView.tableView.dataSource = self
+        self.customView.tableView.delegate = self.dataSource
+        self.customView.tableView.dataSource = self.dataSource
     }
     
-}
-
-extension FormViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-        return nil
-    }
-    
-}
-
-extension FormViewController: UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.data.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let field = self.data[indexPath.row]
-        return field.dequeue(tableView, for: indexPath)
+    func registerSections() {
+        self.dataSource.register(in: self.customView.tableView)
     }
     
 }

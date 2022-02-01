@@ -11,6 +11,8 @@ class TableViewSection: Section {
 
     private(set) var key: String
     private(set) var rows: [Row]
+    var headerTitle: String?
+    var footerTitle: String?
 
     init(key: String, rows: [Row]) {
         self.key = key

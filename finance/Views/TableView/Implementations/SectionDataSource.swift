@@ -11,6 +11,10 @@ class SectionDataSource: NSObject {
 
     private var sections: [Section] = []
     var count: Int { self.sections.count }
+    
+    func register(in tableView: UITableView) {
+        self.sections.forEach { $0.register(in: tableView) }
+    }
 
     func numberOfRows(for section: Int) -> Int {
         return self.sections[section].rowCount
@@ -105,6 +109,10 @@ extension SectionDataSource {
 // MARK: Section related functions
 
 extension SectionDataSource {
+    
+    func setSections(_ sections: [Section]) {
+        self.sections = sections
+    }
 
     func insert(section: Section, at index: Int) {
         self.sections.insert(section, at: index)
