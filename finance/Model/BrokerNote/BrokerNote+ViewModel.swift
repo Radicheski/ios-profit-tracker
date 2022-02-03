@@ -44,3 +44,37 @@ extension BrokerNote {
     }
     
 }
+
+extension BrokerNote.ViewModel: Section {
+    
+    var key: String { BrokerNoteDetailSections.header.rawValue }
+    
+    var rows: [Row] {
+        var brokerageHouse: Box<String?> = Box(self.brokerageHouse.value)
+        var noteNumber: Box<String?> = Box(self.noteNumber.value)
+        var date: Box<String?> = Box(self.date.value)
+        var total: Box<String?> = Box(self.total.value)
+        return [
+            TextInputFormField(key: "brokerageHouse", value: brokerageHouse, contentConfiguration: .init(title: "Corretora", placeholder: brokerageHouse.value)),
+            TextInputFormField(key: "noteNumber", value: noteNumber, contentConfiguration: .init(title: "Nota Nº", placeholder: noteNumber.value)),
+            TextInputFormField(key: "date", value: date, contentConfiguration: .init(title: "Data", placeholder: date.value)),
+            TextInputFormField(key: "total", value: total, contentConfiguration: .init(title: "Total", placeholder: total.value)),
+        ]
+    }
+    
+    func insert(row: Row, at index: Int) {}
+    
+    func insert(row: Row, after key: String) {}
+    
+    func insert(row: Row, before key: String) {}
+    
+    func removeRow(at index: Int) -> Row {
+        #warning("FIX THIS")
+        return self.transactions.last!
+    }
+    
+    func removeRow(withKey key: String) -> Row? { nil }
+    
+    func moveRow(from sourceIndex: Int, to targetIndex: Int) {}
+    
+}
