@@ -74,6 +74,9 @@
 		AD4BC666277A8DAD00593CEE /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */; };
 		AD58D52B272CC0E60047847C /* portfolioExpected.json in Resources */ = {isa = PBXBuildFile; fileRef = AD58D52A272CC0E60047847C /* portfolioExpected.json */; };
 		AD58D52E272CC7E60047847C /* PortfolioItem+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58D52D272CC7E60047847C /* PortfolioItem+extension.swift */; };
+		AD6DDD4727ABF144002A34EE /* DateInputFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DDD4627ABF144002A34EE /* DateInputFormField.swift */; };
+		AD6DDD4927ABF2D4002A34EE /* DateInputContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DDD4827ABF2D4002A34EE /* DateInputContentConfiguration.swift */; };
+		AD6DDD4B27ABF2EC002A34EE /* DateInputContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DDD4A27ABF2EC002A34EE /* DateInputContentView.swift */; };
 		AD8E9A632795E757005164F6 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8E9A622795E757005164F6 /* Mock.swift */; };
 		AD94831D279DC3420098E194 /* TransactionViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD94831C279DC3420098E194 /* TransactionViewProtocol.swift */; };
 		AD94831F279DC3890098E194 /* TransactionInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD94831E279DC3890098E194 /* TransactionInteractorProtocol.swift */; };
@@ -232,6 +235,9 @@
 		AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
 		AD58D52A272CC0E60047847C /* portfolioExpected.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portfolioExpected.json; sourceTree = "<group>"; };
 		AD58D52D272CC7E60047847C /* PortfolioItem+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+extension.swift"; sourceTree = "<group>"; };
+		AD6DDD4627ABF144002A34EE /* DateInputFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputFormField.swift; sourceTree = "<group>"; };
+		AD6DDD4827ABF2D4002A34EE /* DateInputContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputContentConfiguration.swift; sourceTree = "<group>"; };
+		AD6DDD4A27ABF2EC002A34EE /* DateInputContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputContentView.swift; sourceTree = "<group>"; };
 		AD8E9A622795E757005164F6 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 		AD94831C279DC3420098E194 /* TransactionViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewProtocol.swift; sourceTree = "<group>"; };
 		AD94831E279DC3890098E194 /* TransactionInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionInteractorProtocol.swift; sourceTree = "<group>"; };
@@ -542,6 +548,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		AD6DDD4527ABF121002A34EE /* DateInputFormField */ = {
+			isa = PBXGroup;
+			children = (
+				AD6DDD4627ABF144002A34EE /* DateInputFormField.swift */,
+				AD6DDD4827ABF2D4002A34EE /* DateInputContentConfiguration.swift */,
+				AD6DDD4A27ABF2EC002A34EE /* DateInputContentView.swift */,
+			);
+			path = DateInputFormField;
+			sourceTree = "<group>";
+		};
 		AD77DF622784ED7500D6AB9D /* UpdateView */ = {
 			isa = PBXGroup;
 			children = (
@@ -720,6 +736,7 @@
 		ADCD164D27A716EE006219AA /* Implementations */ = {
 			isa = PBXGroup;
 			children = (
+				AD6DDD4527ABF121002A34EE /* DateInputFormField */,
 				ADCD162B27A56D00006219AA /* SwitchInputFormField */,
 				ADD1EFAB27A1D0D4002A4055 /* TextInputFormField */,
 				ADCD164E27A716FA006219AA /* TableViewSection.swift */,
@@ -953,6 +970,7 @@
 				ADBD4155272B3B1E00BB3327 /* MainViewController.swift in Sources */,
 				ADBBB675279ADD6F00B596A5 /* PortfolioWorkerProtocol.swift in Sources */,
 				ADBBB66227999DDB00B596A5 /* SummaryItem.swift in Sources */,
+				AD6DDD4B27ABF2EC002A34EE /* DateInputContentView.swift in Sources */,
 				ADBD4151272B3B1E00BB3327 /* AppDelegate.swift in Sources */,
 				ADBBB684279ADE4800B596A5 /* PortfolioPresenter.swift in Sources */,
 				AD041FBA27A03AAB00C9A815 /* BrokerNoteSummaryNavigationController.swift in Sources */,
@@ -998,6 +1016,7 @@
 				ADBBB677279ADD8900B596A5 /* PortfolioPresenterProtocol.swift in Sources */,
 				AD94833C279DCCEC0098E194 /* TransactionNavigationController.swift in Sources */,
 				AD2810272787676E00BA4136 /* Formatter.swift in Sources */,
+				AD6DDD4927ABF2D4002A34EE /* DateInputContentConfiguration.swift in Sources */,
 				AD041F9927A027A800C9A815 /* BrokerNoteSummaryViewProtocol.swift in Sources */,
 				AD948338279DCA100098E194 /* TransactionTableViewDataSource.swift in Sources */,
 				AD28102227875A0700BA4136 /* NetworkWorker.swift in Sources */,
@@ -1009,6 +1028,7 @@
 				ADAEFF2B27355D7700C7ABAE /* CustomLocalization.swift in Sources */,
 				AD0D230F279C5E6900CBA554 /* SummaryConfigurator.swift in Sources */,
 				AD0D22FF279C5B1100CBA554 /* SummaryRouterProtocol.swift in Sources */,
+				AD6DDD4727ABF144002A34EE /* DateInputFormField.swift in Sources */,
 				AD8E9A632795E757005164F6 /* Mock.swift in Sources */,
 				ADBBB67E279ADDF200B596A5 /* PortfolioConfigurator.swift in Sources */,
 				ADD1EFAD27A1D0E9002A4055 /* TextInputContentConfiguration.swift in Sources */,

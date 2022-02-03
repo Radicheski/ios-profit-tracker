@@ -15,7 +15,7 @@ struct BrokerNoteContentConfiguration: UIContentConfiguration {
     var total: String
     
     init(from viewModel: BrokerNote.ViewModel) {
-        self.date = viewModel.date.value
+        self.date = viewModel.date.value.formatted(date: .numeric, time: .omitted)
         self.brokerageHouse = viewModel.brokerageHouse.value
         self.noteNumber = viewModel.noteNumber.value
         self.total = viewModel.total.value

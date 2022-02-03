@@ -14,7 +14,7 @@ extension BrokerNote {
         var id: UUID
         var noteNumber: Box<String>
         var brokerageHouse: Box<String>
-        var date: Box<String>
+        var date: Box<Date>
         var total: Box<String>
         
         var transactions: [Row]
@@ -23,7 +23,7 @@ extension BrokerNote {
             self.id = brokerNote.id
             self.noteNumber = Box(Formatter.shared.number.string(from: NSNumber(value: brokerNote.noteNumber))!)
             self.brokerageHouse = Box(brokerNote.brokerageHouse)
-            self.date = Box(Formatter.shared.date.string(from: brokerNote.date))
+            self.date = Box(brokerNote.date)
         
             self.total = Box(Formatter.shared.currency.string(from: brokerNote.total)!)
             
@@ -38,7 +38,7 @@ extension BrokerNote {
             }
             
             self.date.listener = { newValue in
-                brokerNote.date = Formatter.shared.date.date(from: newValue)!
+                brokerNote.date = newValue
             }
         }
     }
@@ -52,12 +52,12 @@ extension BrokerNote.ViewModel: Section {
     var rows: [Row] {
         var brokerageHouse: Box<String?> = Box(self.brokerageHouse.value)
         var noteNumber: Box<String?> = Box(self.noteNumber.value)
-        var date: Box<String?> = Box(self.date.value)
+        var date: Box<Date> = Box(self.date.value)
         var total: Box<String?> = Box(self.total.value)
         return [
             TextInputFormField(key: "brokerageHouse", value: brokerageHouse, contentConfiguration: .init(title: "Corretora", placeholder: brokerageHouse.value)),
             TextInputFormField(key: "noteNumber", value: noteNumber, contentConfiguration: .init(title: "Nota Nº", placeholder: noteNumber.value)),
-            TextInputFormField(key: "date", value: date, contentConfiguration: .init(title: "Data", placeholder: date.value)),
+            DateInputFormField(key: "date", value: date, contentConfiguration: .init(title: "Data", placeholder: date.value.formatted(date: .numeric, time: .omitted))),
             TextInputFormField(key: "total", value: total, contentConfiguration: .init(title: "Total", placeholder: total.value)),
         ]
     }
