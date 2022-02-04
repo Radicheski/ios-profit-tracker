@@ -10,4 +10,5 @@ import Foundation
 protocol BrokerNoteDetailWorkerProtocol: AnyObject {
     init(id: UUID)
     func loadData() -> [BrokerNote]
+    func save()
 }

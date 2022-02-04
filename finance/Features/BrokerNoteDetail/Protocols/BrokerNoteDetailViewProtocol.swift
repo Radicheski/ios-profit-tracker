@@ -10,6 +10,7 @@ import UIKit
 protocol BrokerNoteDetailViewProtocol: UIViewController {
     var interactor: BrokerNoteDetailInteractorProtocol { get }
     var router: BrokerNoteDetailRouterProtocol { get }
+    var saveAction: ((UIAction) -> Void) { get set }
     func loadData()
     func presentData(item: [Section])
 }

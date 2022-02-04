@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import UIKit
 
 extension BrokerNote {
     
     class ViewModel {
+        private var item: BrokerNote
         
         var id: UUID
         var noteNumber: Box<String>
@@ -20,6 +22,7 @@ extension BrokerNote {
         var transactions: [Row]
         
         init(from brokerNote: BrokerNote) {
+            self.item = brokerNote
             self.id = brokerNote.id
             self.noteNumber = Box(Formatter.shared.number.string(from: NSNumber(value: brokerNote.noteNumber))!)
             self.brokerageHouse = Box(brokerNote.brokerageHouse)
@@ -29,17 +32,23 @@ extension BrokerNote {
             
             self.transactions = brokerNote.cdtransactions?.allObjects as? [Row] ?? []
             
-            self.noteNumber.listener = { newValue in
-                brokerNote.noteNumber = try! Int(newValue, format: .number)
-            }
-            
-            self.brokerageHouse.listener = { newValue in
-                brokerNote.brokerageHouse = newValue
-            }
-            
-            self.date.listener = { newValue in
-                brokerNote.date = newValue
-            }
+//            self.noteNumber.listener = { newValue in
+//                brokerNote.noteNumber = try! Int(newValue, format: .number)
+//            }
+//
+//            self.brokerageHouse.listener = { newValue in
+//                brokerNote.brokerageHouse = newValue
+//            }
+//
+//            self.date.listener = { newValue in
+//                brokerNote.date = newValue
+//            }
+        }
+        
+        func saveAction(_ action: UIAction) {
+            self.item.brokerageHouse = self.brokerageHouse.value
+            self.item.noteNumber = (try? Int(self.noteNumber.value,format: .number)) ?? 0
+            self.item.date = self.date.value
         }
     }
     
@@ -54,6 +63,24 @@ extension BrokerNote.ViewModel: Section {
         var noteNumber: Box<String?> = Box(self.noteNumber.value)
         var date: Box<Date> = Box(self.date.value)
         var total: Box<String?> = Box(self.total.value)
+        
+        brokerageHouse.listener = { newValue in
+            if let value = newValue, !value.isEmpty {
+                self.brokerageHouse.value = value
+            }
+        }
+        
+        noteNumber.listener = { newValue in
+            if let value = newValue, !value.isEmpty,
+               let _ = try? Int(value, format: .number) {
+                self.noteNumber.value = value
+            }
+        }
+        
+        date.listener = { newValue in
+            self.date.value = newValue
+        }
+        
         return [
             TextInputFormField(key: "brokerageHouse", value: brokerageHouse, contentConfiguration: .init(title: "Corretora", placeholder: brokerageHouse.value)),
             TextInputFormField(key: "noteNumber", value: noteNumber, contentConfiguration: .init(title: "Nota Nº", placeholder: noteNumber.value)),

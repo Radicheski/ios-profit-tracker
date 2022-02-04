@@ -11,4 +11,5 @@ protocol BrokerNoteDetailInteractorProtocol: AnyObject {
     var presenter: BrokerNoteDetailPresenterProtocol { get }
     var worker: BrokerNoteDetailWorkerProtocol { get }
     func loadData()
+    func save()
 }

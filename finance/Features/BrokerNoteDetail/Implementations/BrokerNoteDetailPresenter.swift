@@ -23,6 +23,8 @@ class BrokerNoteDetailPresenter: BrokerNoteDetailPresenterProtocol {
         
         self.view?.navigationItem.leftBarButtonItem = UIBarButtonItem(systemItem: .cancel, primaryAction: UIAction(handler: self.action(_:)), menu: nil)
         
+        self.view?.saveAction = item.saveAction(_:)
+        
         self.view?.presentData(item: [section, transactionSection])
     }
     

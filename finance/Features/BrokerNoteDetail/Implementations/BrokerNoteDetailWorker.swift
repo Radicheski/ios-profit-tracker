@@ -27,4 +27,8 @@ class BrokerNoteDetailWorker: BrokerNoteDetailWorkerProtocol {
         }
     }
     
+    func save() {
+        try? self.context.save()
+    }
+    
 }

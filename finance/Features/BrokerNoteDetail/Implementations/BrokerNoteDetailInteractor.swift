@@ -22,4 +22,8 @@ class BrokerNoteDetailInteractor: BrokerNoteDetailInteractorProtocol {
         self.presenter.loadData(note: data[0])
     }
     
+    func save() {
+        self.worker.save()
+    }
+    
 }

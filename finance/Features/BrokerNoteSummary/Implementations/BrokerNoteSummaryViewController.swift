@@ -49,6 +49,11 @@ class BrokerNoteSummaryViewController: BaseViewController<PortfolioView>, Broker
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.loadData()
+        super.viewWillAppear(animated)
+    }
+    
     @objc func cancelEdit() {
         self.interactor.discard()
         self.setEditing(false, animated: true)
