@@ -10,9 +10,9 @@ import UIKit
 struct BrokerNoteContentConfiguration: UIContentConfiguration {
     
     var date: String
-    var brokerageHouse: String
-    var noteNumber: String
-    var total: String
+    var brokerageHouse: String?
+    var noteNumber: String?
+    var total: String?
     
     init(from viewModel: BrokerNote.ViewModel) {
         self.date = viewModel.date.value.formatted(date: .numeric, time: .omitted)

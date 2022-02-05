@@ -14,12 +14,14 @@ extension BrokerNote {
         private var item: BrokerNote
         
         var id: UUID
-        var noteNumber: Box<String>
-        var brokerageHouse: Box<String>
+        var noteNumber: Box<String?>
+        var brokerageHouse: Box<String?>
         var date: Box<Date>
-        var total: Box<String>
+        var total: Box<String?>
         
         var transactions: [Row]
+        
+        var header: [Row]
         
         init(from brokerNote: BrokerNote) {
             self.item = brokerNote
@@ -27,27 +29,30 @@ extension BrokerNote {
             self.noteNumber = Box(Formatter.shared.number.string(from: NSNumber(value: brokerNote.noteNumber))!)
             self.brokerageHouse = Box(brokerNote.brokerageHouse)
             self.date = Box(brokerNote.date)
-        
+            
             self.total = Box(Formatter.shared.currency.string(from: brokerNote.total)!)
             
             self.transactions = brokerNote.cdtransactions?.allObjects as? [Row] ?? []
             
-//            self.noteNumber.listener = { newValue in
-//                brokerNote.noteNumber = try! Int(newValue, format: .number)
-//            }
-//
-//            self.brokerageHouse.listener = { newValue in
-//                brokerNote.brokerageHouse = newValue
-//            }
-//
-//            self.date.listener = { newValue in
-//                brokerNote.date = newValue
-//            }
+            self.header = [
+                TextInputFormField(key: "brokerageHouse", value: brokerageHouse, contentConfiguration: .init(title: "Corretora", placeholder: brokerageHouse.value)),
+                TextInputFormField(key: "noteNumber", value: self.noteNumber, contentConfiguration: .init(title: "Nota Nº", placeholder: self.noteNumber.value)),
+                DateInputFormField(key: "date", value: date, contentConfiguration: .init(title: "Data", placeholder: date.value.formatted(date: .numeric, time: .omitted))),
+                TextInputFormField(key: "total", value: total, contentConfiguration: .init(title: "Total", placeholder: total.value)),
+            ]
         }
         
         func saveAction(_ action: UIAction) {
-            self.item.brokerageHouse = self.brokerageHouse.value
-            self.item.noteNumber = (try? Int(self.noteNumber.value,format: .number)) ?? 0
+            
+            if let value = self.brokerageHouse.value, !value.isEmpty {
+                self.item.brokerageHouse = value
+            }
+            
+            if let stringValue = self.noteNumber.value, !stringValue.isEmpty,
+               let value = try? Int(stringValue, format: .number) {
+                self.item.noteNumber = value
+            }
+            
             self.item.date = self.date.value
         }
     }
@@ -58,36 +63,7 @@ extension BrokerNote.ViewModel: Section {
     
     var key: String { BrokerNoteDetailSections.header.rawValue }
     
-    var rows: [Row] {
-        var brokerageHouse: Box<String?> = Box(self.brokerageHouse.value)
-        var noteNumber: Box<String?> = Box(self.noteNumber.value)
-        var date: Box<Date> = Box(self.date.value)
-        var total: Box<String?> = Box(self.total.value)
-        
-        brokerageHouse.listener = { newValue in
-            if let value = newValue, !value.isEmpty {
-                self.brokerageHouse.value = value
-            }
-        }
-        
-        noteNumber.listener = { newValue in
-            if let value = newValue, !value.isEmpty,
-               let _ = try? Int(value, format: .number) {
-                self.noteNumber.value = value
-            }
-        }
-        
-        date.listener = { newValue in
-            self.date.value = newValue
-        }
-        
-        return [
-            TextInputFormField(key: "brokerageHouse", value: brokerageHouse, contentConfiguration: .init(title: "Corretora", placeholder: brokerageHouse.value)),
-            TextInputFormField(key: "noteNumber", value: noteNumber, contentConfiguration: .init(title: "Nota Nº", placeholder: noteNumber.value)),
-            DateInputFormField(key: "date", value: date, contentConfiguration: .init(title: "Data", placeholder: date.value.formatted(date: .numeric, time: .omitted))),
-            TextInputFormField(key: "total", value: total, contentConfiguration: .init(title: "Total", placeholder: total.value)),
-        ]
-    }
+    var rows: [Row] { self.header }
     
     func insert(row: Row, at index: Int) {}
     
