@@ -6,7 +6,7 @@
 //
 
 class SummaryRouter: SummaryRouterProtocol {
-    var view: SummaryViewProtocol?
+    weak var view: SummaryViewProtocol?
     
     
 }
