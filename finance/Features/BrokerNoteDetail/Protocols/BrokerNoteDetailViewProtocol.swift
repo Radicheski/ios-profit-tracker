@@ -12,5 +12,7 @@ protocol BrokerNoteDetailViewProtocol: UIViewController {
     var router: BrokerNoteDetailRouterProtocol { get }
     var saveAction: ((UIAction) -> Void) { get set }
     func loadData()
+    func insertTransaction()
+    func insertTransaction(_ transaction: Row)
     func presentData(item: [Section])
 }

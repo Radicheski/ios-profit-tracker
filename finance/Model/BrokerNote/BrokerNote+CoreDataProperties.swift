@@ -20,7 +20,7 @@ extension BrokerNote {
     @NSManaged public var brokerageHouse: String
     @NSManaged public var date: Date
     @NSManaged public var noteNumber: Int
-    @NSManaged public var cdtransactions: NSSet?
+    @NSManaged public var cdtransactions: Set<Transaction>
 
 }
 

@@ -26,4 +26,9 @@ class BrokerNoteDetailInteractor: BrokerNoteDetailInteractorProtocol {
         self.worker.save()
     }
     
+    func insertTransaction() {
+        let newTransaction = self.worker.insertTransaction()
+        self.presenter.insertTransaction(newTransaction)
+    }
+    
 }

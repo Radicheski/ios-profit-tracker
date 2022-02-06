@@ -8,6 +8,8 @@
 import UIKit
 
 class TextInputFormField: Row {
+    
+    var didSelect: ((UITableView, IndexPath) -> Void)?
 
     var key: String
     var value: Box<String?>

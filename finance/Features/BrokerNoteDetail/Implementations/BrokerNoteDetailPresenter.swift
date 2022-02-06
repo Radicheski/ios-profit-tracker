@@ -32,6 +32,10 @@ class BrokerNoteDetailPresenter: BrokerNoteDetailPresenterProtocol {
         self.view?.navigationController?.popViewController(animated: true)
     }
     
+    func insertTransaction(_ transaction: Transaction) {
+        self.view?.insertTransaction(Transaction.ViewModel(from: transaction))
+    }
+    
 }
 
 enum BrokerNoteDetailSections: String {

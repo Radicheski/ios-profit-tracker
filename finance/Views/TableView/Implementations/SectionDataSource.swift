@@ -31,10 +31,19 @@ class SectionDataSource: NSObject {
     private func getSectionIndex(forkey key: String) -> Int? {
         return self.sections.firstIndex(where: { $0.key == key } )
     }
+    
+    func getRow(fromSection sectionKey: String, withKey rowKey: String) -> Row? {
+        guard let section = getSection(forKey: sectionKey) else { return nil }
+        return section.rows.first(where: { $0.key == rowKey } )
+    }
 
 }
 
 extension SectionDataSource: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.sections[indexPath.section].rows[indexPath.row].didSelect?(tableView, indexPath)
+    }
     
 }
 

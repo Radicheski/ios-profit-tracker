@@ -9,6 +9,7 @@ import UIKit
 
 protocol Row: AnyObject {
     var key: String { get }
+    var didSelect: ((UITableView, IndexPath) -> Void)? { get set }
     var tableViewCell: RegistrableTableViewCell.Type { get }
     var contentConfiguration: UIContentConfiguration { get }
     func register(_ tableView: UITableView)
@@ -18,6 +19,10 @@ protocol Row: AnyObject {
 extension Row {
 
     var tableViewCell: RegistrableTableViewCell.Type { UITableViewCell.self }
+    var didSelect: ((UITableView, IndexPath) -> Void)? {
+        get { nil }
+        set { }
+    }
 
     func register(_ tableView: UITableView) {
         tableView.register(self.tableViewCell)

@@ -10,4 +10,5 @@ import Foundation
 protocol BrokerNoteDetailPresenterProtocol: AnyObject {
     var view: BrokerNoteDetailViewProtocol? { get }
     func loadData(note: BrokerNote)
+    func insertTransaction(_ transaction: Transaction)
 }

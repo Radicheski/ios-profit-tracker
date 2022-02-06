@@ -32,7 +32,7 @@ extension BrokerNote {
             
             self.total = Box(Formatter.shared.currency.string(from: brokerNote.total)!)
             
-            self.transactions = brokerNote.cdtransactions?.allObjects as? [Row] ?? []
+            self.transactions = brokerNote.cdtransactions.map { Transaction.ViewModel(from: $0) } as [Row]
             
             self.header = [
                 TextInputFormField(key: "brokerageHouse", value: brokerageHouse, contentConfiguration: .init(title: "Corretora", placeholder: brokerageHouse.value)),

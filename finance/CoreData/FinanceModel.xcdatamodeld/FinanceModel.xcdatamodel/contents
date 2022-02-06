@@ -5,7 +5,7 @@
         <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="noteNumber" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="cdtransactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="brokerNote" inverseEntity="Transaction"/>
+        <relationship name="cdtransactions" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="brokerNote" inverseEntity="Transaction"/>
     </entity>
     <entity name="PortfolioItem" representedClassName="PortfolioItem" syncable="YES">
         <attribute name="asset" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
@@ -23,7 +23,7 @@
         <relationship name="brokerNote" maxCount="1" deletionRule="Nullify" destinationEntity="BrokerNote" inverseName="cdtransactions" inverseEntity="BrokerNote"/>
     </entity>
     <elements>
-        <element name="BrokerNote" positionX="-63" positionY="36" width="128" height="89"/>
+        <element name="BrokerNote" positionX="-63" positionY="36" width="128" height="104"/>
         <element name="PortfolioItem" positionX="-63" positionY="-18" width="128" height="119"/>
         <element name="Transaction" positionX="-63" positionY="27" width="128" height="14"/>
     </elements>

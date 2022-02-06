@@ -27,6 +27,10 @@ class BrokerNoteDetailViewController: FormViewController, BrokerNoteDetailViewPr
         return nil
     }
     
+    func insertTransaction() {
+        self.interactor.insertTransaction()
+    }
+    
     func loadData() {
         self.interactor.loadData()
     }
@@ -34,6 +38,10 @@ class BrokerNoteDetailViewController: FormViewController, BrokerNoteDetailViewPr
     func presentData(item: [Section]) {
         self.dataSource.setSections(item)
         self.dataSource.register(in: self.customView.tableView)
+        
+        let row = self.dataSource.getRow(fromSection: BrokerNoteDetailSections.transactions.rawValue, withKey: "newTransaction")
+        row?.didSelect = { [weak self] _, _ in self?.insertTransaction() }
+        
         self.customView.tableView.reloadData()
     }
     
@@ -41,6 +49,11 @@ class BrokerNoteDetailViewController: FormViewController, BrokerNoteDetailViewPr
         self.saveAction(action)
         self.interactor.save()
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    func insertTransaction(_ transaction: Row) {
+        self.dataSource.insert(row: transaction, forSectionKey: BrokerNoteDetailSections.transactions.rawValue, before: "newTransaction")
+        self.customView.tableView.reloadSections(IndexSet(integer: 1), with: .automatic)
     }
     
 }
