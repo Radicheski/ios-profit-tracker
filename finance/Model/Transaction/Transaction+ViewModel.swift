@@ -14,6 +14,8 @@ extension Transaction {
         var date: Box<Date>
         var ticker: Box<String>
         
+        var didSelect: ((UITableView, IndexPath) -> Void)?
+        
         init(from transaction: Transaction) {
             self.quantity = Box("\(transaction.quantity)")
             self.total = Box(Formatter.shared.currency.string(from: transaction.total) ?? "R$ 0,00")

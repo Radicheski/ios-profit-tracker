@@ -9,4 +9,5 @@ import Foundation
 
 protocol BrokerNoteDetailRouterProtocol: AnyObject {
     var view: BrokerNoteDetailViewProtocol? { get }
+    func present(transaction: Transaction.ViewModel)
 }

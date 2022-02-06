@@ -39,6 +39,15 @@ class BrokerNoteDetailViewController: FormViewController, BrokerNoteDetailViewPr
         self.dataSource.setSections(item)
         self.dataSource.register(in: self.customView.tableView)
         
+        item.filter { $0.key == BrokerNoteDetailSections.transactions.rawValue }
+        .flatMap { $0.rows }
+        .filter { $0.key != "newTransaction" }
+        .map { $0 as! Transaction.ViewModel }
+        .forEach { [weak self] transaction in
+            transaction.didSelect = { [weak self] _,_ in
+                self?.present(transaction: transaction)
+            }
+        }
         let row = self.dataSource.getRow(fromSection: BrokerNoteDetailSections.transactions.rawValue, withKey: "newTransaction")
         row?.didSelect = { [weak self] _, _ in self?.insertTransaction() }
         
@@ -54,6 +63,10 @@ class BrokerNoteDetailViewController: FormViewController, BrokerNoteDetailViewPr
     func insertTransaction(_ transaction: Row) {
         self.dataSource.insert(row: transaction, forSectionKey: BrokerNoteDetailSections.transactions.rawValue, before: "newTransaction")
         self.customView.tableView.reloadSections(IndexSet(integer: 1), with: .automatic)
+    }
+    
+    func present(transaction: Transaction.ViewModel) {
+        self.router.present(transaction: transaction)
     }
     
 }
