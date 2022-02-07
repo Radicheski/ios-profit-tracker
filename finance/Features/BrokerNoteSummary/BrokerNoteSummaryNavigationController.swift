@@ -18,8 +18,7 @@ class BrokerNoteSummaryNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        #warning("Localization")
-        self.tabBarItem.title = CustomLocalization.Transactions.transactionsTabBarTitle
+        self.tabBarItem.title = CustomLocalization.BrokerNotes.brokerNotesTabBarTitle
         self.tabBarItem.image = UIImage(systemName: "banknote")
     }
     

@@ -44,6 +44,8 @@ class SummaryViewController: BaseViewController<PortfolioView>, SummaryViewProto
         self.customView.tableView.delegate = self.delegate
         self.delegate?.viewController = self
         
+        if self.navigationItem.title == nil { self.navigationItem.title = CustomLocalization.Summary.summaryTitle }
+        
         self.customView.tableView.register(UITableViewCell.self)
     }
     

@@ -22,3 +22,7 @@
 "transactionsTabBarTitle" = "Transactions";
 "transactionTitle" = "Transactions";
 "newTransaction" = "New transaction";
+
+"brokerNotesTabBarTitle" = "Notes";
+"brokerNotesTitle" = "Notes";
+"brokerNotesNewItem" = "New note";
