@@ -9,15 +9,14 @@ import Foundation
 
 struct Quote: Decodable {
     
-    let id: Int
     let tp_reg: Int
-    let dt_pregao: Int // Date YYYYMMDD
-    let cd_bdi: String // Int
+    let dt_pregao: String // Date YYYYMMDD
+    let cd_bdi: Int
     let cd_acao: String
     let tp_merc: Int
     let nm_empresa_rdz: String
     let especi: String
-    let prazot: String // Int
+    let prazot: Int?
     let moeda_ref: String
     let vl_abertura: Decimal
     let vl_maximo: Decimal
@@ -30,13 +29,10 @@ struct Quote: Decodable {
     let qt_tit_neg: Int
     let vl_volume: Int
     let vl_exec_opc: Int
-    let in_opc: String
-    let dt_vnct_opc: Int // Date YYYYMMDD
+    let in_opc: Int
+    let dt_vnct_opc: String // Date YYYYMMDD
     let ft_cotacao: Int
     let vl_exec_moeda_corrente: Int
     let cd_isin: String
-    let cd_acao_rdz: String
-    let created_at: String // Datetime YYYY-MM-DDTHH:MM:SS.SSSSSSZ
-    let updated_at: String // Datetime YYYY-MM-DDTHH:MM:SS.SSSSSSZ
-    
+    let numeroDistribuicao: Int
 }
