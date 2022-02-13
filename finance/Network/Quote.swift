@@ -27,7 +27,7 @@ struct Quote: Decodable {
     let vl_mlh_oft_venda: Decimal
     let vl_ttl_neg: Int
     let qt_tit_neg: Int
-    let vl_volume: Int
+    let vl_volume: Decimal
     let vl_exec_opc: Int
     let in_opc: Int
     let dt_vnct_opc: String // Date YYYYMMDD
