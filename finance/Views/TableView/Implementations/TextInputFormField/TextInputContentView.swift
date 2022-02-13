@@ -30,6 +30,7 @@ class TextInputContentView: UIView & UIContentView {
 
         self.addSubview(self.titleLabel)
         self.titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        self.titleLabel.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         NSLayoutConstraint.activate([
             self.titleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 10),
             self.titleLabel.leftAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leftAnchor, constant: 10),
@@ -43,6 +44,7 @@ class TextInputContentView: UIView & UIContentView {
         self.textField.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             self.textField.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 10),
+            self.textField.leftAnchor.constraint(equalTo: self.titleLabel.rightAnchor, constant: 10),
             self.textField.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor, constant: -10),
             self.textField.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -10),
         ])
