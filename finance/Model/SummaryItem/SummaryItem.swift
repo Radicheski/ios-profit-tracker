@@ -10,16 +10,7 @@ import Foundation
 class SummaryItem {
     
     var name: String
-    lazy var price: Decimal = {
-        let worker = NetworkWorker(ticker: name)
-        worker.getQuote { [weak self] (price: Quote) in
-            self?.price = price.vl_fechamento
-        } onError: { error in
-            #warning("Handle this error")
-            print(error)
-        }
-        return Decimal()
-    }()
+    var price: Decimal
     var weight: Decimal
     var quantity: Int
     
@@ -27,13 +18,26 @@ class SummaryItem {
         self.name = name
         self.weight = Decimal()
         self.quantity = 0
-
+        self.price = 0
+        self.updatePrice()
     }
     
     init(from item: PortfolioItem) {
         self.name = item.name
         self.weight = item.weight
         self.quantity = 0
+        self.price = 0
+        self.updatePrice()
+    }
+    
+    func updatePrice() {
+        let worker = NetworkWorker(ticker: name)
+        worker.getQuote { [weak self] (price: Quote) in
+            self?.price = price.vl_fechamento
+        } onError: { error in
+            #warning("Handle this error")
+            print(error)
+        }
     }
     
 }

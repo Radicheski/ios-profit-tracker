@@ -55,19 +55,6 @@ class CustomContentView: UIView, UIContentView {
             self.quantityLabel.text = conf.quantity
             self.priceLabel.text = conf.price
             self.priceLabel.textColor = .secondaryLabel
-            if let title = conf.title {
-                let worker = NetworkWorker(ticker: title)
-                worker.getQuote { (quote: [Quote]) in
-                    let price = quote[0].vl_fechamento
-                    DispatchQueue.main.async { [weak self] in
-                        self?.priceLabel.text = Formatter.shared.currency.string(from: price)
-                        self?.priceLabel.textColor = .label
-                    }
-                } onError: { error in
-                    #warning("Improve error handling")
-                    print(error)
-                }
-            }
         }
     }
 
