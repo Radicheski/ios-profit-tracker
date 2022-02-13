@@ -11,16 +11,15 @@ extension SummaryItem {
     
     class ViewModel {
         
-        var weight: Box<String>
-        var name: Box<String>
-        var price: Box<String>
-        var quantity: Box<String>
+        private var item: SummaryItem
+        
+        var weight: String { Formatter.shared.percent.string(from: self.item.weight) ?? "0,00%" }
+        var name: String { self.item.name }
+        var price: String? { Formatter.shared.currency.string(from: self.item.price) }
+        var quantity: String { "\(item.quantity)" }
         
         init(from item: SummaryItem) {
-            self.weight = Box(Formatter.shared.percent.string(from: item.weight) ?? "0,00%")
-            self.name = Box(item.name)
-            self.price = Box(Formatter.shared.currency.string(from: item.price) ?? "<N/D")
-            self.quantity = Box("\(item.quantity)")
+            self.item = item
         }
     }
     

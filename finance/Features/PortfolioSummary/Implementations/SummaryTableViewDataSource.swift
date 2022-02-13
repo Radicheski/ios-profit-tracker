@@ -28,15 +28,15 @@ class SummaryTableViewDataSource: NSObject, UITableViewDataSource {
         if section == 0 {
             var conf = CustomContentConfiguration()
             let item = self.data[row]
-            conf.title = item.name.value
-            conf.weight = item.weight.value
-            conf.quantity = item.quantity.value
-            conf.price = item.price.value
+            conf.title = item.name
+            conf.weight = item.weight
+            conf.quantity = item.quantity
+            conf.price = item.price
             cell.contentConfiguration = conf
         } else {
             var conf = cell.defaultContentConfiguration()
             conf.text = CustomLocalization.PortfolioManager.globalPortfolioUnallocated
-            conf.secondaryText = Formatter.shared.percent.string(from: self.data.map { try! Decimal($0.weight.value ?? "0", format: .percent) }.reduce(1, { $0 - $1 }))
+            conf.secondaryText = Formatter.shared.percent.string(from: self.data.map { try! Decimal($0.weight ?? "0", format: .percent) }.reduce(1, { $0 - $1 }))
             cell.contentConfiguration = conf
         }
         
