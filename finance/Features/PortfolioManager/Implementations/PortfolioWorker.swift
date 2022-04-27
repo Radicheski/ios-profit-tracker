@@ -18,7 +18,7 @@ class PortfolioWorker: NSObject, PortfolioWorkerProtocol {
     
     func loadData() -> [Portfolio] {
         do {
-            let request = PortfolioItem.createFetchRequest()
+            let request = Portfolio.createFetchRequest()
             request.predicate = NSPredicate(format: "parentId == %@", self.portfolioId as CVarArg)
             request.sortDescriptors = [NSSortDescriptor(key: "rank", ascending: true)]
             let data = try self.context.fetch(request)
@@ -29,7 +29,7 @@ class PortfolioWorker: NSObject, PortfolioWorkerProtocol {
     }
     func insert() -> [Portfolio] {
         let rank = count()
-        let newItem = PortfolioItem(context: self.context)
+        let newItem = Portfolio(context: self.context)
         newItem.id = UUID()
         newItem.parentId = self.portfolioId
         newItem.name = ""
@@ -40,7 +40,7 @@ class PortfolioWorker: NSObject, PortfolioWorkerProtocol {
     
     func count() -> Int {
         do {
-            let request = PortfolioItem.createFetchRequest()
+            let request = Portfolio.createFetchRequest()
             request.predicate = NSPredicate(format: "parentId == %@", self.portfolioId as CVarArg)
             let data = try self.context.count(for: request)
             return data
@@ -76,7 +76,7 @@ class PortfolioWorker: NSObject, PortfolioWorkerProtocol {
         if self.context.hasChanges { self.context.rollback() }
     }
     
-    func updateRanks(_ items: [PortfolioItem]) {
+    func updateRanks(_ items: [Portfolio]) {
         for index in 0 ..< items.count {
             items[index].rank = index
         }

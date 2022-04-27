@@ -9,7 +9,7 @@ import Foundation
 import SwiftyJSON
 
 func loadMockData() throws {
-    let portfolioItemRequest = PortfolioItem.createFetchRequest()
+    let portfolioItemRequest = Portfolio.createFetchRequest()
     if let portfolioItemResult = try? Persistence.shared.persistentContainer.viewContext.fetch(portfolioItemRequest) {
         if portfolioItemResult.isEmpty { loadPortfolioData() }
     } else {
@@ -31,7 +31,7 @@ fileprivate func loadPortfolioData() {
        let data = FileManager.default.contents(atPath: path),
        let json = try? JSON(data: data).arrayValue {
         for object in json {
-            let item = PortfolioItem(context: Persistence.shared.context)
+            let item = Portfolio(context: Persistence.shared.context)
             item.id = UUID(uuidString: object["id"].stringValue)!
             item.parentId = UUID(uuidString: object["parentId"].stringValue)!
             item.rank = object["rank"].intValue

@@ -1,5 +1,5 @@
 //
-//  PortfolioItem.swift
+//  Portfolio.swift
 //  finance
 //
 //  Created by Erik Radicheski da Silva on 29/10/21.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension PortfolioItem {
+extension Portfolio {
     
     public var weight: Decimal {
         get {
@@ -19,16 +19,16 @@ extension PortfolioItem {
     }
     
     convenience init() {
-        self.init(entity: PortfolioItem.entity(), insertInto: nil)
+        self.init(entity: Portfolio.entity(), insertInto: nil)
     }
     
-    public static func getItems(_ items: [PortfolioItem]) -> [PortfolioItem] {
+    public static func getItems(_ items: [Portfolio]) -> [Portfolio] {
         
-        let map: [UUID?: PortfolioItem] = items.reduce(into: [:]) { dict, item in
+        let map: [UUID?: Portfolio] = items.reduce(into: [:]) { dict, item in
             dict[item.id] = item
         }
         
-        var result: [String: PortfolioItem] = [:]
+        var result: [String: Portfolio] = [:]
         
         for item in items where item.asset {
             var weight = item.weight
@@ -38,7 +38,7 @@ extension PortfolioItem {
                 parent = map[parent!.parentId]
             }
             if result[item.name] == nil {
-                let newItem = PortfolioItem()
+                let newItem = Portfolio()
                 newItem.name = item.name
                 newItem.weight = weight
                 result[item.name] = newItem

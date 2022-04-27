@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21C52" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="BrokerNote" representedClassName="BrokerNote" syncable="YES">
         <attribute name="brokerageHouse" attributeType="String"/>
         <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
@@ -7,7 +7,7 @@
         <attribute name="noteNumber" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <relationship name="cdtransactions" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="brokerNote" inverseEntity="Transaction"/>
     </entity>
-    <entity name="PortfolioItem" representedClassName="PortfolioItem" syncable="YES">
+    <entity name="Portfolio" representedClassName="Portfolio" syncable="YES">
         <attribute name="asset" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="cdweight" attributeType="Decimal" defaultValueString="0.0"/>
         <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
@@ -23,8 +23,8 @@
         <relationship name="brokerNote" maxCount="1" deletionRule="Nullify" destinationEntity="BrokerNote" inverseName="cdtransactions" inverseEntity="BrokerNote"/>
     </entity>
     <elements>
-        <element name="BrokerNote" positionX="-63" positionY="36" width="128" height="104"/>
-        <element name="PortfolioItem" positionX="-63" positionY="-18" width="128" height="119"/>
-        <element name="Transaction" positionX="-63" positionY="27" width="128" height="14"/>
+        <element name="BrokerNote" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Portfolio" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Transaction" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

@@ -1,5 +1,5 @@
 //
-//  PortfolioItem+CoreDataProperties.swift
+//  Portfolio+CoreDataProperties.swift
 //  finance
 //
 //  Created by Erik Radicheski da Silva on 02/01/22.
@@ -10,10 +10,10 @@ import Foundation
 import CoreData
 
 
-extension PortfolioItem {
+extension Portfolio {
     
-    @nonobjc public class func createFetchRequest() -> NSFetchRequest<PortfolioItem> {
-        return NSFetchRequest<PortfolioItem>(entityName: "PortfolioItem")
+    @nonobjc public class func createFetchRequest() -> NSFetchRequest<Portfolio> {
+        return NSFetchRequest<Portfolio>(entityName: "Portfolio")
     }
     
     @NSManaged public var id: UUID

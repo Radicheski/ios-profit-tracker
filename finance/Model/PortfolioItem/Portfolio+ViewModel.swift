@@ -1,5 +1,5 @@
 //
-//  PortfolioItem+ViewModel.swift
+//  Portfolio+ViewModel.swift
 //  finance
 //
 //  Created by Erik Radicheski da Silva on 21/01/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension PortfolioItem {
+extension Portfolio {
     
     class ViewModel {
         var id: Box<String>

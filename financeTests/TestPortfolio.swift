@@ -1,5 +1,5 @@
 //
-//  TestPortfolioItem.swift
+//  TestPortfolio.swift
 //  financeTests
 //
 //  Created by Erik Radicheski da Silva on 29/10/21.
@@ -8,13 +8,13 @@
 import XCTest
 import finance
 
-class TestPortfolioItem: XCTestCase {
+class TestPortfolio: XCTestCase {
     
-    var item: [PortfolioItem] = []
+    var item: [Portfolio] = []
     
     var expectation: [String: Decimal]!
     
-    var output: [PortfolioItem]!
+    var output: [Portfolio]!
     
     override func setUpWithError() throws {
         
@@ -23,7 +23,7 @@ class TestPortfolioItem: XCTestCase {
            let data = FileManager.default.contents(atPath: path),
            let json = try? JSON(data: data).arrayValue {
             for object in json {
-                let item = PortfolioItem(entity: PortfolioItem.entity(), insertInto: nil)
+                let item = Portfolio(entity: Portfolio.entity(), insertInto: nil)
                 item.id = UUID(uuidString: object["id"].stringValue)!
                 item.parentId = UUID(uuidString: object["parentId"].stringValue)
                 item.rank = object["rank"].intValue
@@ -43,7 +43,7 @@ class TestPortfolioItem: XCTestCase {
         }
         
         //Execute routine to be tested
-        self.output = PortfolioItem.getItems(self.item)
+        self.output = Portfolio.getItems(self.item)
     }
     
     func testCheckSize() {
@@ -68,7 +68,7 @@ class TestPortfolioItem: XCTestCase {
     
     func testGetItemsPerfomance() {
         self.measure {
-            PortfolioItem.getItems(self.item)
+            Portfolio.getItems(self.item)
         }
     }
     

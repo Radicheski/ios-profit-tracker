@@ -24,7 +24,7 @@ class SummaryDataStore: ReadOnlyDatastore {
     func update() {
         var data: [String: SummaryItem] = [:]
         
-        let portfolioItems = PortfolioItem.getItems(PortfolioDatastore.shared.getTree(for: nil))
+        let portfolioItems = Portfolio.getItems(PortfolioDatastore.shared.getTree(for: nil))
         
         for item in portfolioItems {
             let summary = data[item.name, default: SummaryItem(name: item.name)]

@@ -10,9 +10,9 @@ class SummaryWorker: SummaryWorkerProtocol {
     var context = Persistence.shared.context
     
     func loadData() -> [SummaryItem] {
-        let request = PortfolioItem.createFetchRequest()
+        let request = Portfolio.createFetchRequest()
         let response = try! self.context.fetch(request)
-        var data = PortfolioItem.getItems(response).map { SummaryItem(from: $0) }
+        var data = Portfolio.getItems(response).map { SummaryItem(from: $0) }
         
         let transactionRequest = Transaction.createFetchRequest()
         let transactionResponse = try! self.context.fetch(transactionRequest)

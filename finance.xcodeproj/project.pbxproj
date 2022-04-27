@@ -47,8 +47,8 @@
 		AD162AC427934D2F00E77FC1 /* TransactionContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD162AC327934D2F00E77FC1 /* TransactionContentView.swift */; };
 		AD19B742277E402600D459EA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B741277E402600D459EA /* Persistence.swift */; };
 		AD19B7452782217700D459EA /* FinanceModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD19B7432782217700D459EA /* FinanceModel.xcdatamodeld */; };
-		AD19B75027822C8400D459EA /* PortfolioItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B74E27822C8400D459EA /* PortfolioItem+CoreDataClass.swift */; };
-		AD19B75127822C8400D459EA /* PortfolioItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B74F27822C8400D459EA /* PortfolioItem+CoreDataProperties.swift */; };
+		AD19B75027822C8400D459EA /* Portfolio+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B74E27822C8400D459EA /* Portfolio+CoreDataClass.swift */; };
+		AD19B75127822C8400D459EA /* Portfolio+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B74F27822C8400D459EA /* Portfolio+CoreDataProperties.swift */; };
 		AD21191D27A7FEB200B54710 /* BrokerNoteDetailViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21191C27A7FEB200B54710 /* BrokerNoteDetailViewProtocol.swift */; };
 		AD21191F27A7FED300B54710 /* BrokerNoteInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21191E27A7FED300B54710 /* BrokerNoteInteractorProtocol.swift */; };
 		AD21192127A7FF2D00B54710 /* BrokerNoteDetailPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21192027A7FF2D00B54710 /* BrokerNoteDetailPresenterProtocol.swift */; };
@@ -74,7 +74,7 @@
 		AD4BC666277A8DAD00593CEE /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */; };
 		AD57927227B19DC700C7E867 /* CustomLocalization+BrokerNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57927127B19DC700C7E867 /* CustomLocalization+BrokerNotes.swift */; };
 		AD58D52B272CC0E60047847C /* portfolioExpected.json in Resources */ = {isa = PBXBuildFile; fileRef = AD58D52A272CC0E60047847C /* portfolioExpected.json */; };
-		AD58D52E272CC7E60047847C /* PortfolioItem+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58D52D272CC7E60047847C /* PortfolioItem+extension.swift */; };
+		AD58D52E272CC7E60047847C /* Portfolio+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58D52D272CC7E60047847C /* Portfolio+extension.swift */; };
 		AD6DDD4727ABF144002A34EE /* DateInputFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DDD4627ABF144002A34EE /* DateInputFormField.swift */; };
 		AD6DDD4927ABF2D4002A34EE /* DateInputContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DDD4827ABF2D4002A34EE /* DateInputContentConfiguration.swift */; };
 		AD6DDD4B27ABF2EC002A34EE /* DateInputContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DDD4A27ABF2EC002A34EE /* DateInputContentView.swift */; };
@@ -113,8 +113,8 @@
 		ADBBB68A279ADEA900B596A5 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB689279ADEA900B596A5 /* PortfolioViewController.swift */; };
 		ADBBB68C279ADEC800B596A5 /* PortfolioTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB68B279ADEC800B596A5 /* PortfolioTableViewDataSource.swift */; };
 		ADBBB68E279ADEDE00B596A5 /* PortfolioTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB68D279ADEDE00B596A5 /* PortfolioTableViewDelegate.swift */; };
-		ADBBB690279B1A7C00B596A5 /* PortfolioItem+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB68F279B1A7C00B596A5 /* PortfolioItem+ViewModel.swift */; };
-		ADBBC31A27825FE80068D066 /* PortfolioItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC31927825FE80068D066 /* PortfolioItemTests.swift */; };
+		ADBBB690279B1A7C00B596A5 /* Portfolio+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB68F279B1A7C00B596A5 /* Portfolio+ViewModel.swift */; };
+		ADBBC31A27825FE80068D066 /* TestPortfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC31927825FE80068D066 /* TestPortfolio.swift */; };
 		ADBD4151272B3B1E00BB3327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4150272B3B1E00BB3327 /* AppDelegate.swift */; };
 		ADBD4153272B3B1E00BB3327 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4152272B3B1E00BB3327 /* SceneDelegate.swift */; };
 		ADBD4155272B3B1E00BB3327 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4154272B3B1E00BB3327 /* MainViewController.swift */; };
@@ -122,7 +122,7 @@
 		ADBD415D272B3B1F00BB3327 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADBD415B272B3B1F00BB3327 /* LaunchScreen.storyboard */; };
 		ADBD4166272B3CC500BB3327 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4165272B3CC500BB3327 /* PortfolioView.swift */; };
 		ADBD4168272B3EF000BB3327 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD4167272B3EF000BB3327 /* BaseViewController.swift */; };
-		ADC3F67B278F60A80087294D /* PortfolioItem+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC3F67A278F60A80087294D /* PortfolioItem+Identifiable.swift */; };
+		ADC3F67B278F60A80087294D /* Portfolio+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC3F67A278F60A80087294D /* Portfolio+Identifiable.swift */; };
 		ADC3F67D278F611B0087294D /* CustomContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC3F67C278F611B0087294D /* CustomContentConfiguration.swift */; };
 		ADCD162D27A56D19006219AA /* SwitchInputFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD162C27A56D19006219AA /* SwitchInputFormField.swift */; };
 		ADCD162F27A56DE4006219AA /* SwitchInputContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD162E27A56DE4006219AA /* SwitchInputContentConfiguration.swift */; };
@@ -194,8 +194,8 @@
 		AD162AC327934D2F00E77FC1 /* TransactionContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionContentView.swift; sourceTree = "<group>"; };
 		AD19B741277E402600D459EA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		AD19B7442782217700D459EA /* FinanceModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinanceModel.xcdatamodel; sourceTree = "<group>"; };
-		AD19B74E27822C8400D459EA /* PortfolioItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+CoreDataClass.swift"; sourceTree = "<group>"; };
-		AD19B74F27822C8400D459EA /* PortfolioItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AD19B74E27822C8400D459EA /* Portfolio+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Portfolio+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AD19B74F27822C8400D459EA /* Portfolio+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Portfolio+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AD21191C27A7FEB200B54710 /* BrokerNoteDetailViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerNoteDetailViewProtocol.swift; sourceTree = "<group>"; };
 		AD21191E27A7FED300B54710 /* BrokerNoteInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerNoteInteractorProtocol.swift; sourceTree = "<group>"; };
 		AD21192027A7FF2D00B54710 /* BrokerNoteDetailPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerNoteDetailPresenterProtocol.swift; sourceTree = "<group>"; };
@@ -221,7 +221,7 @@
 		AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
 		AD57927127B19DC700C7E867 /* CustomLocalization+BrokerNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomLocalization+BrokerNotes.swift"; sourceTree = "<group>"; };
 		AD58D52A272CC0E60047847C /* portfolioExpected.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portfolioExpected.json; sourceTree = "<group>"; };
-		AD58D52D272CC7E60047847C /* PortfolioItem+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+extension.swift"; sourceTree = "<group>"; };
+		AD58D52D272CC7E60047847C /* Portfolio+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Portfolio+extension.swift"; sourceTree = "<group>"; };
 		AD6DDD4627ABF144002A34EE /* DateInputFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputFormField.swift; sourceTree = "<group>"; };
 		AD6DDD4827ABF2D4002A34EE /* DateInputContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputContentConfiguration.swift; sourceTree = "<group>"; };
 		AD6DDD4A27ABF2EC002A34EE /* DateInputContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputContentView.swift; sourceTree = "<group>"; };
@@ -260,9 +260,9 @@
 		ADBBB689279ADEA900B596A5 /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
 		ADBBB68B279ADEC800B596A5 /* PortfolioTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioTableViewDataSource.swift; sourceTree = "<group>"; };
 		ADBBB68D279ADEDE00B596A5 /* PortfolioTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioTableViewDelegate.swift; sourceTree = "<group>"; };
-		ADBBB68F279B1A7C00B596A5 /* PortfolioItem+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+ViewModel.swift"; sourceTree = "<group>"; };
+		ADBBB68F279B1A7C00B596A5 /* Portfolio+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Portfolio+ViewModel.swift"; sourceTree = "<group>"; };
 		ADBBC31727825FE80068D066 /* financeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = financeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADBBC31927825FE80068D066 /* PortfolioItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItemTests.swift; sourceTree = "<group>"; };
+		ADBBC31927825FE80068D066 /* TestPortfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPortfolio.swift; sourceTree = "<group>"; };
 		ADBD414D272B3B1E00BB3327 /* finance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBD4150272B3B1E00BB3327 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADBD4152272B3B1E00BB3327 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -272,7 +272,7 @@
 		ADBD415E272B3B1F00BB3327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADBD4165272B3CC500BB3327 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		ADBD4167272B3EF000BB3327 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		ADC3F67A278F60A80087294D /* PortfolioItem+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PortfolioItem+Identifiable.swift"; sourceTree = "<group>"; };
+		ADC3F67A278F60A80087294D /* Portfolio+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Portfolio+Identifiable.swift"; sourceTree = "<group>"; };
 		ADC3F67C278F611B0087294D /* CustomContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomContentConfiguration.swift; sourceTree = "<group>"; };
 		ADCD162C27A56D19006219AA /* SwitchInputFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchInputFormField.swift; sourceTree = "<group>"; };
 		ADCD162E27A56DE4006219AA /* SwitchInputContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchInputContentConfiguration.swift; sourceTree = "<group>"; };
@@ -576,7 +576,7 @@
 		ADBBC31827825FE80068D066 /* financeTests */ = {
 			isa = PBXGroup;
 			children = (
-				ADBBC31927825FE80068D066 /* PortfolioItemTests.swift */,
+				ADBBC31927825FE80068D066 /* TestPortfolio.swift */,
 				AD9F420827920F0D002A472F /* TransactionTests.swift */,
 			);
 			path = financeTests;
@@ -647,11 +647,11 @@
 		ADC3F679278F606B0087294D /* PortfolioItem */ = {
 			isa = PBXGroup;
 			children = (
-				AD58D52D272CC7E60047847C /* PortfolioItem+extension.swift */,
-				AD19B74E27822C8400D459EA /* PortfolioItem+CoreDataClass.swift */,
-				AD19B74F27822C8400D459EA /* PortfolioItem+CoreDataProperties.swift */,
-				ADC3F67A278F60A80087294D /* PortfolioItem+Identifiable.swift */,
-				ADBBB68F279B1A7C00B596A5 /* PortfolioItem+ViewModel.swift */,
+				AD58D52D272CC7E60047847C /* Portfolio+extension.swift */,
+				AD19B74E27822C8400D459EA /* Portfolio+CoreDataClass.swift */,
+				AD19B74F27822C8400D459EA /* Portfolio+CoreDataProperties.swift */,
+				ADC3F67A278F60A80087294D /* Portfolio+Identifiable.swift */,
+				ADBBB68F279B1A7C00B596A5 /* Portfolio+ViewModel.swift */,
 			);
 			path = PortfolioItem;
 			sourceTree = "<group>";
@@ -887,7 +887,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD9F420927920F0D002A472F /* TransactionTests.swift in Sources */,
-				ADBBC31A27825FE80068D066 /* PortfolioItemTests.swift in Sources */,
+				ADBBC31A27825FE80068D066 /* TestPortfolio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -915,13 +915,13 @@
 				ADBBB684279ADE4800B596A5 /* PortfolioPresenter.swift in Sources */,
 				AD041FBA27A03AAB00C9A815 /* BrokerNoteSummaryNavigationController.swift in Sources */,
 				AD0D2311279D8CC900CBA554 /* SummaryViewController.swift in Sources */,
-				AD19B75027822C8400D459EA /* PortfolioItem+CoreDataClass.swift in Sources */,
+				AD19B75027822C8400D459EA /* Portfolio+CoreDataClass.swift in Sources */,
 				AD041F9F27A02DBB00C9A815 /* BrokerNoteSummaryInteractorProtocol.swift in Sources */,
 				ADBBB6492797354600B596A5 /* NavigationAccessoryDelegate.swift in Sources */,
 				AD0D22FB279C568500CBA554 /* SummaryViewProtocol.swift in Sources */,
 				AD19B7452782217700D459EA /* FinanceModel.xcdatamodeld in Sources */,
 				AD0D2301279C5B2800CBA554 /* SummaryPresenterProtocol.swift in Sources */,
-				AD58D52E272CC7E60047847C /* PortfolioItem+extension.swift in Sources */,
+				AD58D52E272CC7E60047847C /* Portfolio+extension.swift in Sources */,
 				ADAEFF352735669100C7ABAE /* CustomLocalization+PortfolioManager.swift in Sources */,
 				AD041FA927A02E6C00C9A815 /* BrokerNoteSummaryTableViewDataSource.swift in Sources */,
 				ADD1EFAF27A1D109002A4055 /* TextInputContentView.swift in Sources */,
@@ -934,7 +934,7 @@
 				AD0D22FD279C5AFA00CBA554 /* SummaryInteractorProtocol.swift in Sources */,
 				AD041F9327A0271800C9A815 /* BrokerNote+CoreDataClass.swift in Sources */,
 				AD21192527A7FF8700B54710 /* BrokerNoteDetailWorkerProtocol.swift in Sources */,
-				ADBBB690279B1A7C00B596A5 /* PortfolioItem+ViewModel.swift in Sources */,
+				ADBBB690279B1A7C00B596A5 /* Portfolio+ViewModel.swift in Sources */,
 				AD041FB227A0324D00C9A815 /* BrokerNoteSummaryInteractor.swift in Sources */,
 				AD041FB427A032DD00C9A815 /* BrokerNoteSummaryPresenter.swift in Sources */,
 				AD36B05A2786197C00040D25 /* CustomLocalization+UpdateView.swift in Sources */,
@@ -994,14 +994,14 @@
 				AD0D2313279D8D4300CBA554 /* SummaryRouter.swift in Sources */,
 				AD19B742277E402600D459EA /* Persistence.swift in Sources */,
 				ADD677692796E06700880AE8 /* NavigationAccessoryView.swift in Sources */,
-				ADC3F67B278F60A80087294D /* PortfolioItem+Identifiable.swift in Sources */,
+				ADC3F67B278F60A80087294D /* Portfolio+Identifiable.swift in Sources */,
 				AD281029278768B400BA4136 /* NumberFormatter+extension.swift in Sources */,
 				ADBBB671279ADD3400B596A5 /* PortfolioViewProtocol.swift in Sources */,
 				AD36D8A8279492290043EB93 /* TransactionContentConfiguration.swift in Sources */,
 				AD2810242787648C00BA4136 /* Quote.swift in Sources */,
 				AD041FC827A06A4200C9A815 /* BrokerNoteContentConfiguration.swift in Sources */,
 				AD9F420C27921B0A002A472F /* Transaction+CoreDataClass.swift in Sources */,
-				AD19B75127822C8400D459EA /* PortfolioItem+CoreDataProperties.swift in Sources */,
+				AD19B75127822C8400D459EA /* Portfolio+CoreDataProperties.swift in Sources */,
 				AD041FAE27A02FE300C9A815 /* BrokerNoteSummaryTableViewDelegate.swift in Sources */,
 				AD21193027A8349700B54710 /* BrokerNoteDetailRouter.swift in Sources */,
 				EBDF37D6FE10FAB0EFB1E38E /* SummaryNavigationController.swift in Sources */,

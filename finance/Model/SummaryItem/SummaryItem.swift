@@ -22,7 +22,7 @@ class SummaryItem {
         self.updatePrice()
     }
     
-    init(from item: PortfolioItem) {
+    init(from item: Portfolio) {
         self.name = item.name
         self.weight = item.weight
         self.quantity = 0

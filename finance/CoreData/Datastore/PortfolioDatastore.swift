@@ -13,11 +13,11 @@ class PortfolioDatastore {
     
     private var context: NSManagedObjectContext = Persistence.shared.persistentContainer.viewContext
     
-    private var data: [UUID?: [PortfolioItem]] = [:]
+    private var data: [UUID?: [Portfolio]] = [:]
     
     private init() {
         
-        let request = PortfolioItem.createFetchRequest()
+        let request = Portfolio.createFetchRequest()
         if let data = try? self.context.fetch(request) {
             for item in data {
                 self.insert(item)
@@ -26,7 +26,7 @@ class PortfolioDatastore {
         
     }
     
-    func insert(_ item: PortfolioItem) {
+    func insert(_ item: Portfolio) {
         if self.data.keys.contains(item.parentId) {
             self.data[item.parentId]?.append(item)
             self.data[item.parentId]?.sort(by: { $0.rank < $1.rank } )
@@ -39,18 +39,18 @@ class PortfolioDatastore {
         return self.data[parentId]?.count ?? 0
     }
     
-    func getElement(for parentId: UUID?, at index: Int) -> PortfolioItem? {
+    func getElement(for parentId: UUID?, at index: Int) -> Portfolio? {
         return self.data[parentId]?[index]
     }
     
-    func getElement(for parentId: UUID?) -> [PortfolioItem] {
+    func getElement(for parentId: UUID?) -> [Portfolio] {
         guard let array = self.data[parentId] else { return [] }
         return array
     }
     
-    func getTree(for parentId: UUID?) -> [PortfolioItem] {
-        var array: [PortfolioItem] = []
-        var pending: [PortfolioItem] = self.getElement(for: parentId)
+    func getTree(for parentId: UUID?) -> [Portfolio] {
+        var array: [Portfolio] = []
+        var pending: [Portfolio] = self.getElement(for: parentId)
         while !pending.isEmpty {
             let next = pending.remove(at: 0)
             array.append(next)
@@ -59,7 +59,7 @@ class PortfolioDatastore {
         return array
     }
     
-    func remove(_ item: PortfolioItem) {
+    func remove(_ item: Portfolio) {
         self.context.delete(item)
         self.data[item.parentId]?.removeAll(where: { $0.id == item.id } )
     }
