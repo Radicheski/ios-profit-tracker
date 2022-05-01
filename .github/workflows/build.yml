@@ -1,0 +1,14 @@
+name: build-and-test
+on: [push]
+jobs:
+  build-project:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: xcodebuild clean -project finance.xcodeproj -scheme finance
+  test-project:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: xcodebuild test -project finance.xcodeproj -scheme financeTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4'
+

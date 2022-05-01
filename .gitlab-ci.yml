@@ -1,0 +1,13 @@
+stages:
+  - build
+  - test
+
+build:
+  stage: build
+  script:
+    - xcodebuild clean -project finance.xcodeproj -scheme finance
+
+test:
+  stage: test
+  script:
+    -  xcodebuild test -project finance.xcodeproj -scheme financeTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4'
