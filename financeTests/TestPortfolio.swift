@@ -7,6 +7,7 @@
 
 import XCTest
 import finance
+import SwiftyJSON
 
 class TestPortfolio: XCTestCase {
     
@@ -25,7 +26,7 @@ class TestPortfolio: XCTestCase {
             for object in json {
                 let item = Portfolio(entity: Portfolio.entity(), insertInto: nil)
                 item.id = UUID(uuidString: object["id"].stringValue)!
-                item.parentId = UUID(uuidString: object["parentId"].stringValue)
+                item.parentId = UUID(uuidString: object["parentId"].stringValue) ?? UUID()
                 item.rank = object["rank"].intValue
                 item.weight = Decimal(string: object["weight"].stringValue, locale: nil)!
                 item.name = object["name"].stringValue

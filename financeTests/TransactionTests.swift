@@ -7,6 +7,7 @@
 
 import XCTest
 import finance
+import SwiftyJSON
 
 class TransactionTests: XCTestCase {
     
