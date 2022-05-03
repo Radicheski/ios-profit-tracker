@@ -9,11 +9,6 @@ import Foundation
 
 extension BrokerNote {
     
-    var total: Decimal {
-        get {
-            let set = self.cdtransactions as? Set<Transaction> ?? []
-            return set.reduce(0) { $0 + $1.total }
-        }
-    }
+    var total: Decimal { return self.cdtransactions.reduce(0) { $0 + $1.total } }
     
 }

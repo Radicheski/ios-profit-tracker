@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol PortfolioViewProtocol: AnyObject where Self: UIViewController {
+protocol PortfolioViewProtocol: UIViewController {
     var interactor: PortfolioInteractorProtocol { get }
     var router: PortfolioRouterProtocol { get }
     func updateView(with data: [Portfolio.ViewModel])

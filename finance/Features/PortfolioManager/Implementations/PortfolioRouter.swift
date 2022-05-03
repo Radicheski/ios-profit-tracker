@@ -19,9 +19,9 @@ class PortfolioRouter: NSObject, PortfolioRouterProtocol {
     
     func update(item: Portfolio.ViewModel) {
         let viewController = FormViewController()
-        var name: Box<String?> = Box(item.name.value)
-        var weight: Box<String?> = Box(item.weight.value)
-        var asset: Box<Bool> = Box(!item.isAsset.value)
+        let name: Box<String?> = Box(item.name.value)
+        let weight: Box<String?> = Box(item.weight.value)
+        let asset: Box<Bool> = Box(!item.isAsset.value)
         let rows: [Row] = [
             TextInputFormField(key: "name", value: name, contentConfiguration: .init(title: CustomLocalization.UpdateView.updateViewNameLabel, placeholder: name.value)),
             TextInputFormField(key: "weight", value: weight, contentConfiguration: .init(title: CustomLocalization.UpdateView.updateViewWeightLabel, placeholder: weight.value)),

@@ -36,7 +36,7 @@ class SummaryTableViewDataSource: NSObject, UITableViewDataSource {
         } else {
             var conf = cell.defaultContentConfiguration()
             conf.text = CustomLocalization.PortfolioManager.globalPortfolioUnallocated
-            conf.secondaryText = Formatter.shared.percent.string(from: self.data.map { try! Decimal($0.weight ?? "0", format: .percent) }.reduce(1, { $0 - $1 }))
+            conf.secondaryText = Formatter.shared.percent.string(from: self.data.map { try! Decimal($0.weight, format: .percent) }.reduce(1, { $0 - $1 }))
             cell.contentConfiguration = conf
         }
         

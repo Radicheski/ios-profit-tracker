@@ -14,10 +14,10 @@ class BrokerNoteDetailRouter: BrokerNoteDetailRouterProtocol {
     func present(transaction: Transaction.ViewModel) {
 
         let viewController = FormViewController()
-        var ticker: Box<String?> = Box(transaction.ticker.value)
-        var quantity: Box<String?> = Box(transaction.quantity.value)
-        var date: Box<String?> = Box(transaction.date.value.formatted())
-        var total: Box<String?> = Box(transaction.total.value)
+        let ticker: Box<String?> = Box(transaction.ticker.value)
+        let quantity: Box<String?> = Box(transaction.quantity.value)
+        let date: Box<String?> = Box(transaction.date.value.formatted())
+        let total: Box<String?> = Box(transaction.total.value)
         let rows: [Row] = [
             TextInputFormField(key: "ticker", value: ticker, contentConfiguration: .init(title: "Ticker", placeholder: ticker.value)),
             TextInputFormField(key: "quantity", value: quantity, contentConfiguration: .init(title: "Quantidade", placeholder: quantity.value)),

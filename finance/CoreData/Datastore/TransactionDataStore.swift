@@ -28,7 +28,7 @@ class TransactionDataStore {
     }
     
     func create() {
-        var newItem = Transaction(context: Persistence.shared.context)
+        let newItem = Transaction(context: Persistence.shared.context)
         newItem.ticker = CustomLocalization.Transactions.newTransaction
         newItem.date = Date.now
         newItem.quantity = 0
