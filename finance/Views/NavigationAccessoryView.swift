@@ -16,12 +16,12 @@ class NavigationAccessoryView: UIToolbar {
     }
     
     
-    var upButton = UIBarButtonItem(image: UIImage(systemName: "chevron.up"), style: .plain, target: self, action: #selector(buttonTapped(_:)))
-    var downButton = UIBarButtonItem(image: UIImage(systemName: "chevron.down"), style: .plain, target: self, action: #selector(buttonTapped(_:)))
+    lazy var upButton = UIBarButtonItem(image: UIImage(systemName: "chevron.up"), style: .plain, target: self, action: #selector(buttonTapped(_:)))
+    lazy var downButton = UIBarButtonItem(image: UIImage(systemName: "chevron.down"), style: .plain, target: self, action: #selector(buttonTapped(_:)))
     
     var space = UIBarButtonItem(systemItem: .flexibleSpace, primaryAction: nil, menu: nil)
 
-    var doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(buttonTapped(_:)))
+    lazy var doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(buttonTapped(_:)))
     
     weak var navigationDelegate: NavigationAccessoryDelegate?
     
