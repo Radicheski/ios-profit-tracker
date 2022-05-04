@@ -12,6 +12,10 @@ class PortfolioWorker: NSObject, PortfolioWorkerProtocol {
     var portfolioId: UUID
     var context = Persistence.shared.context
     
+    var alertPresenter: ((((Bool) -> Void)?) -> Void)?
+    
+    var reloadData: (() -> Void)?
+    
     init(portfolioId: UUID) {
         self.portfolioId = portfolioId
     }
@@ -59,13 +63,23 @@ class PortfolioWorker: NSObject, PortfolioWorkerProtocol {
     func delete(fromIndex index: Int) {
         var data = loadData()
         let item = data.remove(at: index)
-        self.context.delete(item)
         let childrenWorker = PortfolioWorker(portfolioId: item.id)
-        #warning("if has children show alert controller asking for confirmation")
-        while childrenWorker.count() > 0 {
-            childrenWorker.delete(fromIndex: 0)
+        if childrenWorker.count() == 0 {
+            self.context.delete(item)
+            updateRanks(data)
+            self.reloadData?()
+        } else {
+            self.alertPresenter? { [weak self] response in
+                if response {
+                    while childrenWorker.count() > 0 {
+                        childrenWorker.delete(fromIndex: 0)
+                    }
+                    self?.context.delete(item)
+                    self?.updateRanks(data)
+                    self?.reloadData?()
+                }
+            }
         }
-        updateRanks(data)
     }
     
     func save() {

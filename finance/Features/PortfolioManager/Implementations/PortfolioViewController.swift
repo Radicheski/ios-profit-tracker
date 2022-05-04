@@ -112,4 +112,13 @@ class PortfolioViewController: BaseViewController<PortfolioView>, PortfolioViewP
         self.interactor.move(from: startIndex, to: endIndex)
     }
     
+    func askForConfirmation(_ completion: ((Bool) -> Void)?) {
+        
+        let alert = UIAlertController(title: nil, message: CustomLocalization.PortfolioManager.userConfirmationOnPortfolioDelete, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: CustomLocalization.CommonStrings.cancel, style: .cancel, handler: { _ in completion?(false)}))
+        alert.addAction(UIAlertAction(title: CustomLocalization.CommonStrings.ok, style: .destructive, handler: { _ in completion?(true)}))
+        
+        self.present(alert, animated: true)
+    }
+    
 }

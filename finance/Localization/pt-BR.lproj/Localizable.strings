@@ -9,6 +9,7 @@
 "globalPortfolioTitle" = "Carteira global";
 "globalPortfolioUnallocated" = "Não alocado";
 "globalPortfolioNewItem" = "Novo item";
+"globalPortfolioDeleteMessage" = "Você está prestes a apagar um portfolio que não está vazio. Tem certeza?";
 
 "summaryTabBarTitle" = "Resumo";
 "summaryTitle" = "Resumo";
@@ -26,3 +27,6 @@
 "brokerNotesTabBarTitle" = "Notas";
 "brokerNotesTitle" = "Notas";
 "brokerNotesNewItem" = "Nova nota";
+
+"commonStringsOK" = "OK";
+"commonStringsCancel" = "Cancelar";

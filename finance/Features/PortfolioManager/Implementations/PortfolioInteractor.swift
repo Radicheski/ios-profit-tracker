@@ -15,6 +15,9 @@ class PortfolioInteractor: NSObject, PortfolioInteractorProtocol {
     init(presenter: PortfolioPresenterProtocol, worker: PortfolioWorkerProtocol) {
         self.presenter = presenter
         self.worker = worker
+        super.init()
+        self.worker.alertPresenter = self.askForConfirmation
+        self.worker.reloadData = self.loadData
     }
     
     func loadData() {
@@ -34,7 +37,6 @@ class PortfolioInteractor: NSObject, PortfolioInteractorProtocol {
     
     func delete(fromIndex index: Int) {
         self.worker.delete(fromIndex: index)
-        self.loadData()
     }
     
     func move(from startIndex: Int, to endIndex: Int) {
@@ -48,6 +50,10 @@ class PortfolioInteractor: NSObject, PortfolioInteractorProtocol {
     func discard() {
         self.worker.discard()
         self.loadData()
+    }
+    
+    func askForConfirmation(_ completion: ((Bool) -> Void)?) {
+        self.presenter.askForConfirmation(completion)
     }
 
 }

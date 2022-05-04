@@ -21,4 +21,8 @@ class PortfolioPresenter: NSObject, PortfolioPresenterProtocol {
         self.view?.present(item: viewModel)
     }
     
+    func askForConfirmation(_ completion: ((Bool) -> Void)?) {
+        self.view?.askForConfirmation(completion)
+    }
+    
 }

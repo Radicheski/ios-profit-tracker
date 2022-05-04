@@ -9,4 +9,5 @@ protocol PortfolioPresenterProtocol: AnyObject {
     var view: PortfolioViewProtocol? { get }
     func load(data: [Portfolio])
     func present(item: Portfolio)
+    func askForConfirmation(_ completion: ((Bool) -> Void)?)
 }

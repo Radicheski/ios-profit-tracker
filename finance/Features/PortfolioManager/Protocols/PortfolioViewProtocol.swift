@@ -18,4 +18,5 @@ protocol PortfolioViewProtocol: UIViewController {
     func delete(fromIndex index: Int)
     func move(from startIndex: Int, to endIndex: Int)
     func loadData()
+    func askForConfirmation(_ completion: ((Bool) -> Void)?)
 }

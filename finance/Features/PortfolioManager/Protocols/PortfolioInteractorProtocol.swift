@@ -17,4 +17,5 @@ protocol PortfolioInteractorProtocol: AnyObject {
     func move(from startIndex: Int, to endIndex: Int)
     func save()
     func discard()
+    func askForConfirmation(_ completion: ((Bool) -> Void)?)
 }

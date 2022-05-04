@@ -9,6 +9,8 @@ import Foundation
 
 protocol PortfolioWorkerProtocol: AnyObject {
     var portfolioId: UUID { get }
+    var alertPresenter: ((((Bool) -> Void)?) -> Void)? { get set }
+    var reloadData: (() -> Void)? { get set }
     func loadData() -> [Portfolio]
     func insert() -> [Portfolio]
     func move(from startIndex: Int, to endIndex: Int)
