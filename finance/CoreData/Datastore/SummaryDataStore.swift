@@ -40,7 +40,9 @@ class SummaryDataStore: ReadOnlyDatastore {
             data[item.ticker] = summary
         }
 
-        self.data = data.filter { $0.value.quantity != 0 || !$0.value.weight.isZero }.map { $0.value }.sorted { $0.name < $1.name }
+        self.data = data.filter { $0.value.quantity != 0 || !$0.value.weight.isZero }
+            .map { $0.value }
+            .sorted { $0.name < $1.name }
 
     }
 

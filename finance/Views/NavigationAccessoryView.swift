@@ -15,8 +15,14 @@ class NavigationAccessoryView: UIToolbar {
         case done
     }
 
-    lazy var upButton = UIBarButtonItem(image: UIImage(systemName: "chevron.up"), style: .plain, target: self, action: #selector(buttonTapped(_:)))
-    lazy var downButton = UIBarButtonItem(image: UIImage(systemName: "chevron.down"), style: .plain, target: self, action: #selector(buttonTapped(_:)))
+    lazy var upButton = UIBarButtonItem(image: UIImage(systemName: "chevron.up"),
+                                        style: .plain,
+                                        target: self,
+                                        action: #selector(buttonTapped(_:)))
+    lazy var downButton = UIBarButtonItem(image: UIImage(systemName: "chevron.down"),
+                                          style: .plain,
+                                          target: self,
+                                          action: #selector(buttonTapped(_:)))
 
     var space = UIBarButtonItem(systemItem: .flexibleSpace, primaryAction: nil, menu: nil)
 

@@ -19,10 +19,18 @@ class BrokerNoteDetailRouter: BrokerNoteDetailRouterProtocol {
         let date: Box<String?> = Box(transaction.date.value.formatted())
         let total: Box<String?> = Box(transaction.total.value)
         let rows: [Row] = [
-            TextInputFormField(key: "ticker", value: ticker, contentConfiguration: .init(title: "Ticker", placeholder: ticker.value)),
-            TextInputFormField(key: "quantity", value: quantity, contentConfiguration: .init(title: "Quantidade", placeholder: quantity.value)),
-            TextInputFormField(key: "date", value: date, contentConfiguration: .init(title: "Data", placeholder: date.value)),
-            TextInputFormField(key: "total", value: total, contentConfiguration: .init(title: "Total", placeholder: total.value)),
+            TextInputFormField(key: "ticker",
+                               value: ticker,
+                               contentConfiguration: .init(title: "Ticker", placeholder: ticker.value)),
+            TextInputFormField(key: "quantity",
+                               value: quantity,
+                               contentConfiguration: .init(title: "Quantidade", placeholder: quantity.value)),
+            TextInputFormField(key: "date",
+                               value: date,
+                               contentConfiguration: .init(title: "Data", placeholder: date.value)),
+            TextInputFormField(key: "total",
+                               value: total,
+                               contentConfiguration: .init(title: "Total", placeholder: total.value)),
         ]
 
         let section = TableViewSection(key: "updateHeader", rows: rows)
@@ -30,9 +38,12 @@ class BrokerNoteDetailRouter: BrokerNoteDetailRouterProtocol {
         viewController.dataSource.insert(section: section, at: 0)
         viewController.registerSections()
 
-        viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(systemItem: .cancel, primaryAction: UIAction(handler: self.action(_:)), menu: nil)
+        let leftBarButton = UIBarButtonItem(systemItem: .cancel,
+                                            primaryAction: UIAction(handler: self.action(_:)),
+                                            menu: nil)
+        viewController.navigationItem.leftBarButtonItem = leftBarButton
 
-        viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(systemItem: .save, primaryAction: UIAction(handler: { [weak self] _ in
+        let rightBarButton = UIBarButtonItem(systemItem: .save, primaryAction: UIAction(handler: { [weak self] _ in
             if let ticker = ticker.value {
                 transaction.ticker.value = ticker
             }
@@ -48,6 +59,7 @@ class BrokerNoteDetailRouter: BrokerNoteDetailRouterProtocol {
             }
             self?.view?.navigationController?.popViewController(animated: true)
         }))
+        viewController.navigationItem.rightBarButtonItem = rightBarButton
 
         self.view?.show(viewController, sender: nil)
     }

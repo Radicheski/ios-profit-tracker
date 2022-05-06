@@ -34,11 +34,21 @@ extension BrokerNote {
 
             self.transactions = brokerNote.cdtransactions.map { Transaction.ViewModel(from: $0) } as [Row]
 
+            let datePlaceholder = date.value.formatted(date: .numeric, time: .omitted)
             self.header = [
-                TextInputFormField(key: "brokerageHouse", value: brokerageHouse, contentConfiguration: .init(title: "Corretora", placeholder: brokerageHouse.value)),
-                TextInputFormField(key: "noteNumber", value: self.noteNumber, contentConfiguration: .init(title: "Nota Nº", placeholder: self.noteNumber.value)),
-                DateInputFormField(key: "date", value: date, contentConfiguration: .init(title: "Data", placeholder: date.value.formatted(date: .numeric, time: .omitted))),
-                TextInputFormField(key: "total", value: total, contentConfiguration: .init(title: "Total", placeholder: total.value)),
+               TextInputFormField(key: "brokerageHouse",
+                                   value: brokerageHouse,
+                                   contentConfiguration: .init(title: "Corretora", placeholder: brokerageHouse.value)),
+                TextInputFormField(key: "noteNumber",
+                                   value: self.noteNumber,
+                                   contentConfiguration: .init(title: "Nota Nº", placeholder: self.noteNumber.value)),
+                DateInputFormField(key: "date",
+                                   value: date,
+                                   contentConfiguration: .init(title: "Data",
+                                                               placeholder: datePlaceholder)),
+                TextInputFormField(key: "total",
+                                   value: total,
+                                   contentConfiguration: .init(title: "Total", placeholder: total.value)),
             ]
         }
 

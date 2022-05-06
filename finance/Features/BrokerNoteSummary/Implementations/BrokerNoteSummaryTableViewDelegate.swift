@@ -9,7 +9,8 @@ import UIKit
 class BrokerNoteSummaryTableViewDelegate: NSObject, UITableViewDelegate {
     weak var viewController: BrokerNoteSummaryViewProtocol?
 
-    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+    func tableView(_ tableView: UITableView,
+                   editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         if tableView.isEditing && indexPath.section == 0 { return .none }
         else { return .delete }
     }

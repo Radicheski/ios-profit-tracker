@@ -17,11 +17,19 @@ class BrokerNoteDetailPresenter: BrokerNoteDetailPresenterProtocol {
         let section: Section = item
 
         var transactionRows = item.transactions
-        transactionRows.append(TextInputFormField(key: "newTransaction", value: Box(nil), contentConfiguration: .init(title: "Nova transação", placeholder: nil)))
-        let transactionSection = TableViewSection(key: BrokerNoteDetailSections.transactions.rawValue, rows: transactionRows)
+        let newTransaction = TextInputFormField(key: "newTransaction",
+                                                value: Box(nil),
+                                                contentConfiguration: .init(title: "Nova transação", placeholder: nil))
+        transactionRows.append(newTransaction)
+
+        let transactionSection = TableViewSection(key: BrokerNoteDetailSections.transactions.rawValue,
+                                                  rows: transactionRows)
         transactionSection.headerTitle = "Transações"
 
-        self.view?.navigationItem.leftBarButtonItem = UIBarButtonItem(systemItem: .cancel, primaryAction: UIAction(handler: self.action(_:)), menu: nil)
+        let leftBarButton = UIBarButtonItem(systemItem: .cancel,
+                                            primaryAction: UIAction(handler: self.action(_:)),
+                                            menu: nil)
+        self.view?.navigationItem.leftBarButtonItem = leftBarButton
 
         self.view?.saveAction = item.saveAction(_:)
 

@@ -21,8 +21,12 @@ class CustomContentView: UIView, UIContentView {
         self.configuration = configuration
         super.init(frame: .zero)
 
-        [self.titleLabel, self.weightLabel, self.priceLabel, self.quantityLabel].forEach { $0.translatesAutoresizingMaskIntoConstraints = false }
-        [self.titleLabel, self.weightLabel, self.priceLabel, self.quantityLabel].forEach { self.addSubview($0) }
+        [self.titleLabel, self.weightLabel, self.priceLabel, self.quantityLabel].forEach {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+        }
+        [self.titleLabel, self.weightLabel, self.priceLabel, self.quantityLabel].forEach {
+            self.addSubview($0)
+        }
         NSLayoutConstraint.activate([
             self.titleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 11),
             self.titleLabel.leftAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leftAnchor, constant: 20),

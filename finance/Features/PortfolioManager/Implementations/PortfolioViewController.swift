@@ -38,7 +38,9 @@ class PortfolioViewController: BaseViewController<PortfolioView>, PortfolioViewP
         self.customView.tableView.dataSource = self.datasource
 
         self.navigationItem.rightBarButtonItem = self.editButtonItem
-        if self.navigationItem.title == nil { self.navigationItem.title = CustomLocalization.PortfolioManager.globalPortfolioTitle }
+        if self.navigationItem.title == nil {
+            self.navigationItem.title = CustomLocalization.PortfolioManager.globalPortfolioTitle
+        }
 
         self.customView.tableView.allowsSelectionDuringEditing = true
     }
@@ -57,7 +59,10 @@ class PortfolioViewController: BaseViewController<PortfolioView>, PortfolioViewP
         super.setEditing(editing, animated: animated)
         let indexPath = IndexPath(row: 0, section: 1)
         if editing {
-            self.navigationItem.setLeftBarButton(UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelEdit)), animated: true)
+            let leftBarButton = UIBarButtonItem(barButtonSystemItem: .cancel,
+                                                target: self,
+                                                action: #selector(cancelEdit))
+            self.navigationItem.setLeftBarButton(leftBarButton, animated: true)
             self.customView.tableView.insertRows(at: [indexPath], with: .left)
             self.customView.tableView.scrollToBottom(at: .none, animated: true)
         } else {
@@ -112,9 +117,19 @@ class PortfolioViewController: BaseViewController<PortfolioView>, PortfolioViewP
 
     func askForConfirmation(_ completion: ((Bool) -> Void)?) {
 
-        let alert = UIAlertController(title: nil, message: CustomLocalization.PortfolioManager.userConfirmationOnPortfolioDelete, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: CustomLocalization.CommonStrings.cancel, style: .cancel, handler: { _ in completion?(false)}))
-        alert.addAction(UIAlertAction(title: CustomLocalization.CommonStrings.ok, style: .destructive, handler: { _ in completion?(true)}))
+        let alert = UIAlertController(title: nil,
+                                      message: CustomLocalization.PortfolioManager.userConfirmationOnPortfolioDelete,
+                                      preferredStyle: .alert)
+
+        let cancelAction = UIAlertAction(title: CustomLocalization.CommonStrings.cancel,
+                                         style: .cancel,
+                                         handler: { _ in completion?(false)})
+        alert.addAction(cancelAction)
+
+        let okAction = UIAlertAction(title: CustomLocalization.CommonStrings.ok,
+                                     style: .destructive,
+                                     handler: { _ in completion?(true)})
+        alert.addAction(okAction)
 
         self.present(alert, animated: true)
     }

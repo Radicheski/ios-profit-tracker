@@ -15,8 +15,12 @@ class SaveCancelNavigationBar: UINavigationBar {
     }
 
     let navigationItem = UINavigationItem()
-    lazy var cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(buttonPressed(_:)))
-    lazy var saveButton = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(buttonPressed(_:)))
+    lazy var cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel,
+                                            target: self,
+                                            action: #selector(buttonPressed(_:)))
+    lazy var saveButton = UIBarButtonItem(barButtonSystemItem: .save,
+                                          target: self,
+                                          action: #selector(buttonPressed(_:)))
 
     weak var saveCancelDelegate: SaveCancelNavigationDelegate?
 

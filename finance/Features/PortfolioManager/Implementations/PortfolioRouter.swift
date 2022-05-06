@@ -23,23 +23,36 @@ class PortfolioRouter: NSObject, PortfolioRouterProtocol {
         let weight: Box<String?> = Box(item.weight.value)
         let asset: Box<Bool> = Box(!item.isAsset.value)
         let rows: [Row] = [
-            TextInputFormField(key: "name", value: name, contentConfiguration: .init(title: CustomLocalization.UpdateView.updateViewNameLabel, placeholder: name.value)),
-            TextInputFormField(key: "weight", value: weight, contentConfiguration: .init(title: CustomLocalization.UpdateView.updateViewWeightLabel, placeholder: weight.value)),
-            SwitchInputFormField(key: "asset", value: asset, contentConfiguration: .init(title: CustomLocalization.UpdateView.updateViewPortfolioLabel, value: asset.value))
+          TextInputFormField(key: "name",
+                             value: name,
+                             contentConfiguration: .init(title: CustomLocalization.UpdateView.updateViewNameLabel,
+                                                         placeholder: name.value)),
+          TextInputFormField(key: "weight",
+                             value: weight,
+                             contentConfiguration: .init(title: CustomLocalization.UpdateView.updateViewWeightLabel,
+                                                         placeholder: weight.value)),
+          SwitchInputFormField(key: "asset",
+                               value: asset,
+                               contentConfiguration: .init(title: CustomLocalization.UpdateView.updateViewPortfolioLabel,
+                                                           value: asset.value))
         ]
         let section = TableViewSection(key: "updateHeader", rows: rows)
 
         viewController.dataSource.insert(section: section, at: 0)
         viewController.registerSections()
 
-        viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(systemItem: .cancel, primaryAction: UIAction(handler: self.action(_:)), menu: nil)
+        let leftBarButton = UIBarButtonItem(systemItem: .cancel,
+                                            primaryAction: UIAction(handler: self.action(_:)),
+                                            menu: nil)
+        viewController.navigationItem.leftBarButtonItem = leftBarButton
 
-        viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(systemItem: .save, primaryAction: UIAction(handler: { [weak self] _ in
+        let rightBarButton = UIBarButtonItem(systemItem: .save, primaryAction: UIAction(handler: { [weak self] _ in
             item.name.value = name.value
             item.weight.value = weight.value
             item.isAsset.value = !asset.value
             self?.view?.navigationController?.popViewController(animated: true)
         }))
+        viewController.navigationItem.rightBarButtonItem = rightBarButton
 
         self.view?.show(viewController, sender: nil)
     }

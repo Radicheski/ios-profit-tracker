@@ -31,7 +31,9 @@ class BrokerNoteSummaryViewController: BaseViewController<PortfolioView>, Broker
 
         self.customView.tableView.allowsSelectionDuringEditing = true
 
-        if self.navigationItem.title == nil { self.navigationItem.title = CustomLocalization.BrokerNotes.brokerNotesTitle }
+        if self.navigationItem.title == nil {
+            self.navigationItem.title = CustomLocalization.BrokerNotes.brokerNotesTitle
+        }
 
         self.customView.tableView.register(UITableViewCell.self)
         self.navigationItem.rightBarButtonItem = self.editButtonItem
@@ -42,7 +44,10 @@ class BrokerNoteSummaryViewController: BaseViewController<PortfolioView>, Broker
         super.setEditing(editing, animated: animated)
         let sectionIndex = IndexSet(arrayLiteral: 0)
         if editing {
-            self.navigationItem.setLeftBarButton(UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelEdit)), animated: true)
+            let leftBarButton = UIBarButtonItem(barButtonSystemItem: .cancel,
+                                                target: self,
+                                                action: #selector(cancelEdit))
+            self.navigationItem.setLeftBarButton(leftBarButton, animated: true)
             self.customView.tableView.insertSections(sectionIndex, with: .left)
         } else {
             self.navigationItem.setLeftBarButton(nil, animated: true)
