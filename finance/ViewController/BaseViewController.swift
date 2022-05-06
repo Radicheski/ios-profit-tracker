@@ -8,18 +8,14 @@
 import UIKit
 
 class BaseViewController<T: UIView>: UIViewController {
-    
+
+    // swiftlint:disable force_cast
     var customView: T {
-        get {
-            return self.view as! T
-        }
+        return self.view as! T
     }
-    
-    
+
     override func loadView() {
         self.view = T()
     }
-    
-    
-}
 
+}

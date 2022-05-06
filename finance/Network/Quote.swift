@@ -9,6 +9,7 @@ import Foundation
 
 struct Quote: Decodable {
     
+    // swiftlint:disable identifier_name
     let tp_reg: Int
     let dt_pregao: String // Date YYYYMMDD
     let cd_bdi: Int
