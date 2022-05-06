@@ -15,6 +15,6 @@ protocol RegistrableTableViewCell where Self: UITableViewCell {
 
 extension RegistrableTableViewCell {
 
-    static var identifier: String { get { String(describing: Self.self) } }
+    static var identifier: String { String(describing: Self.self) }
 
 }

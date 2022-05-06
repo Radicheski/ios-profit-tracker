@@ -29,7 +29,7 @@ class PortfolioDatastore {
     func insert(_ item: Portfolio) {
         if self.data.keys.contains(item.parentId) {
             self.data[item.parentId]?.append(item)
-            self.data[item.parentId]?.sort(by: { $0.rank < $1.rank } )
+            self.data[item.parentId]?.sort { $0.rank < $1.rank }
         } else {
             self.data[item.parentId] = [item]
         }
@@ -61,12 +61,12 @@ class PortfolioDatastore {
 
     func remove(_ item: Portfolio) {
         self.context.delete(item)
-        self.data[item.parentId]?.removeAll(where: { $0.id == item.id } )
+        self.data[item.parentId]?.removeAll { $0.id == item.id }
     }
 
     func getUnallocated(for parentId: UUID?) -> Decimal {
         if let data = self.data[parentId] {
-            return data.map( { -$0.weight } ).reduce(Decimal(1), { $0 + $1 })
+            return data.map { -$0.weight }.reduce(Decimal(1)) { $0 + $1 }
         } else {
             return Decimal(1)
         }

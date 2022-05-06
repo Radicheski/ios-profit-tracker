@@ -10,7 +10,7 @@ import Foundation
 extension UUID {
 
     static var zero: UUID {
-        get { return UUID(uuidString: "00000000-0000-0000-0000-000000000000")! }
+        return UUID(uuidString: "00000000-0000-0000-0000-000000000000")!
     }
 
 }

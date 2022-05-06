@@ -25,16 +25,16 @@ class SectionDataSource: NSObject {
     }
 
     private func getSection(forKey key: String) -> Section? {
-        return self.sections.first(where: { $0.key == key } )
+        return self.sections.first { $0.key == key }
     }
 
     private func getSectionIndex(forkey key: String) -> Int? {
-        return self.sections.firstIndex(where: { $0.key == key } )
+        return self.sections.firstIndex { $0.key == key }
     }
 
     func getRow(fromSection sectionKey: String, withKey rowKey: String) -> Row? {
         guard let section = getSection(forKey: sectionKey) else { return nil }
-        return section.rows.first(where: { $0.key == rowKey } )
+        return section.rows.first { $0.key == rowKey }
     }
 
 }

@@ -46,7 +46,7 @@ public struct Formatter {
         return formatter
     }()
 
-    private init(){}
+    private init() {}
 
     private(set) public lazy var number: NumberFormatter = {
         let formatter = NumberFormatter()

@@ -18,7 +18,7 @@ class SummaryDataStore: ReadOnlyDatastore {
     }
 
     var count: Int {
-        get { return self.data.count }
+        return self.data.count
     }
 
     func update() {

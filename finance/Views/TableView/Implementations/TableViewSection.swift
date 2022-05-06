@@ -44,7 +44,7 @@ extension TableViewSection {
     }
 
     func removeRow(withKey key: String) -> Row? {
-        if let index = self.rows.firstIndex(where: { $0.key == key } ) {
+        if let index = self.rows.firstIndex(where: { $0.key == key }) {
             return self.rows.remove(at: index)
         } else {
             return nil

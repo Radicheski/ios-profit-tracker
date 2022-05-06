@@ -12,7 +12,7 @@ class TransactionDataStore {
     private(set) var data: [Transaction] = []
 
     var count: Int {
-        get { self.data.count }
+        self.data.count
     }
 
     init() {

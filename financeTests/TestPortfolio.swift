@@ -53,10 +53,10 @@ class TestPortfolio: XCTestCase {
 
     func testUniqueNames() {
         var output = Set<String>()
-        self.output.forEach( { output.insert($0.name) } )
+        self.output.forEach { output.insert($0.name) }
 
         var expectation = Set<String>()
-        self.expectation.keys.forEach( { expectation.insert($0) } )
+        self.expectation.keys.forEach { expectation.insert($0) }
 
         XCTAssertEqual(output, expectation)
     }
