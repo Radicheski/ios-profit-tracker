@@ -6,7 +6,6 @@ import UIKit
 
 class CustomContentView: UIView, UIContentView {
 
-
     var titleLabel = UILabel()
     var weightLabel = UILabel()
     var priceLabel = UILabel()

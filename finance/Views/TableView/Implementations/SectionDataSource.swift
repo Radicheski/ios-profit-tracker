@@ -11,7 +11,7 @@ class SectionDataSource: NSObject {
 
     private var sections: [Section] = []
     var count: Int { self.sections.count }
-    
+
     func register(in tableView: UITableView) {
         self.sections.forEach { $0.register(in: tableView) }
     }
@@ -31,7 +31,7 @@ class SectionDataSource: NSObject {
     private func getSectionIndex(forkey key: String) -> Int? {
         return self.sections.firstIndex(where: { $0.key == key } )
     }
-    
+
     func getRow(fromSection sectionKey: String, withKey rowKey: String) -> Row? {
         guard let section = getSection(forKey: sectionKey) else { return nil }
         return section.rows.first(where: { $0.key == rowKey } )
@@ -40,27 +40,27 @@ class SectionDataSource: NSObject {
 }
 
 extension SectionDataSource: UITableViewDelegate {
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.sections[indexPath.section].rows[indexPath.row].didSelect?(tableView, indexPath)
     }
-    
+
 }
 
 extension SectionDataSource: UITableViewDataSource {
-    
+
     func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         return self.sections[indexPath.section].canMoveRow(for: tableView, at: indexPath.row)
     }
-    
+
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return self.sections[indexPath.section].canEditRow(for: tableView, at: indexPath.row)
     }
-    
+
     func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         return self.sections[section].footerTitle
     }
-    
+
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return self.sections[section].headerTitle
     }
@@ -118,7 +118,7 @@ extension SectionDataSource {
 // MARK: Section related functions
 
 extension SectionDataSource {
-    
+
     func setSections(_ sections: [Section]) {
         self.sections = sections
     }
@@ -138,15 +138,15 @@ extension SectionDataSource {
             self.sections.insert(section, at: index)
         }
     }
-    
+
     func deleteSection(at index: Int) {
         self.sections.remove(at: index)
     }
-    
+
     func deleteSection(forKey key: String) {
         self.sections.removeAll(where: { $0.key == key })
     }
-    
+
     func moveSection(from sourceIndex: Int, to targetIndex: Int) {
         let section = self.sections.remove(at: sourceIndex)
         self.sections.insert(section, at: targetIndex)

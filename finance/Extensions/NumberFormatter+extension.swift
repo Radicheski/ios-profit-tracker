@@ -8,9 +8,9 @@
 import Foundation
 
 extension NumberFormatter {
-    
+
     func string(from decimal: Decimal) -> String? {
         return self.string(from: NSDecimalNumber(decimal: decimal))
     }
-    
+
 }

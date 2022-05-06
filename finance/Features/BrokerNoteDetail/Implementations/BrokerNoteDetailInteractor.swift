@@ -11,24 +11,24 @@ class BrokerNoteDetailInteractor: BrokerNoteDetailInteractorProtocol {
 
     var presenter: BrokerNoteDetailPresenterProtocol
     var worker: BrokerNoteDetailWorkerProtocol
-    
+
     init(presenter: BrokerNoteDetailPresenterProtocol, worker: BrokerNoteDetailWorkerProtocol) {
         self.presenter = presenter
         self.worker = worker
     }
-    
+
     func loadData() {
         let data = self.worker.loadData()
         self.presenter.loadData(note: data[0])
     }
-    
+
     func save() {
         self.worker.save()
     }
-    
+
     func insertTransaction() {
         let newTransaction = self.worker.insertTransaction()
         self.presenter.insertTransaction(newTransaction)
     }
-    
+
 }

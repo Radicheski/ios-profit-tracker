@@ -9,13 +9,12 @@
 import Foundation
 import CoreData
 
-
 extension Portfolio {
-    
+
     @nonobjc public class func createFetchRequest() -> NSFetchRequest<Portfolio> {
         return NSFetchRequest<Portfolio>(entityName: "Portfolio")
     }
-    
+
     @NSManaged public var id: UUID
     @NSManaged public var rank: Int
     @NSManaged public var name: String

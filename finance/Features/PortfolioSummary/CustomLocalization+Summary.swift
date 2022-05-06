@@ -8,14 +8,11 @@
 import Foundation
 
 extension CustomLocalization {
-    
-    ///Teste
+
     struct Summary {
-        
         static let summaryTabBarTitle = NSLocalizedString("summaryTabBarTitle", comment: "Summary title")
         static let summaryTitle = NSLocalizedString("summaryTitle", comment: "Summary title")
         static let summaryUnallocated = NSLocalizedString("summaryUnallocated", comment: "Summary unallocated resources")
-        
     }
-    
+
 }

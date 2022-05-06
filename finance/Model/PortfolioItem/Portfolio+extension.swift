@@ -8,7 +8,7 @@
 import Foundation
 
 extension Portfolio {
-    
+
     public var weight: Decimal {
         get {
             self.cdweight.decimalValue
@@ -17,19 +17,19 @@ extension Portfolio {
             self.cdweight = NSDecimalNumber(decimal: newValue)
         }
     }
-    
+
     convenience init() {
         self.init(entity: Portfolio.entity(), insertInto: nil)
     }
-    
+
     public static func getItems(_ items: [Portfolio]) -> [Portfolio] {
-        
+
         let map: [UUID?: Portfolio] = items.reduce(into: [:]) { dict, item in
             dict[item.id] = item
         }
-        
+
         var result: [String: Portfolio] = [:]
-        
+
         for item in items where item.asset {
             var weight = item.weight
             var parent = map[item.parentId]
@@ -46,8 +46,8 @@ extension Portfolio {
                 result[item.name]?.weight += weight
             }
         }
-        
+
         return result.compactMap { $1 }
     }
-    
+
 }

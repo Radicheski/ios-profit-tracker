@@ -11,7 +11,7 @@ class TextInputContentConfiguration: UIContentConfiguration {
 
     var title: String?
     var placeholder: String?
-    
+
     weak var delegate: TextInputFormFieldDelegate?
 
     init(title: String?, placeholder: String?) {

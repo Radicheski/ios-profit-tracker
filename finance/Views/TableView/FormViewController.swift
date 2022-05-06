@@ -9,16 +9,16 @@ import Foundation
 import UIKit
 
 class FormViewController: BaseViewController<PortfolioView> {
-    
+
     var dataSource = SectionDataSource()
-    
+
     override func viewDidLoad() {
         self.customView.tableView.delegate = self.dataSource
         self.customView.tableView.dataSource = self.dataSource
     }
-    
+
     func registerSections() {
         self.dataSource.register(in: self.customView.tableView)
     }
-    
+
 }

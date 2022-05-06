@@ -8,9 +8,9 @@
 import UIKit
 
 class PortfolioTableViewDelegate: NSObject, UITableViewDelegate {
-    
+
     weak var viewController: PortfolioViewProtocol?
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
             self.viewController?.present(fromIndex: indexPath.row)
@@ -19,11 +19,11 @@ class PortfolioTableViewDelegate: NSObject, UITableViewDelegate {
         }
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
+
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return indexPath.section == 0 ? .delete : .none
     }
-    
+
     func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
         return proposedDestinationIndexPath.section == 0 ? proposedDestinationIndexPath : sourceIndexPath
     }

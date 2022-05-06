@@ -8,12 +8,12 @@
 import Foundation
 
 class SummaryItem {
-    
+
     var name: String
     var price: Decimal
     var weight: Decimal
     var quantity: Int
-    
+
     init(name: String) {
         self.name = name
         self.weight = Decimal()
@@ -21,7 +21,7 @@ class SummaryItem {
         self.price = 0
         self.updatePrice()
     }
-    
+
     init(from item: Portfolio) {
         self.name = item.name
         self.weight = item.weight
@@ -29,7 +29,7 @@ class SummaryItem {
         self.price = 0
         self.updatePrice()
     }
-    
+
     func updatePrice() {
         let worker = NetworkWorker(ticker: name)
         worker.getQuote { [weak self] (price: Quote) in
@@ -39,5 +39,5 @@ class SummaryItem {
             print(error)
         }
     }
-    
+
 }

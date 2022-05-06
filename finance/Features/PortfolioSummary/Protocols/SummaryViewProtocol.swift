@@ -14,12 +14,3 @@ protocol SummaryViewProtocol where Self: UIViewController {
     func loadData()
     func updateView(with data: [SummaryItem.ViewModel])
 }
-
-
-
-
-
-
-
-
-

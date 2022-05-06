@@ -15,14 +15,14 @@ func loadMockData() throws {
     } else {
         throw NSError(domain: "CoreData", code: 1, userInfo: ["description": "Fetch PortfolioItem request failed"])
     }
-    
+
     let transactionRequest = Transaction.createFetchRequest()
     if let transactionResult = try? Persistence.shared.persistentContainer.viewContext.fetch(transactionRequest) {
         if transactionResult.isEmpty { loadTransactionData() }
     } else {
         throw NSError(domain: "CoreData", code: 2, userInfo: ["description": "Fetch Transaction request failed"])
     }
-    
+
     if Persistence.shared.context.hasChanges { Persistence.shared.saveContext() }
 }
 

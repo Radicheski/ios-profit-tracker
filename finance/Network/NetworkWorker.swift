@@ -8,13 +8,13 @@
 import Foundation
 
 class NetworkWorker {
-    
+
     var url: URL?
-    
+
     init(ticker: String) {
         self.url = URL(string: "https://radicheski-finance.herokuapp.com/b3/\(ticker)")
     }
-    
+
     func getQuote<T: Decodable>(onSuccess: ((T) -> Void)? = nil, onError: ((Error) -> Void)? = nil) {
         if let url = self.url {
             let request = URLRequest(url: url)
@@ -30,4 +30,3 @@ class NetworkWorker {
         }
     }
 }
-

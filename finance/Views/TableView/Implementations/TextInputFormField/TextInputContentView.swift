@@ -21,7 +21,7 @@ class TextInputContentView: UIView & UIContentView {
 
     private let titleLabel: UILabel = .init()
     private let textField: UITextField = .init()
-    
+
     weak var delegate: TextInputFormFieldDelegate?
 
     init(configuration: TextInputContentConfiguration) {
@@ -74,7 +74,7 @@ class TextInputContentView: UIView & UIContentView {
         self.textField.placeholder = contentConfiguration.placeholder
         self.delegate = contentConfiguration.delegate
     }
-    
+
     func textFieldEditingChanged(_ action: UIAction) {
         self.delegate?.box(didChangeValue: self.textField.text)
     }

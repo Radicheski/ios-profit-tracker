@@ -8,18 +8,18 @@
 import Foundation
 
 class PortfolioWorker: NSObject, PortfolioWorkerProtocol {
-    
+
     var portfolioId: UUID
     var context = Persistence.shared.context
-    
+
     var alertPresenter: ((((Bool) -> Void)?) -> Void)?
-    
+
     var reloadData: (() -> Void)?
-    
+
     init(portfolioId: UUID) {
         self.portfolioId = portfolioId
     }
-    
+
     func loadData() -> [Portfolio] {
         do {
             let request = Portfolio.createFetchRequest()
@@ -41,7 +41,7 @@ class PortfolioWorker: NSObject, PortfolioWorkerProtocol {
         newItem.asset = false
         return loadData()
     }
-    
+
     func count() -> Int {
         do {
             let request = Portfolio.createFetchRequest()
@@ -52,14 +52,14 @@ class PortfolioWorker: NSObject, PortfolioWorkerProtocol {
             return 0
         }
     }
-    
+
     func move(from startIndex: Int, to endIndex: Int) {
         var data = loadData()
         let item = data.remove(at: startIndex)
         data.insert(item, at: endIndex)
         updateRanks(data)
     }
-    
+
     func delete(fromIndex index: Int) {
         var data = loadData()
         let item = data.remove(at: index)
@@ -81,19 +81,19 @@ class PortfolioWorker: NSObject, PortfolioWorkerProtocol {
             }
         }
     }
-    
+
     func save() {
         if self.context.hasChanges { try? self.context.save() }
     }
-    
+
     func discard() {
         if self.context.hasChanges { self.context.rollback() }
     }
-    
+
     func updateRanks(_ items: [Portfolio]) {
         for index in 0 ..< items.count {
             items[index].rank = index
         }
     }
-    
+
 }

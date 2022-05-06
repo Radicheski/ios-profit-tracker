@@ -13,7 +13,7 @@ class PortfolioView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+
         self.addSubview(self.tableView)
         self.tableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -22,11 +22,11 @@ class PortfolioView: UIView {
             self.tableView.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor),
             self.tableView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor),
         ])
-        
+
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
 }

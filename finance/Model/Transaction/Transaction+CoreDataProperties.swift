@@ -9,7 +9,6 @@
 import Foundation
 import CoreData
 
-
 extension Transaction {
 
     @nonobjc public class func createFetchRequest() -> NSFetchRequest<Transaction> {
@@ -29,11 +28,11 @@ extension Transaction : Identifiable {
 }
 
 extension Transaction {
-    
+
     convenience init() {
         self.init(entity: Self.entity(), insertInto: nil)
     }
-    
+
     public var total: Decimal {
         get { return self.cdtotal.decimalValue }
         set { self.cdtotal = NSDecimalNumber(decimal: newValue) }

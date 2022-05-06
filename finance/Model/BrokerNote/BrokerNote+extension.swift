@@ -8,7 +8,7 @@
 import Foundation
 
 extension BrokerNote {
-    
+
     var total: Decimal { return self.cdtransactions.reduce(0) { $0 + $1.total } }
-    
+
 }

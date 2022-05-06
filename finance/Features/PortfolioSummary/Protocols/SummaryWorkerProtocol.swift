@@ -6,7 +6,5 @@
 //
 
 protocol SummaryWorkerProtocol: AnyObject {
-    
     func loadData() -> [SummaryItem]
-    
 }

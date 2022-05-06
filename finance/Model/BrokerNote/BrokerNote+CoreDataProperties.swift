@@ -9,7 +9,6 @@
 import Foundation
 import CoreData
 
-
 extension BrokerNote {
 
     @nonobjc public class func createFetchRequest() -> NSFetchRequest<BrokerNote> {

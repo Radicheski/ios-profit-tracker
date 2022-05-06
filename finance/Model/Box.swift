@@ -6,15 +6,15 @@
 //
 
 class Box<T> {
-    
+
     var listener: ((T) -> Void)?
-    
+
     var value: T {
         didSet { self.listener?(self.value) }
     }
-    
+
     init(_ value: T) {
         self.value = value
     }
-    
+
 }

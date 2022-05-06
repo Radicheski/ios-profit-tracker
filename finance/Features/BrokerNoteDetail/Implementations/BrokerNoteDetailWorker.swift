@@ -8,14 +8,14 @@
 import Foundation
 
 class BrokerNoteDetailWorker: BrokerNoteDetailWorkerProtocol {
-    
+
     private(set) var brokerNoteId: UUID
     private let context = Persistence.shared.context
-    
+
     required init(id: UUID) {
         self.brokerNoteId = id
     }
-    
+
     func loadData() -> [BrokerNote] {
         let request = BrokerNote.createFetchRequest()
         request.predicate = NSPredicate(format: "id == %@", argumentArray: [self.brokerNoteId])
@@ -26,11 +26,11 @@ class BrokerNoteDetailWorker: BrokerNoteDetailWorkerProtocol {
             return []
         }
     }
-    
+
     func save() {
         try? self.context.save()
     }
-    
+
     func insertTransaction() -> Transaction {
         let newTransaction = Transaction(context: self.context)
         newTransaction.date = Date.now
@@ -39,5 +39,5 @@ class BrokerNoteDetailWorker: BrokerNoteDetailWorkerProtocol {
         newTransaction.brokerNote = brokerNote
         return newTransaction
     }
-    
+
 }

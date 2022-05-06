@@ -24,7 +24,7 @@ class SummaryTableViewDataSource: NSObject, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(UITableViewCell.self, for: indexPath)
         let section = indexPath.section
         let row = indexPath.row
-        
+
         if section == 0 {
             var conf = CustomContentConfiguration()
             let item = self.data[row]
@@ -41,7 +41,7 @@ class SummaryTableViewDataSource: NSObject, UITableViewDataSource {
             conf.secondaryText = Formatter.shared.percent.string(from: percentValue)
             cell.contentConfiguration = conf
         }
-        
+
         return cell
     }
 

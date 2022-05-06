@@ -8,13 +8,13 @@
 import UIKit
 
 protocol RegistrableTableViewCell where Self: UITableViewCell {
-    
+
     static var identifier: String { get }
-    
+
 }
 
 extension RegistrableTableViewCell {
-    
+
     static var identifier: String { get { String(describing: Self.self) } }
-    
+
 }

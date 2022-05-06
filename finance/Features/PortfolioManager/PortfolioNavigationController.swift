@@ -8,20 +8,18 @@
 import UIKit
 
 class PortfolioNavigationController: UINavigationController {
-    
+
     convenience init() {
         let configurator = PortfolioConfigurator()
         let viewController = configurator.build(for: UUID.zero)
         self.init(rootViewController: viewController)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.tabBarItem.title = CustomLocalization.PortfolioManager.globalPortfolioTabBarTitle
         self.tabBarItem.image = UIImage(systemName: "globe")
     }
 
-
 }
-

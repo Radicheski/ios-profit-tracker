@@ -7,10 +7,9 @@
 
 protocol ReadOnlyDatastore {
     associatedtype T
-    
+
     var data: [T] { get }
     var count: Int { get }
-    
+
     func update()
 }
-
