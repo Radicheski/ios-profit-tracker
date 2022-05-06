@@ -8,18 +8,18 @@
 import UIKit
 
 class SummaryTableViewDataSource: NSObject, UITableViewDataSource {
-    
+
     weak var viewController: SummaryViewProtocol?
     var data: [SummaryItem.ViewModel] = []
-    
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return section == 0 ? self.data.count : 1
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(UITableViewCell.self, for: indexPath)
         let section = indexPath.section
@@ -36,11 +36,13 @@ class SummaryTableViewDataSource: NSObject, UITableViewDataSource {
         } else {
             var conf = cell.defaultContentConfiguration()
             conf.text = CustomLocalization.PortfolioManager.globalPortfolioUnallocated
-            conf.secondaryText = Formatter.shared.percent.string(from: self.data.map { try! Decimal($0.weight, format: .percent) }.reduce(1, { $0 - $1 }))
+            let percentArray = self.data.map { try? Decimal($0.weight, format: .percent) }
+            let percentValue = percentArray.filter { $0 != nil }.reduce(1) { $0 - ($1 ?? 0) }
+            conf.secondaryText = Formatter.shared.percent.string(from: percentValue)
             cell.contentConfiguration = conf
         }
         
         return cell
     }
-    
+
 }

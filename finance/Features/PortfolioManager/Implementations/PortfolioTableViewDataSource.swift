@@ -8,23 +8,23 @@
 import UIKit
 
 class PortfolioTableViewDataSource: NSObject, UITableViewDataSource {
-    
+
     private enum Sections: Int, CaseIterable {
         case main
         case accessory
     }
-    
+
     weak var viewController: PortfolioViewProtocol?
     var data: [Portfolio.ViewModel] = []
-    
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return Sections.allCases.count
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return section == 0 ? self.data.count : tableView.isEditing ? 2 : 1
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let section = Sections(rawValue: indexPath.section)
         let row = indexPath.row
@@ -39,27 +39,31 @@ class PortfolioTableViewDataSource: NSObject, UITableViewDataSource {
                 conf.secondaryText = nil
             } else {
                 conf.text = CustomLocalization.PortfolioManager.globalPortfolioUnallocated
-                conf.secondaryText = Formatter.shared.percent.string(from: self.data.map { try! Decimal($0.weight.value ?? "0", format: .percent) }.reduce(1, { $0 - $1 }))
+                let percentArray = self.data.map { try? Decimal($0.weight.value ?? "0", format: .percent) }
+                let percentValue = percentArray.filter { $0 != nil }.reduce(1) { $0 - ($1 ?? 0) }
+                conf.secondaryText = Formatter.shared.percent.string(from: percentValue)
             }
             cell.contentConfiguration = conf
         default: break
         }
         return cell
     }
-    
+
     func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         return indexPath.section == Sections.main.rawValue
     }
-    
+
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return indexPath.section == Sections.main.rawValue
     }
-    
+
     func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
         self.viewController?.move(from: sourceIndexPath.row, to: destinationIndexPath.row)
     }
-    
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+
+    func tableView(_ tableView: UITableView,
+                   commit editingStyle: UITableViewCell.EditingStyle,
+                   forRowAt indexPath: IndexPath) {
         if indexPath.section != 0 { return }
         switch editingStyle {
         case .delete:
@@ -68,5 +72,5 @@ class PortfolioTableViewDataSource: NSObject, UITableViewDataSource {
         }
         if !tableView.isEditing { self.viewController?.interactor.save() }
     }
-    
+
 }
