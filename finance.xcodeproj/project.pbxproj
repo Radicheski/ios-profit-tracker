@@ -77,6 +77,7 @@
 		AD4BC666277A8DAD00593CEE /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */; };
 		AD58D52B272CC0E60047847C /* portfolioExpected.json in Resources */ = {isa = PBXBuildFile; fileRef = AD58D52A272CC0E60047847C /* portfolioExpected.json */; };
 		AD58D52E272CC7E60047847C /* Portfolio+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58D52D272CC7E60047847C /* Portfolio+extension.swift */; };
+		AD6AE3632827121100BD2BC0 /* FinanceLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6AE3622827121100BD2BC0 /* FinanceLocalizationTests.swift */; };
 		AD6DDD4727ABF144002A34EE /* DateInputFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DDD4627ABF144002A34EE /* DateInputFormField.swift */; };
 		AD6DDD4927ABF2D4002A34EE /* DateInputContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DDD4827ABF2D4002A34EE /* DateInputContentConfiguration.swift */; };
 		AD6DDD4B27ABF2EC002A34EE /* DateInputContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DDD4A27ABF2EC002A34EE /* DateInputContentView.swift */; };
@@ -145,6 +146,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AD6AE3642827121100BD2BC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADBD4145272B3B1E00BB3327 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADBD414C272B3B1E00BB3327;
+			remoteInfo = finance;
+		};
 		ADBBC31B27825FE80068D066 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADBD4145272B3B1E00BB3327 /* Project object */;
@@ -225,6 +233,8 @@
 		AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
 		AD58D52A272CC0E60047847C /* portfolioExpected.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portfolioExpected.json; sourceTree = "<group>"; };
 		AD58D52D272CC7E60047847C /* Portfolio+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Portfolio+extension.swift"; sourceTree = "<group>"; };
+		AD6AE3602827121100BD2BC0 /* financeLocalizationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = financeLocalizationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD6AE3622827121100BD2BC0 /* FinanceLocalizationTests.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = FinanceLocalizationTests.swift; sourceTree = "<group>"; tabWidth = 2; };
 		AD6DDD4627ABF144002A34EE /* DateInputFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputFormField.swift; sourceTree = "<group>"; };
 		AD6DDD4827ABF2D4002A34EE /* DateInputContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputContentConfiguration.swift; sourceTree = "<group>"; };
 		AD6DDD4A27ABF2EC002A34EE /* DateInputContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputContentView.swift; sourceTree = "<group>"; };
@@ -296,6 +306,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AD6AE35D2827121100BD2BC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ADBBC31427825FE80068D066 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -520,6 +537,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		AD6AE3612827121100BD2BC0 /* financeLocalizationTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD6AE3622827121100BD2BC0 /* FinanceLocalizationTests.swift */,
+			);
+			path = financeLocalizationTests;
+			sourceTree = "<group>";
+		};
 		AD6DDD4527ABF121002A34EE /* DateInputFormField */ = {
 			isa = PBXGroup;
 			children = (
@@ -590,6 +615,7 @@
 			children = (
 				ADBD414F272B3B1E00BB3327 /* finance */,
 				ADBBC31827825FE80068D066 /* financeTests */,
+				AD6AE3612827121100BD2BC0 /* financeLocalizationTests */,
 				ADBD414E272B3B1E00BB3327 /* Products */,
 				EBDF3C4A2EF3A78078840235 /* .gitignore */,
 			);
@@ -600,6 +626,7 @@
 			children = (
 				ADBD414D272B3B1E00BB3327 /* finance.app */,
 				ADBBC31727825FE80068D066 /* financeTests.xctest */,
+				AD6AE3602827121100BD2BC0 /* financeLocalizationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -780,6 +807,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AD6AE35F2827121100BD2BC0 /* financeLocalizationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD6AE3682827121100BD2BC0 /* Build configuration list for PBXNativeTarget "financeLocalizationTests" */;
+			buildPhases = (
+				AD6AE35C2827121100BD2BC0 /* Sources */,
+				AD6AE35D2827121100BD2BC0 /* Frameworks */,
+				AD6AE35E2827121100BD2BC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD6AE3652827121100BD2BC0 /* PBXTargetDependency */,
+			);
+			name = financeLocalizationTests;
+			productName = financeLocalizationTests;
+			productReference = AD6AE3602827121100BD2BC0 /* financeLocalizationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		ADBBC31627825FE80068D066 /* financeTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADBBC31D27825FE80068D066 /* Build configuration list for PBXNativeTarget "financeTests" */;
@@ -827,9 +872,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
+				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
+					AD6AE35F2827121100BD2BC0 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = ADBD414C272B3B1E00BB3327;
+					};
 					ADBBC31627825FE80068D066 = {
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = ADBD414C272B3B1E00BB3327;
@@ -858,11 +907,19 @@
 			targets = (
 				ADBD414C272B3B1E00BB3327 /* finance */,
 				ADBBC31627825FE80068D066 /* financeTests */,
+				AD6AE35F2827121100BD2BC0 /* financeLocalizationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AD6AE35E2827121100BD2BC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ADBBC31527825FE80068D066 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -924,6 +981,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AD6AE35C2827121100BD2BC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6AE3632827121100BD2BC0 /* FinanceLocalizationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ADBBC31327825FE80068D066 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1068,6 +1133,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AD6AE3652827121100BD2BC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADBD414C272B3B1E00BB3327 /* finance */;
+			targetProxy = AD6AE3642827121100BD2BC0 /* PBXContainerItemProxy */;
+		};
 		ADBBC31C27825FE80068D066 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = ADBD414C272B3B1E00BB3327 /* finance */;
@@ -1096,6 +1166,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AD6AE3662827121100BD2BC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S85L3BQN65;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.radicheski.financeLocalizationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/finance.app/finance";
+			};
+			name = Debug;
+		};
+		AD6AE3672827121100BD2BC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S85L3BQN65;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.radicheski.financeLocalizationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/finance.app/finance";
+			};
+			name = Release;
+		};
 		ADBBC31E27825FE80068D066 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1307,6 +1415,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AD6AE3682827121100BD2BC0 /* Build configuration list for PBXNativeTarget "financeLocalizationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD6AE3662827121100BD2BC0 /* Debug */,
+				AD6AE3672827121100BD2BC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		ADBBC31D27825FE80068D066 /* Build configuration list for PBXNativeTarget "financeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
