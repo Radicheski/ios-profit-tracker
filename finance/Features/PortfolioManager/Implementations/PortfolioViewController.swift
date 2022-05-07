@@ -39,7 +39,7 @@ class PortfolioViewController: BaseViewController<PortfolioView>, PortfolioViewP
 
         self.navigationItem.rightBarButtonItem = self.editButtonItem
         if self.navigationItem.title == nil {
-            self.navigationItem.title = CustomLocalization.PortfolioManager.globalPortfolioTitle
+            self.navigationItem.title = PortfolioManagerStrings.globalPortfolioTitle.localizedString
         }
 
         self.customView.tableView.allowsSelectionDuringEditing = true
@@ -118,15 +118,15 @@ class PortfolioViewController: BaseViewController<PortfolioView>, PortfolioViewP
     func askForConfirmation(_ completion: ((Bool) -> Void)?) {
 
         let alert = UIAlertController(title: nil,
-                                      message: CustomLocalization.PortfolioManager.userConfirmationOnPortfolioDelete,
+                                      message: PortfolioManagerStrings.globalPortfolioDeleteMessage.localizedString,
                                       preferredStyle: .alert)
 
-        let cancelAction = UIAlertAction(title: CustomLocalization.CommonStrings.cancel,
+        let cancelAction = UIAlertAction(title: CommonStrings.cancelText.localizedString,
                                          style: .cancel,
                                          handler: { _ in completion?(false)})
         alert.addAction(cancelAction)
 
-        let okAction = UIAlertAction(title: CustomLocalization.CommonStrings.ok,
+        let okAction = UIAlertAction(title: CommonStrings.okText.localizedString,
                                      style: .destructive,
                                      handler: { _ in completion?(true)})
         alert.addAction(okAction)

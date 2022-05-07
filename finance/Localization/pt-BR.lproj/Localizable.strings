@@ -3,13 +3,12 @@
   finance
 
   Created by Erik Radicheski da Silva on 05/11/21.
-  
 */
-"globalPortfolioTabBarTitle" = "Carteiras";
-"globalPortfolioTitle" = "Carteira global";
-"globalPortfolioUnallocated" = "Não alocado";
-"globalPortfolioNewItem" = "Novo item";
-"globalPortfolioDeleteMessage" = "Você está prestes a apagar um portfolio que não está vazio. Tem certeza?";
+"PortfolioManagerStrings.globalPortfolioTabBarTitle" = "Carteiras";
+"PortfolioManagerStrings.globalPortfolioTitle" = "Carteira global";
+"PortfolioManagerStrings.globalPortfolioUnallocated" = "Não alocado";
+"PortfolioManagerStrings.globalPortfolioNewItem" = "Novo item";
+"PortfolioManagerStrings.globalPortfolioDeleteMessage" = "Você está prestes a apagar um portfolio que não está vazio. Tem certeza?";
 
 "summaryTabBarTitle" = "Resumo";
 "summaryTitle" = "Resumo";
@@ -28,5 +27,5 @@
 "brokerNotesTitle" = "Notas";
 "brokerNotesNewItem" = "Nova nota";
 
-"commonStringsOK" = "OK";
-"commonStringsCancel" = "Cancelar";
+"CommonStrings.okText" = "OK";
+"CommonStrings.cancelText" = "Cancelar";
