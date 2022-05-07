@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum CustomLocalization {
-
-}
+//enum CustomLocalization {
+//
+//}

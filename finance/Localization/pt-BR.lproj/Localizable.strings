@@ -14,10 +14,10 @@
 "summaryTitle" = "Resumo";
 "summaryUnallocated" = "Não alocado";
 
-"updateViewNameLabel" = "Nome";
-"updateViewWeightLabel" = "Alocação";
-"updateViewParentLabel" = "Portfolio pai";
-"updateViewPortfolioLabel" = "Carteira";
+"PortfolioUpdateStrings.updateViewNameLabel" = "Nome";
+"PortfolioUpdateStrings.updateViewWeightLabel" = "Alocação";
+"PortfolioUpdateStrings.updateViewParentLabel" = "Portfolio pai";
+"PortfolioUpdateStrings.updateViewPortfolioLabel" = "Carteira";
 
 "TransactionStrings.transactionsTabBarTitle" = "Transações";
 "TransactionStrings.transactionTitle" = "Transações";

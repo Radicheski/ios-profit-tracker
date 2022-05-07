@@ -14,10 +14,10 @@
 "SummaryStrings.summaryTitle" = "Summary";
 "SummaryStrings.summaryUnallocated" = "Unallocated";
 
-"updateViewNameLabel" = "Name";
-"updateViewWeightLabel" = "Weight";
-"updateViewParentLabel" = "Parent portfolio";
-"updateViewPortfolioLabel" = "Portfolio";
+"PortfolioUpdateStrings.updateViewNameLabel" = "Name";
+"PortfolioUpdateStrings.updateViewWeightLabel" = "Weight";
+"PortfolioUpdateStrings.updateViewParentLabel" = "Parent portfolio";
+"PortfolioUpdateStrings.updateViewPortfolioLabel" = "Portfolio";
 
 "TransactionStrings.transactionsTabBarTitle" = "Transactions";
 "TransactionStrings.transactionTitle" = "Transactions";
