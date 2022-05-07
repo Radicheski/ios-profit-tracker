@@ -19,9 +19,9 @@
 "updateViewParentLabel" = "Portfolio pai";
 "updateViewPortfolioLabel" = "Carteira";
 
-"transactionsTabBarTitle" = "Transações";
-"transactionTitle" = "Transações";
-"newTransaction" = "Nova transação";
+"TransactionStrings.transactionsTabBarTitle" = "Transações";
+"TransactionStrings.transactionTitle" = "Transações";
+"TransactionStrings.newTransaction" = "Nova transação";
 
 "brokerNotesTabBarTitle" = "Notas";
 "brokerNotesTitle" = "Notas";

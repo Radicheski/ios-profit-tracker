@@ -34,7 +34,7 @@ class BrokerNoteDetailWorker: BrokerNoteDetailWorkerProtocol {
     func insertTransaction() -> Transaction {
         let newTransaction = Transaction(context: self.context)
         newTransaction.date = Date.now
-        newTransaction.ticker = CustomLocalization.Transactions.newTransaction
+        newTransaction.ticker = TransactionStrings.newTransaction.localizedString
         let brokerNote = self.loadData()[0]
         newTransaction.brokerNote = brokerNote
         return newTransaction
