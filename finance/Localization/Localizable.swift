@@ -7,13 +7,13 @@
 
 import Foundation
 
-protocol Localizable: RawRepresentable where RawValue == String {
+public protocol Localizable: RawRepresentable, CaseIterable where RawValue == String {
   var key: String { get }
   var comment: String { get }
   var localizedString: String { get }
 }
 
-extension Localizable {
+public extension Localizable {
   var key: String { "\(String(describing: Self.self)).\(String(describing: self))" }
   var comment: String { rawValue }
   var localizedString: String { NSLocalizedString(key, comment: rawValue) }

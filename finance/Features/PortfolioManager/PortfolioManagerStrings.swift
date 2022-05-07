@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum PortfolioManagerStrings: String, Localizable {
+public enum PortfolioManagerStrings: String, Localizable {
   case globalPortfolioTabBarTitle = "Global portfolio tab bar title"
   case globalPortfolioTitle = "Global portfolio title"
   case globalPortfolioUnallocated = "Global portfolio unallocated resources"

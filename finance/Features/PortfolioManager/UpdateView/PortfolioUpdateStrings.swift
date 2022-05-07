@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum PortfolioUpdateStrings: String, Localizable {
+public enum PortfolioUpdateStrings: String, Localizable {
   case updateViewNameLabel = "Item name label on update view"
   case updateViewWeightLabel = "Item weight label on update view"
   case updateViewParentLabel = "Item parent id label on update view"

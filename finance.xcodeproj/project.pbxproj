@@ -87,7 +87,6 @@
 		AD9F420927920F0D002A472F /* TransactionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9F420827920F0D002A472F /* TransactionTests.swift */; };
 		AD9F420C27921B0A002A472F /* Transaction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9F420A27921B0A002A472F /* Transaction+CoreDataClass.swift */; };
 		AD9F420D27921B0A002A472F /* Transaction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9F420B27921B0A002A472F /* Transaction+CoreDataProperties.swift */; };
-		ADAEFF2B27355D7700C7ABAE /* CustomLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEFF2A27355D7700C7ABAE /* CustomLocalization.swift */; };
 		ADAEFF2E273560D400C7ABAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADAEFF30273560D400C7ABAE /* Localizable.strings */; };
 		ADBBB6492797354600B596A5 /* NavigationAccessoryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB6482797354600B596A5 /* NavigationAccessoryDelegate.swift */; };
 		ADBBB64B279736CE00B596A5 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB64A279736CE00B596A5 /* NavigationManager.swift */; };
@@ -236,7 +235,6 @@
 		AD9F420827920F0D002A472F /* TransactionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTests.swift; sourceTree = "<group>"; };
 		AD9F420A27921B0A002A472F /* Transaction+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AD9F420B27921B0A002A472F /* Transaction+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		ADAEFF2A27355D7700C7ABAE /* CustomLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocalization.swift; sourceTree = "<group>"; };
 		ADAEFF31273560FB00C7ABAE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		ADAEFF332735621900C7ABAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		ADBBB6482797354600B596A5 /* NavigationAccessoryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAccessoryDelegate.swift; sourceTree = "<group>"; };
@@ -543,7 +541,6 @@
 		ADAEFF32273561C400C7ABAE /* Localization */ = {
 			isa = PBXGroup;
 			children = (
-				ADAEFF2A27355D7700C7ABAE /* CustomLocalization.swift */,
 				ADAEFF30273560D400C7ABAE /* Localizable.strings */,
 				AD8770482825F3810012F404 /* Localizable.swift */,
 				AD87704A2825F3A20012F404 /* CommonStrings.swift */,
@@ -1004,7 +1001,6 @@
 				AD36D8B0279492F30043EB93 /* TransactionDataStore.swift in Sources */,
 				AD4BC666277A8DAD00593CEE /* UITableView+extension.swift in Sources */,
 				AD4034332827043900FB9977 /* SummaryStrings.swift in Sources */,
-				ADAEFF2B27355D7700C7ABAE /* CustomLocalization.swift in Sources */,
 				AD0D230F279C5E6900CBA554 /* SummaryConfigurator.swift in Sources */,
 				AD0D22FF279C5B1100CBA554 /* SummaryRouterProtocol.swift in Sources */,
 				AD6DDD4727ABF144002A34EE /* DateInputFormField.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum TransactionStrings: String, Localizable {
+public enum TransactionStrings: String, Localizable {
   case transactionsTabBarTitle = "Transactions tab bar title"
   case transactionTitle = "Tansaction screen title"
   case newTransaction = "Text for new transaction button"

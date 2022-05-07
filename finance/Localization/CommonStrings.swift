@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum CommonStrings: String, Localizable {
+public enum CommonStrings: String, Localizable {
   case okText = "OK text for buttons"
   case cancelText = "Cancel text for buttons"
 }
