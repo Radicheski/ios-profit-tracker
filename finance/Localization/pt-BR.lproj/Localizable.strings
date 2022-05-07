@@ -23,9 +23,9 @@
 "TransactionStrings.transactionTitle" = "Transações";
 "TransactionStrings.newTransaction" = "Nova transação";
 
-"brokerNotesTabBarTitle" = "Notas";
-"brokerNotesTitle" = "Notas";
-"brokerNotesNewItem" = "Nova nota";
+"BrokerNoteStrings.brokerNotesTabBarTitle" = "Notas";
+"BrokerNoteStrings.brokerNotesTitle" = "Notas";
+"BrokerNoteStrings.brokerNotesNewItem" = "Nova nota";
 
 "CommonStrings.okText" = "OK";
 "CommonStrings.cancelText" = "Cancelar";

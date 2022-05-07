@@ -32,7 +32,7 @@ class BrokerNoteSummaryViewController: BaseViewController<PortfolioView>, Broker
         self.customView.tableView.allowsSelectionDuringEditing = true
 
         if self.navigationItem.title == nil {
-            self.navigationItem.title = CustomLocalization.BrokerNotes.brokerNotesTitle
+            self.navigationItem.title = BrokerNoteStrings.brokerNotesTitle.localizedString
         }
 
         self.customView.tableView.register(UITableViewCell.self)
