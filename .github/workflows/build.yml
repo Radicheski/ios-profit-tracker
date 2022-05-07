@@ -2,7 +2,7 @@ name: build-and-test
 on: [push]
 jobs:
   build-project:
-    runs-on: macos-latest
+    runs-on: [self-hosted, macOS, X64]
     steps:
       - uses: actions/checkout@v3
       - run: xcodebuild clean -project finance.xcodeproj -scheme finance
@@ -11,4 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: xcodebuild test -project finance.xcodeproj -scheme financeTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4'
+      - run: xcodebuild test -project finance.xcodeproj -scheme financeLocalizationTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4' -testLanguage en
+      - run: xcodebuild test -project finance.xcodeproj -scheme financeLocalizationTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4' -testLanguage pt-BR
 

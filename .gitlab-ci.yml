@@ -10,4 +10,6 @@ build:
 test:
   stage: test
   script:
-    -  xcodebuild test -project finance.xcodeproj -scheme financeTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4'
+    - xcodebuild test -project finance.xcodeproj -scheme financeTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4'
+    - xcodebuild test -project finance.xcodeproj -scheme financeLocalizationTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4' -testLanguage en
+    - xcodebuild test -project finance.xcodeproj -scheme financeLocalizationTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4' -testLanguage pt-BR
