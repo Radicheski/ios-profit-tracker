@@ -10,9 +10,9 @@
 "PortfolioManagerStrings.globalPortfolioNewItem" = "Novo item";
 "PortfolioManagerStrings.globalPortfolioDeleteMessage" = "Você está prestes a apagar um portfolio que não está vazio. Tem certeza?";
 
-"summaryTabBarTitle" = "Resumo";
-"summaryTitle" = "Resumo";
-"summaryUnallocated" = "Não alocado";
+"SummaryStrings.summaryTabBarTitle" = "Resumo";
+"SummaryStrings.summaryTitle" = "Resumo";
+"SummaryStrings.summaryUnallocated" = "Não alocado";
 
 "PortfolioUpdateStrings.updateViewNameLabel" = "Nome";
 "PortfolioUpdateStrings.updateViewWeightLabel" = "Alocação";
