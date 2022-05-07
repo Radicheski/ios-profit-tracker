@@ -72,6 +72,7 @@
 		AD36D8AE279492DD0043EB93 /* CustomLocalization+Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8AD279492DD0043EB93 /* CustomLocalization+Transactions.swift */; };
 		AD36D8B0279492F30043EB93 /* TransactionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36D8AF279492F30043EB93 /* TransactionDataStore.swift */; };
 		AD4034312827020E00FB9977 /* PortfolioManagerStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4034302827020E00FB9977 /* PortfolioManagerStrings.swift */; };
+		AD4034332827043900FB9977 /* SummaryStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4034322827043900FB9977 /* SummaryStrings.swift */; };
 		AD4BC666277A8DAD00593CEE /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */; };
 		AD57927227B19DC700C7E867 /* CustomLocalization+BrokerNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57927127B19DC700C7E867 /* CustomLocalization+BrokerNotes.swift */; };
 		AD58D52B272CC0E60047847C /* portfolioExpected.json in Resources */ = {isa = PBXBuildFile; fileRef = AD58D52A272CC0E60047847C /* portfolioExpected.json */; };
@@ -88,7 +89,6 @@
 		AD9F420D27921B0A002A472F /* Transaction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9F420B27921B0A002A472F /* Transaction+CoreDataProperties.swift */; };
 		ADAEFF2B27355D7700C7ABAE /* CustomLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEFF2A27355D7700C7ABAE /* CustomLocalization.swift */; };
 		ADAEFF2E273560D400C7ABAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADAEFF30273560D400C7ABAE /* Localizable.strings */; };
-		ADAEFF37273566BD00C7ABAE /* CustomLocalization+Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEFF36273566BD00C7ABAE /* CustomLocalization+Summary.swift */; };
 		ADBBB6492797354600B596A5 /* NavigationAccessoryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB6482797354600B596A5 /* NavigationAccessoryDelegate.swift */; };
 		ADBBB64B279736CE00B596A5 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB64A279736CE00B596A5 /* NavigationManager.swift */; };
 		ADBBB6532797426A00B596A5 /* SaveCancelNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB6522797426A00B596A5 /* SaveCancelNavigationBar.swift */; };
@@ -221,6 +221,7 @@
 		AD36D8AD279492DD0043EB93 /* CustomLocalization+Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomLocalization+Transactions.swift"; sourceTree = "<group>"; };
 		AD36D8AF279492F30043EB93 /* TransactionDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDataStore.swift; sourceTree = "<group>"; };
 		AD4034302827020E00FB9977 /* PortfolioManagerStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioManagerStrings.swift; sourceTree = "<group>"; };
+		AD4034322827043900FB9977 /* SummaryStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryStrings.swift; sourceTree = "<group>"; };
 		AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
 		AD57927127B19DC700C7E867 /* CustomLocalization+BrokerNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomLocalization+BrokerNotes.swift"; sourceTree = "<group>"; };
 		AD58D52A272CC0E60047847C /* portfolioExpected.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portfolioExpected.json; sourceTree = "<group>"; };
@@ -238,7 +239,6 @@
 		ADAEFF2A27355D7700C7ABAE /* CustomLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocalization.swift; sourceTree = "<group>"; };
 		ADAEFF31273560FB00C7ABAE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		ADAEFF332735621900C7ABAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		ADAEFF36273566BD00C7ABAE /* CustomLocalization+Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomLocalization+Summary.swift"; sourceTree = "<group>"; };
 		ADBBB6482797354600B596A5 /* NavigationAccessoryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAccessoryDelegate.swift; sourceTree = "<group>"; };
 		ADBBB64A279736CE00B596A5 /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 		ADBBB6522797426A00B596A5 /* SaveCancelNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCancelNavigationBar.swift; sourceTree = "<group>"; };
@@ -761,9 +761,9 @@
 				AD0D2304279C5B4E00CBA554 /* Implementations */,
 				AD0D22F9279C567400CBA554 /* Protocols */,
 				EBDF35CA014AE318370973AE /* SummaryNavigationController.swift */,
-				ADAEFF36273566BD00C7ABAE /* CustomLocalization+Summary.swift */,
 				EBDF36E0DCEDBEA7026F554B /* CustomContentView.swift */,
 				ADC3F67C278F611B0087294D /* CustomContentConfiguration.swift */,
+				AD4034322827043900FB9977 /* SummaryStrings.swift */,
 			);
 			path = PortfolioSummary;
 			sourceTree = "<group>";
@@ -1005,6 +1005,7 @@
 				AD21193227A834BF00B54710 /* BrokerNoteDetailWorker.swift in Sources */,
 				AD36D8B0279492F30043EB93 /* TransactionDataStore.swift in Sources */,
 				AD4BC666277A8DAD00593CEE /* UITableView+extension.swift in Sources */,
+				AD4034332827043900FB9977 /* SummaryStrings.swift in Sources */,
 				ADAEFF2B27355D7700C7ABAE /* CustomLocalization.swift in Sources */,
 				AD0D230F279C5E6900CBA554 /* SummaryConfigurator.swift in Sources */,
 				AD0D22FF279C5B1100CBA554 /* SummaryRouterProtocol.swift in Sources */,
@@ -1034,7 +1035,6 @@
 				AD0D230A279C5BC400CBA554 /* SummaryConfiguratorProtocol.swift in Sources */,
 				ADBBB6682799BBDE00B596A5 /* RegistrableTableViewCell.swift in Sources */,
 				AD041F8C27A026B200C9A815 /* BrokerNote+CoreDataProperties.swift in Sources */,
-				ADAEFF37273566BD00C7ABAE /* CustomLocalization+Summary.swift in Sources */,
 				AD041FC027A05E5700C9A815 /* BrokerNoteSummaryWorker.swift in Sources */,
 				AD21192727A7FFB700B54710 /* BrokerNoteDetailConfiguratorProtocol.swift in Sources */,
 				AD0D2313279D8D4300CBA554 /* SummaryRouter.swift in Sources */,
