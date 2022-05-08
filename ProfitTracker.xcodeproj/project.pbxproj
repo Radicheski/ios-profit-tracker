@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0203DF28286D2E00E82F8E /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = AD0203DE28286D2E00E82F8E /* SwiftyJSON */; };
 		AD041F8C27A026B200C9A815 /* BrokerNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD041F8B27A026B200C9A815 /* BrokerNote+CoreDataProperties.swift */; };
 		AD041F9327A0271800C9A815 /* BrokerNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD041F9127A0271800C9A815 /* BrokerNote+CoreDataClass.swift */; };
 		AD041F9927A027A800C9A815 /* BrokerNoteSummaryViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD041F9827A027A800C9A815 /* BrokerNoteSummaryViewProtocol.swift */; };
@@ -46,7 +47,7 @@
 		AD0D2319279D8DE900CBA554 /* SummaryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D2318279D8DE900CBA554 /* SummaryInteractor.swift */; };
 		AD162AC427934D2F00E77FC1 /* TransactionContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD162AC327934D2F00E77FC1 /* TransactionContentView.swift */; };
 		AD19B742277E402600D459EA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B741277E402600D459EA /* Persistence.swift */; };
-		AD19B7452782217700D459EA /* FinanceModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD19B7432782217700D459EA /* FinanceModel.xcdatamodeld */; };
+		AD19B7452782217700D459EA /* ProfitTrackerModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD19B7432782217700D459EA /* ProfitTrackerModel.xcdatamodeld */; };
 		AD19B75027822C8400D459EA /* Portfolio+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B74E27822C8400D459EA /* Portfolio+CoreDataClass.swift */; };
 		AD19B75127822C8400D459EA /* Portfolio+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19B74F27822C8400D459EA /* Portfolio+CoreDataProperties.swift */; };
 		AD21191D27A7FEB200B54710 /* BrokerNoteDetailViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21191C27A7FEB200B54710 /* BrokerNoteDetailViewProtocol.swift */; };
@@ -93,7 +94,6 @@
 		ADBBB64B279736CE00B596A5 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB64A279736CE00B596A5 /* NavigationManager.swift */; };
 		ADBBB6532797426A00B596A5 /* SaveCancelNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB6522797426A00B596A5 /* SaveCancelNavigationBar.swift */; };
 		ADBBB6552797428100B596A5 /* SaveCancelNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB6542797428100B596A5 /* SaveCancelNavigationDelegate.swift */; };
-		ADBBB65C2798270B00B596A5 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = ADBBB65B2798270B00B596A5 /* SwiftyJSON */; };
 		ADBBB65E27999CB000B596A5 /* FullDatastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB65D27999CB000B596A5 /* FullDatastore.swift */; };
 		ADBBB66027999CCA00B596A5 /* ReadOnlyDatastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB65F27999CCA00B596A5 /* ReadOnlyDatastore.swift */; };
 		ADBBB66227999DDB00B596A5 /* SummaryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBB66127999DDB00B596A5 /* SummaryItem.swift */; };
@@ -233,7 +233,7 @@
 		AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
 		AD58D52A272CC0E60047847C /* portfolioExpected.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portfolioExpected.json; sourceTree = "<group>"; };
 		AD58D52D272CC7E60047847C /* Portfolio+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Portfolio+extension.swift"; sourceTree = "<group>"; };
-		AD6AE3602827121100BD2BC0 /* financeLocalizationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = financeLocalizationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD6AE3602827121100BD2BC0 /* ProfitTrackerLocalizationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProfitTrackerLocalizationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6AE3622827121100BD2BC0 /* FinanceLocalizationTests.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = FinanceLocalizationTests.swift; sourceTree = "<group>"; tabWidth = 2; };
 		AD6DDD4627ABF144002A34EE /* DateInputFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputFormField.swift; sourceTree = "<group>"; };
 		AD6DDD4827ABF2D4002A34EE /* DateInputContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputContentConfiguration.swift; sourceTree = "<group>"; };
@@ -273,9 +273,9 @@
 		ADBBB68B279ADEC800B596A5 /* PortfolioTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioTableViewDataSource.swift; sourceTree = "<group>"; };
 		ADBBB68D279ADEDE00B596A5 /* PortfolioTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioTableViewDelegate.swift; sourceTree = "<group>"; };
 		ADBBB68F279B1A7C00B596A5 /* Portfolio+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Portfolio+ViewModel.swift"; sourceTree = "<group>"; };
-		ADBBC31727825FE80068D066 /* financeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = financeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADBBC31727825FE80068D066 /* ProfitTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProfitTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBBC31927825FE80068D066 /* TestPortfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPortfolio.swift; sourceTree = "<group>"; };
-		ADBD414D272B3B1E00BB3327 /* finance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADBD414D272B3B1E00BB3327 /* ProfitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProfitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBD4150272B3B1E00BB3327 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADBD4152272B3B1E00BB3327 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ADBD4154272B3B1E00BB3327 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -324,7 +324,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADBBB65C2798270B00B596A5 /* SwiftyJSON in Frameworks */,
+				AD0203DF28286D2E00E82F8E /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +445,7 @@
 			children = (
 				AD36B05B27864B2600040D25 /* Datastore */,
 				AD19B741277E402600D459EA /* Persistence.swift */,
-				AD19B7432782217700D459EA /* FinanceModel.xcdatamodeld */,
+				AD19B7432782217700D459EA /* ProfitTrackerModel.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -537,12 +537,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		AD6AE3612827121100BD2BC0 /* financeLocalizationTests */ = {
+		AD6AE3612827121100BD2BC0 /* ProfitTrackerLocalizationTests */ = {
 			isa = PBXGroup;
 			children = (
 				AD6AE3622827121100BD2BC0 /* FinanceLocalizationTests.swift */,
 			);
-			path = financeLocalizationTests;
+			path = ProfitTrackerLocalizationTests;
 			sourceTree = "<group>";
 		};
 		AD6DDD4527ABF121002A34EE /* DateInputFormField */ = {
@@ -601,21 +601,21 @@
 			path = Implementations;
 			sourceTree = "<group>";
 		};
-		ADBBC31827825FE80068D066 /* financeTests */ = {
+		ADBBC31827825FE80068D066 /* ProfitTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
 				ADBBC31927825FE80068D066 /* TestPortfolio.swift */,
 				AD9F420827920F0D002A472F /* TransactionTests.swift */,
 			);
-			path = financeTests;
+			path = ProfitTrackerTests;
 			sourceTree = "<group>";
 		};
 		ADBD4144272B3B1E00BB3327 = {
 			isa = PBXGroup;
 			children = (
-				ADBD414F272B3B1E00BB3327 /* finance */,
-				ADBBC31827825FE80068D066 /* financeTests */,
-				AD6AE3612827121100BD2BC0 /* financeLocalizationTests */,
+				ADBD414F272B3B1E00BB3327 /* ProfitTracker */,
+				ADBBC31827825FE80068D066 /* ProfitTrackerTests */,
+				AD6AE3612827121100BD2BC0 /* ProfitTrackerLocalizationTests */,
 				ADBD414E272B3B1E00BB3327 /* Products */,
 				EBDF3C4A2EF3A78078840235 /* .gitignore */,
 			);
@@ -624,14 +624,14 @@
 		ADBD414E272B3B1E00BB3327 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ADBD414D272B3B1E00BB3327 /* finance.app */,
-				ADBBC31727825FE80068D066 /* financeTests.xctest */,
-				AD6AE3602827121100BD2BC0 /* financeLocalizationTests.xctest */,
+				ADBD414D272B3B1E00BB3327 /* ProfitTracker.app */,
+				ADBBC31727825FE80068D066 /* ProfitTrackerTests.xctest */,
+				AD6AE3602827121100BD2BC0 /* ProfitTrackerLocalizationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ADBD414F272B3B1E00BB3327 /* finance */ = {
+		ADBD414F272B3B1E00BB3327 /* ProfitTracker */ = {
 			isa = PBXGroup;
 			children = (
 				AD2810252787676300BA4136 /* Utils */,
@@ -651,7 +651,7 @@
 				EBDF37E648074FC97F24035F /* Protocols */,
 				EBDF3D33351F47B826444740 /* Features */,
 			);
-			path = finance;
+			path = ProfitTracker;
 			sourceTree = "<group>";
 		};
 		ADBD4164272B3CA800BB3327 /* Views */ = {
@@ -807,9 +807,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AD6AE35F2827121100BD2BC0 /* financeLocalizationTests */ = {
+		AD6AE35F2827121100BD2BC0 /* ProfitTrackerLocalizationTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD6AE3682827121100BD2BC0 /* Build configuration list for PBXNativeTarget "financeLocalizationTests" */;
+			buildConfigurationList = AD6AE3682827121100BD2BC0 /* Build configuration list for PBXNativeTarget "ProfitTrackerLocalizationTests" */;
 			buildPhases = (
 				AD6AE35C2827121100BD2BC0 /* Sources */,
 				AD6AE35D2827121100BD2BC0 /* Frameworks */,
@@ -820,14 +820,14 @@
 			dependencies = (
 				AD6AE3652827121100BD2BC0 /* PBXTargetDependency */,
 			);
-			name = financeLocalizationTests;
+			name = ProfitTrackerLocalizationTests;
 			productName = financeLocalizationTests;
-			productReference = AD6AE3602827121100BD2BC0 /* financeLocalizationTests.xctest */;
+			productReference = AD6AE3602827121100BD2BC0 /* ProfitTrackerLocalizationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		ADBBC31627825FE80068D066 /* financeTests */ = {
+		ADBBC31627825FE80068D066 /* ProfitTrackerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADBBC31D27825FE80068D066 /* Build configuration list for PBXNativeTarget "financeTests" */;
+			buildConfigurationList = ADBBC31D27825FE80068D066 /* Build configuration list for PBXNativeTarget "ProfitTrackerTests" */;
 			buildPhases = (
 				ADBBC31327825FE80068D066 /* Sources */,
 				ADBBC31427825FE80068D066 /* Frameworks */,
@@ -839,14 +839,14 @@
 			dependencies = (
 				ADBBC31C27825FE80068D066 /* PBXTargetDependency */,
 			);
-			name = financeTests;
+			name = ProfitTrackerTests;
 			productName = financeTests;
-			productReference = ADBBC31727825FE80068D066 /* financeTests.xctest */;
+			productReference = ADBBC31727825FE80068D066 /* ProfitTrackerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		ADBD414C272B3B1E00BB3327 /* finance */ = {
+		ADBD414C272B3B1E00BB3327 /* ProfitTracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADBD4161272B3B1F00BB3327 /* Build configuration list for PBXNativeTarget "finance" */;
+			buildConfigurationList = ADBD4161272B3B1F00BB3327 /* Build configuration list for PBXNativeTarget "ProfitTracker" */;
 			buildPhases = (
 				ADBD4149272B3B1E00BB3327 /* Sources */,
 				ADBD414A272B3B1E00BB3327 /* Frameworks */,
@@ -857,12 +857,12 @@
 			);
 			dependencies = (
 			);
-			name = finance;
+			name = ProfitTracker;
 			packageProductDependencies = (
-				ADBBB65B2798270B00B596A5 /* SwiftyJSON */,
+				AD0203DE28286D2E00E82F8E /* SwiftyJSON */,
 			);
 			productName = finance;
-			productReference = ADBD414D272B3B1E00BB3327 /* finance.app */;
+			productReference = ADBD414D272B3B1E00BB3327 /* ProfitTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -888,7 +888,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ADBD4148272B3B1E00BB3327 /* Build configuration list for PBXProject "finance" */;
+			buildConfigurationList = ADBD4148272B3B1E00BB3327 /* Build configuration list for PBXProject "ProfitTracker" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -899,15 +899,15 @@
 			);
 			mainGroup = ADBD4144272B3B1E00BB3327;
 			packageReferences = (
-				ADBBB65A2798270B00B596A5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				AD0203DD28286D2E00E82F8E /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = ADBD414E272B3B1E00BB3327 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ADBD414C272B3B1E00BB3327 /* finance */,
-				ADBBC31627825FE80068D066 /* financeTests */,
-				AD6AE35F2827121100BD2BC0 /* financeLocalizationTests */,
+				ADBD414C272B3B1E00BB3327 /* ProfitTracker */,
+				ADBBC31627825FE80068D066 /* ProfitTrackerTests */,
+				AD6AE35F2827121100BD2BC0 /* ProfitTrackerLocalizationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1027,7 +1027,7 @@
 				AD041F9F27A02DBB00C9A815 /* BrokerNoteSummaryInteractorProtocol.swift in Sources */,
 				ADBBB6492797354600B596A5 /* NavigationAccessoryDelegate.swift in Sources */,
 				AD0D22FB279C568500CBA554 /* SummaryViewProtocol.swift in Sources */,
-				AD19B7452782217700D459EA /* FinanceModel.xcdatamodeld in Sources */,
+				AD19B7452782217700D459EA /* ProfitTrackerModel.xcdatamodeld in Sources */,
 				AD0D2301279C5B2800CBA554 /* SummaryPresenterProtocol.swift in Sources */,
 				AD58D52E272CC7E60047847C /* Portfolio+extension.swift in Sources */,
 				AD041FA927A02E6C00C9A815 /* BrokerNoteSummaryTableViewDataSource.swift in Sources */,
@@ -1135,12 +1135,12 @@
 /* Begin PBXTargetDependency section */
 		AD6AE3652827121100BD2BC0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ADBD414C272B3B1E00BB3327 /* finance */;
+			target = ADBD414C272B3B1E00BB3327 /* ProfitTracker */;
 			targetProxy = AD6AE3642827121100BD2BC0 /* PBXContainerItemProxy */;
 		};
 		ADBBC31C27825FE80068D066 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ADBD414C272B3B1E00BB3327 /* finance */;
+			target = ADBD414C272B3B1E00BB3327 /* ProfitTracker */;
 			targetProxy = ADBBC31B27825FE80068D066 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1176,12 +1176,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.radicheski.financeLocalizationTests;
+				PRODUCT_BUNDLE_IDENTIFIER = me.radicheski.ProfitTrackerLocalizationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/finance.app/finance";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProfitTracker.app/ProfitTracker";
 			};
 			name = Debug;
 		};
@@ -1195,12 +1195,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.radicheski.financeLocalizationTests;
+				PRODUCT_BUNDLE_IDENTIFIER = me.radicheski.ProfitTrackerLocalizationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/finance.app/finance";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProfitTracker.app/ProfitTracker";
 			};
 			name = Release;
 		};
@@ -1214,12 +1214,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.radicheski.financeTests;
+				PRODUCT_BUNDLE_IDENTIFIER = me.radicheski.ProfitTrackerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/finance.app/finance";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProfitTracker.app/ProfitTracker";
 			};
 			name = Debug;
 		};
@@ -1233,12 +1233,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.radicheski.financeTests;
+				PRODUCT_BUNDLE_IDENTIFIER = me.radicheski.ProfitTrackerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/finance.app/finance";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProfitTracker.app/ProfitTracker";
 			};
 			name = Release;
 		};
@@ -1367,7 +1367,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S85L3BQN65;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = finance/Info.plist;
+				INFOPLIST_FILE = ProfitTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1377,7 +1377,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.radicheski.finance;
+				PRODUCT_BUNDLE_IDENTIFIER = me.radicheski.ProfitTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1394,7 +1394,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S85L3BQN65;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = finance/Info.plist;
+				INFOPLIST_FILE = ProfitTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1404,7 +1404,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.radicheski.finance;
+				PRODUCT_BUNDLE_IDENTIFIER = me.radicheski.ProfitTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1415,7 +1415,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AD6AE3682827121100BD2BC0 /* Build configuration list for PBXNativeTarget "financeLocalizationTests" */ = {
+		AD6AE3682827121100BD2BC0 /* Build configuration list for PBXNativeTarget "ProfitTrackerLocalizationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD6AE3662827121100BD2BC0 /* Debug */,
@@ -1424,7 +1424,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADBBC31D27825FE80068D066 /* Build configuration list for PBXNativeTarget "financeTests" */ = {
+		ADBBC31D27825FE80068D066 /* Build configuration list for PBXNativeTarget "ProfitTrackerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADBBC31E27825FE80068D066 /* Debug */,
@@ -1433,7 +1433,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADBD4148272B3B1E00BB3327 /* Build configuration list for PBXProject "finance" */ = {
+		ADBD4148272B3B1E00BB3327 /* Build configuration list for PBXProject "ProfitTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADBD415F272B3B1F00BB3327 /* Debug */,
@@ -1442,7 +1442,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADBD4161272B3B1F00BB3327 /* Build configuration list for PBXNativeTarget "finance" */ = {
+		ADBD4161272B3B1F00BB3327 /* Build configuration list for PBXNativeTarget "ProfitTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADBD4162272B3B1F00BB3327 /* Debug */,
@@ -1454,32 +1454,32 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		ADBBB65A2798270B00B596A5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+		AD0203DD28286D2E00E82F8E /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		ADBBB65B2798270B00B596A5 /* SwiftyJSON */ = {
+		AD0203DE28286D2E00E82F8E /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ADBBB65A2798270B00B596A5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			package = AD0203DD28286D2E00E82F8E /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		AD19B7432782217700D459EA /* FinanceModel.xcdatamodeld */ = {
+		AD19B7432782217700D459EA /* ProfitTrackerModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				AD19B7442782217700D459EA /* FinanceModel.xcdatamodel */,
 			);
 			currentVersion = AD19B7442782217700D459EA /* FinanceModel.xcdatamodel */;
-			path = FinanceModel.xcdatamodeld;
+			path = ProfitTrackerModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

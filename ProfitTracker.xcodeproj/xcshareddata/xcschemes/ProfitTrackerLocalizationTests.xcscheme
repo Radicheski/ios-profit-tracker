@@ -17,9 +17,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AD6AE35F2827121100BD2BC0"
-               BuildableName = "financeLocalizationTests.xctest"
-               BlueprintName = "financeLocalizationTests"
-               ReferencedContainer = "container:finance.xcodeproj">
+               BuildableName = "ProfitTrackerLocalizationTests.xctest"
+               BlueprintName = "ProfitTrackerLocalizationTests"
+               ReferencedContainer = "container:ProfitTracker.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

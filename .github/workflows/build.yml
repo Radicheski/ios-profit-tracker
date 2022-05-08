@@ -5,12 +5,11 @@ jobs:
     runs-on: [self-hosted, macOS, X64]
     steps:
       - uses: actions/checkout@v3
-      - run: xcodebuild clean -project finance.xcodeproj -scheme finance
+      - run: xcodebuild clean build -project ProfitTracker.xcodeproj -scheme ProfitTracker
   test-project:
     runs-on: [self-hosted, macOS, X64]
     steps:
       - uses: actions/checkout@v3
-      - run: xcodebuild test -project finance.xcodeproj -scheme financeTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4'
-      - run: xcodebuild test -project finance.xcodeproj -scheme financeLocalizationTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4' -testLanguage en
-      - run: xcodebuild test -project finance.xcodeproj -scheme financeLocalizationTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4' -testLanguage pt-BR
-
+      - run: xcodebuild clean test -project ProfitTracker.xcodeproj -scheme ProfitTrackerTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4'
+      - run: xcodebuild clean test -project ProfitTracker.xcodeproj -scheme ProfitTrackerLocalizationTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4' -testLanguage en
+      - run: xcodebuild clean test -project ProfitTracker.xcodeproj -scheme ProfitTrackerLocalizationTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4' -testLanguage pt-BR

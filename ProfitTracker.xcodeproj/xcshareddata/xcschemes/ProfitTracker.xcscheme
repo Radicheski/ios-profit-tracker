@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ADBD414C272B3B1E00BB3327"
-               BuildableName = "finance.app"
-               BlueprintName = "finance"
-               ReferencedContainer = "container:finance.xcodeproj">
+               BuildableName = "ProfitTracker.app"
+               BlueprintName = "ProfitTracker"
+               ReferencedContainer = "container:ProfitTracker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AD6AE35F2827121100BD2BC0"
-               BuildableName = "financeLocalizationTests.xctest"
-               BlueprintName = "financeLocalizationTests"
-               ReferencedContainer = "container:finance.xcodeproj">
+               BuildableName = "ProfitTrackerLocalizationTests.xctest"
+               BlueprintName = "ProfitTrackerLocalizationTests"
+               ReferencedContainer = "container:ProfitTracker.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ADBD414C272B3B1E00BB3327"
-            BuildableName = "finance.app"
-            BlueprintName = "finance"
-            ReferencedContainer = "container:finance.xcodeproj">
+            BuildableName = "ProfitTracker.app"
+            BlueprintName = "ProfitTracker"
+            ReferencedContainer = "container:ProfitTracker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ADBD414C272B3B1E00BB3327"
-            BuildableName = "finance.app"
-            BlueprintName = "finance"
-            ReferencedContainer = "container:finance.xcodeproj">
+            BuildableName = "ProfitTracker.app"
+            BlueprintName = "ProfitTracker"
+            ReferencedContainer = "container:ProfitTracker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
