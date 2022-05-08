@@ -6,7 +6,7 @@
 //
 
 class SummaryDataStore: ReadOnlyDatastore {
-    typealias T = SummaryItem
+    typealias Item = SummaryItem
 
     private var portfolioDatastore = PortfolioDatastore.shared
     private var transactionDatastore = TransactionDataStore()

@@ -6,7 +6,7 @@
 //
 
 protocol FullDatastore: ReadOnlyDatastore {
-    func newItem() -> T
+    func newItem() -> Item
     func deleteItem(at index: Int)
     func moveItem(at startIndex: Int, to endIndex: Int)
     func saveChanges()

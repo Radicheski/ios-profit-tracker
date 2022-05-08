@@ -40,6 +40,6 @@ extension BrokerNote {
 
 }
 
-extension BrokerNote : Identifiable {
+extension BrokerNote: Identifiable {
 
 }

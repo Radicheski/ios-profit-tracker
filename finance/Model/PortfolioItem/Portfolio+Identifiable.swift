@@ -7,8 +7,8 @@
 
 import Foundation
 
-extension Portfolio : Identifiable {
-    public static func ==(lhs: Portfolio, rhs: Portfolio) -> Bool {
+extension Portfolio: Identifiable {
+    public static func == (lhs: Portfolio, rhs: Portfolio) -> Bool {
         return lhs.name == rhs.name
     }
 }

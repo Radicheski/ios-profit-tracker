@@ -11,7 +11,7 @@ protocol SwitchInputFormFieldDelegate: AnyObject {
     func box(didChangeValue value: Bool)
 }
 
-class SwitchInputContentView: UIView & UIContentView {
+class SwitchInputContentView: UIView, UIContentView {
 
     var configuration: UIContentConfiguration {
         didSet { self.updateContentView() }

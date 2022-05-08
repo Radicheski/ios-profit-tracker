@@ -11,7 +11,7 @@ protocol DateInputFormFieldDelegate: AnyObject {
     func box(didChangeValue value: Date)
 }
 
-class DateInputContentView: UIView & UIContentView {
+class DateInputContentView: UIView, UIContentView {
 
     var configuration: UIContentConfiguration {
         didSet { self.updateContentView() }

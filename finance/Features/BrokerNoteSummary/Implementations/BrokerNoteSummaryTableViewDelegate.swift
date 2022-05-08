@@ -11,8 +11,11 @@ class BrokerNoteSummaryTableViewDelegate: NSObject, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView,
                    editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
-        if tableView.isEditing && indexPath.section == 0 { return .none }
-        else { return .delete }
+        if tableView.isEditing && indexPath.section == 0 {
+            return .none
+        } else {
+            return .delete
+        }
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

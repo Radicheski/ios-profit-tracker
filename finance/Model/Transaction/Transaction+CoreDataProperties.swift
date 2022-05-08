@@ -23,7 +23,7 @@ extension Transaction {
 
 }
 
-extension Transaction : Identifiable {
+extension Transaction: Identifiable {
 
 }
 

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BrokerNoteContentView: UIView & UIContentView {
+class BrokerNoteContentView: UIView, UIContentView {
 
     var dateLabel = UILabel()
     var brokerageHouseLabel = UILabel()
