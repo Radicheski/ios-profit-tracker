@@ -4,28 +4,28 @@
 
   Created by Erik Radicheski da Silva on 05/11/21.
 */
-"PortfolioManagerStrings.globalPortfolioTabBarTitle" = "Carteiras";
-"PortfolioManagerStrings.globalPortfolioTitle" = "Carteira global";
-"PortfolioManagerStrings.globalPortfolioUnallocated" = "Não alocado";
-"PortfolioManagerStrings.globalPortfolioNewItem" = "Novo item";
-"PortfolioManagerStrings.globalPortfolioDeleteMessage" = "Você está prestes a apagar um portfolio que não está vazio. Tem certeza?";
+"PortfolioManagerStrings.tabBarTitle" = "Carteiras";
+"PortfolioManagerStrings.title" = "Carteira global";
+"PortfolioManagerStrings.unallocated" = "Não alocado";
+"PortfolioManagerStrings.newItem" = "Novo item";
+"PortfolioManagerStrings.deleteMessage" = "Você está prestes a apagar um portfolio que não está vazio. Tem certeza?";
 
-"SummaryStrings.summaryTabBarTitle" = "Resumo";
-"SummaryStrings.summaryTitle" = "Resumo";
-"SummaryStrings.summaryUnallocated" = "Não alocado";
+"SummaryStrings.tabBarTitle" = "Resumo";
+"SummaryStrings.title" = "Resumo";
+"SummaryStrings.unallocated" = "Não alocado";
 
-"PortfolioUpdateStrings.updateViewNameLabel" = "Nome";
-"PortfolioUpdateStrings.updateViewWeightLabel" = "Alocação";
-"PortfolioUpdateStrings.updateViewParentLabel" = "Portfolio pai";
-"PortfolioUpdateStrings.updateViewPortfolioLabel" = "Carteira";
+"PortfolioUpdateStrings.nameLabel" = "Nome";
+"PortfolioUpdateStrings.weightLabel" = "Alocação";
+"PortfolioUpdateStrings.parentLabel" = "Portfolio pai";
+"PortfolioUpdateStrings.portfolioLabel" = "Carteira";
 
-"TransactionStrings.transactionsTabBarTitle" = "Transações";
-"TransactionStrings.transactionTitle" = "Transações";
-"TransactionStrings.newTransaction" = "Nova transação";
+"TransactionStrings.tabBarTitle" = "Transações";
+"TransactionStrings.title" = "Transações";
+"TransactionStrings.newItem" = "Nova transação";
 
-"BrokerNoteStrings.brokerNotesTabBarTitle" = "Notas";
-"BrokerNoteStrings.brokerNotesTitle" = "Notas";
-"BrokerNoteStrings.brokerNotesNewItem" = "Nova nota";
+"BrokerNoteStrings.tabBarTitle" = "Notas";
+"BrokerNoteStrings.title" = "Notas";
+"BrokerNoteStrings.newItem" = "Nova nota";
 
 "CommonStrings.okText" = "OK";
 "CommonStrings.cancelText" = "Cancelar";

@@ -35,10 +35,10 @@ class PortfolioTableViewDataSource: NSObject, UITableViewDataSource {
         case .accessory:
             var conf = cell.defaultContentConfiguration()
             if tableView.isEditing && indexPath.row == 0 {
-                conf.text = PortfolioManagerStrings.globalPortfolioNewItem.localizedString
+                conf.text = PortfolioManagerStrings.newItem.localizedString
                 conf.secondaryText = nil
             } else {
-                conf.text = PortfolioManagerStrings.globalPortfolioUnallocated.localizedString
+                conf.text = PortfolioManagerStrings.unallocated.localizedString
                 let percentArray = self.data.map { try? Decimal($0.weight.value ?? "0", format: .percent) }
                 let percentValue = percentArray.filter { $0 != nil }.reduce(1) { $0 - ($1 ?? 0) }
                 conf.secondaryText = Formatter.shared.percent.string(from: percentValue)

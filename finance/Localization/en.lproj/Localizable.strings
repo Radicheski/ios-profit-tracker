@@ -4,28 +4,28 @@
 
   Created by Erik Radicheski da Silva on 05/11/21.
 */
-"PortfolioManagerStrings.globalPortfolioTabBarTitle" = "Portfolios";
-"PortfolioManagerStrings.globalPortfolioTitle" = "Global portfolio";
-"PortfolioManagerStrings.globalPortfolioUnallocated" = "Unallocated";
-"PortfolioManagerStrings.globalPortfolioNewItem" = "New item";
-"PortfolioManagerStrings.globalPortfolioDeleteMessage" = "You are about to delete a non-empty portfolio. You are sure?";
+"PortfolioManagerStrings.tabBarTitle" = "Portfolios";
+"PortfolioManagerStrings.title" = "Global portfolio";
+"PortfolioManagerStrings.unallocated" = "Unallocated";
+"PortfolioManagerStrings.newItem" = "New item";
+"PortfolioManagerStrings.deleteMessage" = "You are about to delete a non-empty portfolio. You are sure?";
 
-"SummaryStrings.summaryTabBarTitle" = "Summary";
-"SummaryStrings.summaryTitle" = "Summary";
-"SummaryStrings.summaryUnallocated" = "Unallocated";
+"SummaryStrings.tabBarTitle" = "Summary";
+"SummaryStrings.title" = "Summary";
+"SummaryStrings.unallocated" = "Unallocated";
 
-"PortfolioUpdateStrings.updateViewNameLabel" = "Name";
-"PortfolioUpdateStrings.updateViewWeightLabel" = "Weight";
-"PortfolioUpdateStrings.updateViewParentLabel" = "Parent portfolio";
-"PortfolioUpdateStrings.updateViewPortfolioLabel" = "Portfolio";
+"PortfolioUpdateStrings.nameLabel" = "Name";
+"PortfolioUpdateStrings.weightLabel" = "Weight";
+"PortfolioUpdateStrings.parentLabel" = "Parent portfolio";
+"PortfolioUpdateStrings.portfolioLabel" = "Portfolio";
 
-"TransactionStrings.transactionsTabBarTitle" = "Transactions";
-"TransactionStrings.transactionTitle" = "Transactions";
-"TransactionStrings.newTransaction" = "New transaction";
+"TransactionStrings.tabBarTitle" = "Transactions";
+"TransactionStrings.title" = "Transactions";
+"TransactionStrings.newItem" = "New transaction";
 
-"BrokerNoteStrings.brokerNotesTabBarTitle" = "Notes";
-"BrokerNoteStrings.brokerNotesTitle" = "Notes";
-"BrokerNoteStrings.brokerNotesNewItem" = "New note";
+"BrokerNoteStrings.tabBarTitle" = "Notes";
+"BrokerNoteStrings.title" = "Notes";
+"BrokerNoteStrings.newItem" = "New note";
 
 "CommonStrings.okText" = "OK";
 "CommonStrings.cancelText" = "Cancel";

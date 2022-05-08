@@ -27,7 +27,7 @@ class BrokerNoteSummaryTableViewDataSource: NSObject, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(UITableViewCell.self, for: indexPath)
         if tableView.isEditing && indexPath.section == 0 {
             var conf = cell.defaultContentConfiguration()
-            conf.text = BrokerNoteStrings.brokerNotesNewItem.localizedString
+            conf.text = BrokerNoteStrings.newItem.localizedString
             cell.contentConfiguration = conf
         } else {
             let item = self.data[indexPath.row]

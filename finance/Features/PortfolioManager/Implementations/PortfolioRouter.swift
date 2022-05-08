@@ -25,15 +25,15 @@ class PortfolioRouter: NSObject, PortfolioRouterProtocol {
         let rows: [Row] = [
           TextInputFormField(key: "name",
                              value: name,
-                             contentConfiguration: .init(title: PortfolioUpdateStrings.updateViewNameLabel.localizedString,
+                             contentConfiguration: .init(title: PortfolioUpdateStrings.nameLabel.localizedString,
                                                          placeholder: name.value)),
           TextInputFormField(key: "weight",
                              value: weight,
-                             contentConfiguration: .init(title: PortfolioUpdateStrings.updateViewWeightLabel.localizedString,
+                             contentConfiguration: .init(title: PortfolioUpdateStrings.weightLabel.localizedString,
                                                          placeholder: weight.value)),
           SwitchInputFormField(key: "asset",
                                value: asset,
-                               contentConfiguration: .init(title: PortfolioUpdateStrings.updateViewPortfolioLabel.localizedString,
+                               contentConfiguration: .init(title: PortfolioUpdateStrings.portfolioLabel.localizedString,
                                                            value: asset.value))
         ]
         let section = TableViewSection(key: "updateHeader", rows: rows)

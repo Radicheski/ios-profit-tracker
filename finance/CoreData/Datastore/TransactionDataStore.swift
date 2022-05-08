@@ -29,7 +29,7 @@ class TransactionDataStore {
 
     func create() {
         let newItem = Transaction(context: Persistence.shared.context)
-        newItem.ticker = TransactionStrings.newTransaction.localizedString
+        newItem.ticker = TransactionStrings.newItem.localizedString
         newItem.date = Date.now
         newItem.quantity = 0
         newItem.total = Decimal()

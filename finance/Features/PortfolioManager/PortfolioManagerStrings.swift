@@ -8,9 +8,9 @@
 import Foundation
 
 public enum PortfolioManagerStrings: String, Localizable {
-  case globalPortfolioTabBarTitle = "Global portfolio tab bar title"
-  case globalPortfolioTitle = "Global portfolio title"
-  case globalPortfolioUnallocated = "Global portfolio unallocated resources"
-  case globalPortfolioNewItem = "Global portfolio new item cell title"
-  case globalPortfolioDeleteMessage = "Message asking for user to confirm portfolio deletion"
+  case tabBarTitle = "Global portfolio tab bar title"
+  case title = "Global portfolio title"
+  case unallocated = "Global portfolio unallocated resources"
+  case newItem = "Global portfolio new item cell title"
+  case deleteMessage = "Message asking for user to confirm portfolio deletion"
 }

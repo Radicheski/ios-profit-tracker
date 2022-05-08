@@ -8,7 +8,7 @@
 import Foundation
 
 public enum BrokerNoteStrings: String, Localizable {
-  case brokerNotesTabBarTitle = "Broker Note tab bar title"
-  case brokerNotesTitle = "Broker Note title"
-  case brokerNotesNewItem = "Broker Note new item cell title"
+  case tabBarTitle = "Broker Note tab bar title"
+  case title = "Broker Note title"
+  case newItem = "Broker Note new item cell title"
 }
