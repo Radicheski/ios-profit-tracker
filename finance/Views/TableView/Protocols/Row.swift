@@ -21,7 +21,7 @@ extension Row {
     var tableViewCell: RegistrableTableViewCell.Type { UITableViewCell.self }
     var didSelect: ((UITableView, IndexPath) -> Void)? {
         get { nil }
-        set { }
+        set { self.didSelect = newValue }
     }
 
     func register(_ tableView: UITableView) {

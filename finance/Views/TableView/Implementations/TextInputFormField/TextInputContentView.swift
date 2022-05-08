@@ -34,7 +34,7 @@ class TextInputContentView: UIView, UIContentView {
         NSLayoutConstraint.activate([
             self.titleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 10),
             self.titleLabel.leftAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leftAnchor, constant: 10),
-            self.titleLabel.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -10),
+            self.titleLabel.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -10)
         ])
 
         self.textField.addAction(UIAction(handler: textFieldEditingChanged(_:)), for: .editingChanged)
@@ -46,7 +46,7 @@ class TextInputContentView: UIView, UIContentView {
             self.textField.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 10),
             self.textField.leftAnchor.constraint(equalTo: self.titleLabel.rightAnchor, constant: 10),
             self.textField.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor, constant: -10),
-            self.textField.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -10),
+            self.textField.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -10)
         ])
 
         self.toolbar.setItems([

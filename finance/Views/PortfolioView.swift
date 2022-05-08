@@ -20,7 +20,7 @@ class PortfolioView: UIView {
             self.tableView.leftAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leftAnchor),
             self.tableView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
             self.tableView.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor),
-            self.tableView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor),
+            self.tableView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor)
         ])
 
     }

@@ -30,7 +30,7 @@ class BrokerNoteDetailRouter: BrokerNoteDetailRouterProtocol {
                                contentConfiguration: .init(title: "Data", placeholder: date.value)),
             TextInputFormField(key: "total",
                                value: total,
-                               contentConfiguration: .init(title: "Total", placeholder: total.value)),
+                               contentConfiguration: .init(title: "Total", placeholder: total.value))
         ]
 
         let section = TableViewSection(key: "updateHeader", rows: rows)

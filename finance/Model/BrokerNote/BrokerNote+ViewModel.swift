@@ -48,7 +48,7 @@ extension BrokerNote {
                                                                placeholder: datePlaceholder)),
                 TextInputFormField(key: "total",
                                    value: total,
-                                   contentConfiguration: .init(title: "Total", placeholder: total.value)),
+                                   contentConfiguration: .init(title: "Total", placeholder: total.value))
             ]
         }
 
