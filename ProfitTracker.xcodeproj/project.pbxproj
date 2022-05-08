@@ -78,7 +78,7 @@
 		AD4BC666277A8DAD00593CEE /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BC665277A8DAD00593CEE /* UITableView+extension.swift */; };
 		AD58D52B272CC0E60047847C /* portfolioExpected.json in Resources */ = {isa = PBXBuildFile; fileRef = AD58D52A272CC0E60047847C /* portfolioExpected.json */; };
 		AD58D52E272CC7E60047847C /* Portfolio+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58D52D272CC7E60047847C /* Portfolio+extension.swift */; };
-		AD6AE3632827121100BD2BC0 /* FinanceLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6AE3622827121100BD2BC0 /* FinanceLocalizationTests.swift */; };
+		AD6AE3632827121100BD2BC0 /* ProfitTrackerLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6AE3622827121100BD2BC0 /* ProfitTrackerLocalizationTests.swift */; };
 		AD6DDD4727ABF144002A34EE /* DateInputFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DDD4627ABF144002A34EE /* DateInputFormField.swift */; };
 		AD6DDD4927ABF2D4002A34EE /* DateInputContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DDD4827ABF2D4002A34EE /* DateInputContentConfiguration.swift */; };
 		AD6DDD4B27ABF2EC002A34EE /* DateInputContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DDD4A27ABF2EC002A34EE /* DateInputContentView.swift */; };
@@ -202,7 +202,7 @@
 		AD0D2318279D8DE900CBA554 /* SummaryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryInteractor.swift; sourceTree = "<group>"; };
 		AD162AC327934D2F00E77FC1 /* TransactionContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionContentView.swift; sourceTree = "<group>"; };
 		AD19B741277E402600D459EA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		AD19B7442782217700D459EA /* FinanceModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinanceModel.xcdatamodel; sourceTree = "<group>"; };
+		AD19B7442782217700D459EA /* ProfitTrackerModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProfitTrackerModel.xcdatamodel; sourceTree = "<group>"; };
 		AD19B74E27822C8400D459EA /* Portfolio+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Portfolio+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AD19B74F27822C8400D459EA /* Portfolio+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Portfolio+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AD21191C27A7FEB200B54710 /* BrokerNoteDetailViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerNoteDetailViewProtocol.swift; sourceTree = "<group>"; };
@@ -234,7 +234,7 @@
 		AD58D52A272CC0E60047847C /* portfolioExpected.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portfolioExpected.json; sourceTree = "<group>"; };
 		AD58D52D272CC7E60047847C /* Portfolio+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Portfolio+extension.swift"; sourceTree = "<group>"; };
 		AD6AE3602827121100BD2BC0 /* ProfitTrackerLocalizationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProfitTrackerLocalizationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD6AE3622827121100BD2BC0 /* FinanceLocalizationTests.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = FinanceLocalizationTests.swift; sourceTree = "<group>"; tabWidth = 2; };
+		AD6AE3622827121100BD2BC0 /* ProfitTrackerLocalizationTests.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ProfitTrackerLocalizationTests.swift; sourceTree = "<group>"; tabWidth = 2; };
 		AD6DDD4627ABF144002A34EE /* DateInputFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputFormField.swift; sourceTree = "<group>"; };
 		AD6DDD4827ABF2D4002A34EE /* DateInputContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputContentConfiguration.swift; sourceTree = "<group>"; };
 		AD6DDD4A27ABF2EC002A34EE /* DateInputContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputContentView.swift; sourceTree = "<group>"; };
@@ -540,7 +540,7 @@
 		AD6AE3612827121100BD2BC0 /* ProfitTrackerLocalizationTests */ = {
 			isa = PBXGroup;
 			children = (
-				AD6AE3622827121100BD2BC0 /* FinanceLocalizationTests.swift */,
+				AD6AE3622827121100BD2BC0 /* ProfitTrackerLocalizationTests.swift */,
 			);
 			path = ProfitTrackerLocalizationTests;
 			sourceTree = "<group>";
@@ -985,7 +985,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD6AE3632827121100BD2BC0 /* FinanceLocalizationTests.swift in Sources */,
+				AD6AE3632827121100BD2BC0 /* ProfitTrackerLocalizationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1476,9 +1476,9 @@
 		AD19B7432782217700D459EA /* ProfitTrackerModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				AD19B7442782217700D459EA /* FinanceModel.xcdatamodel */,
+				AD19B7442782217700D459EA /* ProfitTrackerModel.xcdatamodel */,
 			);
-			currentVersion = AD19B7442782217700D459EA /* FinanceModel.xcdatamodel */;
+			currentVersion = AD19B7442782217700D459EA /* ProfitTrackerModel.xcdatamodel */;
 			path = ProfitTrackerModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

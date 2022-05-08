@@ -6,9 +6,9 @@
 //
 
 import XCTest
-import finance
+import ProfitTracker
 
-class FinanceLocalizationTests: XCTestCase {
+class ProfitTrackerLocalizationTests: XCTestCase {
 
   func testCommonStrings() {
     for string in CommonStrings.allCases {

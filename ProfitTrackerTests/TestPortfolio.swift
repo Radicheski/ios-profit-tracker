@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import finance
+import ProfitTracker
 import SwiftyJSON
 
 class TestPortfolio: XCTestCase {
