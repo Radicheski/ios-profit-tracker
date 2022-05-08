@@ -100,12 +100,12 @@ extension SectionDataSource {
 
     func deleteRow(forSectionKey key: String, at index: Int) {
         let section = self.getSection(forKey: key)
-        let _ = section?.removeRow(at: index)
+        _ = section?.removeRow(at: index)
     }
 
     func deleteRow(forSectionKey key: String, rowKey: String) {
         let section = self.getSection(forKey: key)
-        let _ = section?.removeRow(withKey: rowKey)
+        _ = section?.removeRow(withKey: rowKey)
     }
 
     func moveRow(forSectionKey key: String, from sourceIndex: Int, to targetIndex: Int) {

@@ -10,16 +10,16 @@ import UIKit
 class NavigationAccessoryView: UIToolbar {
 
     enum Event {
-        case up
-        case down
+        case previous
+        case next
         case done
     }
 
-    lazy var upButton = UIBarButtonItem(image: UIImage(systemName: "chevron.up"),
+    lazy var previousButton = UIBarButtonItem(image: UIImage(systemName: "chevron.up"),
                                         style: .plain,
                                         target: self,
                                         action: #selector(buttonTapped(_:)))
-    lazy var downButton = UIBarButtonItem(image: UIImage(systemName: "chevron.down"),
+    lazy var nextButton = UIBarButtonItem(image: UIImage(systemName: "chevron.down"),
                                           style: .plain,
                                           target: self,
                                           action: #selector(buttonTapped(_:)))
@@ -33,7 +33,7 @@ class NavigationAccessoryView: UIToolbar {
     init() {
         super.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
 
-        self.setItems([self.upButton, self.downButton, self.space, self.doneButton], animated: true)
+        self.setItems([self.previousButton, self.nextButton, self.space, self.doneButton], animated: true)
     }
 
     required init?(coder: NSCoder) {
@@ -43,8 +43,8 @@ class NavigationAccessoryView: UIToolbar {
     @objc func buttonTapped(_ button: UIBarButtonItem) {
         let event: Event
         switch button {
-        case self.upButton: event = .up
-        case self.downButton: event = .down
+        case self.previousButton: event = .previous
+        case self.nextButton: event = .next
         case self.doneButton: event = .done
         default: return
         }

@@ -26,7 +26,7 @@ func loadMockData() throws {
     if Persistence.shared.context.hasChanges { Persistence.shared.saveContext() }
 }
 
-fileprivate func loadPortfolioData() {
+private func loadPortfolioData() {
     if let path = Bundle.main.path(forResource: "portfolio", ofType: "json"),
        let data = FileManager.default.contents(atPath: path),
        let json = try? JSON(data: data).arrayValue {
@@ -42,7 +42,7 @@ fileprivate func loadPortfolioData() {
     }
 }
 
-fileprivate func loadTransactionData() {
+private func loadTransactionData() {
     if let path = Bundle.main.path(forResource: "transactions", ofType: "json"),
        let data = FileManager.default.contents(atPath: path),
        let json = try? JSON(data: data) {

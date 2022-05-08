@@ -42,7 +42,7 @@ class BrokerNoteSummaryViewController: BaseViewController<PortfolioView>, Broker
     override func setEditing(_ editing: Bool, animated: Bool) {
         self.customView.tableView.setEditing(editing, animated: animated)
         super.setEditing(editing, animated: animated)
-        let sectionIndex = IndexSet(arrayLiteral: 0)
+        let sectionIndex = IndexSet(integer: 0)
         if editing {
             let leftBarButton = UIBarButtonItem(barButtonSystemItem: .cancel,
                                                 target: self,

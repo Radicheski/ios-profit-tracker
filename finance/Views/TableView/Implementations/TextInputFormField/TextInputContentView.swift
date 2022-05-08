@@ -11,7 +11,7 @@ protocol TextInputFormFieldDelegate: AnyObject {
     func box(didChangeValue value: String?)
 }
 
-class TextInputContentView: UIView & UIContentView {
+class TextInputContentView: UIView, UIContentView {
 
     var configuration: UIContentConfiguration {
         didSet { self.updateContentView() }
