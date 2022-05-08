@@ -35,7 +35,6 @@ class SummaryItem {
         worker.getQuote { [weak self] (price: Quote) in
             self?.price = price.vl_fechamento
         } onError: { error in
-            #warning("Handle this error")
             print(error)
         }
     }

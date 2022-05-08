@@ -82,7 +82,6 @@ extension BrokerNote.ViewModel: Section {
     func insert(row: Row, before key: String) {}
 
     func removeRow(at index: Int) -> Row {
-        #warning("FIX THIS")
         return self.transactions.last!
     }
 
