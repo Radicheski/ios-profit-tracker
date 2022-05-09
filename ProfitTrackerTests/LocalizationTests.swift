@@ -8,7 +8,7 @@
 import XCTest
 import ProfitTracker
 
-class ProfitTrackerLocalizationTests: XCTestCase {
+class LocalizationTests: XCTestCase {
 
   func testCommonStrings() {
     for string in CommonStrings.allCases {

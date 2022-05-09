@@ -10,6 +10,6 @@ build:
 test:
   stage: test
   script:
-    - xcodebuild clean test -project ProfitTracker.xcodeproj -scheme ProfitTrackerTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4'
-    - xcodebuild clean test -project ProfitTracker.xcodeproj -scheme ProfitTrackerLocalizationTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4' -testLanguage en
-    - xcodebuild clean test -project ProfitTracker.xcodeproj -scheme ProfitTrackerLocalizationTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4' -testLanguage pt-BR
+    - xcodebuild test -project ProfitTracker.xcodeproj -scheme ProfitTrackerTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4' -testLanguage pt-BR
+    - xcodebuild test -project ProfitTracker.xcodeproj -scheme ProfitTrackerTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4' -testLanguage en
+

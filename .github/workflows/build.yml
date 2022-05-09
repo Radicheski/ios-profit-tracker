@@ -10,6 +10,5 @@ jobs:
     runs-on: [self-hosted, macOS, X64]
     steps:
       - uses: actions/checkout@v3
-      - run: xcodebuild clean test -project ProfitTracker.xcodeproj -scheme ProfitTrackerTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4'
-      - run: xcodebuild clean test -project ProfitTracker.xcodeproj -scheme ProfitTrackerLocalizationTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4' -testLanguage en
-      - run: xcodebuild clean test -project ProfitTracker.xcodeproj -scheme ProfitTrackerLocalizationTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4' -testLanguage pt-BR
+      - run: xcodebuild test -project ProfitTracker.xcodeproj -scheme ProfitTrackerTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4' -testLanguage pt_BR
+      - run: xcodebuild test -project ProfitTracker.xcodeproj -scheme ProfitTrackerTests -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max,OS=15.4' -testLanguage en
